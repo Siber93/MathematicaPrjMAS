@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     45807,       1184]
-NotebookOptionsPosition[     41574,       1037]
-NotebookOutlinePosition[     42781,       1077]
-CellTagsIndexPosition[     42594,       1069]
+NotebookDataLength[     39714,       1024]
+NotebookOptionsPosition[     35684,        883]
+NotebookOutlinePosition[     36886,        923]
+CellTagsIndexPosition[     36703,        915]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -129,7 +129,8 @@ Cell[BoxData[{
 Cell[BoxData["\<\"C:\\\\Users\\\\Simone\\\\Documents\\\\GitHub\\\\\
 MathematicaPrjMAS\"\>"], "Output",
  CellChangeTimes->{3.7341451378010077`*^9, 3.7342512719557357`*^9, 
-  3.7342527167053585`*^9, 3.7342667704125853`*^9}]
+  3.7342527167053585`*^9, 3.7342667704125853`*^9, 3.734439398446945*^9, 
+  3.7344954799668913`*^9, 3.7344977280181046`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -141,46 +142,21 @@ Cell[BoxData[{
  RowBox[{"q", "=", "1"}]}], "Input"],
 
 Cell[BoxData["1"], "Output",
- CellChangeTimes->{3.734266770537675*^9}],
+ CellChangeTimes->{3.734266770537675*^9, 3.7344394045876417`*^9, 
+  3.734495482607547*^9, 3.7344977303775077`*^9}],
 
 Cell[BoxData["1"], "Output",
- CellChangeTimes->{3.734266770541177*^9}],
+ CellChangeTimes->{3.734266770537675*^9, 3.7344394045876417`*^9, 
+  3.734495482607547*^9, 3.7344977303775077`*^9}],
 
 Cell[BoxData["1"], "Output",
- CellChangeTimes->{3.7342667705436788`*^9}],
+ CellChangeTimes->{3.734266770537675*^9, 3.7344394045876417`*^9, 
+  3.734495482607547*^9, 3.7344977303775077`*^9}],
 
 Cell[BoxData["1"], "Output",
- CellChangeTimes->{3.734266770546181*^9}]
+ CellChangeTimes->{3.734266770537675*^9, 3.7344394045876417`*^9, 
+  3.734495482607547*^9, 3.7344977303775077`*^9}]
 }, Open  ]],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"d", "[", 
-   RowBox[{"k_", ",", "g_"}], "]"}], " ", ":=", 
-  RowBox[{"Switch", "[", 
-   RowBox[{"g", ",", "\[IndentingNewLine]", "1", ",", 
-    RowBox[{"Button", "[", "\[IndentingNewLine]", 
-     RowBox[{"\"\<Delete\>\"", ",", "\[IndentingNewLine]", 
-      RowBox[{"list1", "=", 
-       RowBox[{"Delete", "[", 
-        RowBox[{"list1", ",", 
-         RowBox[{"Key", "[", "k", "]"}]}], "]"}]}]}], "\[IndentingNewLine]", 
-     "]"}], ",", "\[IndentingNewLine]", "2", ",", 
-    RowBox[{"Button", "[", "\[IndentingNewLine]", 
-     RowBox[{"\"\<Delete\>\"", ",", "\[IndentingNewLine]", 
-      RowBox[{"list2", "=", 
-       RowBox[{"Delete", "[", 
-        RowBox[{"list2", ",", 
-         RowBox[{"Key", "[", "k", "]"}]}], "]"}]}]}], "\[IndentingNewLine]", 
-     "]"}], ",", "\[IndentingNewLine]", "3", ",", 
-    RowBox[{"Button", "[", "\[IndentingNewLine]", 
-     RowBox[{"\"\<Delete\>\"", ",", "\[IndentingNewLine]", 
-      RowBox[{"list3", "=", 
-       RowBox[{"Delete", "[", 
-        RowBox[{"list3", ",", 
-         RowBox[{"Key", "[", "k", "]"}]}], "]"}]}]}], "\[IndentingNewLine]", 
-     "]"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
- CellChangeTimes->{{3.7342625348265314`*^9, 3.7342625377411995`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -227,112 +203,18 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"list1", "=", 
-  RowBox[{"<|", "|>"}]}]], "Input",
+  RowBox[{"{", "}"}]}]], "Input",
  CellChangeTimes->{{3.7341547170278845`*^9, 3.734154726776566*^9}, 
-   3.7342526587597046`*^9}],
+   3.7342526587597046`*^9, {3.7344434360011034`*^9, 3.7344434380011263`*^9}}],
 
 Cell[BoxData[
- RowBox[{"\[LeftAssociation]", "\[RightAssociation]"}]], "Output",
- CellChangeTimes->{3.734251272158863*^9, 3.7342527167678576`*^9, 
-  3.7342626864170165`*^9, 3.734266770578704*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"DynamicModule", "[", 
-  RowBox[{
-   RowBox[{"{", "f", "}"}], ",", 
-   RowBox[{"Column", "[", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"Panel", "[", 
-       RowBox[{"Interpretation", "[", 
-        RowBox[{
-         RowBox[{"{", 
-          RowBox[{"significand", ",", "exponent"}], "}"}], ",", 
-         RowBox[{"Row", "[", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"InputField", "[", 
-             RowBox[{
-              RowBox[{"Dynamic", "[", "significand", "]"}], ",", "Number", 
-              ",", 
-              RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "]"}], ",", 
-            RowBox[{"Style", "[", 
-             RowBox[{"\"\<x * \>\"", ",", "12"}], "]"}], ",", 
-            RowBox[{"Superscript", "[", 
-             RowBox[{"y", ",", 
-              RowBox[{"InputField", "[", 
-               RowBox[{
-                RowBox[{"Dynamic", "[", "exponent", "]"}], ",", "Number", ",", 
-                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "]"}]}], "]"}]}], 
-           "}"}], "]"}], ",", 
-         RowBox[{"f", "=", 
-          RowBox[{
-           RowBox[{"significand", "*", "x"}], " ", "+", " ", 
-           RowBox[{"y", "^", "exponent"}]}]}]}], "]"}], "]"}], ",", 
-      RowBox[{"Button", "[", 
-       RowBox[{"\"\<Add\>\"", ",", 
-        RowBox[{"AppendTo", "[", 
-         RowBox[{"list1", ",", 
-          RowBox[{"f", "\[Rule]", " ", 
-           RowBox[{"Button", "[", 
-            RowBox[{"\"\<Delete\>\"", ",", 
-             RowBox[{"list", "=", 
-              RowBox[{"Delete", "[", 
-               RowBox[{"list1", ",", 
-                RowBox[{"Key", "[", "f", "]"}]}], "]"}]}]}], "]"}]}]}], 
-         "]"}]}], "]"}]}], " ", "}"}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.734066297195404*^9, 3.734066299638141*^9}, {
-   3.734066343712489*^9, 3.7340663484398518`*^9}, {3.734066423804471*^9, 
-   3.734066481648594*^9}, {3.734066515013324*^9, 3.7340666008393693`*^9}, {
-   3.734149820256853*^9, 3.734149937122201*^9}, 3.734149972882614*^9, {
-   3.7341502090369797`*^9, 3.7341502217590065`*^9}, {3.734150351602539*^9, 
-   3.734150371147308*^9}, {3.7341504157395153`*^9, 3.7341504499042025`*^9}, {
-   3.734150607735214*^9, 3.7341506145692043`*^9}, {3.734150774360509*^9, 
-   3.73415077521502*^9}, {3.734150904134139*^9, 3.7341509347636447`*^9}, {
-   3.734151092921129*^9, 3.7341510969189577`*^9}, {3.7341524234440603`*^9, 
-   3.734152423622627*^9}, 3.734152502216836*^9, {3.7341525456081595`*^9, 
-   3.7341525586122217`*^9}, {3.7341534192295256`*^9, 
-   3.7341534742654767`*^9}, {3.734252691791361*^9, 3.7342527001310773`*^9}}],
-
-Cell[BoxData[
- DynamicModuleBox[{$CellContext`f$$}, 
-  TagBox[GridBox[{
-     {
-      PanelBox[
-       TagBox[
-        DynamicModuleBox[{$CellContext`significand$$, \
-$CellContext`exponent$$}, 
-         InterpretationBox[
-          TemplateBox[{InputFieldBox[
-             Dynamic[$CellContext`significand$$], Number, FieldSize -> Full],
-            StyleBox["\"x * \"", 12, StripOnInput -> False],TemplateBox[{"y", 
-              InputFieldBox[
-               Dynamic[$CellContext`exponent$$], Number, FieldSize -> Full]}, 
-             "Superscript", SyntaxForm -> SuperscriptBox]},
-           "RowDefault"],
-          $CellContext`f$$ = $CellContext`significand$$ $CellContext`x + \
-$CellContext`y^$CellContext`exponent$$],
-         DynamicModuleValues:>{}],
-        Setting[#, {0}]& ]]},
-     {
-      ButtonBox["\<\"Add\"\>",
-       Appearance->Automatic,
-       ButtonFunction:>
-        AppendTo[$CellContext`list1, $CellContext`f$$ -> 
-         Button["Delete", $CellContext`list = Delete[$CellContext`list1, 
-             Key[$CellContext`f$$]]]],
-       Evaluator->Automatic,
-       Method->"Preemptive"]}
-    },
-    DefaultBaseStyle->"Column",
-    GridBoxAlignment->{"Columns" -> {{Left}}},
-    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-   "Column"],
-  DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.7342667706017203`*^9}]
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{
+  3.734251272158863*^9, 3.7342527167678576`*^9, 3.7342626864170165`*^9, 
+   3.734266770578704*^9, 3.734439419572192*^9, 3.734440402933425*^9, 
+   3.7344415450379114`*^9, {3.7344419479076653`*^9, 3.7344419510170765`*^9}, 
+   3.7344420266437016`*^9, 3.7344421977872143`*^9, 3.734443439173013*^9, 
+   3.7344954926956797`*^9, 3.7344977459880123`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -387,19 +269,13 @@ Cell[BoxData[
             "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
            "\[IndentingNewLine]", 
            RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-            RowBox[{"list1", ",", "\[IndentingNewLine]", 
-             RowBox[{"f", "\[Rule]", " ", 
-              RowBox[{"d", "[", 
-               RowBox[{"f", ",", "1"}], "]"}]}]}], "\[IndentingNewLine]", 
-            "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"list1", ",", "\[IndentingNewLine]", "f"}], 
+            "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
            RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-            RowBox[{"list1", ",", "\[IndentingNewLine]", 
-             RowBox[{"f", "\[Rule]", " ", 
-              RowBox[{"d", "[", 
-               RowBox[{"f", ",", "1"}], "]"}]}]}], "\[IndentingNewLine]", 
-            "]"}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
-        "]"}]}]}], " ", "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", 
-    "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+            RowBox[{"list1", ",", "\[IndentingNewLine]", "f"}], 
+            "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
+        "\[IndentingNewLine]", "]"}]}]}], " ", "\[IndentingNewLine]", "}"}], 
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
  CellChangeTimes->{{3.734066297195404*^9, 3.734066299638141*^9}, {
    3.734066343712489*^9, 3.7340663484398518`*^9}, {3.734066423804471*^9, 
    3.734066481648594*^9}, {3.734066515013324*^9, 3.7340666008393693`*^9}, {
@@ -413,10 +289,21 @@ Cell[BoxData[
    3.7341525586122217`*^9}, {3.7341534192295256`*^9, 
    3.7341534742654767`*^9}, {3.734252077117014*^9, 3.7342522303101625`*^9}, {
    3.734252281262754*^9, 3.734252431691269*^9}, {3.7342526865725465`*^9, 
-   3.734252704158327*^9}, {3.7342626071943827`*^9, 3.734262667612368*^9}}],
+   3.734252704158327*^9}, {3.7342626071943827`*^9, 3.734262667612368*^9}, {
+   3.7344394731352997`*^9, 3.7344394785103617`*^9}, {3.7344400485464907`*^9, 
+   3.7344400602584476`*^9}, {3.7344401407630234`*^9, 3.734440146497464*^9}, {
+   3.734440227838991*^9, 3.7344402686291876`*^9}, {3.7344411958592854`*^9, 
+   3.73444119853121*^9}, {3.7344414641967945`*^9, 3.734441510633326*^9}, 
+   3.734441654205417*^9, {3.7344419089493523`*^9, 3.7344419418294744`*^9}, {
+   3.734442169911784*^9, 3.7344421803228736`*^9}, {3.7344422824158673`*^9, 
+   3.734442288947193*^9}, {3.734442325177179*^9, 3.7344423262709036`*^9}, {
+   3.734443412134202*^9, 3.7344434305322905`*^9}, {3.7344979840145535`*^9, 
+   3.7344980053627815`*^9}, {3.7344982709629397`*^9, 3.7344983006930337`*^9}, 
+   3.73449844138251*^9, {3.7344988192485776`*^9, 3.7344988257607517`*^9}, {
+   3.734498901862132*^9, 3.7344989092409897`*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`f$$ = 1 + $CellContext`x}, 
+ DynamicModuleBox[{$CellContext`f$$ = 1 + 2 $CellContext`x}, 
   TagBox[GridBox[{
      {
       PanelBox[
@@ -432,12 +319,8 @@ Cell[BoxData[
         ButtonFunction:>If[
           Or[$CellContext`a == Null, $CellContext`q == Null], 
           MessageDialog["Alcuni campi inseriti non sono corretti!"], 
-          
-          AppendTo[$CellContext`list1, $CellContext`f$$ -> \
-$CellContext`d[$CellContext`f$$, 1]], 
-          
-          AppendTo[$CellContext`list1, $CellContext`f$$ -> \
-$CellContext`d[$CellContext`f$$, 1]]],
+          AppendTo[$CellContext`list1, $CellContext`f$$], 
+          AppendTo[$CellContext`list1, $CellContext`f$$]],
         Evaluator->Automatic,
         Method->"Preemptive"], " ", 
        DynamicBox[ToBoxes[
@@ -451,21 +334,65 @@ $CellContext`q; "", TrackedSymbols :> {$CellContext`a, $CellContext`q}],
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Column"],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.7342626759319267`*^9, 3.7342667706302404`*^9}]
+ CellChangeTimes->{3.7342626759319267`*^9, 3.7342667706302404`*^9, 
+  3.7344394830416636`*^9, 3.7344415331942854`*^9, 3.7344419422669764`*^9, 
+  3.7344420323625193`*^9, 3.7344421911621404`*^9, 3.734442292540993*^9, 
+  3.734442330645954*^9, 3.7344434445365033`*^9, 3.7344955157822175`*^9, 
+  3.7344977489968915`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Dynamic", "[", "list1", "]"}]], "Input",
+ RowBox[{"Dynamic", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Button", "[", 
+     RowBox[{
+      RowBox[{"list1", "[", 
+       RowBox[{"[", "#", "]"}], "]"}], ",", 
+      RowBox[{"list1", " ", "=", " ", 
+       RowBox[{"Delete", "[", 
+        RowBox[{"list1", ",", 
+         RowBox[{"Position", "[", 
+          RowBox[{"list1", ",", 
+           RowBox[{"list1", "[", 
+            RowBox[{"[", "#", "]"}], "]"}]}], "]"}]}], "]"}]}]}], "]"}], 
+    "&"}], "/@", 
+   RowBox[{"Range", "[", 
+    RowBox[{"Length", "[", "list1", "]"}], "]"}]}], " ", "]"}]], "Input",
  CellChangeTimes->{{3.734153093188799*^9, 3.7341530968757453`*^9}, 
-   3.7342526843069086`*^9}],
+   3.7342526843069086`*^9, {3.7344434672033415`*^9, 3.7344434831377153`*^9}}],
 
 Cell[BoxData[
- DynamicBox[ToBoxes[$CellContext`list1, StandardForm],
-  ImageSizeCache->{26., {2., 8.}}]], "Output",
+ DynamicBox[ToBoxes[
+   Map[Button[
+     Part[$CellContext`list1, #], $CellContext`list1 = 
+     Delete[$CellContext`list1, 
+       Position[$CellContext`list1, 
+        Part[$CellContext`list1, #]]]]& , 
+    Range[
+     Length[$CellContext`list1]]], StandardForm],
+  ImageSizeCache->{16., {3., 9.}}]], "Output",
  CellChangeTimes->{3.7341530972270346`*^9, 3.7342512726276197`*^9, 
-  3.734252717220988*^9, 3.7342667706522565`*^9}]
+  3.734252717220988*^9, 3.7342667706522565`*^9, 3.734443488467013*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Dynamic", "[", 
+  RowBox[{"d", "[", "list1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.734496442549617*^9, 3.734496446346611*^9}, {
+  3.734496559805782*^9, 3.7344966089933643`*^9}}],
+
+Cell[BoxData[
+ DynamicBox[ToBoxes[
+   $CellContext`d[$CellContext`list1], StandardForm],
+  ImageSizeCache->{22., {16., 22.}}]], "Output",
+ CellChangeTimes->{
+  3.7344964467528496`*^9, {3.73449657523401*^9, 3.7344966102738504`*^9}, 
+   3.734497754932416*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -474,23 +401,22 @@ Cell[BoxData[
  RowBox[{"Button", "[", 
   RowBox[{"\"\<Export Data\>\"", ",", " ", 
    RowBox[{"Export", "[", 
-    RowBox[{"\"\<g1.txt\>\"", ",", 
-     RowBox[{"Keys", "[", "list1", "]"}]}], "]"}]}], "]"}]], "Input",
+    RowBox[{"\"\<g1.txt\>\"", ",", "list1"}], "]"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.7341538540553646`*^9, 3.7341538878329973`*^9}, {
   3.734153942855629*^9, 3.7341539571006727`*^9}, {3.7341542724166555`*^9, 
   3.7341542772073746`*^9}, {3.734154441070569*^9, 3.734154441429948*^9}, {
-  3.734252677119304*^9, 3.734252682041259*^9}}],
+  3.734252677119304*^9, 3.734252682041259*^9}, {3.7344435146386213`*^9, 
+  3.7344435184171066`*^9}}],
 
 Cell[BoxData[
  ButtonBox["\<\"Export Data\"\>",
   Appearance->Automatic,
-  ButtonFunction:>Export["g1.txt", 
-    Keys[$CellContext`list1]],
+  ButtonFunction:>Export["g1.txt", $CellContext`list1],
   Evaluator->Automatic,
   Method->"Preemptive"]], "Output",
  CellChangeTimes->{3.734153958069419*^9, 3.7341542845207586`*^9, 
   3.734154359516574*^9, 3.734154447148184*^9, 3.734251272643245*^9, 
-  3.734252717236613*^9, 3.7342667706692686`*^9}]
+  3.734252717236613*^9, 3.7342667706692686`*^9, 3.734443521151513*^9}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -511,12 +437,14 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"list2", "=", 
-  RowBox[{"<|", "|>"}]}]], "Input",
- CellChangeTimes->{{3.7342528433233557`*^9, 3.7342528435108557`*^9}}],
+  RowBox[{"{", "}"}]}]], "Input",
+ CellChangeTimes->{{3.7342528433233557`*^9, 3.7342528435108557`*^9}, {
+  3.7344963089773326`*^9, 3.7344963107425976`*^9}}],
 
 Cell[BoxData[
- RowBox[{"\[LeftAssociation]", "\[RightAssociation]"}]], "Output",
- CellChangeTimes->{3.734262689691926*^9, 3.734266770690284*^9}]
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{3.734262689691926*^9, 3.734266770690284*^9, 
+  3.7344966691893544`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -583,27 +511,22 @@ Cell[BoxData[
             "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
            "\[IndentingNewLine]", 
            RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-            RowBox[{"list2", ",", "\[IndentingNewLine]", 
-             RowBox[{"f", "\[Rule]", " ", 
-              RowBox[{"d", "[", 
-               RowBox[{"f", ",", "2"}], "]"}]}]}], "\[IndentingNewLine]", 
-            "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"list2", ",", "\[IndentingNewLine]", "f"}], 
+            "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
            RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-            RowBox[{"list2", ",", "\[IndentingNewLine]", 
-             RowBox[{"f", "\[Rule]", " ", 
-              RowBox[{"d", "[", 
-               RowBox[{"f", ",", "2"}], "]"}]}]}], "\[IndentingNewLine]", 
-            "]"}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
-        "]"}]}]}], " ", "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", 
-    "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+            RowBox[{"list2", ",", "\[IndentingNewLine]", "f"}], 
+            "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
+        "\[IndentingNewLine]", "]"}]}]}], " ", "\[IndentingNewLine]", "}"}], 
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
  CellChangeTimes->{{3.7342528579641585`*^9, 3.7342528618392234`*^9}, {
   3.734253001523771*^9, 3.7342530224270053`*^9}, {3.7342530577243137`*^9, 
   3.7342531628964367`*^9}, {3.7342621502345476`*^9, 3.7342621821945524`*^9}, {
   3.734262213014886*^9, 3.7342622692679024`*^9}, {3.734262565433571*^9, 
-  3.734262576320376*^9}}],
+  3.734262576320376*^9}, {3.7344969406047964`*^9, 3.73449694291781*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`f$$ = 1 + $CellContext`x + $CellContext`x^2}, 
+ DynamicModuleBox[{$CellContext`f$$ = 3 + 2 $CellContext`x + 
+  2 $CellContext`x^2}, 
   TagBox[GridBox[{
      {
       PanelBox[
@@ -624,12 +547,8 @@ Cell[BoxData[
           Or[$CellContext`a == Null, $CellContext`b == Null, $CellContext`q == 
            Null], 
           MessageDialog["Alcuni campi inseriti non sono corretti!"], 
-          
-          AppendTo[$CellContext`list2, $CellContext`f$$ -> \
-$CellContext`d[$CellContext`f$$, 2]], 
-          
-          AppendTo[$CellContext`list2, $CellContext`f$$ -> \
-$CellContext`d[$CellContext`f$$, 2]]],
+          AppendTo[$CellContext`list2, $CellContext`f$$], 
+          AppendTo[$CellContext`list2, $CellContext`f$$]],
         Evaluator->Automatic,
         Method->"Preemptive"], " ", 
        DynamicBox[ToBoxes[
@@ -645,19 +564,23 @@ $CellContext`b $CellContext`x + $CellContext`q; "",
    "Column"],
   DynamicModuleValues:>{}]], "Output",
  CellChangeTimes->{3.7342621514914865`*^9, 3.734262589217921*^9, 
-  3.734266770716302*^9}]
+  3.734266770716302*^9, 3.7344969465305843`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Dynamic", "[", "list2", "]"}]], "Input",
- CellChangeTimes->{{3.7342528818842096`*^9, 3.734252881962332*^9}}],
+ RowBox[{"Dynamic", "[", 
+  RowBox[{"d", "[", "list2", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7342528818842096`*^9, 3.734252881962332*^9}, {
+  3.734496951416351*^9, 3.734496955340934*^9}}],
 
 Cell[BoxData[
- DynamicBox[ToBoxes[$CellContext`list2, StandardForm],
-  ImageSizeCache->{26., {2., 8.}}]], "Output",
- CellChangeTimes->{3.7342529340254555`*^9, 3.7342667707483244`*^9}]
+ DynamicBox[ToBoxes[
+   $CellContext`d[$CellContext`list2], StandardForm],
+  ImageSizeCache->{138., {21., 28.}}]], "Output",
+ CellChangeTimes->{3.7342529340254555`*^9, 3.7342667707483244`*^9, 
+  3.734496955942518*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -666,18 +589,18 @@ Cell[BoxData[
  RowBox[{"Button", "[", 
   RowBox[{"\"\<Export Data\>\"", ",", " ", 
    RowBox[{"Export", "[", 
-    RowBox[{"\"\<g2.txt\>\"", ",", 
-     RowBox[{"Keys", "[", "list2", "]"}]}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.7342531863342223`*^9, 3.734253189120414*^9}}],
+    RowBox[{"\"\<g2.txt\>\"", ",", "list2"}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7342531863342223`*^9, 3.734253189120414*^9}, {
+  3.73449698700344*^9, 3.734496989384451*^9}}],
 
 Cell[BoxData[
  ButtonBox["\<\"Export Data\"\>",
   Appearance->Automatic,
-  ButtonFunction:>Export["g2.txt", 
-    Keys[$CellContext`list2]],
+  ButtonFunction:>Export["g2.txt", $CellContext`list2],
   Evaluator->Automatic,
   Method->"Preemptive"]], "Output",
- CellChangeTimes->{3.7342531924485617`*^9, 3.734266770765336*^9}]
+ CellChangeTimes->{3.7342531924485617`*^9, 3.734266770765336*^9, 
+  3.73449699167944*^9}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -698,18 +621,19 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"list3", "=", 
-  RowBox[{"<|", "|>"}]}]], "Input",
+  RowBox[{"{", "}"}]}]], "Input",
  CellChangeTimes->{{3.7342534978420258`*^9, 3.7342534979357767`*^9}, {
   3.734258289255665*^9, 3.734258300182907*^9}, {3.734258339382213*^9, 
   3.734258339984221*^9}, {3.7342583763609085`*^9, 3.7342584496331897`*^9}, {
-  3.7342618140997963`*^9, 3.734261818169572*^9}}],
+  3.7342618140997963`*^9, 3.734261818169572*^9}, {3.7344970031617055`*^9, 
+  3.73449700486485*^9}}],
 
 Cell[BoxData[
- RowBox[{"\[LeftAssociation]", "\[RightAssociation]"}]], "Output",
+ RowBox[{"{", "}"}]], "Output",
  CellChangeTimes->{3.734259827142165*^9, 3.7342599071892924`*^9, 
   3.734260547148696*^9, 3.7342607201483765`*^9, 3.7342614838943615`*^9, 
   3.734261707274683*^9, 3.7342618192726426`*^9, 3.7342626929172697`*^9, 
-  3.734266770786351*^9}]
+  3.734266770786351*^9, 3.7344970498805733`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -788,19 +712,13 @@ Cell[BoxData[
             "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
            "\[IndentingNewLine]", 
            RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-            RowBox[{"list3", ",", "\[IndentingNewLine]", 
-             RowBox[{"f", "\[Rule]", " ", 
-              RowBox[{"d", "[", 
-               RowBox[{"f", ",", "3"}], "]"}]}]}], "\[IndentingNewLine]", 
-            "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"list3", ",", "\[IndentingNewLine]", "f"}], 
+            "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
            RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-            RowBox[{"list3", ",", "\[IndentingNewLine]", 
-             RowBox[{"f", "\[Rule]", " ", 
-              RowBox[{"d", "[", 
-               RowBox[{"f", ",", "3"}], "]"}]}]}], "\[IndentingNewLine]", 
-            "]"}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
-        "]"}]}]}], " ", "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", 
-    "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+            RowBox[{"list3", ",", "\[IndentingNewLine]", "f"}], 
+            "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
+        "\[IndentingNewLine]", "]"}]}]}], " ", "\[IndentingNewLine]", "}"}], 
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
  CellChangeTimes->{{3.7342535601856456`*^9, 3.7342536177175064`*^9}, 
    3.734254337209093*^9, {3.7342545966850295`*^9, 3.734254616832322*^9}, {
    3.7342546926927423`*^9, 3.7342548011661415`*^9}, {3.7342548446987934`*^9, 
@@ -821,11 +739,12 @@ Cell[BoxData[
    3.7342578970057535`*^9}, {3.7342579971475854`*^9, 
    3.7342580361580133`*^9}, {3.7342580817862263`*^9, 3.734258096242326*^9}, {
    3.7342582471320267`*^9, 3.7342582580360017`*^9}, {3.734261765932596*^9, 
-   3.7342618068786354`*^9}, {3.734262551359135*^9, 3.734262554571314*^9}}],
+   3.7342618068786354`*^9}, {3.734262551359135*^9, 3.734262554571314*^9}, {
+   3.73449700991459*^9, 3.7344970117427216`*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`f$$ = 
-  1 + $CellContext`x + $CellContext`x^2 + $CellContext`x^3}, 
+ DynamicModuleBox[{$CellContext`f$$ = 3 + $CellContext`x + 2 $CellContext`x^2 + 
+  2 $CellContext`x^3}, 
   TagBox[GridBox[{
      {
       PanelBox[
@@ -849,12 +768,8 @@ Cell[BoxData[
           Or[$CellContext`a == Null, $CellContext`b == Null, $CellContext`c == 
            Null, $CellContext`q == Null], 
           MessageDialog["Alcuni campi inseriti non sono corretti!"], 
-          
-          AppendTo[$CellContext`list3, $CellContext`f$$ -> \
-$CellContext`d[$CellContext`f$$, 3]], 
-          
-          AppendTo[$CellContext`list3, $CellContext`f$$ -> \
-$CellContext`d[$CellContext`f$$, 3]]],
+          AppendTo[$CellContext`list3, $CellContext`f$$], 
+          AppendTo[$CellContext`list3, $CellContext`f$$]],
         Evaluator->Automatic,
         Method->"Preemptive"], " ", 
        DynamicBox[ToBoxes[
@@ -880,93 +795,24 @@ $CellContext`q}], StandardForm],
    3.734256547677684*^9, 3.734256665461571*^9, 3.7342571752735505`*^9, 
    3.7342572740601535`*^9, 3.7342577950994496`*^9, 3.7342578563269963`*^9, 
    3.734257899183587*^9, 3.734258098864702*^9, 3.734258268886465*^9, 
-   3.7342618466007385`*^9, 3.7342625578958845`*^9, 3.7342667708108687`*^9}],
-
-Cell[BoxData[
- DynamicModuleBox[{$CellContext`f$$ = 
-  1 + $CellContext`x + $CellContext`x^2 + $CellContext`x^3}, 
-  TagBox[GridBox[{
-     {
-      PanelBox[
-       TemplateBox[{InputFieldBox[
-          Dynamic[$CellContext`a], Number, FieldSize -> Full],StyleBox[
-         "\"\\!\\(\\*SuperscriptBox[\\(x\\), \\(3\\)]\\) + \"", 12, 
-          StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`b], Number, FieldSize -> Full],StyleBox[
-         "\"\\!\\(\\*SuperscriptBox[\\(x\\), \\(2\\)]\\) + \"", 12, 
-          StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`c], Number, FieldSize -> Full],StyleBox[
-         "\"x + \"", 12, StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`q], Number, FieldSize -> Full]},
-        "RowDefault"]]},
-     {
-      RowBox[{
-       ButtonBox["\<\"Add\"\>",
-        Appearance->Automatic,
-        ButtonFunction:>If[
-          
-          Or[$CellContext`a == Null, $CellContext`b == Null, $CellContext`c == 
-           Null, $CellContext`q == Null], 
-          MessageDialog["Alcuni campi inseriti non sono corretti!"], 
-          
-          AppendTo[$CellContext`list3, $CellContext`f$$ -> \
-$CellContext`d[$CellContext`f$$, 3]], 
-          
-          AppendTo[$CellContext`list3, $CellContext`f$$ -> \
-$CellContext`d[$CellContext`f$$, 3]]],
-        Evaluator->Automatic,
-        Method->"Preemptive"], " ", 
-       DynamicBox[ToBoxes[
-         Refresh[$CellContext`f$$ = $CellContext`a $CellContext`x^3 + \
-$CellContext`b $CellContext`x^2 + $CellContext`c $CellContext`x + \
-$CellContext`q; "", 
-          TrackedSymbols :> {$CellContext`a, $CellContext`b, $CellContext`c, \
-$CellContext`q}], StandardForm],
-        ImageSizeCache->{0., {0., 6.}}]}]}
-    },
-    DefaultBaseStyle->"Column",
-    GridBoxAlignment->{"Columns" -> {{Left}}},
-    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-   "Column"],
-  DynamicModuleValues:>{}]], "Output",
- GeneratedCell->False,
- CellAutoOverwrite->False,
- CellChangeTimes->{{3.734254834649921*^9, 3.7342548514232826`*^9}, 
-   3.7342555021937857`*^9, {3.734255579867857*^9, 3.7342555881888695`*^9}, 
-   3.7342556702545924`*^9, 3.7342558827692213`*^9, 3.734255914466857*^9, 
-   3.734256136733112*^9, 3.7342562141991234`*^9, 3.734256270005229*^9, 
-   3.7342563688300385`*^9, 3.734256399192113*^9, 3.7342564756980295`*^9, 
-   3.734256547677684*^9, 3.734256665461571*^9, 3.7342571752735505`*^9, 
-   3.7342572740601535`*^9, 3.7342577950994496`*^9, 3.7342578563269963`*^9, 
-   3.734257899183587*^9, 3.734258098864702*^9, 3.734258268886465*^9, 
-   3.7342618466007385`*^9, 3.7342625578958845`*^9}]
+   3.7342618466007385`*^9, 3.7342625578958845`*^9, 3.7342667708108687`*^9, 
+   3.734497018432023*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Dynamic", "[", "list3", "]"}]], "Input",
- CellChangeTimes->{{3.7342536802955694`*^9, 3.734253681217455*^9}}],
+ RowBox[{"Dynamic", "[", 
+  RowBox[{"d", "[", "list3", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7342536802955694`*^9, 3.734253681217455*^9}, {
+  3.73449703099807*^9, 3.7344970349912367`*^9}}],
 
 Cell[BoxData[
- DynamicBox[ToBoxes[$CellContext`list3, StandardForm],
-  ImageSizeCache->{26., {2., 8.}}]], "Output",
- CellChangeTimes->{3.734258475811579*^9, 3.73426677084089*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"del3", " ", "=", " ", 
-  RowBox[{"<|", "|>"}]}]], "Input",
- CellChangeTimes->{{3.734259424570233*^9, 3.734259433396418*^9}}],
-
-Cell[BoxData[
- RowBox[{"\[LeftAssociation]", "\[RightAssociation]"}]], "Output",
- CellChangeTimes->{
-  3.7342599318144064`*^9, 3.7342605527246523`*^9, {3.734260714001794*^9, 
-   3.734260738725976*^9}, 3.73426079720012*^9, 3.7342614939581203`*^9, 
-   3.734261589444538*^9, 3.734261671398416*^9, 3.7342667708594036`*^9}]
+ DynamicBox[ToBoxes[
+   $CellContext`d[$CellContext`list3], StandardForm],
+  ImageSizeCache->{22., {16., 22.}}]], "Output",
+ CellChangeTimes->{3.734258475811579*^9, 3.73426677084089*^9, 
+  3.7344970354912434`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -975,9 +821,9 @@ Cell[BoxData[
  RowBox[{"Button", "[", 
   RowBox[{"\"\<Export Data\>\"", ",", " ", 
    RowBox[{"Export", "[", 
-    RowBox[{"\"\<g3.txt\>\"", ",", 
-     RowBox[{"Keys", "[", "list3", "]"}]}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.734253696608251*^9, 3.7342537007333193`*^9}}],
+    RowBox[{"\"\<g3.txt\>\"", ",", "list3"}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.734253696608251*^9, 3.7342537007333193`*^9}, {
+  3.7344970681424737`*^9, 3.734497070220622*^9}}],
 
 Cell[BoxData[
  ButtonBox["\<\"Export Data\"\>",
@@ -1035,8 +881,8 @@ Cell[BoxData[
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1366, 695},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+WindowSize->{1350, 695},
+WindowMargins->{{-8, Automatic}, {Automatic, 0}},
 TaggingRules->{"SlideShow" -> True},
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
 StyleDefinitions->"Default.nb"
@@ -1049,29 +895,29 @@ CellTagsIndex->{
  "SlideShowHeader"->{
   Cell[580, 22, 4356, 95, 76, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[8300, 216, 64, 1, 75, "SlideShowNavigationBar",
+  Cell[7418, 192, 64, 1, 75, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[19746, 499, 64, 1, 75, "SlideShowNavigationBar",
+  Cell[17164, 425, 64, 1, 75, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[27004, 686, 64, 1, 75, "SlideShowNavigationBar",
+  Cell[24349, 609, 64, 1, 75, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]},
  "1\[Degree] Grado"->{
-  Cell[8389, 221, 142, 2, 70, "Section",
+  Cell[7507, 197, 142, 2, 70, "Section",
    CellTags->"1\[Degree] Grado"]},
  "2\[Degree] Grado"->{
-  Cell[19835, 504, 195, 3, 70, "Section",
+  Cell[17253, 430, 195, 3, 70, "Section",
    CellTags->"2\[Degree] Grado"]},
  "3\[Degree] Grado"->{
-  Cell[27093, 691, 193, 3, 70, "Section",
+  Cell[24438, 614, 193, 3, 70, "Section",
    CellTags->"3\[Degree] Grado"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 41916, 1048},
- {"1\[Degree] Grado", 42295, 1057},
- {"2\[Degree] Grado", 42394, 1060},
- {"3\[Degree] Grado", 42494, 1063}
+ {"SlideShowHeader", 36025, 894},
+ {"1\[Degree] Grado", 36404, 903},
+ {"2\[Degree] Grado", 36503, 906},
+ {"3\[Degree] Grado", 36603, 909}
  }
 *)
 (*NotebookFileOutline
@@ -1081,108 +927,102 @@ Cell[580, 22, 4356, 95, 76, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
 Cell[4961, 121, 319, 5, 50, "Input"],
-Cell[5283, 128, 221, 3, 30, "Output"]
+Cell[5283, 128, 294, 4, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5541, 136, 201, 4, 88, "Input"],
-Cell[5745, 142, 70, 1, 30, "Output"],
-Cell[5818, 145, 70, 1, 30, "Output"],
-Cell[5891, 148, 72, 1, 30, "Output"],
-Cell[5966, 151, 70, 1, 30, "Output"]
+Cell[5614, 137, 201, 4, 88, "Input"],
+Cell[5818, 143, 143, 2, 30, "Output"],
+Cell[5964, 147, 143, 2, 30, "Output"],
+Cell[6110, 151, 143, 2, 30, "Output"],
+Cell[6256, 155, 143, 2, 30, "Output"]
 }, Open  ]],
-Cell[6051, 155, 1242, 27, 278, "Input"],
 Cell[CellGroupData[{
-Cell[7318, 186, 866, 21, 347, "Title"],
-Cell[8187, 209, 64, 1, 56, "Subtitle"]
+Cell[6436, 162, 866, 21, 347, "Title"],
+Cell[7305, 185, 64, 1, 56, "Subtitle"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8300, 216, 64, 1, 75, "SlideShowNavigationBar",
+Cell[7418, 192, 64, 1, 75, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[8389, 221, 142, 2, 70, "Section",
+Cell[7507, 197, 142, 2, 70, "Section",
  CellTags->"1\[Degree] Grado"],
 Cell[CellGroupData[{
-Cell[8556, 227, 169, 4, 30, "Input"],
-Cell[8728, 233, 195, 3, 30, "Output"]
+Cell[7674, 203, 217, 4, 30, "Input"],
+Cell[7894, 209, 412, 7, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8960, 241, 2603, 56, 107, "Input"],
-Cell[11566, 299, 1372, 35, 93, "Output"]
+Cell[8343, 221, 4513, 81, 677, "Input"],
+Cell[12859, 304, 1577, 36, 89, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12975, 339, 3937, 76, 677, "Input"],
-Cell[16915, 417, 1431, 36, 89, "Output"]
+Cell[14473, 345, 719, 19, 30, "Input"],
+Cell[15195, 366, 465, 11, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18383, 458, 160, 3, 30, "Input"],
-Cell[18546, 463, 232, 4, 30, "Output"]
+Cell[15697, 382, 209, 4, 30, "Input"],
+Cell[15909, 388, 257, 6, 55, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18815, 472, 484, 9, 30, "Input"],
-Cell[19302, 483, 383, 9, 42, "Output"]
+Cell[16203, 399, 503, 9, 30, "Input"],
+Cell[16709, 410, 394, 8, 42, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19746, 499, 64, 1, 75, "SlideShowNavigationBar",
+Cell[17164, 425, 64, 1, 75, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[19835, 504, 195, 3, 70, "Section",
+Cell[17253, 430, 195, 3, 70, "Section",
  CellTags->"2\[Degree] Grado"],
 Cell[CellGroupData[{
-Cell[20055, 511, 143, 3, 30, "Input"],
-Cell[20201, 516, 144, 2, 30, "Output"]
+Cell[17473, 437, 194, 4, 30, "Input"],
+Cell[17670, 443, 136, 3, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20382, 523, 3845, 79, 812, "Input"],
-Cell[24230, 604, 1770, 43, 89, "Output"]
+Cell[17843, 451, 3650, 73, 812, "Input"],
+Cell[21496, 526, 1697, 40, 89, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26037, 652, 132, 2, 30, "Input"],
-Cell[26172, 656, 183, 3, 30, "Output"]
+Cell[23230, 571, 209, 4, 30, "Input"],
+Cell[23442, 577, 231, 5, 66, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26392, 664, 283, 6, 30, "Input"],
-Cell[26678, 672, 265, 7, 42, "Output"]
+Cell[23710, 587, 297, 6, 30, "Input"],
+Cell[24010, 595, 278, 7, 42, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[27004, 686, 64, 1, 75, "SlideShowNavigationBar",
+Cell[24349, 609, 64, 1, 75, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[27093, 691, 193, 3, 70, "Section",
+Cell[24438, 614, 193, 3, 70, "Section",
  CellTags->"3\[Degree] Grado"],
 Cell[CellGroupData[{
-Cell[27311, 698, 342, 6, 30, "Input"],
-Cell[27656, 706, 317, 5, 30, "Output"]
+Cell[24656, 621, 390, 7, 30, "Input"],
+Cell[25049, 630, 306, 5, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[28010, 716, 5628, 107, 893, "Input"],
-Cell[33641, 825, 2666, 57, 89, "Output"],
-Cell[36310, 884, 2642, 57, 89, "Output"]
+Cell[25392, 640, 5437, 102, 893, "Input"],
+Cell[30832, 744, 2592, 54, 89, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[38989, 946, 132, 2, 30, "Input"],
-Cell[39124, 950, 178, 3, 30, "Output"]
+Cell[33461, 803, 210, 4, 30, "Input"],
+Cell[33674, 809, 227, 5, 55, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[39339, 958, 148, 3, 30, "Input"],
-Cell[39490, 963, 318, 5, 30, "Output"]
+Cell[33938, 819, 300, 6, 30, "Input"],
+Cell[34241, 827, 265, 7, 42, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[39845, 973, 283, 6, 30, "Input"],
-Cell[40131, 981, 265, 7, 42, "Output"]
+Cell[34543, 839, 224, 5, 42, "Input"],
+Cell[34770, 846, 243, 7, 48, "Output"],
+Cell[35016, 855, 82, 2, 27, "Print"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[40433, 993, 224, 5, 42, "Input"],
-Cell[40660, 1000, 243, 7, 48, "Output"],
-Cell[40906, 1009, 82, 2, 27, "Print"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[41025, 1016, 167, 3, 30, "Input"],
-Cell[41195, 1021, 339, 11, 67, "Output"]
+Cell[35135, 862, 167, 3, 30, "Input"],
+Cell[35305, 867, 339, 11, 34, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
