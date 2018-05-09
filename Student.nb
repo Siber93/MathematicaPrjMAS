@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    380405,       7848]
-NotebookOptionsPosition[    368035,       7449]
-NotebookOutlinePosition[    370496,       7520]
-CellTagsIndexPosition[    370304,       7511]
+NotebookDataLength[    380305,       7846]
+NotebookOptionsPosition[    367935,       7447]
+NotebookOutlinePosition[    370396,       7518]
+CellTagsIndexPosition[    370204,       7509]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -4393,7 +4393,7 @@ Cell[BoxData[
 
 Cell[BoxData[
  DynamicBox[ToBoxes[$CellContext`teacherEQ, StandardForm],
-  ImageSizeCache->{168., {3., 9.}}]], "Output",
+  ImageSizeCache->{64., {2., 9.}}]], "Output",
  CellChangeTimes->{
   3.734613221818018*^9, 3.734616576933158*^9, 3.7346891758728137`*^9, 
    3.734689310202629*^9, 3.7346894952956743`*^9, 3.734690039183584*^9, 
@@ -4553,7 +4553,7 @@ Cell[BoxData[
 
 Cell[BoxData[
  DynamicBox[ToBoxes[$CellContext`exercises, StandardForm],
-  ImageSizeCache->{667., {3., 9.}}]], "Output",
+  ImageSizeCache->{63., {0., 9.}}]], "Output",
  CellChangeTimes->{
   3.734616673421238*^9, {3.7346167144698167`*^9, 3.7346167355230656`*^9}, {
    3.7346169229620657`*^9, 3.7346169481584487`*^9}, 3.734689175919614*^9, 
@@ -6309,102 +6309,100 @@ IC8UaOcyJ1b+/ic//3JP++SUIMgRe80vzswIgmxy0fUfsguC/N7Z22UOhyDI
 Cell[CellGroupData[{
 
 Cell[BoxData[{
- RowBox[{
-  RowBox[{"Button", "[", 
-   RowBox[{"\"\<Verifica\>\"", ",", "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"StringAnswer", " ", "=", "\"\<\>\""}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"For", "[", 
-      RowBox[{
-       RowBox[{"i", " ", "=", " ", "1"}], ",", " ", 
-       RowBox[{"i", "\[LessEqual]", " ", 
-        RowBox[{"Length", "[", "teacherEQ", "]"}]}], ",", 
-       RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-       RowBox[{"If", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"s1", "[", 
-           RowBox[{"[", "i", "]"}], "]"}], " ", "===", " ", 
-          RowBox[{"teacherEQ", "[", 
-           RowBox[{"[", "i", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"correctAnswer", "++"}], ";", " ", "\[IndentingNewLine]", 
-          RowBox[{"StringAnswer", " ", "=", " ", 
-           RowBox[{"StringJoin", "[", 
-            RowBox[{"StringAnswer", ",", 
-             RowBox[{"StringJoin", "[", 
-              RowBox[{
-               RowBox[{"StringJoin", "[", 
-                RowBox[{"\"\<\\nEs #\>\"", ",", 
-                 RowBox[{"ToString", "[", "i", "]"}]}], "]"}], ",", 
-               "\"\<: Risposta corretta\>\""}], "]"}]}], "]"}]}], ";", 
-          RowBox[{"(*", " ", 
-           RowBox[{"1", " ", "is", " ", "correct"}], " ", "*)"}], 
-          "\[IndentingNewLine]", " ", 
-          RowBox[{"en1", " ", "=", " ", "False"}], ";"}], " ", 
-         RowBox[{"(*", " ", 
-          RowBox[{"Disable", " ", "retring"}], " ", "*)"}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"If", "[", 
-          RowBox[{
-           RowBox[{
-            RowBox[{"s1", "[", 
-             RowBox[{"[", "i", "]"}], "]"}], "===", "0"}], ",", 
-           "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"StringAnswer", "=", 
-             RowBox[{"StringJoin", "[", 
-              RowBox[{
-               RowBox[{"StringJoin", "[", 
-                RowBox[{"\"\<Domanda \>\"", ",", 
-                 RowBox[{"ToString", "[", "i", "]"}]}], "]"}], ",", 
-               "\"\< non completata\>\""}], "]"}]}], ";", 
-            RowBox[{"(*", " ", 
-             RowBox[{
-             "1", " ", "answer", " ", "has", " ", "not", " ", "be", " ", 
-              "given"}], " ", "*)"}], "\[IndentingNewLine]", 
-            RowBox[{"en1", " ", "=", " ", "True"}], ";", " ", 
-            RowBox[{"(*", " ", 
-             RowBox[{"Enable", " ", "retring"}], " ", "*)"}], " ", 
-            "\[IndentingNewLine]", 
-            RowBox[{"Break", "[", "]"}]}], ",", 
-           RowBox[{
-            RowBox[{"StringAnswer", "=", 
-             RowBox[{"StringJoin", "[", 
-              RowBox[{"StringAnswer", ",", 
-               RowBox[{"StringJoin", "[", 
-                RowBox[{
-                 RowBox[{"StringJoin", "[", 
-                  RowBox[{
-                   RowBox[{"StringJoin", "[", 
-                    RowBox[{"\"\<\\nEs #\>\"", ",", 
-                    RowBox[{"ToString", "[", "i", "]"}]}], "]"}], ",", 
-                   "\"\<: Risposta errata. Quella corretta era \>\""}], "]"}],
-                  ",", 
-                 RowBox[{"ToString", "[", 
-                  RowBox[{"teacherEQ", "[", 
-                   RowBox[{"[", "i", "]"}], "]"}], "]"}]}], "]"}]}], "]"}]}], 
-            ";", " ", 
-            RowBox[{"(*", " ", 
-             RowBox[{"1", " ", "error"}], "*)"}], " ", "\[IndentingNewLine]", 
-            
-            RowBox[{"en1", " ", "=", " ", "False"}]}]}], 
-          RowBox[{"(*", " ", 
-           RowBox[{"Disable", " ", "retring"}], " ", "*)"}], 
-          "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
-      "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-     RowBox[{"MessageDialog", "[", "StringAnswer", "]"}]}], 
-    RowBox[{"(*", " ", 
-     RowBox[{"Output", " ", "the", " ", "solution"}], " ", "*)"}], ",", 
+ RowBox[{"Button", "[", 
+  RowBox[{"\"\<Verifica\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"StringAnswer", " ", "=", "\"\<\>\""}], ";", 
     "\[IndentingNewLine]", 
-    RowBox[{"Enabled", "\[Rule]", 
-     RowBox[{"Dynamic", "[", "en1", "]"}]}]}], 
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"i", " ", "=", " ", "1"}], ",", " ", 
+      RowBox[{"i", "\[LessEqual]", " ", 
+       RowBox[{"Length", "[", "teacherEQ", "]"}]}], ",", 
+      RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"s1", "[", 
+          RowBox[{"[", "i", "]"}], "]"}], " ", "===", " ", 
+         RowBox[{"teacherEQ", "[", 
+          RowBox[{"[", "i", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"correctAnswer", "++"}], ";", " ", "\[IndentingNewLine]", 
+         RowBox[{"StringAnswer", " ", "=", " ", 
+          RowBox[{"StringJoin", "[", 
+           RowBox[{"StringAnswer", ",", 
+            RowBox[{"StringJoin", "[", 
+             RowBox[{
+              RowBox[{"StringJoin", "[", 
+               RowBox[{"\"\<\\nEs #\>\"", ",", 
+                RowBox[{"ToString", "[", "i", "]"}]}], "]"}], ",", 
+              "\"\<: Risposta corretta\>\""}], "]"}]}], "]"}]}], ";", 
+         RowBox[{"(*", " ", 
+          RowBox[{"1", " ", "is", " ", "correct"}], " ", "*)"}], 
+         "\[IndentingNewLine]", " ", 
+         RowBox[{"en1", " ", "=", " ", "False"}], ";"}], " ", 
+        RowBox[{"(*", " ", 
+         RowBox[{"Disable", " ", "retring"}], " ", "*)"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"s1", "[", 
+            RowBox[{"[", "i", "]"}], "]"}], "===", "0"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"StringAnswer", "=", 
+            RowBox[{"StringJoin", "[", 
+             RowBox[{
+              RowBox[{"StringJoin", "[", 
+               RowBox[{"\"\<Domanda \>\"", ",", 
+                RowBox[{"ToString", "[", "i", "]"}]}], "]"}], ",", 
+              "\"\< non completata\>\""}], "]"}]}], ";", 
+           RowBox[{"(*", " ", 
+            RowBox[{
+            "1", " ", "answer", " ", "has", " ", "not", " ", "be", " ", 
+             "given"}], " ", "*)"}], "\[IndentingNewLine]", 
+           RowBox[{"en1", " ", "=", " ", "True"}], ";", " ", 
+           RowBox[{"(*", " ", 
+            RowBox[{"Enable", " ", "retring"}], " ", "*)"}], " ", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Break", "[", "]"}]}], ",", 
+          RowBox[{
+           RowBox[{"StringAnswer", "=", 
+            RowBox[{"StringJoin", "[", 
+             RowBox[{"StringAnswer", ",", 
+              RowBox[{"StringJoin", "[", 
+               RowBox[{
+                RowBox[{"StringJoin", "[", 
+                 RowBox[{
+                  RowBox[{"StringJoin", "[", 
+                   RowBox[{"\"\<\\nEs #\>\"", ",", 
+                    RowBox[{"ToString", "[", "i", "]"}]}], "]"}], ",", 
+                  "\"\<: Risposta errata. Quella corretta era \>\""}], "]"}], 
+                ",", 
+                RowBox[{"ToString", "[", 
+                 RowBox[{"teacherEQ", "[", 
+                  RowBox[{"[", "i", "]"}], "]"}], "]"}]}], "]"}]}], "]"}]}], 
+           ";", " ", 
+           RowBox[{"(*", " ", 
+            RowBox[{"1", " ", "error"}], "*)"}], " ", "\[IndentingNewLine]", 
+           RowBox[{"en1", " ", "=", " ", "False"}]}]}], 
+         RowBox[{"(*", " ", 
+          RowBox[{"Disable", " ", "retring"}], " ", "*)"}], 
+         "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"MessageDialog", "[", "StringAnswer", "]"}]}], 
    RowBox[{"(*", " ", 
-    RowBox[{
-    "Allowed", " ", "only", " ", "1", " ", "click", " ", "after", " ", "all", 
-     " ", "answer", " ", "have", " ", "been", " ", "given"}], " ", "*)"}], 
-   "\[IndentingNewLine]", "]"}], "1"}], "\[IndentingNewLine]", 
+    RowBox[{"Output", " ", "the", " ", "solution"}], " ", "*)"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Enabled", "\[Rule]", 
+    RowBox[{"Dynamic", "[", "en1", "]"}]}]}], 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Allowed", " ", "only", " ", "1", " ", "click", " ", "after", " ", "all", 
+    " ", "answer", " ", "have", " ", "been", " ", "given"}], " ", "*)"}], 
+  "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"(*", " ", 
    RowBox[{
@@ -6436,7 +6434,7 @@ Cell[BoxData[{
    3.734723048839713*^9}, {3.7347231748062024`*^9, 3.734723195957221*^9}, 
    3.7347232303220215`*^9, 3.7347232795849752`*^9, {3.7347233359559827`*^9, 
    3.7347234957848854`*^9}, {3.73472352723948*^9, 3.734723548073716*^9}, {
-   3.7347235872779717`*^9, 3.7347238030360413`*^9}}],
+   3.7347235872779717`*^9, 3.7347238030360413`*^9}, 3.7348501753367453`*^9}],
 
 Cell[BoxData[
  ButtonBox["\<\"Verifica\"\>",
@@ -6493,7 +6491,7 @@ Cell[BoxData[
  FractionBox[
   RowBox[{"100", " ", 
    DynamicBox[ToBoxes[$CellContext`correctAnswer, StandardForm],
-    ImageSizeCache->{7., {0., 8.}}]}], "3"]], "Output",
+    ImageSizeCache->{91., {0., 8.}}]}], "3"]], "Output",
  CellChangeTimes->{3.7347025302722034`*^9, 3.7347238841146865`*^9}]
 }, Open  ]],
 
@@ -7484,15 +7482,15 @@ CellTagsIndex->{
    CellTags->"SlideShowHeader"],
   Cell[223375, 4254, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[334421, 6555, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[334321, 6553, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[338330, 6656, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[338230, 6654, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[345236, 6839, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[345136, 6837, 64, 1, 90, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[349501, 6948, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[349401, 6946, 64, 1, 90, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[357346, 7148, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[357246, 7146, 64, 1, 90, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]},
  "Home"->{
   Cell[5304, 133, 136747, 2250, 213, "Title",
@@ -7504,17 +7502,17 @@ CellTagsIndex->{
   Cell[185118, 3332, 431, 6, 63, "Subsection",
    CellTags->"AG_C1_G1"]},
  "E_2G"->{
-  Cell[334488, 6558, 212, 3, 67, "Text",
+  Cell[334388, 6556, 212, 3, 67, "Text",
    CellTags->"E_2G"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 368397, 7461},
- {"Home", 369954, 7496},
- {"Introduction", 370042, 7499},
- {"AG_C1_G1", 370132, 7502},
- {"E_2G", 370217, 7505}
+ {"SlideShowHeader", 368297, 7459},
+ {"Home", 369854, 7494},
+ {"Introduction", 369942, 7497},
+ {"AG_C1_G1", 370032, 7500},
+ {"E_2G", 370117, 7503}
  }
 *)
 (*NotebookFileOutline
@@ -7548,7 +7546,7 @@ Cell[149469, 2537, 124, 3, 25, "Subitem"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[149654, 2547, 11425, 199, 148, "Title"],
-Cell[161082, 2748, 44, 1, 1, "PageBreak",
+Cell[161082, 2748, 44, 1, 4, "PageBreak",
  PageBreakBelow->True]
 }, Open  ]]
 }, Open  ]],
@@ -7708,146 +7706,146 @@ Cell[224840, 4289, 393, 8, 30, "Input"],
 Cell[225236, 4299, 3344, 83, 183, "Input"],
 Cell[CellGroupData[{
 Cell[228605, 4386, 246, 5, 30, "Input"],
-Cell[228854, 4393, 485, 8, 30, "Output"]
+Cell[228854, 4393, 484, 8, 30, "Output"]
 }, Open  ]],
-Cell[229354, 4404, 5371, 138, 335, "Input"],
+Cell[229353, 4404, 5371, 138, 335, "Input"],
 Cell[CellGroupData[{
-Cell[234750, 4546, 267, 5, 30, "Input"],
-Cell[235020, 4553, 571, 9, 30, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[235628, 4567, 2615, 63, 259, "Input"],
-Cell[238246, 4632, 23457, 469, 1278, "Output"]
+Cell[234749, 4546, 267, 5, 30, "Input"],
+Cell[235019, 4553, 570, 9, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[261740, 5106, 179, 4, 30, "Input"],
-Cell[261922, 5112, 142, 3, 30, "Output"]
+Cell[235626, 4567, 2615, 63, 259, "Input"],
+Cell[238244, 4632, 23457, 469, 1278, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[262101, 5120, 189, 4, 30, "Input"],
-Cell[262293, 5126, 98, 1, 30, "Output"]
+Cell[261738, 5106, 179, 4, 30, "Input"],
+Cell[261920, 5112, 142, 3, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[262428, 5132, 3529, 73, 487, "Input"],
-Cell[265960, 5207, 57431, 1098, 533, "Output"]
+Cell[262099, 5120, 189, 4, 30, "Input"],
+Cell[262291, 5126, 98, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[323428, 6310, 6448, 128, 392, "Input"],
-Cell[329879, 6440, 1856, 38, 42, "Output"]
+Cell[262426, 5132, 3529, 73, 487, "Input"],
+Cell[265958, 5207, 57431, 1098, 500, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[331772, 6483, 282, 6, 30, "Input"],
-Cell[332057, 6491, 239, 5, 45, "Output"]
+Cell[323426, 6310, 6349, 126, 411, "Input"],
+Cell[329778, 6438, 1856, 38, 42, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[332333, 6501, 1188, 24, 50, "Input"],
-Cell[333524, 6527, 549, 12, 30, "Output"]
+Cell[331671, 6481, 282, 6, 30, "Input"],
+Cell[331956, 6489, 240, 5, 45, "Output"]
 }, Open  ]],
-Cell[334088, 6542, 92, 1, 30, "Input"],
-Cell[334183, 6545, 92, 1, 30, "Input"],
-Cell[334278, 6548, 94, 1, 30, "Input"]
+Cell[CellGroupData[{
+Cell[332233, 6499, 1188, 24, 50, "Input"],
+Cell[333424, 6525, 549, 12, 30, "Output"]
+}, Open  ]],
+Cell[333988, 6540, 92, 1, 30, "Input"],
+Cell[334083, 6543, 92, 1, 30, "Input"],
+Cell[334178, 6546, 94, 1, 30, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[334421, 6555, 64, 1, 89, "SlideShowNavigationBar",
+Cell[334321, 6553, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[334488, 6558, 212, 3, 67, "Text",
+Cell[334388, 6556, 212, 3, 67, "Text",
  CellTags->"E_2G"],
 Cell[CellGroupData[{
-Cell[334725, 6565, 101, 1, 49, "Subsection"],
+Cell[334625, 6563, 101, 1, 49, "Subsection"],
 Cell[CellGroupData[{
-Cell[334851, 6570, 991, 29, 30, "Input"],
-Cell[335845, 6601, 2424, 48, 431, "Output"]
+Cell[334751, 6568, 991, 29, 30, "Input"],
+Cell[335745, 6599, 2424, 48, 431, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[338330, 6656, 64, 1, 89, "SlideShowNavigationBar",
+Cell[338230, 6654, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[338419, 6661, 149, 3, 30, "Input"],
-Cell[338571, 6666, 87, 2, 30, "Output"]
+Cell[338319, 6659, 149, 3, 30, "Input"],
+Cell[338471, 6664, 87, 2, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[338695, 6673, 3466, 71, 812, "Input"],
-Cell[342164, 6746, 1662, 39, 89, "Output"]
+Cell[338595, 6671, 3466, 71, 812, "Input"],
+Cell[342064, 6744, 1662, 39, 89, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[343863, 6790, 134, 2, 30, "Input"],
-Cell[344000, 6794, 159, 3, 30, "Output"]
+Cell[343763, 6788, 134, 2, 30, "Input"],
+Cell[343900, 6792, 159, 3, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[344196, 6802, 275, 7, 30, "Input"],
-Cell[344474, 6811, 199, 4, 237, "Output"]
+Cell[344096, 6800, 275, 7, 30, "Input"],
+Cell[344374, 6809, 199, 4, 237, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[344710, 6820, 260, 5, 69, "Input"],
-Cell[344973, 6827, 214, 6, 42, "Output"]
+Cell[344610, 6818, 260, 5, 69, "Input"],
+Cell[344873, 6825, 214, 6, 42, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[345236, 6839, 64, 1, 90, "SlideShowNavigationBar",
+Cell[345136, 6837, 64, 1, 90, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[345303, 6842, 195, 2, 46, "Text"],
+Cell[345203, 6840, 195, 2, 46, "Text"],
 Cell[CellGroupData[{
-Cell[345523, 6848, 101, 1, 43, "Subsection"],
+Cell[345423, 6846, 101, 1, 43, "Subsection"],
 Cell[CellGroupData[{
-Cell[345649, 6853, 1117, 34, 30, "Input"],
-Cell[346769, 6889, 2671, 52, 454, "Output"]
+Cell[345549, 6851, 1117, 34, 30, "Input"],
+Cell[346669, 6887, 2671, 52, 454, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[349501, 6948, 64, 1, 90, "SlideShowNavigationBar",
- CellTags->"SlideShowHeader"],
-Cell[CellGroupData[{
-Cell[349590, 6953, 141, 3, 30, "Input"],
-Cell[349734, 6958, 87, 2, 30, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[349858, 6965, 4073, 83, 868, "Input"],
-Cell[353934, 7050, 1998, 44, 89, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[355969, 7099, 130, 2, 30, "Input"],
-Cell[356102, 7103, 159, 3, 30, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[356298, 7111, 279, 7, 30, "Input"],
-Cell[356580, 7120, 199, 4, 237, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[356816, 7129, 262, 5, 69, "Input"],
-Cell[357081, 7136, 216, 6, 42, "Output"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[357346, 7148, 64, 1, 90, "SlideShowNavigationBar",
+Cell[349401, 6946, 64, 1, 90, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[357435, 7153, 292, 6, 30, "Input"],
-Cell[357730, 7161, 3076, 81, 104, "Output"]
+Cell[349490, 6951, 141, 3, 30, "Input"],
+Cell[349634, 6956, 87, 2, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[360843, 7247, 145, 2, 30, "Input"],
-Cell[360991, 7251, 104, 1, 30, "Output"]
+Cell[349758, 6963, 4073, 83, 868, "Input"],
+Cell[353834, 7048, 1998, 44, 89, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[361132, 7257, 874, 17, 200, "Input"],
-Cell[362009, 7276, 448, 11, 47, "Output"]
+Cell[355869, 7097, 130, 2, 30, "Input"],
+Cell[356002, 7101, 159, 3, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[362494, 7292, 138, 2, 30, "Input"],
-Cell[362635, 7296, 163, 3, 30, "Output"]
+Cell[356198, 7109, 279, 7, 30, "Input"],
+Cell[356480, 7118, 199, 4, 237, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[362835, 7304, 1192, 36, 145, "Input"],
-Cell[364030, 7342, 2654, 57, 235, "Output"]
+Cell[356716, 7127, 262, 5, 69, "Input"],
+Cell[356981, 7134, 216, 6, 42, "Output"]
+}, Open  ]]
 }, Open  ]],
-Cell[366699, 7402, 68, 1, 30, "Input"],
 Cell[CellGroupData[{
-Cell[366792, 7407, 407, 10, 30, "Input"],
-Cell[367202, 7419, 805, 26, 30, "Output"]
+Cell[357246, 7146, 64, 1, 90, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[357335, 7151, 292, 6, 30, "Input"],
+Cell[357630, 7159, 3076, 81, 104, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[360743, 7245, 145, 2, 30, "Input"],
+Cell[360891, 7249, 104, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[361032, 7255, 874, 17, 200, "Input"],
+Cell[361909, 7274, 448, 11, 47, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[362394, 7290, 138, 2, 30, "Input"],
+Cell[362535, 7294, 163, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[362735, 7302, 1192, 36, 145, "Input"],
+Cell[363930, 7340, 2654, 57, 235, "Output"]
+}, Open  ]],
+Cell[366599, 7400, 68, 1, 30, "Input"],
+Cell[CellGroupData[{
+Cell[366692, 7405, 407, 10, 30, "Input"],
+Cell[367102, 7417, 805, 26, 30, "Output"]
 }, Open  ]]
 }, Open  ]]
 }
