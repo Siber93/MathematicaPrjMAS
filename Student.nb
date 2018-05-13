@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    334668,       6981]
-NotebookOptionsPosition[    322654,       6593]
-NotebookOutlinePosition[    325114,       6664]
-CellTagsIndexPosition[    324922,       6655]
+NotebookDataLength[    329790,       6849]
+NotebookOptionsPosition[    317779,       6461]
+NotebookOutlinePosition[    320240,       6532]
+CellTagsIndexPosition[    320048,       6523]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -131,7 +131,8 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"loadFiles", "[", "]"}], ";"}]}], "Input",
  CellChangeTimes->{{3.7347162289520006`*^9, 3.7347162311551714`*^9}, {
-  3.7351172544707575`*^9, 3.7351172842609444`*^9}}],
+  3.7351172544707575`*^9, 3.7351172842609444`*^9}, {3.7352392186580467`*^9, 
+  3.735239219776279*^9}}],
 
 Cell[CellGroupData[{
 
@@ -4286,149 +4287,9 @@ Cell[BoxData[
 
 Cell[BoxData[
  DynamicBox[ToBoxes[MClib`teacherEQ, StandardForm],
-  ImageSizeCache->{791.5, {29., 12.}}]], "Output",
+  ImageSizeCache->{1405., {6., 12.}}]], "Output",
  CellChangeTimes->{3.735117299178671*^9}]
 }, Open  ]],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"exercises", " ", "=", " ", 
-   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{"For", "[", 
-  RowBox[{
-   RowBox[{"i", "=", "1"}], ",", 
-   RowBox[{"i", "<=", 
-    RowBox[{"Length", "[", "teacherEQ", "]"}]}], ",", 
-   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"sol", "=", 
-     RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
-    RowBox[{"AppendTo", "[", 
-     RowBox[{"sol", ",", 
-      RowBox[{"teacherEQ", "[", 
-       RowBox[{"[", "i", "]"}], "]"}]}], "]"}], ";", 
-    RowBox[{"(*", " ", 
-     RowBox[{"Add", " ", "correct", " ", "answer"}], " ", "*)"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{"coeff", " ", "=", " ", 
-     RowBox[{"CoefficientList", "[", 
-      RowBox[{
-       RowBox[{"teacherEQ", "[", 
-        RowBox[{"[", "i", "]"}], "]"}], ",", "x"}], "]"}]}], ";", 
-    RowBox[{"(*", " ", 
-     RowBox[{
-     "Get", " ", "coefficients", " ", "from", " ", "expression", " ", "i"}], 
-     " ", "*)"}], "\[IndentingNewLine]", " ", 
-    RowBox[{"AppendTo", "[", 
-     RowBox[{"sol", ",", 
-      RowBox[{
-       RowBox[{"coeff", "[", 
-        RowBox[{"[", "1", "]"}], "]"}], "-", 
-       RowBox[{"x", "*", 
-        RowBox[{"coeff", "[", 
-         RowBox[{"[", "2", "]"}], "]"}]}]}]}], "]"}], ";", 
-    RowBox[{"(*", " ", 
-     RowBox[{
-      RowBox[{"Add", " ", "y"}], "=", 
-      RowBox[{
-       RowBox[{"-", "mx"}], "+", "q"}]}], " ", "*)"}], "\[IndentingNewLine]", 
-    
-    RowBox[{"try", " ", "=", " ", 
-     RowBox[{
-      RowBox[{"RandomInteger", "[", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "+", 
-      RowBox[{"x", "*", 
-       RowBox[{"RandomInteger", "[", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}]}]}]}], ";", 
-    RowBox[{"(*", " ", 
-     RowBox[{
-      RowBox[{"Adding", " ", "y"}], "=", 
-      RowBox[{
-       RowBox[{"RND", " ", "x"}], " ", "+", " ", "RND"}]}], " ", "*)"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{"While", "[", 
-     RowBox[{
-      RowBox[{"ContainsAll", "[", 
-       RowBox[{"sol", ",", 
-        RowBox[{"{", "try", "}"}]}], "]"}], ",", " ", 
-      RowBox[{"try", " ", "=", " ", 
-       RowBox[{
-        RowBox[{"RandomInteger", "[", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "+", 
-        RowBox[{"x", "*", 
-         RowBox[{"RandomInteger", "[", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}]}]}]}]}], "]"}], 
-    ";", 
-    RowBox[{"(*", " ", 
-     RowBox[{
-     "Check", " ", "that", " ", "the", " ", "expression", " ", "in", " ", 
-      "not", " ", "already", " ", "in", " ", "the", " ", "solutions", " ", 
-      "lits"}], " ", "*)"}], "\[IndentingNewLine]", 
-    RowBox[{"AppendTo", "[", 
-     RowBox[{"sol", ",", "try"}], "]"}], ";", "\[IndentingNewLine]", 
-    RowBox[{"try", " ", "=", " ", 
-     RowBox[{
-      RowBox[{"RandomInteger", "[", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "+", 
-      RowBox[{"x", "*", 
-       RowBox[{"coeff", "[", 
-        RowBox[{"[", "2", "]"}], "]"}]}]}]}], ";", 
-    RowBox[{"(*", " ", 
-     RowBox[{
-      RowBox[{"Adding", " ", "y"}], "=", 
-      RowBox[{"mx", " ", "+", " ", "RND"}]}], " ", "*)"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{"While", "[", 
-     RowBox[{
-      RowBox[{"ContainsAll", "[", 
-       RowBox[{"sol", ",", 
-        RowBox[{"{", "try", "}"}]}], "]"}], ",", " ", 
-      RowBox[{"try", " ", "=", " ", 
-       RowBox[{
-        RowBox[{"RandomInteger", "[", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "+", 
-        RowBox[{"x", "*", 
-         RowBox[{"coeff", "[", 
-          RowBox[{"[", "2", "]"}], "]"}]}]}]}]}], "]"}], ";", 
-    RowBox[{"(*", " ", 
-     RowBox[{
-     "Check", " ", "that", " ", "the", " ", "expression", " ", "in", " ", 
-      "not", " ", "already", " ", "in", " ", "the", " ", "solutions", " ", 
-      "lits"}], " ", "*)"}], "\[IndentingNewLine]", 
-    RowBox[{"AppendTo", "[", 
-     RowBox[{"sol", ",", "try"}], "]"}], ";", "\[IndentingNewLine]", 
-    RowBox[{"sol", "=", 
-     RowBox[{"RandomSample", "[", "sol", "]"}]}], ";", " ", 
-    RowBox[{"(*", " ", 
-     RowBox[{
-     "Randomizing", " ", "the", " ", "order", " ", "in", " ", "the", " ", 
-      "list"}], " ", "*)"}], "\[IndentingNewLine]", 
-    RowBox[{"AppendTo", "[", 
-     RowBox[{"exercises", ",", "sol"}], "]"}]}]}], 
-  RowBox[{"(*", " ", 
-   RowBox[{"Add", " ", "exercise", " ", "to", " ", "exercises", " ", "list"}],
-    " ", "*)"}], "\[IndentingNewLine]", "]"}]}], "Input",
- CellChangeTimes->{{3.734615501085409*^9, 3.7346155242133646`*^9}, {
-  3.7346157131822667`*^9, 3.734615734079298*^9}, {3.734615947394904*^9, 
-  3.7346161731290784`*^9}, {3.7346162143715725`*^9, 3.7346163515353303`*^9}, {
-  3.7346165403425136`*^9, 3.734616557822254*^9}, {3.734616657681099*^9, 
-  3.7346167306306906`*^9}, {3.7346167776361113`*^9, 3.7346169107184687`*^9}, {
-  3.7346169774087505`*^9, 3.734617168935135*^9}, {3.734718992916933*^9, 
-  3.734719012104637*^9}, {3.7347190669813557`*^9, 3.734719112562786*^9}, {
-  3.7347192040325017`*^9, 3.7347195535735383`*^9}, {3.7347195915284863`*^9, 
-  3.7347196116506042`*^9}, {3.734723098550707*^9, 3.7347231083811626`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -4441,7 +4302,7 @@ Cell[BoxData[
 
 Cell[BoxData[
  DynamicBox[ToBoxes[$CellContext`exercises, StandardForm],
-  ImageSizeCache->{63., {0., 9.}}]], "Output",
+  ImageSizeCache->{112., {0., 9.}}]], "Output",
  CellChangeTimes->{
   3.734616673421238*^9, {3.7346167144698167`*^9, 3.7346167355230656`*^9}, {
    3.7346169229620657`*^9, 3.7346169481584487`*^9}, 3.734689175919614*^9, 
@@ -4451,8 +4312,6 @@ Cell[BoxData[
    3.7346903484184923`*^9}, {3.734690386297764*^9, 3.734690402980995*^9}, 
    3.7351096467719116`*^9}]
 }, Open  ]],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
@@ -4516,6 +4375,14 @@ Cell[BoxData[{
   3.7347215935216236`*^9, 3.7347216051188354`*^9}, {3.7351096991842117`*^9, 
   3.735109718573104*^9}, {3.7351097719283485`*^9, 3.735109818136506*^9}}],
 
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"exKindAPrinter", "[", "1", "]"}]], "Input",
+ CellChangeTimes->{{3.735238490927022*^9, 3.735238499487774*^9}, {
+  3.7352386841935987`*^9, 3.7352387062841234`*^9}, {3.7352389664544*^9, 
+  3.735238968538827*^9}}],
+
 Cell[BoxData[
  TagBox[GridBox[{
     {
@@ -4530,15 +4397,15 @@ Cell[BoxData[
                 TemplateBox[{"\"Zoom sugli zeri:\"", 
                   TemplateBox[{
                     ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$7896 = Part[
+                    "1", ButtonFunction :> (MClib`Private`l$1129 = Part[
                     Solve[
                     Reduce[
                     And[
                     2 + 3 $CellContext`x == 0, -11 < $CellContext`x < 
                     11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$7896 = 1; 
-                    MClib`Private`y$7896 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$7896, 1]]), Appearance -> Automatic, 
+                    MClib`Private`j$1129 = 1; 
+                    MClib`Private`y$1129 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$1129, 1]]), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}, 
                    "RowDefault"]}, "RowDefault"]}, {
                 TemplateBox[{
@@ -4546,13 +4413,13 @@ Cell[BoxData[
                    ToBoxes[
                     Plot[
                     2 + 3 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$7896 - MClib`Private`j$7896, 
-                    MClib`Private`y$7896 + MClib`Private`j$7896}, ImageSize -> 
+                    MClib`Private`y$1129 - MClib`Private`j$1129, 
+                    MClib`Private`y$1129 + MClib`Private`j$1129}, ImageSize -> 
                     Medium], StandardForm]]}, "RowDefault"]}, {
                 ButtonBox[
                 "\"Reset Zoom\"", 
-                 ButtonFunction :> (MClib`Private`j$7896 = 5; 
-                  MClib`Private`y$7896 = 0), Appearance -> Automatic, 
+                 ButtonFunction :> (MClib`Private`j$1129 = 5; 
+                  MClib`Private`y$1129 = 0), Appearance -> Automatic, 
                  Evaluator -> Automatic, Method -> "Preemptive"]}}, 
               GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
               "Column", 
@@ -4565,9 +4432,36 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[$CellContext`s1, 1]], {2 + 3 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> 
-                    Dynamic[$CellContext`en1]], 
+                    MClib`userAnswer[1, 1]], {2 - 3 $CellContext`x}, 
+                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 1, 1]]], 
+                   StyleBox[
+                    RowBox[{"2", "-", 
+                    RowBox[{"3", " ", "x"}]}], "RadioButtonBarLabel", 
+                    StripOnInput -> False]}}, AutoDelete -> False, 
+                 GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 ColumnAlignments -> Left, ColumnSpacings -> 0.3], "  ", 
+                GridBox[{{
+                   RadioButtonBox[
+                    Dynamic[
+                    MClib`userAnswer[1, 1]], {-1 + 9 $CellContext`x}, 
+                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 1, 1]]], 
+                   StyleBox[
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"9", " ", "x"}]}], "RadioButtonBarLabel", 
+                    StripOnInput -> False]}}, AutoDelete -> False, 
+                 GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 ColumnAlignments -> Left, ColumnSpacings -> 0.3], "  ", 
+                GridBox[{{
+                   RadioButtonBox[
+                    Dynamic[
+                    MClib`userAnswer[1, 1]], {2 + 3 $CellContext`x}, 
+                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 1, 1]]], 
                    StyleBox[
                     RowBox[{"2", "+", 
                     RowBox[{"3", " ", "x"}]}], "RadioButtonBarLabel", 
@@ -4578,12 +4472,84 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[$CellContext`s1, 1]], {1 + 3 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> 
-                    Dynamic[$CellContext`en1]], 
+                    MClib`userAnswer[1, 1]], {-8 + 3 $CellContext`x}, 
+                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 1, 1]]], 
                    StyleBox[
-                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"-", "8"}], "+", 
                     RowBox[{"3", " ", "x"}]}], "RadioButtonBarLabel", 
+                    StripOnInput -> False]}}, AutoDelete -> False, 
+                 GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 ColumnAlignments -> Left, ColumnSpacings -> 0.3]}], 
+              "Deploy"], 
+             RadioButtonBar[
+              Dynamic[
+               MClib`userAnswer[1, 1]], {
+              2 - 3 $CellContext`x, -1 + 9 $CellContext`x, 2 + 
+               3 $CellContext`x, -8 + 3 $CellContext`x}, Enabled -> Dynamic[
+                Part[MClib`enableAnswer, 1, 1]]]]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+          "Column", 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]]},
+      
+      "RowDefault"]},
+    {
+     TemplateBox[{PanelBox[
+        TagBox[
+         GridBox[{{
+            StyleBox[
+            "\"A quale funzione corrisponde la seguente retta?\"", FontWeight -> 
+             Bold, StripOnInput -> False]}, {
+            TagBox[
+             GridBox[{{
+                TemplateBox[{"\"Zoom sugli zeri:\"", 
+                  TemplateBox[{
+                    ButtonBox[
+                    "1", ButtonFunction :> (MClib`Private`l$1133 = Part[
+                    Solve[
+                    Reduce[
+                    And[
+                    1 + 4 $CellContext`x == 0, -11 < $CellContext`x < 
+                    11], $CellContext`x], $CellContext`x], 1]; 
+                    MClib`Private`j$1133 = 1; 
+                    MClib`Private`y$1133 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$1133, 1]]), Appearance -> Automatic, 
+                    Evaluator -> Automatic, Method -> "Preemptive"]}, 
+                   "RowDefault"]}, "RowDefault"]}, {
+                TemplateBox[{
+                  DynamicBox[
+                   ToBoxes[
+                    Plot[
+                    1 + 4 $CellContext`x, {$CellContext`x, 
+                    MClib`Private`y$1133 - MClib`Private`j$1133, 
+                    MClib`Private`y$1133 + MClib`Private`j$1133}, ImageSize -> 
+                    Medium], StandardForm]]}, "RowDefault"]}, {
+                ButtonBox[
+                "\"Reset Zoom\"", 
+                 ButtonFunction :> (MClib`Private`j$1133 = 5; 
+                  MClib`Private`y$1133 = 0), Appearance -> Automatic, 
+                 Evaluator -> Automatic, Method -> "Preemptive"]}}, 
+              GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+              "Column", 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+             "Column"]}, {
+            InterpretationBox[
+             StyleBox[
+              RowBox[{
+                GridBox[{{
+                   RadioButtonBox[
+                    Dynamic[
+                    MClib`userAnswer[1, 2]], {-10 + 4 $CellContext`x}, 
+                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 1, 2]]], 
+                   StyleBox[
+                    RowBox[{
+                    RowBox[{"-", "10"}], "+", 
+                    RowBox[{"4", " ", "x"}]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4591,12 +4557,121 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[$CellContext`s1, 1]], {-4 + 10 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> 
-                    Dynamic[$CellContext`en1]], 
+                    MClib`userAnswer[1, 2]], {1 + 4 $CellContext`x}, 
+                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 1, 2]]], 
+                   StyleBox[
+                    RowBox[{"1", "+", 
+                    RowBox[{"4", " ", "x"}]}], "RadioButtonBarLabel", 
+                    StripOnInput -> False]}}, AutoDelete -> False, 
+                 GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 ColumnAlignments -> Left, ColumnSpacings -> 0.3], "  ", 
+                GridBox[{{
+                   RadioButtonBox[
+                    Dynamic[
+                    MClib`userAnswer[1, 2]], {-8 + 8 $CellContext`x}, 
+                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 1, 2]]], 
                    StyleBox[
                     RowBox[{
-                    RowBox[{"-", "4"}], "+", 
+                    RowBox[{"-", "8"}], "+", 
+                    RowBox[{"8", " ", "x"}]}], "RadioButtonBarLabel", 
+                    StripOnInput -> False]}}, AutoDelete -> False, 
+                 GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 ColumnAlignments -> Left, ColumnSpacings -> 0.3], "  ", 
+                GridBox[{{
+                   RadioButtonBox[
+                    Dynamic[
+                    MClib`userAnswer[1, 2]], {1 - 4 $CellContext`x}, 
+                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 1, 2]]], 
+                   StyleBox[
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", "x"}]}], "RadioButtonBarLabel", 
+                    StripOnInput -> False]}}, AutoDelete -> False, 
+                 GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 ColumnAlignments -> Left, ColumnSpacings -> 0.3]}], 
+              "Deploy"], 
+             RadioButtonBar[
+              Dynamic[
+               MClib`userAnswer[1, 2]], {-10 + 4 $CellContext`x, 1 + 
+               4 $CellContext`x, -8 + 8 $CellContext`x, 1 - 4 $CellContext`x},
+               Enabled -> Dynamic[
+                Part[MClib`enableAnswer, 1, 2]]]]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+          "Column", 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]]},
+      
+      "RowDefault"]},
+    {
+     TemplateBox[{PanelBox[
+        TagBox[
+         GridBox[{{
+            StyleBox[
+            "\"A quale funzione corrisponde la seguente retta?\"", FontWeight -> 
+             Bold, StripOnInput -> False]}, {
+            TagBox[
+             GridBox[{{
+                TemplateBox[{"\"Zoom sugli zeri:\"", 
+                  TemplateBox[{
+                    ButtonBox[
+                    "1", ButtonFunction :> (MClib`Private`l$1134 = Part[
+                    Solve[
+                    Reduce[
+                    And[3 + 4 $CellContext`x == 0, -11 < $CellContext`x < 
+                    11], $CellContext`x], $CellContext`x], 1]; 
+                    MClib`Private`j$1134 = 1; 
+                    MClib`Private`y$1134 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$1134, 1]]), Appearance -> Automatic, 
+                    Evaluator -> Automatic, Method -> "Preemptive"]}, 
+                   "RowDefault"]}, "RowDefault"]}, {
+                TemplateBox[{
+                  DynamicBox[
+                   ToBoxes[
+                    Plot[
+                    3 + 4 $CellContext`x, {$CellContext`x, 
+                    MClib`Private`y$1134 - MClib`Private`j$1134, 
+                    MClib`Private`y$1134 + MClib`Private`j$1134}, ImageSize -> 
+                    Medium], StandardForm]]}, "RowDefault"]}, {
+                ButtonBox[
+                "\"Reset Zoom\"", 
+                 ButtonFunction :> (MClib`Private`j$1134 = 5; 
+                  MClib`Private`y$1134 = 0), Appearance -> Automatic, 
+                 Evaluator -> Automatic, Method -> "Preemptive"]}}, 
+              GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+              "Column", 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+             "Column"]}, {
+            InterpretationBox[
+             StyleBox[
+              RowBox[{
+                GridBox[{{
+                   RadioButtonBox[
+                    Dynamic[
+                    MClib`userAnswer[1, 3]], {3 + 4 $CellContext`x}, 
+                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 1, 3]]], 
+                   StyleBox[
+                    RowBox[{"3", "+", 
+                    RowBox[{"4", " ", "x"}]}], "RadioButtonBarLabel", 
+                    StripOnInput -> False]}}, AutoDelete -> False, 
+                 GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 ColumnAlignments -> Left, ColumnSpacings -> 0.3], "  ", 
+                GridBox[{{
+                   RadioButtonBox[
+                    Dynamic[
+                    MClib`userAnswer[1, 3]], {-9 - 10 $CellContext`x}, 
+                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 1, 3]]], 
+                   StyleBox[
+                    RowBox[{
+                    RowBox[{"-", "9"}], "-", 
                     RowBox[{"10", " ", "x"}]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
@@ -4605,81 +4680,11 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[$CellContext`s1, 1]], {2 - 3 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> 
-                    Dynamic[$CellContext`en1]], 
+                    MClib`userAnswer[1, 3]], {6 + 4 $CellContext`x}, 
+                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 1, 3]]], 
                    StyleBox[
-                    RowBox[{"2", "-", 
-                    RowBox[{"3", " ", "x"}]}], "RadioButtonBarLabel", 
-                    StripOnInput -> False]}}, AutoDelete -> False, 
-                 GridBoxItemSize -> {
-                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                 ColumnAlignments -> Left, ColumnSpacings -> 0.3]}], 
-              "Deploy"], 
-             RadioButtonBar[
-              Dynamic[
-               Part[$CellContext`s1, 1]], {
-              2 + 3 $CellContext`x, 1 + 3 $CellContext`x, -4 + 
-               10 $CellContext`x, 2 - 3 $CellContext`x}, Enabled -> 
-              Dynamic[$CellContext`en1]]]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-          "Column", 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]]},
-      
-      "RowDefault"]},
-    {
-     TemplateBox[{PanelBox[
-        TagBox[
-         GridBox[{{
-            StyleBox[
-            "\"A quale funzione corrisponde la seguente retta?\"", FontWeight -> 
-             Bold, StripOnInput -> False]}, {
-            TagBox[
-             GridBox[{{
-                TemplateBox[{"\"Zoom sugli zeri:\"", 
-                  TemplateBox[{
-                    ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$7897 = Part[
-                    Solve[
-                    Reduce[
-                    And[
-                    1 + 4 $CellContext`x == 0, -11 < $CellContext`x < 
-                    11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$7897 = 1; 
-                    MClib`Private`y$7897 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$7897, 1]]), Appearance -> Automatic, 
-                    Evaluator -> Automatic, Method -> "Preemptive"]}, 
-                   "RowDefault"]}, "RowDefault"]}, {
-                TemplateBox[{
-                  DynamicBox[
-                   ToBoxes[
-                    Plot[
-                    1 + 4 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$7897 - MClib`Private`j$7897, 
-                    MClib`Private`y$7897 + MClib`Private`j$7897}, ImageSize -> 
-                    Medium], StandardForm]]}, "RowDefault"]}, {
-                ButtonBox[
-                "\"Reset Zoom\"", 
-                 ButtonFunction :> (MClib`Private`j$7897 = 5; 
-                  MClib`Private`y$7897 = 0), Appearance -> Automatic, 
-                 Evaluator -> Automatic, Method -> "Preemptive"]}}, 
-              GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-              "Column", 
-              GridBoxItemSize -> {
-               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-             "Column"]}, {
-            InterpretationBox[
-             StyleBox[
-              RowBox[{
-                GridBox[{{
-                   RadioButtonBox[
-                    Dynamic[
-                    Part[$CellContext`s1, 2]], {1 - 4 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> 
-                    Dynamic[$CellContext`en1]], 
-                   StyleBox[
-                    RowBox[{"1", "-", 
+                    RowBox[{"6", "+", 
                     RowBox[{"4", " ", "x"}]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
@@ -4688,39 +4693,12 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[$CellContext`s1, 2]], {9 + 4 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> 
-                    Dynamic[$CellContext`en1]], 
+                    MClib`userAnswer[1, 3]], {3 - 4 $CellContext`x}, 
+                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 1, 3]]], 
                    StyleBox[
-                    RowBox[{"9", "+", 
+                    RowBox[{"3", "-", 
                     RowBox[{"4", " ", "x"}]}], "RadioButtonBarLabel", 
-                    StripOnInput -> False]}}, AutoDelete -> False, 
-                 GridBoxItemSize -> {
-                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                 ColumnAlignments -> Left, ColumnSpacings -> 0.3], "  ", 
-                GridBox[{{
-                   RadioButtonBox[
-                    Dynamic[
-                    Part[$CellContext`s1, 2]], {1 + 4 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> 
-                    Dynamic[$CellContext`en1]], 
-                   StyleBox[
-                    RowBox[{"1", "+", 
-                    RowBox[{"4", " ", "x"}]}], "RadioButtonBarLabel", 
-                    StripOnInput -> False]}}, AutoDelete -> False, 
-                 GridBoxItemSize -> {
-                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                 ColumnAlignments -> Left, ColumnSpacings -> 0.3], "  ", 
-                GridBox[{{
-                   RadioButtonBox[
-                    Dynamic[
-                    Part[$CellContext`s1, 2]], {-7 + 6 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> 
-                    Dynamic[$CellContext`en1]], 
-                   StyleBox[
-                    RowBox[{
-                    RowBox[{"-", "7"}], "+", 
-                    RowBox[{"6", " ", "x"}]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4728,119 +4706,10 @@ Cell[BoxData[
               "Deploy"], 
              RadioButtonBar[
               Dynamic[
-               Part[$CellContext`s1, 2]], {
-              1 - 4 $CellContext`x, 9 + 4 $CellContext`x, 1 + 
-               4 $CellContext`x, -7 + 6 $CellContext`x}, Enabled -> 
-              Dynamic[$CellContext`en1]]]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-          "Column", 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]]},
-      
-      "RowDefault"]},
-    {
-     TemplateBox[{PanelBox[
-        TagBox[
-         GridBox[{{
-            StyleBox[
-            "\"A quale funzione corrisponde la seguente retta?\"", FontWeight -> 
-             Bold, StripOnInput -> False]}, {
-            TagBox[
-             GridBox[{{
-                TemplateBox[{"\"Zoom sugli zeri:\"", 
-                  TemplateBox[{
-                    ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$7898 = Part[
-                    Solve[
-                    Reduce[
-                    And[
-                    1 + 7 $CellContext`x == 0, -11 < $CellContext`x < 
-                    11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$7898 = 1; 
-                    MClib`Private`y$7898 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$7898, 1]]), Appearance -> Automatic, 
-                    Evaluator -> Automatic, Method -> "Preemptive"]}, 
-                   "RowDefault"]}, "RowDefault"]}, {
-                TemplateBox[{
-                  DynamicBox[
-                   ToBoxes[
-                    Plot[
-                    1 + 7 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$7898 - MClib`Private`j$7898, 
-                    MClib`Private`y$7898 + MClib`Private`j$7898}, ImageSize -> 
-                    Medium], StandardForm]]}, "RowDefault"]}, {
-                ButtonBox[
-                "\"Reset Zoom\"", 
-                 ButtonFunction :> (MClib`Private`j$7898 = 5; 
-                  MClib`Private`y$7898 = 0), Appearance -> Automatic, 
-                 Evaluator -> Automatic, Method -> "Preemptive"]}}, 
-              GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-              "Column", 
-              GridBoxItemSize -> {
-               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-             "Column"]}, {
-            InterpretationBox[
-             StyleBox[
-              RowBox[{
-                GridBox[{{
-                   RadioButtonBox[
-                    Dynamic[
-                    Part[$CellContext`s1, 3]], {5 + 7 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> 
-                    Dynamic[$CellContext`en1]], 
-                   StyleBox[
-                    RowBox[{"5", "+", 
-                    RowBox[{"7", " ", "x"}]}], "RadioButtonBarLabel", 
-                    StripOnInput -> False]}}, AutoDelete -> False, 
-                 GridBoxItemSize -> {
-                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                 ColumnAlignments -> Left, ColumnSpacings -> 0.3], "  ", 
-                GridBox[{{
-                   RadioButtonBox[
-                    Dynamic[
-                    Part[$CellContext`s1, 3]], {7 + 9 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> 
-                    Dynamic[$CellContext`en1]], 
-                   StyleBox[
-                    RowBox[{"7", "+", 
-                    RowBox[{"9", " ", "x"}]}], "RadioButtonBarLabel", 
-                    StripOnInput -> False]}}, AutoDelete -> False, 
-                 GridBoxItemSize -> {
-                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                 ColumnAlignments -> Left, ColumnSpacings -> 0.3], "  ", 
-                GridBox[{{
-                   RadioButtonBox[
-                    Dynamic[
-                    Part[$CellContext`s1, 3]], {1 - 7 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> 
-                    Dynamic[$CellContext`en1]], 
-                   StyleBox[
-                    RowBox[{"1", "-", 
-                    RowBox[{"7", " ", "x"}]}], "RadioButtonBarLabel", 
-                    StripOnInput -> False]}}, AutoDelete -> False, 
-                 GridBoxItemSize -> {
-                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                 ColumnAlignments -> Left, ColumnSpacings -> 0.3], "  ", 
-                GridBox[{{
-                   RadioButtonBox[
-                    Dynamic[
-                    Part[$CellContext`s1, 3]], {1 + 7 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> 
-                    Dynamic[$CellContext`en1]], 
-                   StyleBox[
-                    RowBox[{"1", "+", 
-                    RowBox[{"7", " ", "x"}]}], "RadioButtonBarLabel", 
-                    StripOnInput -> False]}}, AutoDelete -> False, 
-                 GridBoxItemSize -> {
-                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                 ColumnAlignments -> Left, ColumnSpacings -> 0.3]}], 
-              "Deploy"], 
-             RadioButtonBar[
-              Dynamic[
-               Part[$CellContext`s1, 3]], {
-              5 + 7 $CellContext`x, 7 + 9 $CellContext`x, 1 - 
-               7 $CellContext`x, 1 + 7 $CellContext`x}, Enabled -> 
-              Dynamic[$CellContext`en1]]]}}, 
+               MClib`userAnswer[1, 3]], {
+              3 + 4 $CellContext`x, -9 - 10 $CellContext`x, 6 + 
+               4 $CellContext`x, 3 - 4 $CellContext`x}, Enabled -> Dynamic[
+                Part[MClib`enableAnswer, 1, 3]]]]}}, 
           GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
           "Column", 
           GridBoxItemSize -> {
@@ -4852,8 +4721,7 @@ Cell[BoxData[
    GridBoxAlignment->{"Columns" -> {{Left}}},
    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   "Column"]], "Output",
- CellChangeTimes->{3.734801153622998*^9, 3.735109739904473*^9, 
-  3.735109786012149*^9, 3.7351098190740156`*^9}]
+ CellChangeTimes->{3.735239234426275*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -5637,7 +5505,7 @@ Cell[BoxData[
  FractionBox[
   RowBox[{"100", " ", 
    DynamicBox[ToBoxes[$CellContext`correctAnswer, StandardForm],
-    ImageSizeCache->{7., {0., 8.}}]}], "3"]], "Output",
+    ImageSizeCache->{91., {0., 8.}}]}], "3"]], "Output",
  CellChangeTimes->{3.7347025302722034`*^9, 3.7347238841146865`*^9}]
 }, Open  ]],
 
@@ -5938,7 +5806,7 @@ Cell[BoxData[
 
 Cell[BoxData[
  DynamicBox[ToBoxes[$CellContext`list2, StandardForm],
-  ImageSizeCache->{16., {2., 8.}}]], "Output",
+  ImageSizeCache->{35., {0., 9.}}]], "Output",
  CellChangeTimes->{3.7344295706747646`*^9}]
 }, Open  ]],
 
@@ -5956,7 +5824,7 @@ Cell[BoxData[
 Cell[BoxData[
  DynamicBox[ToBoxes[
    Plot[$CellContext`list2, {$CellContext`x, -10, 10}], StandardForm],
-  ImageSizeCache->{360., {108., 114.}}]], "Output",
+  ImageSizeCache->{360., {109., 113.}}]], "Output",
  CellChangeTimes->{3.734429604235684*^9}]
 }, Open  ]],
 
@@ -6071,7 +5939,7 @@ $CellContext`x^2 + $CellContext`c$$ $CellContext`x + $CellContext`q$$, \
          10}, {$CellContext`b$$, -10, 10}, {$CellContext`c$$, -10, 
          10}, {$CellContext`q$$, -10, 10}, {$CellContext`zoom$$, 10, 1000}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {215., 222.}},
+     ImageSizeCache->{411., {218., 224.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -6591,8 +6459,8 @@ Cell[BoxData[
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1350, 694},
-WindowMargins->{{-8, Automatic}, {Automatic, 1}},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 TaggingRules->{"SlideShow" -> True},
 ShowCellTags->True,
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
@@ -6606,59 +6474,59 @@ CellTagsIndex->{
  "SlideShowHeader"->{
   Cell[580, 22, 4407, 98, 90, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[148558, 2509, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[148609, 2510, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[161307, 2759, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[161358, 2760, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[162870, 2808, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[162921, 2809, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[174016, 3063, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[174067, 3064, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[180243, 3219, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[180294, 3220, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[185161, 3331, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[185212, 3332, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[189709, 3455, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[189760, 3456, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[207883, 3850, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[207934, 3851, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[210516, 3921, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[210567, 3922, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[214778, 4036, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[214829, 4037, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[223153, 4251, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[223204, 4252, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[289040, 5699, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[284165, 5567, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[292949, 5800, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[288074, 5668, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[299855, 5983, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[294980, 5851, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[304120, 6092, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[299245, 5960, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[311965, 6292, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[307090, 6160, 64, 1, 90, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]},
  "Home"->{
-  Cell[5436, 137, 136747, 2250, 213, "Title",
+  Cell[5487, 138, 136747, 2250, 213, "Title",
    CellTags->"Home"]},
  "Introduction"->{
-  Cell[148647, 2514, 128, 2, 84, "Section",
+  Cell[148698, 2515, 128, 2, 84, "Section",
    CellTags->"Introduction"]},
  "AG_C1_G1"->{
-  Cell[185250, 3336, 431, 6, 63, "Subsection",
+  Cell[185301, 3337, 431, 6, 63, "Subsection",
    CellTags->"AG_C1_G1"]},
  "E_2G"->{
-  Cell[289107, 5702, 212, 3, 67, "Text",
+  Cell[284232, 5570, 212, 3, 67, "Text",
    CellTags->"E_2G"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 323015, 6605},
- {"Home", 324572, 6640},
- {"Introduction", 324660, 6643},
- {"AG_C1_G1", 324750, 6646},
- {"E_2G", 324835, 6649}
+ {"SlideShowHeader", 318141, 6473},
+ {"Home", 319698, 6508},
+ {"Introduction", 319786, 6511},
+ {"AG_C1_G1", 319876, 6514},
+ {"E_2G", 319961, 6517}
  }
 *)
 (*NotebookFileOutline
@@ -6666,321 +6534,321 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 4407, 98, 90, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[4990, 122, 421, 11, 69, "Input"],
+Cell[4990, 122, 472, 12, 69, "Input"],
 Cell[CellGroupData[{
-Cell[5436, 137, 136747, 2250, 213, "Title",
+Cell[5487, 138, 136747, 2250, 213, "Title",
  CellTags->"Home"],
-Cell[142186, 2389, 212, 4, 56, "Subtitle"],
-Cell[142401, 2395, 211, 3, 30, "Text"],
-Cell[142615, 2400, 5894, 103, 121, "Input"]
+Cell[142237, 2390, 212, 4, 56, "Subtitle"],
+Cell[142452, 2396, 211, 3, 30, "Text"],
+Cell[142666, 2401, 5894, 103, 121, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[148558, 2509, 64, 1, 89, "SlideShowNavigationBar",
+Cell[148609, 2510, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[148647, 2514, 128, 2, 84, "Section",
+Cell[148698, 2515, 128, 2, 84, "Section",
  CellTags->"Introduction"],
-Cell[148778, 2518, 307, 5, 49, "Text"],
+Cell[148829, 2519, 307, 5, 30, "Text"],
 Cell[CellGroupData[{
-Cell[149110, 2527, 304, 5, 45, "Item"],
+Cell[149161, 2528, 304, 5, 29, "Item"],
 Cell[CellGroupData[{
-Cell[149439, 2536, 159, 3, 25, "Subitem"],
-Cell[149601, 2541, 124, 3, 25, "Subitem"]
+Cell[149490, 2537, 159, 3, 25, "Subitem"],
+Cell[149652, 2542, 124, 3, 25, "Subitem"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[149786, 2551, 11425, 199, 148, "Title"],
-Cell[161214, 2752, 44, 1, 4, "PageBreak",
+Cell[149837, 2552, 11425, 199, 148, "Title"],
+Cell[161265, 2753, 44, 1, 4, "PageBreak",
  PageBreakBelow->True]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[161307, 2759, 64, 1, 89, "SlideShowNavigationBar",
+Cell[161358, 2760, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[161374, 2762, 178, 2, 49, "Subsection"],
+Cell[161425, 2763, 178, 2, 49, "Subsection"],
 Cell[CellGroupData[{
-Cell[161577, 2768, 99, 1, 33, "Subsubtitle"],
-Cell[161679, 2771, 101, 1, 33, "Subsubtitle"],
-Cell[161783, 2774, 232, 3, 49, "Subsection"]
+Cell[161628, 2769, 99, 1, 33, "Subsubtitle"],
+Cell[161730, 2772, 101, 1, 33, "Subsubtitle"],
+Cell[161834, 2775, 232, 3, 49, "Subsection"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[162052, 2782, 99, 1, 33, "Subsubtitle"],
-Cell[162154, 2785, 154, 2, 33, "Subsubtitle"],
-Cell[162311, 2789, 219, 3, 49, "Subsection"]
+Cell[162103, 2783, 99, 1, 33, "Subsubtitle"],
+Cell[162205, 2786, 154, 2, 33, "Subsubtitle"],
+Cell[162362, 2790, 219, 3, 49, "Subsection"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[162567, 2797, 99, 1, 33, "Subsubtitle"],
-Cell[162669, 2800, 152, 2, 33, "Subsubtitle"]
+Cell[162618, 2798, 99, 1, 33, "Subsubtitle"],
+Cell[162720, 2801, 152, 2, 33, "Subsubtitle"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[162870, 2808, 64, 1, 89, "SlideShowNavigationBar",
+Cell[162921, 2809, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[162937, 2811, 144, 1, 53, "Text"],
+Cell[162988, 2812, 144, 1, 53, "Text"],
 Cell[CellGroupData[{
-Cell[163106, 2816, 175, 2, 49, "Subsection"],
-Cell[163284, 2820, 307, 8, 87, "Text"],
+Cell[163157, 2817, 175, 2, 49, "Subsection"],
+Cell[163335, 2821, 307, 8, 87, "Text"],
 Cell[CellGroupData[{
-Cell[163616, 2832, 785, 23, 30, "Input"],
-Cell[164404, 2857, 7497, 150, 198, "Output"]
+Cell[163667, 2833, 785, 23, 30, "Input"],
+Cell[164455, 2858, 7497, 150, 198, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[171938, 3012, 117, 2, 30, "Input"],
-Cell[172058, 3016, 1897, 40, 375, "Output"]
+Cell[171989, 3013, 117, 2, 30, "Input"],
+Cell[172109, 3017, 1897, 40, 375, "Output"]
 }, Closed]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[174016, 3063, 64, 1, 89, "SlideShowNavigationBar",
+Cell[174067, 3064, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[174083, 3066, 92, 1, 30, "Input"],
+Cell[174134, 3067, 92, 1, 30, "Input"],
 Cell[CellGroupData[{
-Cell[174200, 3071, 300, 4, 49, "Subsection"],
-Cell[174503, 3077, 243, 7, 30, "Text"],
+Cell[174251, 3072, 300, 4, 49, "Subsection"],
+Cell[174554, 3078, 243, 7, 30, "Text"],
 Cell[CellGroupData[{
-Cell[174771, 3088, 1328, 33, 50, "Input"],
-Cell[176102, 3123, 2109, 42, 389, "Output"]
+Cell[174822, 3089, 1328, 33, 30, "Input"],
+Cell[176153, 3124, 2109, 42, 389, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[178248, 3170, 1054, 20, 50, "Input"],
-Cell[179305, 3192, 877, 20, 30, "Output"]
-}, Open  ]]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[180243, 3219, 64, 1, 89, "SlideShowNavigationBar",
- CellTags->"SlideShowHeader"],
-Cell[CellGroupData[{
-Cell[180332, 3224, 345, 4, 49, "Subsection"],
-Cell[180680, 3230, 239, 3, 30, "Text"],
-Cell[CellGroupData[{
-Cell[180944, 3237, 2767, 56, 69, "Input"],
-Cell[183714, 3295, 1386, 29, 42, "Output"]
+Cell[178299, 3171, 1054, 20, 30, "Input"],
+Cell[179356, 3193, 877, 20, 30, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[185161, 3331, 64, 1, 89, "SlideShowNavigationBar",
+Cell[180294, 3220, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[185250, 3336, 431, 6, 63, "Subsection",
+Cell[180383, 3225, 345, 4, 49, "Subsection"],
+Cell[180731, 3231, 239, 3, 30, "Text"],
+Cell[CellGroupData[{
+Cell[180995, 3238, 2767, 56, 69, "Input"],
+Cell[183765, 3296, 1386, 29, 42, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[185212, 3332, 64, 1, 89, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[185301, 3337, 431, 6, 63, "Subsection",
  CellTags->"AG_C1_G1"],
-Cell[185684, 3344, 220, 4, 30, "Text"],
+Cell[185735, 3345, 220, 4, 30, "Text"],
 Cell[CellGroupData[{
-Cell[185929, 3352, 673, 20, 30, "Input"],
-Cell[186605, 3374, 1702, 34, 351, "Output"]
+Cell[185980, 3353, 673, 20, 30, "Input"],
+Cell[186656, 3375, 1702, 34, 351, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[188344, 3413, 739, 19, 50, "Input"],
-Cell[189086, 3434, 562, 14, 30, "Output"]
+Cell[188395, 3414, 739, 19, 30, "Input"],
+Cell[189137, 3435, 562, 14, 30, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[189709, 3455, 64, 1, 89, "SlideShowNavigationBar",
+Cell[189760, 3456, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[189798, 3460, 472, 6, 49, "Subsection"],
-Cell[190273, 3468, 267, 11, 30, "Text"],
+Cell[189849, 3461, 472, 6, 49, "Subsection"],
+Cell[190324, 3469, 267, 11, 30, "Text"],
 Cell[CellGroupData[{
-Cell[190565, 3483, 1311, 33, 69, "Input"],
-Cell[191879, 3518, 730, 13, 42, "Output"],
+Cell[190616, 3484, 1311, 33, 50, "Input"],
+Cell[191930, 3519, 730, 13, 42, "Output"],
 Cell[CellGroupData[{
-Cell[192634, 3535, 14896, 300, 233, "Print"],
-Cell[207533, 3837, 180, 2, 22, "Print"]
+Cell[192685, 3536, 14896, 300, 233, "Print"],
+Cell[207584, 3838, 180, 2, 22, "Print"]
 }, Open  ]]
 }, Open  ]],
-Cell[207740, 3843, 94, 1, 30, "Input"]
+Cell[207791, 3844, 94, 1, 30, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[207883, 3850, 64, 1, 89, "SlideShowNavigationBar",
+Cell[207934, 3851, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[207972, 3855, 472, 6, 49, "Subsection"],
-Cell[208447, 3863, 117, 1, 30, "Text"],
+Cell[208023, 3856, 472, 6, 49, "Subsection"],
+Cell[208498, 3864, 117, 1, 30, "Text"],
 Cell[CellGroupData[{
-Cell[208589, 3868, 1223, 31, 50, "Input"],
-Cell[209815, 3901, 640, 13, 42, "Output"]
+Cell[208640, 3869, 1223, 31, 30, "Input"],
+Cell[209866, 3902, 640, 13, 42, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[210516, 3921, 64, 1, 89, "SlideShowNavigationBar",
+Cell[210567, 3922, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[210605, 3926, 554, 13, 49, "Subsection"],
-Cell[211162, 3941, 406, 10, 106, "Text"],
+Cell[210656, 3927, 554, 13, 49, "Subsection"],
+Cell[211213, 3942, 406, 10, 106, "Text"],
 Cell[CellGroupData[{
-Cell[211593, 3955, 1208, 33, 30, "Input"],
-Cell[212804, 3990, 1913, 39, 357, "Output"]
+Cell[211644, 3956, 1208, 33, 30, "Input"],
+Cell[212855, 3991, 1913, 39, 357, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[214778, 4036, 64, 1, 89, "SlideShowNavigationBar",
+Cell[214829, 4037, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[214867, 4041, 504, 7, 49, "Subsection"],
-Cell[215374, 4050, 208, 4, 30, "Text"],
+Cell[214918, 4042, 504, 7, 49, "Subsection"],
+Cell[215425, 4051, 208, 4, 30, "Text"],
 Cell[CellGroupData[{
-Cell[215607, 4058, 601, 12, 30, "Input"],
-Cell[216211, 4072, 162, 3, 30, "Output"]
+Cell[215658, 4059, 601, 12, 30, "Input"],
+Cell[216262, 4073, 162, 3, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[216410, 4080, 581, 13, 30, "Input"],
-Cell[216994, 4095, 152, 2, 30, "Output"]
+Cell[216461, 4081, 581, 13, 30, "Input"],
+Cell[217045, 4096, 152, 2, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[217183, 4102, 248, 5, 30, "Input"],
-Cell[217434, 4109, 182, 3, 30, "Output"]
+Cell[217234, 4103, 248, 5, 30, "Input"],
+Cell[217485, 4110, 182, 3, 30, "Output"]
 }, Open  ]],
-Cell[217631, 4115, 3959, 90, 202, "Input"],
-Cell[221593, 4207, 1511, 38, 82, "Input"]
+Cell[217682, 4116, 3959, 90, 107, "Input"],
+Cell[221644, 4208, 1511, 38, 82, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[223153, 4251, 64, 1, 89, "SlideShowNavigationBar",
+Cell[223204, 4252, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[223242, 4256, 545, 7, 49, "Subsection"],
-Cell[223790, 4265, 486, 10, 30, "Input"],
+Cell[223293, 4257, 545, 7, 49, "Subsection"],
+Cell[223841, 4266, 486, 10, 30, "Input"],
 Cell[CellGroupData[{
-Cell[224301, 4279, 246, 5, 30, "Input"],
-Cell[224550, 4286, 158, 3, 57, "Output"]
-}, Open  ]],
-Cell[224723, 4292, 5371, 138, 335, "Input"],
-Cell[CellGroupData[{
-Cell[230119, 4434, 267, 5, 30, "Input"],
-Cell[230389, 4441, 598, 10, 30, "Output"]
+Cell[224352, 4280, 246, 5, 30, "Input"],
+Cell[224601, 4287, 157, 3, 34, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[231024, 4456, 2600, 60, 259, "Input"],
-Cell[233627, 4518, 15948, 337, 432, "Output"]
+Cell[224795, 4295, 267, 5, 30, "Input"],
+Cell[225065, 4302, 599, 10, 30, "Output"]
+}, Open  ]],
+Cell[225679, 4315, 2600, 60, 164, "Input"],
+Cell[CellGroupData[{
+Cell[228304, 4379, 233, 4, 30, "Input"],
+Cell[228540, 4385, 16159, 338, 1062, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[249612, 4860, 3394, 70, 487, "Input"],
-Cell[253009, 4932, 25100, 519, 1200, "Output"]
+Cell[244736, 4728, 3394, 70, 487, "Input"],
+Cell[248133, 4800, 25100, 519, 648, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[278146, 5456, 6349, 126, 411, "Input"],
-Cell[284498, 5584, 1856, 38, 42, "Output"]
+Cell[273270, 5324, 6349, 126, 373, "Input"],
+Cell[279622, 5452, 1856, 38, 42, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[286391, 5627, 282, 6, 30, "Input"],
-Cell[286676, 5635, 239, 5, 45, "Output"]
+Cell[281515, 5495, 282, 6, 30, "Input"],
+Cell[281800, 5503, 240, 5, 45, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[286952, 5645, 1188, 24, 50, "Input"],
-Cell[288143, 5671, 549, 12, 30, "Output"]
+Cell[282077, 5513, 1188, 24, 30, "Input"],
+Cell[283268, 5539, 549, 12, 30, "Output"]
 }, Open  ]],
-Cell[288707, 5686, 92, 1, 30, "Input"],
-Cell[288802, 5689, 92, 1, 30, "Input"],
-Cell[288897, 5692, 94, 1, 30, "Input"]
+Cell[283832, 5554, 92, 1, 30, "Input"],
+Cell[283927, 5557, 92, 1, 30, "Input"],
+Cell[284022, 5560, 94, 1, 30, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[289040, 5699, 64, 1, 89, "SlideShowNavigationBar",
+Cell[284165, 5567, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[289107, 5702, 212, 3, 67, "Text",
+Cell[284232, 5570, 212, 3, 67, "Text",
  CellTags->"E_2G"],
 Cell[CellGroupData[{
-Cell[289344, 5709, 101, 1, 49, "Subsection"],
+Cell[284469, 5577, 101, 1, 49, "Subsection"],
 Cell[CellGroupData[{
-Cell[289470, 5714, 991, 29, 30, "Input"],
-Cell[290464, 5745, 2424, 48, 431, "Output"]
+Cell[284595, 5582, 991, 29, 30, "Input"],
+Cell[285589, 5613, 2424, 48, 431, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[292949, 5800, 64, 1, 89, "SlideShowNavigationBar",
+Cell[288074, 5668, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[293038, 5805, 149, 3, 30, "Input"],
-Cell[293190, 5810, 87, 2, 30, "Output"]
+Cell[288163, 5673, 149, 3, 30, "Input"],
+Cell[288315, 5678, 87, 2, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[293314, 5817, 3466, 71, 812, "Input"],
-Cell[296783, 5890, 1662, 39, 89, "Output"]
+Cell[288439, 5685, 3466, 71, 812, "Input"],
+Cell[291908, 5758, 1662, 39, 89, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[298482, 5934, 134, 2, 30, "Input"],
-Cell[298619, 5938, 159, 3, 30, "Output"]
+Cell[293607, 5802, 134, 2, 30, "Input"],
+Cell[293744, 5806, 159, 3, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[298815, 5946, 275, 7, 30, "Input"],
-Cell[299093, 5955, 199, 4, 237, "Output"]
+Cell[293940, 5814, 275, 7, 30, "Input"],
+Cell[294218, 5823, 199, 4, 237, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[299329, 5964, 260, 5, 69, "Input"],
-Cell[299592, 5971, 214, 6, 42, "Output"]
+Cell[294454, 5832, 260, 5, 69, "Input"],
+Cell[294717, 5839, 214, 6, 42, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[299855, 5983, 64, 1, 90, "SlideShowNavigationBar",
+Cell[294980, 5851, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[299922, 5986, 195, 2, 46, "Text"],
+Cell[295047, 5854, 195, 2, 53, "Text"],
 Cell[CellGroupData[{
-Cell[300142, 5992, 101, 1, 43, "Subsection"],
+Cell[295267, 5860, 101, 1, 49, "Subsection"],
 Cell[CellGroupData[{
-Cell[300268, 5997, 1117, 34, 30, "Input"],
-Cell[301388, 6033, 2671, 52, 454, "Output"]
+Cell[295393, 5865, 1117, 34, 30, "Input"],
+Cell[296513, 5901, 2671, 52, 459, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[304120, 6092, 64, 1, 90, "SlideShowNavigationBar",
- CellTags->"SlideShowHeader"],
-Cell[CellGroupData[{
-Cell[304209, 6097, 141, 3, 30, "Input"],
-Cell[304353, 6102, 87, 2, 30, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[304477, 6109, 4073, 83, 868, "Input"],
-Cell[308553, 6194, 1998, 44, 89, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[310588, 6243, 130, 2, 30, "Input"],
-Cell[310721, 6247, 159, 3, 30, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[310917, 6255, 279, 7, 30, "Input"],
-Cell[311199, 6264, 199, 4, 237, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[311435, 6273, 262, 5, 69, "Input"],
-Cell[311700, 6280, 216, 6, 42, "Output"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[311965, 6292, 64, 1, 90, "SlideShowNavigationBar",
+Cell[299245, 5960, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[312054, 6297, 292, 6, 30, "Input"],
-Cell[312349, 6305, 3076, 81, 104, "Output"]
+Cell[299334, 5965, 141, 3, 30, "Input"],
+Cell[299478, 5970, 87, 2, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[315462, 6391, 145, 2, 30, "Input"],
-Cell[315610, 6395, 104, 1, 30, "Output"]
+Cell[299602, 5977, 4073, 83, 893, "Input"],
+Cell[303678, 6062, 1998, 44, 89, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[315751, 6401, 874, 17, 200, "Input"],
-Cell[316628, 6420, 448, 11, 47, "Output"]
+Cell[305713, 6111, 130, 2, 30, "Input"],
+Cell[305846, 6115, 159, 3, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[317113, 6436, 138, 2, 30, "Input"],
-Cell[317254, 6440, 163, 3, 30, "Output"]
+Cell[306042, 6123, 279, 7, 30, "Input"],
+Cell[306324, 6132, 199, 4, 237, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[317454, 6448, 1192, 36, 145, "Input"],
-Cell[318649, 6486, 2654, 57, 235, "Output"]
+Cell[306560, 6141, 262, 5, 69, "Input"],
+Cell[306825, 6148, 216, 6, 42, "Output"]
+}, Open  ]]
 }, Open  ]],
-Cell[321318, 6546, 68, 1, 30, "Input"],
 Cell[CellGroupData[{
-Cell[321411, 6551, 407, 10, 30, "Input"],
-Cell[321821, 6563, 805, 26, 30, "Output"]
+Cell[307090, 6160, 64, 1, 90, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[307179, 6165, 292, 6, 30, "Input"],
+Cell[307474, 6173, 3076, 81, 104, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[310587, 6259, 145, 2, 30, "Input"],
+Cell[310735, 6263, 104, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[310876, 6269, 874, 17, 200, "Input"],
+Cell[311753, 6288, 448, 11, 47, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[312238, 6304, 138, 2, 30, "Input"],
+Cell[312379, 6308, 163, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[312579, 6316, 1192, 36, 145, "Input"],
+Cell[313774, 6354, 2654, 57, 235, "Output"]
+}, Open  ]],
+Cell[316443, 6414, 68, 1, 30, "Input"],
+Cell[CellGroupData[{
+Cell[316536, 6419, 407, 10, 30, "Input"],
+Cell[316946, 6431, 805, 26, 30, "Output"]
 }, Open  ]]
 }, Open  ]]
 }
