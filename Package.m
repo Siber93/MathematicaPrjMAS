@@ -28,8 +28,13 @@ BeginPackage[ "MClib`"];
 		userAnswer::usage="List of all the user answer"
 		exercises::usage="List containing all exercises for each grade and kind (solution + errors)"
 		enableAnswer::usage="List of all boolean variable that disable exercises after having done them"
+		
+		
+		
 		loadFiles::usage = "Load initial Files"
 	
+		checkAnswer::usage = "Check the answer for 1 exercise Kind
+			\n@row_@ exercises row index"
 	
 		exKindAPrinter::usage = "Generate form Kind A for students
 			\n@row_@ exercises row index"
@@ -38,12 +43,23 @@ BeginPackage[ "MClib`"];
 			\n@row_@ exercises row index"
 	
 	
-		generateExercisesG1::usage="Generate a list of all exercises (solutions + errors)
+		generateExercisesG1::usage="Generate a list of all exercises GRADE 1 (solutions + errors)
+			\n@l_@ List of solutions"
+			
+		generateExercisesG2::usage="Generate a list of all exercises GRADE 2 (solutions + errors)
+			\n@l_@ List of solutions"
+			
+		generateExercisesG3::usage="Generate a list of all exercises GRADE 3 (solutions + errors)
 			\n@l_@ List of solutions"
 	
 	
-		solutionReadAndRandomFill::usage = "This function load exercises from a file and complete the excercises list adding Random ones till minimum number is reached
+		solutionReadAndRandomFill::usage = "This function load exercises from a file and completes the excercises list adding Random ones till minimum number is reached
 			\n@file_@ File to load
+			\n@grade_@ Grade o the function {1..N}
+			\n@numMin_@ Minimum number of excercises {1..N}"
+			
+			
+		randomFill::usage = "This function completes the excercises list adding Random ones till minimum number is reached
 			\n@grade_@ Grade o the function {1..N}
 			\n@numMin_@ Minimum number of excercises {1..N}"
 	 
@@ -98,13 +114,61 @@ BeginPackage[ "MClib`"];
 					AppendTo[teacherEQ,solutionReadAndRandomFill["g3B.txt",3,MINNUMBEROFEXERCISES]]; (* Exercises Grade 3 solutions list of Exercise Kind B *)
 					
 					AppendTo[exercises,generateExercisesG1[teacherEQ[[1]]]]; (* Grade 1 Kind A *)
-					AppendTo[exercises,generateExercisesG1[teacherEQ[[2]]]]; (* Grade 1 Kind B *)					
+					AppendTo[exercises,generateExercisesG1[teacherEQ[[2]]]]; (* Grade 1 Kind B *)
+					AppendTo[exercises,generateExercisesG2[teacherEQ[[3]]]]; (* Grade 2 Kind A *)
+					AppendTo[exercises,generateExercisesG2[teacherEQ[[4]]]]; (* Grade 2 Kind B *)	
+					AppendTo[exercises,generateExercisesG3[teacherEQ[[5]]]]; (* Grade 3 Kind A *)
+					AppendTo[exercises,generateExercisesG3[teacherEQ[[6]]]]; (* Grade 3 Kind B *)	
 					
-					userAnswer = Table[0, 2, MINNUMBEROFEXERCISES];
-					enableAnswer = Table[True, 2, MINNUMBEROFEXERCISES];
+					userAnswer = Table[0, 6, MINNUMBEROFEXERCISES];
+					enableAnswer = Table[True, 6, MINNUMBEROFEXERCISES];
 				]
+				
+				
+				
+				load[] := Module[{}, 
+					AppendTo[teacherEQ,randomFill[1,MINNUMBEROFEXERCISES]]; (* Exercises Grade 1 solutions list of Exercise Kind A *)
+					AppendTo[teacherEQ,randomFill[1,MINNUMBEROFEXERCISES]]; (* Exercises Grade 1 solutions list of Exercise Kind B *)				
+					AppendTo[teacherEQ,randomFill[2,MINNUMBEROFEXERCISES]]; (* Exercises Grade 2 solutions list of Exercise Kind A *)
+					AppendTo[teacherEQ,randomFill[2,MINNUMBEROFEXERCISES]]; (* Exercises Grade 2 solutions list of Exercise Kind B *)
+					AppendTo[teacherEQ,randomFill[3,MINNUMBEROFEXERCISES]]; (* Exercises Grade 3 solutions list of Exercise Kind A *)
+					AppendTo[teacherEQ,randomFill[3,MINNUMBEROFEXERCISES]]; (* Exercises Grade 3 solutions list of Exercise Kind B *)
+					
+					AppendTo[exercises,generateExercisesG1[teacherEQ[[1]]]]; (* Grade 1 Kind A *)
+					AppendTo[exercises,generateExercisesG1[teacherEQ[[2]]]]; (* Grade 1 Kind B *)
+					AppendTo[exercises,generateExercisesG2[teacherEQ[[3]]]]; (* Grade 2 Kind A *)
+					AppendTo[exercises,generateExercisesG2[teacherEQ[[4]]]]; (* Grade 2 Kind B *)	
+					AppendTo[exercises,generateExercisesG3[teacherEQ[[5]]]]; (* Grade 3 Kind A *)
+					AppendTo[exercises,generateExercisesG3[teacherEQ[[6]]]]; (* Grade 3 Kind B *)	
+					
+					userAnswer = Table[0, 6, MINNUMBEROFEXERCISES];
+					enableAnswer = Table[True, 6, MINNUMBEROFEXERCISES];
+				]
+				
+				
+				
 			
 			
+				(* Check answer of section row *)
+				checkAnswer[row_] := Module[
+										{StringAnswer = ""},										
+										For[i = 1, i <= Length[teacherEQ[[row]]], i++,
+											If[userAnswer[[row,i]] === teacherEQ[[row,i]],
+												StringAnswer = StringJoin[StringAnswer, StringJoin[StringJoin["\nEs #", ToString[i]], ": Risposta corretta"]];(* 1 is correct *)
+												enableAnswer[[row,i]] = False; (* Disable retring *),
+												If[userAnswer[[row,i]] === 0,
+													StringAnswer = StringJoin[StringJoin["Domanda ", ToString[i]], " non completata"];(* 1 answer has not be given *)
+													enableAnswer[[row,i]] = True; (* Enable retring *) 
+													Break[], 
+													StringAnswer = StringJoin[StringAnswer, StringJoin[StringJoin[StringJoin["\nEs #", ToString[i]], ": Risposta errata. Quella corretta era "], ToString[teacherEQ[[row,i]]]]]; (* 1 error*) 
+													enableAnswer[[row,i]] = False(* Disable retring *)
+												]
+											]
+										];
+										MessageDialog[StringAnswer](* Output the solution *)						 								
+									]
+			
+				
 				(* Draw Exercises KIND A of a grade *)
 				exKindAPrinter[row_] := Module[
 											{},										
@@ -145,7 +209,7 @@ BeginPackage[ "MClib`"];
 																	Style[
 																	StringJoin[
 																		ToString[teacherEQ[[row,i]]], 
-																		" \t Qual'è il suo grafico?"], FontWeight -> Bold
+																		" \t Qual'e' il suo grafico?"], FontWeight -> Bold
 																	],
 																	Row[
 																		Table[
@@ -174,14 +238,15 @@ BeginPackage[ "MClib`"];
 			
 				(* This function load exercises from a file and complete the exercises list adding Random ones till minimum number is reached *)
 				solutionReadAndRandomFill[file_,grade_,numMin_] := Module[
-																		{return = {},try,app},	
-																		return =  ReadList[file]; (* Reading the file *)
+																		{return = {},try,len = 0},	
+																		return =  ReadList[file]; (* Reading the file *)																		
 																		If[Length[return === 0], (* Checking if ReadFile has been accomplished*)
 																			return = {}
 																		];
+																		len = Length[return];
 																		If[Length[return] < numMin, (* Checking number of equations read *)
-																			For[i = 0, i < numMin - Length[return], i++, (* Starting Autofilling *)
-																				try = 0;
+																			For[i = 0, i < (numMin - len), i++, (* Starting Autofilling *)																			
+																				try = 0;																				
 																				For[j = 0, j <= grade, j++, (* Iterating for the grade *)	(* Generating new random expression *)																					
 																					try = try + RandomInteger[{-10, +10}]*Symbol["x"]^j
 																				]
@@ -190,12 +255,34 @@ BeginPackage[ "MClib`"];
 																					For[j = 0, j <= grade, j++, (* Iterating for the grade *)	(* If it is, generate a new one *)
 																						try = try + RandomInteger[{-10, +10}]*Symbol["x"]^j
 																					] 
-																				];
-																				AppendTo[return, try];
+																				];	
+																				AppendTo[return, try]
 																			]
 																		];
 																		return (* Return the completed list *)
 																	];
+				
+				(* Complete the exercises list adding Random ones till minimum number is reached *)				
+				randomFill[grade_,numMin_]:= Module[
+												{return = {},try,len = 0},
+												len = 0;
+												If[Length[return] < numMin, (* Checking number of equations read *)
+													For[i = 0, i < (numMin - len), i++, (* Starting Autofilling *)																			
+														try = 0;																				
+														For[j = 0, j <= grade, j++, (* Iterating for the grade *)	(* Generating new random expression *)																					
+															try = try + RandomInteger[{-10, +10}]*Symbol["x"]^j
+														]
+														While[ContainsAll[return, {try}] || Length[CoefficientList[try, Symbol["x"]]]<grade+1, (* Checking that the expression is not already in the solutions list and grade+1 coefficent of try is != 0 *)
+															try = 0;
+															For[j = 0, j <= grade, j++, (* Iterating for the grade *)	(* If it is, generate a new one *)
+																try = try + RandomInteger[{-10, +10}]*Symbol["x"]^j
+															] 
+														];	
+														AppendTo[return, try]
+													]
+												];
+												return (* Return the completed list *)
+											];
 				
 	
 				
@@ -216,6 +303,46 @@ BeginPackage[ "MClib`"];
 													try = RandomInteger[{-10, 10}] + Symbol["x"]*coeff[[2]]
 												];(* Check that the expression in not already in the solutions list *)
 												AppendTo[sol, try];
+												sol = RandomSample[sol]; (* Randomizing the order in the list *)
+												AppendTo[return, sol](* Add exercise to exercises list *)
+											];
+											return
+										];
+										
+										
+				generateExercisesG2[l_] := Module[
+											{return = {}, sol={}, coeff},
+											For[i = 1, i <= Length[l], i++,
+												sol = {};
+												AppendTo[sol, l[[i]]];(* Add correct answer *)
+												coeff = CoefficientList[l[[i]], Symbol["x"]];(* Get coefficients from expression i *)
+												AppendTo[sol, RandomInteger[{-10, 10}] - Symbol["x"]*coeff[[2]] + Symbol["x"]^2*coeff[[3]]];(* Add y=ax^2 - bx + RND *)
+												AppendTo[sol, Symbol["x"]*coeff[[2]] + Symbol["x"]^2*coeff[[3]]]; (* Adding y=ax^2 + bx *)
+												AppendTo[sol, coeff[[1]] + Symbol["x"]*coeff[[2]] - Symbol["x"]^2*coeff[[3]]];(* Adding y=-ax^2 + bx + c *)
+												sol = RandomSample[sol]; (* Randomizing the order in the list *)
+												AppendTo[return, sol](* Add exercise to exercises list *)
+											];
+											return
+										];
+										
+										
+				generateExercisesG3[l_] := Module[
+											{return = {}, sol={}, coeff},
+											For[i = 1, i <= Length[l], i++,
+												sol = {};
+												AppendTo[sol, l[[i]]];(* Add correct answer *)
+												coeff = CoefficientList[l[[i]], Symbol["x"]];(* Get coefficients from expression i *)
+												AppendTo[sol, coeff[[1]] + Symbol["x"]*coeff[[2]] + Symbol["x"]^2*coeff[[3]] - Symbol["x"]^3*coeff[[4]]];(* Adding y=-ax^3 + bx^2 + cx + d *)
+												try = coeff[[1]] - Symbol["x"]*RandomInteger[{0, 10}] - Symbol["x"]^2*RandomInteger[{0, 10}] + Symbol["x"]^3*coeff[[4]];(* Adding y=ax^3 - RNDx^2 - RNDx + d *)
+												While[ContainsAll[sol, {try}], 
+													try = coeff[[1]] - Symbol["x"]*RandomInteger[{0, 10}] - Symbol["x"]^2*RandomInteger[{0, 10}] + Symbol["x"]^3*coeff[[4]]
+												];(* Check that the expression in not already in the solutions list *)
+												AppendTo[sol, try];
+												try = RandomInteger[{-10, 10}] + Symbol["x"]*coeff[[2]] + Symbol["x"]^2*coeff[[3]] + Symbol["x"]^3*coeff[[4]];(* Adding y=ax^3 + bx^2 + cx + RND *)
+												While[ContainsAll[sol, {try}], 
+													try = RandomInteger[{-10, 10}] + Symbol["x"]*coeff[[2]] + Symbol["x"]^2*coeff[[3]] + Symbol["x"]^3*coeff[[4]];
+												];(* Check that the expression in not already in the solutions list *)
+												AppendTo[sol, try];												
 												sol = RandomSample[sol]; (* Randomizing the order in the list *)
 												AppendTo[return, sol](* Add exercise to exercises list *)
 											];

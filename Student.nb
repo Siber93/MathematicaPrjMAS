@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    414300,       9063]
-NotebookOptionsPosition[    391198,       8316]
-NotebookOutlinePosition[    397799,       8513]
-CellTagsIndexPosition[    396981,       8481]
+NotebookDataLength[    412966,       9038]
+NotebookOptionsPosition[    389744,       8287]
+NotebookOutlinePosition[    396345,       8484]
+CellTagsIndexPosition[    395527,       8452]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -4329,8 +4329,8 @@ Cell[BoxData[
 
 Cell[BoxData[
  DynamicBox[ToBoxes[MClib`teacherEQ, StandardForm],
-  ImageSizeCache->{1397., {6., 12.}}]], "Output",
- CellChangeTimes->{3.735117299178671*^9, 3.735293043291156*^9}]
+  ImageSizeCache->{1717., {6., 12.}}]], "Output",
+ CellChangeTimes->{3.7353214792328205`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -4344,7 +4344,7 @@ Cell[BoxData[
 
 Cell[BoxData[
  DynamicBox[ToBoxes[MClib`exercises, StandardForm],
-  ImageSizeCache->{1399., {3., 9.}}]], "Output",
+  ImageSizeCache->{1588.5, {98., 12.}}]], "Output",
  CellChangeTimes->{
   3.734616673421238*^9, {3.7346167144698167`*^9, 3.7346167355230656`*^9}, {
    3.7346169229620657`*^9, 3.7346169481584487`*^9}, 3.734689175919614*^9, 
@@ -4352,14 +4352,19 @@ Cell[BoxData[
    3.7346901897467856`*^9, 3.7346902268546553`*^9, {3.7346902570629125`*^9, 
    3.7346902869325686`*^9}, {3.7346903271852465`*^9, 
    3.7346903484184923`*^9}, {3.734690386297764*^9, 3.734690402980995*^9}, 
-   3.7351096467719116`*^9, 3.735315079212102*^9}]
+   3.7351096467719116`*^9, 3.735315079212102*^9, 3.7353202748688574`*^9, 
+   3.7353206595523367`*^9, 3.735321314668256*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"exKindAPrinter", "[", "1", "]"}]], "Input",
- CellChangeTimes->{{3.7353168024791183`*^9, 3.7353168092373366`*^9}}],
+ RowBox[{"exKindAPrinter", "[", "5", "]"}]], "Input",
+ CellChangeTimes->{{3.7353168024791183`*^9, 3.7353168092373366`*^9}, {
+  3.7353202561333475`*^9, 3.735320256261397*^9}, {3.7353203640198593`*^9, 
+  3.7353204352493*^9}, {3.7353205145786686`*^9, 3.7353205151460953`*^9}, {
+  3.735320627042025*^9, 3.7353206276225863`*^9}, {3.7353220918861217`*^9, 
+  3.7353220920757794`*^9}}],
 
 Cell[BoxData[
  TagBox[GridBox[{
@@ -4375,29 +4380,31 @@ Cell[BoxData[
                 TemplateBox[{"\"Zoom sugli zeri:\"", 
                   TemplateBox[{
                     ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1735 = Part[
+                    "1", ButtonFunction :> (MClib`Private`l$6374 = Part[
                     Solve[
                     Reduce[
                     And[
-                    2 + 3 $CellContext`x == 0, -11 < $CellContext`x < 
+                    2 + $CellContext`x - 2 $CellContext`x^2 - 
+                    7 $CellContext`x^3 == 0, -11 < $CellContext`x < 
                     11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1735 = 1; 
-                    MClib`Private`y$1735 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1735, 1]]), Appearance -> Automatic, 
+                    MClib`Private`j$6374 = 1; 
+                    MClib`Private`y$6374 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$6374, 1]]), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}, 
                    "RowDefault"]}, "RowDefault"]}, {
                 TemplateBox[{
                   DynamicBox[
                    ToBoxes[
                     Plot[
-                    2 + 3 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$1735 - MClib`Private`j$1735, 
-                    MClib`Private`y$1735 + MClib`Private`j$1735}, ImageSize -> 
-                    Medium], StandardForm]]}, "RowDefault"]}, {
+                    2 + $CellContext`x - 2 $CellContext`x^2 - 
+                    7 $CellContext`x^3, {$CellContext`x, MClib`Private`y$6374 - 
+                    MClib`Private`j$6374, MClib`Private`y$6374 + 
+                    MClib`Private`j$6374}, ImageSize -> Medium], 
+                    StandardForm]]}, "RowDefault"]}, {
                 ButtonBox[
                 "\"Reset Zoom\"", 
-                 ButtonFunction :> (MClib`Private`j$1735 = 5; 
-                  MClib`Private`y$1735 = 0), Appearance -> Automatic, 
+                 ButtonFunction :> (MClib`Private`j$6374 = 5; 
+                  MClib`Private`y$6374 = 0), Appearance -> Automatic, 
                  Evaluator -> Automatic, Method -> "Preemptive"]}}, 
               GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
               "Column", 
@@ -4410,12 +4417,17 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[MClib`userAnswer, 1, 1]], {2 - 3 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
-                    Part[MClib`enableAnswer, 1, 1]]], 
+                    Part[MClib`userAnswer, 5, 1]], {
+                    2 + $CellContext`x - 2 $CellContext`x^2 + 
+                    7 $CellContext`x^3}, DefaultBaseStyle -> "RadioButtonBar",
+                     Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 5, 1]]], 
                    StyleBox[
-                    RowBox[{"2", "-", 
-                    RowBox[{"3", " ", "x"}]}], "RadioButtonBarLabel", 
+                    RowBox[{"2", "+", "x", "-", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["x", "2"]}], "+", 
+                    RowBox[{"7", " ", 
+                    SuperscriptBox["x", "3"]}]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4423,12 +4435,17 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[MClib`userAnswer, 1, 1]], {2 + 3 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
-                    Part[MClib`enableAnswer, 1, 1]]], 
+                    Part[MClib`userAnswer, 5, 1]], {
+                    2 + $CellContext`x - 2 $CellContext`x^2 - 
+                    7 $CellContext`x^3}, DefaultBaseStyle -> "RadioButtonBar",
+                     Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 5, 1]]], 
                    StyleBox[
-                    RowBox[{"2", "+", 
-                    RowBox[{"3", " ", "x"}]}], "RadioButtonBarLabel", 
+                    RowBox[{"2", "+", "x", "-", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["x", "2"]}], "-", 
+                    RowBox[{"7", " ", 
+                    SuperscriptBox["x", "3"]}]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4436,12 +4453,17 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[MClib`userAnswer, 1, 1]], {7 + 2 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
-                    Part[MClib`enableAnswer, 1, 1]]], 
+                    Part[MClib`userAnswer, 5, 1]], {
+                    2 - $CellContext`x - 6 $CellContext`x^2 - 
+                    7 $CellContext`x^3}, DefaultBaseStyle -> "RadioButtonBar",
+                     Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 5, 1]]], 
                    StyleBox[
-                    RowBox[{"7", "+", 
-                    RowBox[{"2", " ", "x"}]}], "RadioButtonBarLabel", 
+                    RowBox[{"2", "-", "x", "-", 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox["x", "2"]}], "-", 
+                    RowBox[{"7", " ", 
+                    SuperscriptBox["x", "3"]}]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4449,12 +4471,17 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[MClib`userAnswer, 1, 1]], {8 + 3 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
-                    Part[MClib`enableAnswer, 1, 1]]], 
+                    Part[MClib`userAnswer, 5, 1]], {
+                    3 + $CellContext`x - 2 $CellContext`x^2 - 
+                    7 $CellContext`x^3}, DefaultBaseStyle -> "RadioButtonBar",
+                     Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 5, 1]]], 
                    StyleBox[
-                    RowBox[{"8", "+", 
-                    RowBox[{"3", " ", "x"}]}], "RadioButtonBarLabel", 
+                    RowBox[{"3", "+", "x", "-", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["x", "2"]}], "-", 
+                    RowBox[{"7", " ", 
+                    SuperscriptBox["x", "3"]}]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4462,10 +4489,13 @@ Cell[BoxData[
               "Deploy"], 
              RadioButtonBar[
               Dynamic[
-               Part[MClib`userAnswer, 1, 1]], {
-              2 - 3 $CellContext`x, 2 + 3 $CellContext`x, 7 + 
-               2 $CellContext`x, 8 + 3 $CellContext`x}, Enabled -> Dynamic[
-                Part[MClib`enableAnswer, 1, 1]]]]}}, 
+               Part[MClib`userAnswer, 5, 1]], {
+              2 + $CellContext`x - 2 $CellContext`x^2 + 7 $CellContext`x^3, 
+               2 + $CellContext`x - 2 $CellContext`x^2 - 7 $CellContext`x^3, 
+               2 - $CellContext`x - 6 $CellContext`x^2 - 7 $CellContext`x^3, 
+               3 + $CellContext`x - 2 $CellContext`x^2 - 7 $CellContext`x^3}, 
+              Enabled -> Dynamic[
+                Part[MClib`enableAnswer, 5, 1]]]]}}, 
           GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
           "Column", 
           GridBoxItemSize -> {
@@ -4484,29 +4514,58 @@ Cell[BoxData[
                 TemplateBox[{"\"Zoom sugli zeri:\"", 
                   TemplateBox[{
                     ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1736 = Part[
+                    "1", ButtonFunction :> (MClib`Private`l$6375 = Part[
                     Solve[
                     Reduce[
-                    And[
-                    1 + 4 $CellContext`x == 0, -11 < $CellContext`x < 
+                    
+                    And[-1 - 10 $CellContext`x + 
+                    4 $CellContext`x^2 + $CellContext`x^3 == 
+                    0, -11 < $CellContext`x < 
                     11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1736 = 1; 
-                    MClib`Private`y$1736 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1736, 1]]), Appearance -> Automatic, 
+                    MClib`Private`j$6375 = 1; 
+                    MClib`Private`y$6375 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$6375, 1]]), Appearance -> Automatic, 
+                    Evaluator -> Automatic, Method -> "Preemptive"], 
+                    ButtonBox[
+                    "2", ButtonFunction :> (MClib`Private`l$6375 = Part[
+                    Solve[
+                    Reduce[
+                    
+                    And[-1 - 10 $CellContext`x + 
+                    4 $CellContext`x^2 + $CellContext`x^3 == 
+                    0, -11 < $CellContext`x < 
+                    11], $CellContext`x], $CellContext`x], 2]; 
+                    MClib`Private`j$6375 = 1; 
+                    MClib`Private`y$6375 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$6375, 1]]), Appearance -> Automatic, 
+                    Evaluator -> Automatic, Method -> "Preemptive"], 
+                    ButtonBox[
+                    "3", ButtonFunction :> (MClib`Private`l$6375 = Part[
+                    Solve[
+                    Reduce[
+                    
+                    And[-1 - 10 $CellContext`x + 
+                    4 $CellContext`x^2 + $CellContext`x^3 == 
+                    0, -11 < $CellContext`x < 
+                    11], $CellContext`x], $CellContext`x], 3]; 
+                    MClib`Private`j$6375 = 1; 
+                    MClib`Private`y$6375 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$6375, 1]]), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}, 
                    "RowDefault"]}, "RowDefault"]}, {
                 TemplateBox[{
                   DynamicBox[
                    ToBoxes[
-                    Plot[
-                    1 + 4 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$1736 - MClib`Private`j$1736, 
-                    MClib`Private`y$1736 + MClib`Private`j$1736}, ImageSize -> 
+                    
+                    Plot[-1 - 10 $CellContext`x + 
+                    4 $CellContext`x^2 + $CellContext`x^3, {$CellContext`x, 
+                    MClib`Private`y$6375 - MClib`Private`j$6375, 
+                    MClib`Private`y$6375 + MClib`Private`j$6375}, ImageSize -> 
                     Medium], StandardForm]]}, "RowDefault"]}, {
                 ButtonBox[
                 "\"Reset Zoom\"", 
-                 ButtonFunction :> (MClib`Private`j$1736 = 5; 
-                  MClib`Private`y$1736 = 0), Appearance -> Automatic, 
+                 ButtonFunction :> (MClib`Private`j$6375 = 5; 
+                  MClib`Private`y$6375 = 0), Appearance -> Automatic, 
                  Evaluator -> Automatic, Method -> "Preemptive"]}}, 
               GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
               "Column", 
@@ -4519,12 +4578,17 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[MClib`userAnswer, 1, 2]], {1 - 4 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
-                    Part[MClib`enableAnswer, 1, 2]]], 
+                    Part[MClib`userAnswer, 5, 2]], {
+                    5 - 10 $CellContext`x + 
+                    4 $CellContext`x^2 + $CellContext`x^3}, DefaultBaseStyle -> 
+                    "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 5, 2]]], 
                    StyleBox[
-                    RowBox[{"1", "-", 
-                    RowBox[{"4", " ", "x"}]}], "RadioButtonBarLabel", 
+                    RowBox[{"5", "-", 
+                    RowBox[{"10", " ", "x"}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["x", "2"]}], "+", 
+                    SuperscriptBox["x", "3"]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4532,13 +4596,17 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[MClib`userAnswer, 1, 2]], {-10 + 8 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
-                    Part[MClib`enableAnswer, 1, 2]]], 
+                    Part[MClib`userAnswer, 5, 2]], {-1 - 10 $CellContext`x + 
+                    4 $CellContext`x^2 + $CellContext`x^3}, DefaultBaseStyle -> 
+                    "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 5, 2]]], 
                    StyleBox[
                     RowBox[{
-                    RowBox[{"-", "10"}], "+", 
-                    RowBox[{"8", " ", "x"}]}], "RadioButtonBarLabel", 
+                    RowBox[{"-", "1"}], "-", 
+                    RowBox[{"10", " ", "x"}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["x", "2"]}], "+", 
+                    SuperscriptBox["x", "3"]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4546,12 +4614,17 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[MClib`userAnswer, 1, 2]], {7 + 4 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
-                    Part[MClib`enableAnswer, 1, 2]]], 
+                    Part[MClib`userAnswer, 5, 2]], {-1 - 10 $CellContext`x + 
+                    4 $CellContext`x^2 - $CellContext`x^3}, DefaultBaseStyle -> 
+                    "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 5, 2]]], 
                    StyleBox[
-                    RowBox[{"7", "+", 
-                    RowBox[{"4", " ", "x"}]}], "RadioButtonBarLabel", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "-", 
+                    RowBox[{"10", " ", "x"}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["x", "2"]}], "-", 
+                    SuperscriptBox["x", "3"]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4559,12 +4632,17 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[MClib`userAnswer, 1, 2]], {1 + 4 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
-                    Part[MClib`enableAnswer, 1, 2]]], 
+                    Part[MClib`userAnswer, 5, 2]], {-1 - 5 $CellContext`x - 
+                    9 $CellContext`x^2 + $CellContext`x^3}, DefaultBaseStyle -> 
+                    "RadioButtonBar", Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 5, 2]]], 
                    StyleBox[
-                    RowBox[{"1", "+", 
-                    RowBox[{"4", " ", "x"}]}], "RadioButtonBarLabel", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "-", 
+                    RowBox[{"5", " ", "x"}], "-", 
+                    RowBox[{"9", " ", 
+                    SuperscriptBox["x", "2"]}], "+", 
+                    SuperscriptBox["x", "3"]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4572,10 +4650,13 @@ Cell[BoxData[
               "Deploy"], 
              RadioButtonBar[
               Dynamic[
-               Part[MClib`userAnswer, 1, 2]], {
-              1 - 4 $CellContext`x, -10 + 8 $CellContext`x, 7 + 
-               4 $CellContext`x, 1 + 4 $CellContext`x}, Enabled -> Dynamic[
-                Part[MClib`enableAnswer, 1, 2]]]]}}, 
+               Part[MClib`userAnswer, 5, 2]], {
+              5 - 10 $CellContext`x + 
+               4 $CellContext`x^2 + $CellContext`x^3, -1 - 10 $CellContext`x + 
+               4 $CellContext`x^2 + $CellContext`x^3, -1 - 10 $CellContext`x + 
+               4 $CellContext`x^2 - $CellContext`x^3, -1 - 5 $CellContext`x - 
+               9 $CellContext`x^2 + $CellContext`x^3}, Enabled -> Dynamic[
+                Part[MClib`enableAnswer, 5, 2]]]]}}, 
           GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
           "Column", 
           GridBoxItemSize -> {
@@ -4594,29 +4675,31 @@ Cell[BoxData[
                 TemplateBox[{"\"Zoom sugli zeri:\"", 
                   TemplateBox[{
                     ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1737 = Part[
+                    "1", ButtonFunction :> (MClib`Private`l$6376 = Part[
                     Solve[
                     Reduce[
-                    And[
-                    9 + 9 $CellContext`x == 0, -11 < $CellContext`x < 
+                    
+                    And[-8 - 10 $CellContext`x - $CellContext`x^2 + 
+                    8 $CellContext`x^3 == 0, -11 < $CellContext`x < 
                     11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1737 = 1; 
-                    MClib`Private`y$1737 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1737, 1]]), Appearance -> Automatic, 
+                    MClib`Private`j$6376 = 1; 
+                    MClib`Private`y$6376 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$6376, 1]]), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}, 
                    "RowDefault"]}, "RowDefault"]}, {
                 TemplateBox[{
                   DynamicBox[
                    ToBoxes[
-                    Plot[
-                    9 + 9 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$1737 - MClib`Private`j$1737, 
-                    MClib`Private`y$1737 + MClib`Private`j$1737}, ImageSize -> 
-                    Medium], StandardForm]]}, "RowDefault"]}, {
+                    
+                    Plot[-8 - 10 $CellContext`x - $CellContext`x^2 + 
+                    8 $CellContext`x^3, {$CellContext`x, MClib`Private`y$6376 - 
+                    MClib`Private`j$6376, MClib`Private`y$6376 + 
+                    MClib`Private`j$6376}, ImageSize -> Medium], 
+                    StandardForm]]}, "RowDefault"]}, {
                 ButtonBox[
                 "\"Reset Zoom\"", 
-                 ButtonFunction :> (MClib`Private`j$1737 = 5; 
-                  MClib`Private`y$1737 = 0), Appearance -> Automatic, 
+                 ButtonFunction :> (MClib`Private`j$6376 = 5; 
+                  MClib`Private`y$6376 = 0), Appearance -> Automatic, 
                  Evaluator -> Automatic, Method -> "Preemptive"]}}, 
               GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
               "Column", 
@@ -4629,12 +4712,18 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[MClib`userAnswer, 1, 3]], {5 + 9 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
-                    Part[MClib`enableAnswer, 1, 3]]], 
+                    Part[MClib`userAnswer, 5, 3]], {-2 - 
+                    10 $CellContext`x - $CellContext`x^2 + 
+                    8 $CellContext`x^3}, DefaultBaseStyle -> "RadioButtonBar",
+                     Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 5, 3]]], 
                    StyleBox[
-                    RowBox[{"5", "+", 
-                    RowBox[{"9", " ", "x"}]}], "RadioButtonBarLabel", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "-", 
+                    RowBox[{"10", " ", "x"}], "-", 
+                    SuperscriptBox["x", "2"], "+", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["x", "3"]}]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4642,12 +4731,18 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[MClib`userAnswer, 1, 3]], {9 + 9 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
-                    Part[MClib`enableAnswer, 1, 3]]], 
+                    Part[MClib`userAnswer, 5, 3]], {-8 - 
+                    10 $CellContext`x - $CellContext`x^2 - 
+                    8 $CellContext`x^3}, DefaultBaseStyle -> "RadioButtonBar",
+                     Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 5, 3]]], 
                    StyleBox[
-                    RowBox[{"9", "+", 
-                    RowBox[{"9", " ", "x"}]}], "RadioButtonBarLabel", 
+                    RowBox[{
+                    RowBox[{"-", "8"}], "-", 
+                    RowBox[{"10", " ", "x"}], "-", 
+                    SuperscriptBox["x", "2"], "-", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["x", "3"]}]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4655,12 +4750,18 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[MClib`userAnswer, 1, 3]], {1 - 6 $CellContext`x}, 
+                    Part[MClib`userAnswer, 5, 3]], {-8 - 3 $CellContext`x - 
+                    5 $CellContext`x^2 + 8 $CellContext`x^3}, 
                     DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
-                    Part[MClib`enableAnswer, 1, 3]]], 
+                    Part[MClib`enableAnswer, 5, 3]]], 
                    StyleBox[
-                    RowBox[{"1", "-", 
-                    RowBox[{"6", " ", "x"}]}], "RadioButtonBarLabel", 
+                    RowBox[{
+                    RowBox[{"-", "8"}], "-", 
+                    RowBox[{"3", " ", "x"}], "-", 
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["x", "2"]}], "+", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["x", "3"]}]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4668,12 +4769,18 @@ Cell[BoxData[
                 GridBox[{{
                    RadioButtonBox[
                     Dynamic[
-                    Part[MClib`userAnswer, 1, 3]], {9 - 9 $CellContext`x}, 
-                    DefaultBaseStyle -> "RadioButtonBar", Enabled -> Dynamic[
-                    Part[MClib`enableAnswer, 1, 3]]], 
+                    Part[MClib`userAnswer, 5, 3]], {-8 - 
+                    10 $CellContext`x - $CellContext`x^2 + 
+                    8 $CellContext`x^3}, DefaultBaseStyle -> "RadioButtonBar",
+                     Enabled -> Dynamic[
+                    Part[MClib`enableAnswer, 5, 3]]], 
                    StyleBox[
-                    RowBox[{"9", "-", 
-                    RowBox[{"9", " ", "x"}]}], "RadioButtonBarLabel", 
+                    RowBox[{
+                    RowBox[{"-", "8"}], "-", 
+                    RowBox[{"10", " ", "x"}], "-", 
+                    SuperscriptBox["x", "2"], "+", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["x", "3"]}]}], "RadioButtonBarLabel", 
                     StripOnInput -> False]}}, AutoDelete -> False, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -4681,10 +4788,13 @@ Cell[BoxData[
               "Deploy"], 
              RadioButtonBar[
               Dynamic[
-               Part[MClib`userAnswer, 1, 3]], {
-              5 + 9 $CellContext`x, 9 + 9 $CellContext`x, 1 - 
-               6 $CellContext`x, 9 - 9 $CellContext`x}, Enabled -> Dynamic[
-                Part[MClib`enableAnswer, 1, 3]]]]}}, 
+               Part[MClib`userAnswer, 5, 3]], {-2 - 
+               10 $CellContext`x - $CellContext`x^2 + 8 $CellContext`x^3, -8 - 
+               10 $CellContext`x - $CellContext`x^2 - 8 $CellContext`x^3, -8 - 
+               3 $CellContext`x - 5 $CellContext`x^2 + 8 $CellContext`x^3, -8 - 
+               10 $CellContext`x - $CellContext`x^2 + 8 $CellContext`x^3}, 
+              Enabled -> Dynamic[
+                Part[MClib`enableAnswer, 5, 3]]]]}}, 
           GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
           "Column", 
           GridBoxItemSize -> {
@@ -4696,18 +4806,23 @@ Cell[BoxData[
    GridBoxAlignment->{"Columns" -> {{Left}}},
    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   "Column"]], "Output",
- CellChangeTimes->{3.735316811875969*^9}]
+ CellChangeTimes->{
+  3.735316811875969*^9, 3.7353179618825383`*^9, 3.735318051094756*^9, 
+   3.7353182037897725`*^9, {3.7353202513736563`*^9, 3.7353202571997433`*^9}, {
+   3.7353203452669764`*^9, 3.7353204358015385`*^9}, 3.7353205154056177`*^9, 
+   3.7353206277984943`*^9, {3.7353220885216475`*^9, 3.735322092663125*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"exKindBPrinter", "[", "2", "]"}]], "Input",
+ RowBox[{"exKindBPrinter", "[", "5", "]"}]], "Input",
  CellChangeTimes->{{3.735238490927022*^9, 3.735238499487774*^9}, {
   3.7352386841935987`*^9, 3.7352387062841234`*^9}, {3.7352389664544*^9, 
   3.735238968538827*^9}, {3.735315766741535*^9, 3.735315773644414*^9}, {
   3.7353158810044765`*^9, 3.735315912948639*^9}, {3.7353162377323165`*^9, 
-  3.735316237880562*^9}, {3.7353167330795016`*^9, 3.7353167367092404`*^9}}],
+  3.735316237880562*^9}, {3.7353167330795016`*^9, 3.7353167367092404`*^9}, {
+  3.7353206368574853`*^9, 3.7353206513672314`*^9}}],
 
 Cell[BoxData[
  TagBox[GridBox[{
@@ -4716,84 +4831,46 @@ Cell[BoxData[
         TagBox[
          GridBox[{{
             StyleBox[
-            "\"2 + 3 x \\t Qual'\[CapitalATilde]\[DoubleDot] il suo \
+            "\"           2      3\\n2 + x - 2 x  - 7 x \\t Qual'e' il suo \
 grafico?\"", FontWeight -> Bold, StripOnInput -> False]}, {
             TemplateBox[{
               TemplateBox[{
                 RadioButtonBox[
                  Dynamic[
-                  Part[MClib`userAnswer, 2, 1]], {2 - 3 $CellContext`x}, 
-                 Enabled -> Dynamic[
-                   Part[MClib`enableAnswer, 2, 1]]], 
+                  Part[MClib`userAnswer, 5, 1]], {
+                 2 + $CellContext`x - 2 $CellContext`x^2 - 
+                  7 $CellContext`x^3}, Enabled -> Dynamic[
+                   Part[MClib`enableAnswer, 5, 1]]], 
                 TagBox[
                  GridBox[{{
                     TemplateBox[{"\"Zoom sugli zeri:\"", 
                     TemplateBox[{
                     ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1124 = Part[
+                    "1", ButtonFunction :> (MClib`Private`l$5123 = Part[
                     Solve[
                     Reduce[
                     And[
-                    2 - 3 $CellContext`x == 0, -11 < $CellContext`x < 
+                    2 + $CellContext`x - 2 $CellContext`x^2 - 
+                    7 $CellContext`x^3 == 0, -11 < $CellContext`x < 
                     11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1124 = 1; 
-                    MClib`Private`y$1124 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1124, 1]]), Appearance -> Automatic, 
+                    MClib`Private`j$5123 = 1; 
+                    MClib`Private`y$5123 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$5123, 1]]), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}, 
                     "RowDefault"]}, "RowDefault"]}, {
                     TemplateBox[{
                     DynamicBox[
                     ToBoxes[
                     Plot[
-                    2 - 3 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$1124 - MClib`Private`j$1124, 
-                    MClib`Private`y$1124 + MClib`Private`j$1124}, ImageSize -> 
-                    Medium], StandardForm]]}, "RowDefault"]}, {
-                    ButtonBox[
-                    "\"Reset Zoom\"", 
-                    ButtonFunction :> (MClib`Private`j$1124 = 5; 
-                    MClib`Private`y$1124 = 0), Appearance -> Automatic, 
-                    Evaluator -> Automatic, Method -> "Preemptive"]}}, 
-                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                  DefaultBaseStyle -> "Column", 
-                  GridBoxItemSize -> {
-                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-                 "Column"]}, "RowDefault"], 
-              TemplateBox[{
-                RadioButtonBox[
-                 Dynamic[
-                  Part[MClib`userAnswer, 2, 1]], {-10 + 3 $CellContext`x}, 
-                 Enabled -> Dynamic[
-                   Part[MClib`enableAnswer, 2, 1]]], 
-                TagBox[
-                 GridBox[{{
-                    TemplateBox[{"\"Zoom sugli zeri:\"", 
-                    TemplateBox[{
-                    ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1125 = Part[
-                    Solve[
-                    Reduce[
-                    
-                    And[-10 + 3 $CellContext`x == 0, -11 < $CellContext`x < 
-                    11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1125 = 1; 
-                    MClib`Private`y$1125 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1125, 1]]), Appearance -> Automatic, 
-                    Evaluator -> Automatic, Method -> "Preemptive"]}, 
-                    "RowDefault"]}, "RowDefault"]}, {
-                    TemplateBox[{
-                    DynamicBox[
-                    ToBoxes[
-                    
-                    Plot[-10 + 
-                    3 $CellContext`x, {$CellContext`x, MClib`Private`y$1125 - 
-                    MClib`Private`j$1125, MClib`Private`y$1125 + 
-                    MClib`Private`j$1125}, ImageSize -> Medium], 
+                    2 + $CellContext`x - 2 $CellContext`x^2 - 
+                    7 $CellContext`x^3, {$CellContext`x, MClib`Private`y$5123 - 
+                    MClib`Private`j$5123, MClib`Private`y$5123 + 
+                    MClib`Private`j$5123}, ImageSize -> Medium], 
                     StandardForm]]}, "RowDefault"]}, {
                     ButtonBox[
                     "\"Reset Zoom\"", 
-                    ButtonFunction :> (MClib`Private`j$1125 = 5; 
-                    MClib`Private`y$1125 = 0), Appearance -> Automatic, 
+                    ButtonFunction :> (MClib`Private`j$5123 = 5; 
+                    MClib`Private`y$5123 = 0), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}}, 
                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                   DefaultBaseStyle -> "Column", 
@@ -4803,37 +4880,39 @@ grafico?\"", FontWeight -> Bold, StripOnInput -> False]}, {
               TemplateBox[{
                 RadioButtonBox[
                  Dynamic[
-                  Part[MClib`userAnswer, 2, 1]], {5 + 2 $CellContext`x}, 
-                 Enabled -> Dynamic[
-                   Part[MClib`enableAnswer, 2, 1]]], 
+                  Part[MClib`userAnswer, 5, 1]], {-8 + $CellContext`x - 
+                  2 $CellContext`x^2 - 7 $CellContext`x^3}, Enabled -> Dynamic[
+                   Part[MClib`enableAnswer, 5, 1]]], 
                 TagBox[
                  GridBox[{{
                     TemplateBox[{"\"Zoom sugli zeri:\"", 
                     TemplateBox[{
                     ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1126 = Part[
+                    "1", ButtonFunction :> (MClib`Private`l$5124 = Part[
                     Solve[
                     Reduce[
-                    And[
-                    5 + 2 $CellContext`x == 0, -11 < $CellContext`x < 
+                    
+                    And[-8 + $CellContext`x - 2 $CellContext`x^2 - 
+                    7 $CellContext`x^3 == 0, -11 < $CellContext`x < 
                     11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1126 = 1; 
-                    MClib`Private`y$1126 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1126, 1]]), Appearance -> Automatic, 
+                    MClib`Private`j$5124 = 1; 
+                    MClib`Private`y$5124 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$5124, 1]]), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}, 
                     "RowDefault"]}, "RowDefault"]}, {
                     TemplateBox[{
                     DynamicBox[
                     ToBoxes[
-                    Plot[
-                    5 + 2 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$1126 - MClib`Private`j$1126, 
-                    MClib`Private`y$1126 + MClib`Private`j$1126}, ImageSize -> 
-                    Medium], StandardForm]]}, "RowDefault"]}, {
+                    
+                    Plot[-8 + $CellContext`x - 2 $CellContext`x^2 - 
+                    7 $CellContext`x^3, {$CellContext`x, MClib`Private`y$5124 - 
+                    MClib`Private`j$5124, MClib`Private`y$5124 + 
+                    MClib`Private`j$5124}, ImageSize -> Medium], 
+                    StandardForm]]}, "RowDefault"]}, {
                     ButtonBox[
                     "\"Reset Zoom\"", 
-                    ButtonFunction :> (MClib`Private`j$1126 = 5; 
-                    MClib`Private`y$1126 = 0), Appearance -> Automatic, 
+                    ButtonFunction :> (MClib`Private`j$5124 = 5; 
+                    MClib`Private`y$5124 = 0), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}}, 
                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                   DefaultBaseStyle -> "Column", 
@@ -4843,37 +4922,83 @@ grafico?\"", FontWeight -> Bold, StripOnInput -> False]}, {
               TemplateBox[{
                 RadioButtonBox[
                  Dynamic[
-                  Part[MClib`userAnswer, 2, 1]], {2 + 3 $CellContext`x}, 
-                 Enabled -> Dynamic[
-                   Part[MClib`enableAnswer, 2, 1]]], 
+                  Part[MClib`userAnswer, 5, 1]], {
+                 2 + $CellContext`x - 2 $CellContext`x^2 + 
+                  7 $CellContext`x^3}, Enabled -> Dynamic[
+                   Part[MClib`enableAnswer, 5, 1]]], 
                 TagBox[
                  GridBox[{{
                     TemplateBox[{"\"Zoom sugli zeri:\"", 
                     TemplateBox[{
                     ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1127 = Part[
+                    "1", ButtonFunction :> (MClib`Private`l$5125 = Part[
                     Solve[
                     Reduce[
                     And[
-                    2 + 3 $CellContext`x == 0, -11 < $CellContext`x < 
+                    2 + $CellContext`x - 2 $CellContext`x^2 + 
+                    7 $CellContext`x^3 == 0, -11 < $CellContext`x < 
                     11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1127 = 1; 
-                    MClib`Private`y$1127 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1127, 1]]), Appearance -> Automatic, 
+                    MClib`Private`j$5125 = 1; 
+                    MClib`Private`y$5125 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$5125, 1]]), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}, 
                     "RowDefault"]}, "RowDefault"]}, {
                     TemplateBox[{
                     DynamicBox[
                     ToBoxes[
                     Plot[
-                    2 + 3 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$1127 - MClib`Private`j$1127, 
-                    MClib`Private`y$1127 + MClib`Private`j$1127}, ImageSize -> 
-                    Medium], StandardForm]]}, "RowDefault"]}, {
+                    2 + $CellContext`x - 2 $CellContext`x^2 + 
+                    7 $CellContext`x^3, {$CellContext`x, MClib`Private`y$5125 - 
+                    MClib`Private`j$5125, MClib`Private`y$5125 + 
+                    MClib`Private`j$5125}, ImageSize -> Medium], 
+                    StandardForm]]}, "RowDefault"]}, {
                     ButtonBox[
                     "\"Reset Zoom\"", 
-                    ButtonFunction :> (MClib`Private`j$1127 = 5; 
-                    MClib`Private`y$1127 = 0), Appearance -> Automatic, 
+                    ButtonFunction :> (MClib`Private`j$5125 = 5; 
+                    MClib`Private`y$5125 = 0), Appearance -> Automatic, 
+                    Evaluator -> Automatic, Method -> "Preemptive"]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  DefaultBaseStyle -> "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, "RowDefault"], 
+              TemplateBox[{
+                RadioButtonBox[
+                 Dynamic[
+                  Part[MClib`userAnswer, 5, 1]], {
+                 2 - 6 $CellContext`x - 8 $CellContext`x^2 - 
+                  7 $CellContext`x^3}, Enabled -> Dynamic[
+                   Part[MClib`enableAnswer, 5, 1]]], 
+                TagBox[
+                 GridBox[{{
+                    TemplateBox[{"\"Zoom sugli zeri:\"", 
+                    TemplateBox[{
+                    ButtonBox[
+                    "1", ButtonFunction :> (MClib`Private`l$5126 = Part[
+                    Solve[
+                    Reduce[
+                    And[
+                    2 - 6 $CellContext`x - 8 $CellContext`x^2 - 
+                    7 $CellContext`x^3 == 0, -11 < $CellContext`x < 
+                    11], $CellContext`x], $CellContext`x], 1]; 
+                    MClib`Private`j$5126 = 1; 
+                    MClib`Private`y$5126 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$5126, 1]]), Appearance -> Automatic, 
+                    Evaluator -> Automatic, Method -> "Preemptive"]}, 
+                    "RowDefault"]}, "RowDefault"]}, {
+                    TemplateBox[{
+                    DynamicBox[
+                    ToBoxes[
+                    Plot[
+                    2 - 6 $CellContext`x - 8 $CellContext`x^2 - 
+                    7 $CellContext`x^3, {$CellContext`x, MClib`Private`y$5126 - 
+                    MClib`Private`j$5126, MClib`Private`y$5126 + 
+                    MClib`Private`j$5126}, ImageSize -> Medium], 
+                    StandardForm]]}, "RowDefault"]}, {
+                    ButtonBox[
+                    "\"Reset Zoom\"", 
+                    ButtonFunction :> (MClib`Private`j$5126 = 5; 
+                    MClib`Private`y$5126 = 0), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}}, 
                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                   DefaultBaseStyle -> "Column", 
@@ -4891,218 +5016,46 @@ grafico?\"", FontWeight -> Bold, StripOnInput -> False]}, {
         TagBox[
          GridBox[{{
             StyleBox[
-            "\"1 + 4 x \\t Qual'\[CapitalATilde]\[DoubleDot] il suo \
-grafico?\"", FontWeight -> Bold, StripOnInput -> False]}, {
+            "\"              2      3\\n-3 - 5 x + 8 x  + 8 x \\t Qual'e' il \
+suo grafico?\"", FontWeight -> Bold, StripOnInput -> False]}, {
             TemplateBox[{
               TemplateBox[{
                 RadioButtonBox[
                  Dynamic[
-                  Part[MClib`userAnswer, 2, 2]], {5 + 4 $CellContext`x}, 
-                 Enabled -> Dynamic[
-                   Part[MClib`enableAnswer, 2, 2]]], 
+                  Part[MClib`userAnswer, 5, 2]], {
+                 4 - 5 $CellContext`x + 8 $CellContext`x^2 + 
+                  8 $CellContext`x^3}, Enabled -> Dynamic[
+                   Part[MClib`enableAnswer, 5, 2]]], 
                 TagBox[
                  GridBox[{{
                     TemplateBox[{"\"Zoom sugli zeri:\"", 
                     TemplateBox[{
                     ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1128 = Part[
+                    "1", ButtonFunction :> (MClib`Private`l$5127 = Part[
                     Solve[
                     Reduce[
                     And[
-                    5 + 4 $CellContext`x == 0, -11 < $CellContext`x < 
+                    4 - 5 $CellContext`x + 8 $CellContext`x^2 + 
+                    8 $CellContext`x^3 == 0, -11 < $CellContext`x < 
                     11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1128 = 1; 
-                    MClib`Private`y$1128 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1128, 1]]), Appearance -> Automatic, 
+                    MClib`Private`j$5127 = 1; 
+                    MClib`Private`y$5127 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$5127, 1]]), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}, 
                     "RowDefault"]}, "RowDefault"]}, {
                     TemplateBox[{
                     DynamicBox[
                     ToBoxes[
                     Plot[
-                    5 + 4 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$1128 - MClib`Private`j$1128, 
-                    MClib`Private`y$1128 + MClib`Private`j$1128}, ImageSize -> 
-                    Medium], StandardForm]]}, "RowDefault"]}, {
-                    ButtonBox[
-                    "\"Reset Zoom\"", 
-                    ButtonFunction :> (MClib`Private`j$1128 = 5; 
-                    MClib`Private`y$1128 = 0), Appearance -> Automatic, 
-                    Evaluator -> Automatic, Method -> "Preemptive"]}}, 
-                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                  DefaultBaseStyle -> "Column", 
-                  GridBoxItemSize -> {
-                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-                 "Column"]}, "RowDefault"], 
-              TemplateBox[{
-                RadioButtonBox[
-                 Dynamic[
-                  Part[MClib`userAnswer, 2, 2]], {3 - 3 $CellContext`x}, 
-                 Enabled -> Dynamic[
-                   Part[MClib`enableAnswer, 2, 2]]], 
-                TagBox[
-                 GridBox[{{
-                    TemplateBox[{"\"Zoom sugli zeri:\"", 
-                    TemplateBox[{
-                    ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1129 = Part[
-                    Solve[
-                    Reduce[
-                    And[
-                    3 - 3 $CellContext`x == 0, -11 < $CellContext`x < 
-                    11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1129 = 1; 
-                    MClib`Private`y$1129 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1129, 1]]), Appearance -> Automatic, 
-                    Evaluator -> Automatic, Method -> "Preemptive"]}, 
-                    "RowDefault"]}, "RowDefault"]}, {
-                    TemplateBox[{
-                    DynamicBox[
-                    ToBoxes[
-                    Plot[
-                    3 - 3 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$1129 - MClib`Private`j$1129, 
-                    MClib`Private`y$1129 + MClib`Private`j$1129}, ImageSize -> 
-                    Medium], StandardForm]]}, "RowDefault"]}, {
-                    ButtonBox[
-                    "\"Reset Zoom\"", 
-                    ButtonFunction :> (MClib`Private`j$1129 = 5; 
-                    MClib`Private`y$1129 = 0), Appearance -> Automatic, 
-                    Evaluator -> Automatic, Method -> "Preemptive"]}}, 
-                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                  DefaultBaseStyle -> "Column", 
-                  GridBoxItemSize -> {
-                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-                 "Column"]}, "RowDefault"], 
-              TemplateBox[{
-                RadioButtonBox[
-                 Dynamic[
-                  Part[MClib`userAnswer, 2, 2]], {1 - 4 $CellContext`x}, 
-                 Enabled -> Dynamic[
-                   Part[MClib`enableAnswer, 2, 2]]], 
-                TagBox[
-                 GridBox[{{
-                    TemplateBox[{"\"Zoom sugli zeri:\"", 
-                    TemplateBox[{
-                    ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1130 = Part[
-                    Solve[
-                    Reduce[
-                    And[
-                    1 - 4 $CellContext`x == 0, -11 < $CellContext`x < 
-                    11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1130 = 1; 
-                    MClib`Private`y$1130 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1130, 1]]), Appearance -> Automatic, 
-                    Evaluator -> Automatic, Method -> "Preemptive"]}, 
-                    "RowDefault"]}, "RowDefault"]}, {
-                    TemplateBox[{
-                    DynamicBox[
-                    ToBoxes[
-                    Plot[
-                    1 - 4 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$1130 - MClib`Private`j$1130, 
-                    MClib`Private`y$1130 + MClib`Private`j$1130}, ImageSize -> 
-                    Medium], StandardForm]]}, "RowDefault"]}, {
-                    ButtonBox[
-                    "\"Reset Zoom\"", 
-                    ButtonFunction :> (MClib`Private`j$1130 = 5; 
-                    MClib`Private`y$1130 = 0), Appearance -> Automatic, 
-                    Evaluator -> Automatic, Method -> "Preemptive"]}}, 
-                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                  DefaultBaseStyle -> "Column", 
-                  GridBoxItemSize -> {
-                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-                 "Column"]}, "RowDefault"], 
-              TemplateBox[{
-                RadioButtonBox[
-                 Dynamic[
-                  Part[MClib`userAnswer, 2, 2]], {1 + 4 $CellContext`x}, 
-                 Enabled -> Dynamic[
-                   Part[MClib`enableAnswer, 2, 2]]], 
-                TagBox[
-                 GridBox[{{
-                    TemplateBox[{"\"Zoom sugli zeri:\"", 
-                    TemplateBox[{
-                    ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1131 = Part[
-                    Solve[
-                    Reduce[
-                    And[
-                    1 + 4 $CellContext`x == 0, -11 < $CellContext`x < 
-                    11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1131 = 1; 
-                    MClib`Private`y$1131 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1131, 1]]), Appearance -> Automatic, 
-                    Evaluator -> Automatic, Method -> "Preemptive"]}, 
-                    "RowDefault"]}, "RowDefault"]}, {
-                    TemplateBox[{
-                    DynamicBox[
-                    ToBoxes[
-                    Plot[
-                    1 + 4 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$1131 - MClib`Private`j$1131, 
-                    MClib`Private`y$1131 + MClib`Private`j$1131}, ImageSize -> 
-                    Medium], StandardForm]]}, "RowDefault"]}, {
-                    ButtonBox[
-                    "\"Reset Zoom\"", 
-                    ButtonFunction :> (MClib`Private`j$1131 = 5; 
-                    MClib`Private`y$1131 = 0), Appearance -> Automatic, 
-                    Evaluator -> Automatic, Method -> "Preemptive"]}}, 
-                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                  DefaultBaseStyle -> "Column", 
-                  GridBoxItemSize -> {
-                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-                 "Column"]}, "RowDefault"]}, "RowDefault"]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-          "Column", 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]]},
-      
-      "RowDefault"]},
-    {
-     TemplateBox[{PanelBox[
-        TagBox[
-         GridBox[{{
-            StyleBox[
-            "\"-10 + 10 x \\t Qual'\[CapitalATilde]\[DoubleDot] il suo \
-grafico?\"", FontWeight -> Bold, StripOnInput -> False]}, {
-            TemplateBox[{
-              TemplateBox[{
-                RadioButtonBox[
-                 Dynamic[
-                  Part[MClib`userAnswer, 2, 3]], {-10 - 10 $CellContext`x}, 
-                 Enabled -> Dynamic[
-                   Part[MClib`enableAnswer, 2, 3]]], 
-                TagBox[
-                 GridBox[{{
-                    TemplateBox[{"\"Zoom sugli zeri:\"", 
-                    TemplateBox[{
-                    ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1132 = Part[
-                    Solve[
-                    Reduce[
-                    
-                    And[-10 - 10 $CellContext`x == 0, -11 < $CellContext`x < 
-                    11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1132 = 1; 
-                    MClib`Private`y$1132 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1132, 1]]), Appearance -> Automatic, 
-                    Evaluator -> Automatic, Method -> "Preemptive"]}, 
-                    "RowDefault"]}, "RowDefault"]}, {
-                    TemplateBox[{
-                    DynamicBox[
-                    ToBoxes[
-                    
-                    Plot[-10 - 
-                    10 $CellContext`x, {$CellContext`x, MClib`Private`y$1132 - 
-                    MClib`Private`j$1132, MClib`Private`y$1132 + 
-                    MClib`Private`j$1132}, ImageSize -> Medium], 
+                    4 - 5 $CellContext`x + 8 $CellContext`x^2 + 
+                    8 $CellContext`x^3, {$CellContext`x, MClib`Private`y$5127 - 
+                    MClib`Private`j$5127, MClib`Private`y$5127 + 
+                    MClib`Private`j$5127}, ImageSize -> Medium], 
                     StandardForm]]}, "RowDefault"]}, {
                     ButtonBox[
                     "\"Reset Zoom\"", 
-                    ButtonFunction :> (MClib`Private`j$1132 = 5; 
-                    MClib`Private`y$1132 = 0), Appearance -> Automatic, 
+                    ButtonFunction :> (MClib`Private`j$5127 = 5; 
+                    MClib`Private`y$5127 = 0), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}}, 
                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                   DefaultBaseStyle -> "Column", 
@@ -5112,38 +5065,39 @@ grafico?\"", FontWeight -> Bold, StripOnInput -> False]}, {
               TemplateBox[{
                 RadioButtonBox[
                  Dynamic[
-                  Part[MClib`userAnswer, 2, 3]], {-2 + 4 $CellContext`x}, 
-                 Enabled -> Dynamic[
-                   Part[MClib`enableAnswer, 2, 3]]], 
+                  Part[MClib`userAnswer, 5, 2]], {-3 - 5 $CellContext`x + 
+                  8 $CellContext`x^2 - 8 $CellContext`x^3}, Enabled -> Dynamic[
+                   Part[MClib`enableAnswer, 5, 2]]], 
                 TagBox[
                  GridBox[{{
                     TemplateBox[{"\"Zoom sugli zeri:\"", 
                     TemplateBox[{
                     ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1133 = Part[
+                    "1", ButtonFunction :> (MClib`Private`l$5128 = Part[
                     Solve[
                     Reduce[
                     
-                    And[-2 + 4 $CellContext`x == 0, -11 < $CellContext`x < 
+                    And[-3 - 5 $CellContext`x + 8 $CellContext`x^2 - 
+                    8 $CellContext`x^3 == 0, -11 < $CellContext`x < 
                     11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1133 = 1; 
-                    MClib`Private`y$1133 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1133, 1]]), Appearance -> Automatic, 
+                    MClib`Private`j$5128 = 1; 
+                    MClib`Private`y$5128 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$5128, 1]]), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}, 
                     "RowDefault"]}, "RowDefault"]}, {
                     TemplateBox[{
                     DynamicBox[
                     ToBoxes[
                     
-                    Plot[-2 + 
-                    4 $CellContext`x, {$CellContext`x, MClib`Private`y$1133 - 
-                    MClib`Private`j$1133, MClib`Private`y$1133 + 
-                    MClib`Private`j$1133}, ImageSize -> Medium], 
+                    Plot[-3 - 5 $CellContext`x + 8 $CellContext`x^2 - 
+                    8 $CellContext`x^3, {$CellContext`x, MClib`Private`y$5128 - 
+                    MClib`Private`j$5128, MClib`Private`y$5128 + 
+                    MClib`Private`j$5128}, ImageSize -> Medium], 
                     StandardForm]]}, "RowDefault"]}, {
                     ButtonBox[
                     "\"Reset Zoom\"", 
-                    ButtonFunction :> (MClib`Private`j$1133 = 5; 
-                    MClib`Private`y$1133 = 0), Appearance -> Automatic, 
+                    ButtonFunction :> (MClib`Private`j$5128 = 5; 
+                    MClib`Private`y$5128 = 0), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}}, 
                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                   DefaultBaseStyle -> "Column", 
@@ -5153,38 +5107,51 @@ grafico?\"", FontWeight -> Bold, StripOnInput -> False]}, {
               TemplateBox[{
                 RadioButtonBox[
                  Dynamic[
-                  Part[MClib`userAnswer, 2, 3]], {-10 + 10 $CellContext`x}, 
-                 Enabled -> Dynamic[
-                   Part[MClib`enableAnswer, 2, 3]]], 
+                  Part[MClib`userAnswer, 5, 2]], {-3 - 10 $CellContext`x - 
+                  4 $CellContext`x^2 + 8 $CellContext`x^3}, Enabled -> Dynamic[
+                   Part[MClib`enableAnswer, 5, 2]]], 
                 TagBox[
                  GridBox[{{
                     TemplateBox[{"\"Zoom sugli zeri:\"", 
                     TemplateBox[{
                     ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1134 = Part[
+                    "1", ButtonFunction :> (MClib`Private`l$5129 = Part[
                     Solve[
                     Reduce[
                     
-                    And[-10 + 10 $CellContext`x == 0, -11 < $CellContext`x < 
+                    And[-3 - 10 $CellContext`x - 4 $CellContext`x^2 + 
+                    8 $CellContext`x^3 == 0, -11 < $CellContext`x < 
                     11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1134 = 1; 
-                    MClib`Private`y$1134 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1134, 1]]), Appearance -> Automatic, 
+                    MClib`Private`j$5129 = 1; 
+                    MClib`Private`y$5129 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$5129, 1]]), Appearance -> Automatic, 
+                    Evaluator -> Automatic, Method -> "Preemptive"], 
+                    ButtonBox[
+                    "2", ButtonFunction :> (MClib`Private`l$5129 = Part[
+                    Solve[
+                    Reduce[
+                    
+                    And[-3 - 10 $CellContext`x - 4 $CellContext`x^2 + 
+                    8 $CellContext`x^3 == 0, -11 < $CellContext`x < 
+                    11], $CellContext`x], $CellContext`x], 2]; 
+                    MClib`Private`j$5129 = 1; 
+                    MClib`Private`y$5129 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$5129, 1]]), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}, 
                     "RowDefault"]}, "RowDefault"]}, {
                     TemplateBox[{
                     DynamicBox[
                     ToBoxes[
                     
-                    Plot[-10 + 
-                    10 $CellContext`x, {$CellContext`x, MClib`Private`y$1134 - 
-                    MClib`Private`j$1134, MClib`Private`y$1134 + 
-                    MClib`Private`j$1134}, ImageSize -> Medium], 
+                    Plot[-3 - 10 $CellContext`x - 4 $CellContext`x^2 + 
+                    8 $CellContext`x^3, {$CellContext`x, MClib`Private`y$5129 - 
+                    MClib`Private`j$5129, MClib`Private`y$5129 + 
+                    MClib`Private`j$5129}, ImageSize -> Medium], 
                     StandardForm]]}, "RowDefault"]}, {
                     ButtonBox[
                     "\"Reset Zoom\"", 
-                    ButtonFunction :> (MClib`Private`j$1134 = 5; 
-                    MClib`Private`y$1134 = 0), Appearance -> Automatic, 
+                    ButtonFunction :> (MClib`Private`j$5129 = 5; 
+                    MClib`Private`y$5129 = 0), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}}, 
                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                   DefaultBaseStyle -> "Column", 
@@ -5194,37 +5161,63 @@ grafico?\"", FontWeight -> Bold, StripOnInput -> False]}, {
               TemplateBox[{
                 RadioButtonBox[
                  Dynamic[
-                  Part[MClib`userAnswer, 2, 3]], {9 + 10 $CellContext`x}, 
-                 Enabled -> Dynamic[
-                   Part[MClib`enableAnswer, 2, 3]]], 
+                  Part[MClib`userAnswer, 5, 2]], {-3 - 5 $CellContext`x + 
+                  8 $CellContext`x^2 + 8 $CellContext`x^3}, Enabled -> Dynamic[
+                   Part[MClib`enableAnswer, 5, 2]]], 
                 TagBox[
                  GridBox[{{
                     TemplateBox[{"\"Zoom sugli zeri:\"", 
                     TemplateBox[{
                     ButtonBox[
-                    "1", ButtonFunction :> (MClib`Private`l$1135 = Part[
+                    "1", ButtonFunction :> (MClib`Private`l$5130 = Part[
                     Solve[
                     Reduce[
-                    And[
-                    9 + 10 $CellContext`x == 0, -11 < $CellContext`x < 
+                    
+                    And[-3 - 5 $CellContext`x + 8 $CellContext`x^2 + 
+                    8 $CellContext`x^3 == 0, -11 < $CellContext`x < 
                     11], $CellContext`x], $CellContext`x], 1]; 
-                    MClib`Private`j$1135 = 1; 
-                    MClib`Private`y$1135 = ReplaceAll[$CellContext`x, 
-                    Part[MClib`Private`l$1135, 1]]), Appearance -> Automatic, 
+                    MClib`Private`j$5130 = 1; 
+                    MClib`Private`y$5130 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$5130, 1]]), Appearance -> Automatic, 
+                    Evaluator -> Automatic, Method -> "Preemptive"], 
+                    ButtonBox[
+                    "2", ButtonFunction :> (MClib`Private`l$5130 = Part[
+                    Solve[
+                    Reduce[
+                    
+                    And[-3 - 5 $CellContext`x + 8 $CellContext`x^2 + 
+                    8 $CellContext`x^3 == 0, -11 < $CellContext`x < 
+                    11], $CellContext`x], $CellContext`x], 2]; 
+                    MClib`Private`j$5130 = 1; 
+                    MClib`Private`y$5130 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$5130, 1]]), Appearance -> Automatic, 
+                    Evaluator -> Automatic, Method -> "Preemptive"], 
+                    ButtonBox[
+                    "3", ButtonFunction :> (MClib`Private`l$5130 = Part[
+                    Solve[
+                    Reduce[
+                    
+                    And[-3 - 5 $CellContext`x + 8 $CellContext`x^2 + 
+                    8 $CellContext`x^3 == 0, -11 < $CellContext`x < 
+                    11], $CellContext`x], $CellContext`x], 3]; 
+                    MClib`Private`j$5130 = 1; 
+                    MClib`Private`y$5130 = ReplaceAll[$CellContext`x, 
+                    Part[MClib`Private`l$5130, 1]]), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}, 
                     "RowDefault"]}, "RowDefault"]}, {
                     TemplateBox[{
                     DynamicBox[
                     ToBoxes[
-                    Plot[
-                    9 + 10 $CellContext`x, {$CellContext`x, 
-                    MClib`Private`y$1135 - MClib`Private`j$1135, 
-                    MClib`Private`y$1135 + MClib`Private`j$1135}, ImageSize -> 
-                    Medium], StandardForm]]}, "RowDefault"]}, {
+                    
+                    Plot[-3 - 5 $CellContext`x + 8 $CellContext`x^2 + 
+                    8 $CellContext`x^3, {$CellContext`x, MClib`Private`y$5130 - 
+                    MClib`Private`j$5130, MClib`Private`y$5130 + 
+                    MClib`Private`j$5130}, ImageSize -> Medium], 
+                    StandardForm]]}, "RowDefault"]}, {
                     ButtonBox[
                     "\"Reset Zoom\"", 
-                    ButtonFunction :> (MClib`Private`j$1135 = 5; 
-                    MClib`Private`y$1135 = 0), Appearance -> Automatic, 
+                    ButtonFunction :> (MClib`Private`j$5130 = 5; 
+                    MClib`Private`y$5130 = 0), Appearance -> Automatic, 
                     Evaluator -> Automatic, Method -> "Preemptive"]}}, 
                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                   DefaultBaseStyle -> "Column", 
@@ -5246,196 +5239,8 @@ grafico?\"", FontWeight -> Bold, StripOnInput -> False]}, {
   3.735239234426275*^9, 3.735315011587337*^9, 3.7353153768390284`*^9, {
    3.7353157671922035`*^9, 3.735315774213236*^9}, {3.7353158818101215`*^9, 
    3.7353159146280413`*^9}, 3.7353162393985224`*^9, {3.7353167271424723`*^9, 
-   3.735316737700142*^9}}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[{
- RowBox[{"Button", "[", 
-  RowBox[{"\"\<Verifica\>\"", ",", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"StringAnswer", " ", "=", "\"\<\>\""}], ";", 
-    "\[IndentingNewLine]", 
-    RowBox[{"For", "[", 
-     RowBox[{
-      RowBox[{"i", " ", "=", " ", "1"}], ",", " ", 
-      RowBox[{"i", "\[LessEqual]", " ", 
-       RowBox[{"Length", "[", "teacherEQ", "]"}]}], ",", 
-      RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-      RowBox[{"If", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"s1", "[", 
-          RowBox[{"[", "i", "]"}], "]"}], " ", "===", " ", 
-         RowBox[{"teacherEQ", "[", 
-          RowBox[{"[", "i", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{"correctAnswer", "++"}], ";", " ", "\[IndentingNewLine]", 
-         RowBox[{"StringAnswer", " ", "=", " ", 
-          RowBox[{"StringJoin", "[", 
-           RowBox[{"StringAnswer", ",", 
-            RowBox[{"StringJoin", "[", 
-             RowBox[{
-              RowBox[{"StringJoin", "[", 
-               RowBox[{"\"\<\\nEs #\>\"", ",", 
-                RowBox[{"ToString", "[", "i", "]"}]}], "]"}], ",", 
-              "\"\<: Risposta corretta\>\""}], "]"}]}], "]"}]}], ";", 
-         RowBox[{"(*", " ", 
-          RowBox[{"1", " ", "is", " ", "correct"}], " ", "*)"}], 
-         "\[IndentingNewLine]", " ", 
-         RowBox[{"en1", " ", "=", " ", "False"}], ";"}], " ", 
-        RowBox[{"(*", " ", 
-         RowBox[{"Disable", " ", "retring"}], " ", "*)"}], ",", 
-        "\[IndentingNewLine]", 
-        RowBox[{"If", "[", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"s1", "[", 
-            RowBox[{"[", "i", "]"}], "]"}], "===", "0"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{"StringAnswer", "=", 
-            RowBox[{"StringJoin", "[", 
-             RowBox[{
-              RowBox[{"StringJoin", "[", 
-               RowBox[{"\"\<Domanda \>\"", ",", 
-                RowBox[{"ToString", "[", "i", "]"}]}], "]"}], ",", 
-              "\"\< non completata\>\""}], "]"}]}], ";", 
-           RowBox[{"(*", " ", 
-            RowBox[{
-            "1", " ", "answer", " ", "has", " ", "not", " ", "be", " ", 
-             "given"}], " ", "*)"}], "\[IndentingNewLine]", 
-           RowBox[{"en1", " ", "=", " ", "True"}], ";", " ", 
-           RowBox[{"(*", " ", 
-            RowBox[{"Enable", " ", "retring"}], " ", "*)"}], " ", 
-           "\[IndentingNewLine]", 
-           RowBox[{"Break", "[", "]"}]}], ",", 
-          RowBox[{
-           RowBox[{"StringAnswer", "=", 
-            RowBox[{"StringJoin", "[", 
-             RowBox[{"StringAnswer", ",", 
-              RowBox[{"StringJoin", "[", 
-               RowBox[{
-                RowBox[{"StringJoin", "[", 
-                 RowBox[{
-                  RowBox[{"StringJoin", "[", 
-                   RowBox[{"\"\<\\nEs #\>\"", ",", 
-                    RowBox[{"ToString", "[", "i", "]"}]}], "]"}], ",", 
-                  "\"\<: Risposta errata. Quella corretta era \>\""}], "]"}], 
-                ",", 
-                RowBox[{"ToString", "[", 
-                 RowBox[{"teacherEQ", "[", 
-                  RowBox[{"[", "i", "]"}], "]"}], "]"}]}], "]"}]}], "]"}]}], 
-           ";", " ", 
-           RowBox[{"(*", " ", 
-            RowBox[{"1", " ", "error"}], "*)"}], " ", "\[IndentingNewLine]", 
-           RowBox[{"en1", " ", "=", " ", "False"}]}]}], 
-         RowBox[{"(*", " ", 
-          RowBox[{"Disable", " ", "retring"}], " ", "*)"}], 
-         "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
-     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-    RowBox[{"MessageDialog", "[", "StringAnswer", "]"}]}], 
-   RowBox[{"(*", " ", 
-    RowBox[{"Output", " ", "the", " ", "solution"}], " ", "*)"}], ",", 
-   "\[IndentingNewLine]", 
-   RowBox[{"Enabled", "\[Rule]", 
-    RowBox[{"Dynamic", "[", "en1", "]"}]}]}], 
-  RowBox[{"(*", " ", 
-   RowBox[{
-   "Allowed", " ", "only", " ", "1", " ", "click", " ", "after", " ", "all", 
-    " ", "answer", " ", "have", " ", "been", " ", "given"}], " ", "*)"}], 
-  "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"(*", " ", 
-   RowBox[{
-   "Button", " ", "that", " ", "checks", " ", "if", " ", "the", " ", "answer",
-     " ", "is", " ", "correct", " ", "and", " ", "it", " ", "blocks", " ", 
-    "user", " ", "interaction"}], " ", "*)"}]}]}], "Input",
- CellChangeTimes->{{3.734661336246232*^9, 3.7346614561850557`*^9}, 
-   3.7346615509695773`*^9, {3.734661604290512*^9, 3.7346616296813993`*^9}, {
-   3.734661841740336*^9, 3.734661844284423*^9}, {3.7346620539536695`*^9, 
-   3.7346620912728653`*^9}, {3.7346892979671984`*^9, 3.734689301340804*^9}, {
-   3.734689379346649*^9, 3.7346893802378507`*^9}, {3.7346894765080338`*^9, 
-   3.7346894787086377`*^9}, 3.7346895120147047`*^9, {3.7346902745447454`*^9, 
-   3.734690310112812*^9}, {3.7346903415908747`*^9, 3.734690342652676*^9}, {
-   3.7346928270315037`*^9, 3.7346928308217115`*^9}, {3.7346928648296075`*^9, 
-   3.7346928975481887`*^9}, {3.734695134492079*^9, 3.734695179061099*^9}, {
-   3.7346954407682304`*^9, 3.734695464205047*^9}, {3.7346956147961645`*^9, 
-   3.73469561993879*^9}, {3.734697108931396*^9, 3.7346971429748335`*^9}, {
-   3.7346972684396133`*^9, 3.7346972874025*^9}, {3.734697375017769*^9, 
-   3.734697480729909*^9}, {3.7346975215579014`*^9, 3.734697523442707*^9}, {
-   3.7346982447683535`*^9, 3.734698304013359*^9}, {3.734700758614087*^9, 
-   3.734700877887909*^9}, {3.734700911805849*^9, 3.7347009156410685`*^9}, {
-   3.734700954573295*^9, 3.7347010577691975`*^9}, 3.7347012709323897`*^9, {
-   3.734701442465201*^9, 3.7347014729879465`*^9}, {3.7347015091580153`*^9, 
-   3.73470154157987*^9}, {3.7347018146006937`*^9, 3.734701834167819*^9}, {
-   3.7347216524530706`*^9, 3.734721728948313*^9}, {3.734721813108493*^9, 
-   3.734721896686705*^9}, {3.7347219351125383`*^9, 3.7347224636101227`*^9}, {
-   3.734722513732033*^9, 3.73472260553491*^9}, {3.7347226545108857`*^9, 
-   3.734722715971737*^9}, 3.734722983066738*^9, {3.7347230363037863`*^9, 
-   3.734723048839713*^9}, {3.7347231748062024`*^9, 3.734723195957221*^9}, 
-   3.7347232303220215`*^9, 3.7347232795849752`*^9, {3.7347233359559827`*^9, 
-   3.7347234957848854`*^9}, {3.73472352723948*^9, 3.734723548073716*^9}, {
-   3.7347235872779717`*^9, 3.7347238030360413`*^9}, 3.7348501753367453`*^9}],
-
-Cell[BoxData[
- ButtonBox["\<\"Verifica\"\>",
-  Appearance->Automatic,
-  ButtonFunction:>($CellContext`StringAnswer = ""; 
-   For[$CellContext`i = 1, $CellContext`i <= Length[$CellContext`teacherEQ], 
-     Increment[$CellContext`i], 
-     If[Part[$CellContext`s1, $CellContext`i] === 
-      Part[$CellContext`teacherEQ, $CellContext`i], 
-      Increment[$CellContext`correctAnswer]; $CellContext`StringAnswer = 
-       StringJoin[$CellContext`StringAnswer, 
-         StringJoin[
-          StringJoin["\nEs #", 
-           ToString[$CellContext`i]], 
-          ": Risposta corretta"]]; $CellContext`en1 = False; Null, 
-      If[Part[$CellContext`s1, $CellContext`i] === 
-       0, $CellContext`StringAnswer = StringJoin[
-          StringJoin["Domanda ", 
-           ToString[$CellContext`i]], " non completata"]; $CellContext`en1 = 
-        True; Break[], $CellContext`StringAnswer = 
-        StringJoin[$CellContext`StringAnswer, 
-          StringJoin[
-           StringJoin[
-            StringJoin["\nEs #", 
-             ToString[$CellContext`i]], 
-            ": Risposta errata. Quella corretta era "], 
-           ToString[
-            Part[$CellContext`teacherEQ, $CellContext`i]]]]; $CellContext`en1 = 
-        False]]]; MessageDialog[$CellContext`StringAnswer]),
-  Enabled->Dynamic[$CellContext`en1],
-  Evaluator->Automatic,
-  Method->"Preemptive"]], "Output",
- CellChangeTimes->{
-  3.7347015454390907`*^9, 3.734701873322075*^9, 3.734722038217513*^9, 
-   3.734722466498913*^9, {3.734722590688913*^9, 3.7347226102441587`*^9}, {
-   3.734722690886113*^9, 3.734722717096755*^9}, 3.734723012258712*^9, 
-   3.7347230514960003`*^9, {3.7347231678777523`*^9, 3.734723202078297*^9}, 
-   3.734723282635686*^9, {3.7347233414716945`*^9, 3.734723410267568*^9}, 
-   3.734723465959865*^9, 3.7347235524546976`*^9, 3.7347235959059253`*^9, 
-   3.7347237701004257`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   RowBox[{"Dynamic", "[", "correctAnswer", "]"}], "/", 
-   RowBox[{"Length", "[", "teacherEQ", "]"}]}], "*", "100"}]], "Input",
- CellChangeTimes->{{3.7347025164923573`*^9, 3.734702526429191*^9}, {
-  3.734723837192588*^9, 3.7347238767466145`*^9}}],
-
-Cell[BoxData[
- FractionBox[
-  RowBox[{"100", " ", 
-   DynamicBox[ToBoxes[$CellContext`correctAnswer, StandardForm],
-    ImageSizeCache->{91., {0., 8.}}]}], "3"]], "Output",
- CellChangeTimes->{3.7347025302722034`*^9, 3.7347238841146865`*^9}]
+   3.735316737700142*^9}, 3.735318263547226*^9, 3.7353204835101357`*^9, {
+   3.735320644706936*^9, 3.7353206515721145`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -5479,16 +5284,7 @@ Cell[BoxData[
  CellChangeTimes->{3.734698064816067*^9, 3.7346981608734846`*^9, 
   3.7346981909589214`*^9, 3.7346983598472476`*^9, 3.7347024062595415`*^9, 
   3.734702445801684*^9, 3.734702477895997*^9, 3.734703040249074*^9}]
-}, Open  ]],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.734698039347106*^9, 3.734698039347106*^9}}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.734696815908371*^9, 3.734696815923971*^9}}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.734696563519685*^9, 3.7346965635352845`*^9}}]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 
@@ -5551,7 +5347,7 @@ Cell[BoxData[
  TagBox[
   StyleBox[
    DynamicModuleBox[{$CellContext`a$$ = -10, $CellContext`b$$ = -10, \
-$CellContext`q$$ = -10, $CellContext`zoom$$ = 10, Typeset`show$$ = True, 
+$CellContext`q$$ = -10, $CellContext`zoom$$ = 83., Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
@@ -5559,7 +5355,7 @@ $CellContext`q$$ = -10, $CellContext`zoom$$ = 10, Typeset`show$$ = True,
       Hold[$CellContext`b$$], -10, 10}, {
       Hold[$CellContext`q$$], -10, 10}, {
       Hold[$CellContext`zoom$$], 10, 1000}}, Typeset`size$$ = {
-    360., {115., 120.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    360., {109., 114.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
     Typeset`skipInitDone$$ = True, $CellContext`a$688$$ = 
     0, $CellContext`b$689$$ = 0, $CellContext`q$690$$ = 
     0, $CellContext`zoom$691$$ = 0}, 
@@ -5583,7 +5379,7 @@ $CellContext`x + $CellContext`q$$, {$CellContext`x, -3,
          10}, {$CellContext`b$$, -10, 10}, {$CellContext`q$$, -10, 
          10}, {$CellContext`zoom$$, 10, 1000}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {204., 210.}},
+     ImageSizeCache->{411., {198., 204.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -5679,7 +5475,7 @@ Cell[BoxData[
         PlotLabel -> $CellContext`x^2 + 2 $CellContext`x + $CellContext`c$$], 
       "Specifications" :> {{$CellContext`c$$, -10, 10}, {$CellContext`zoom$$, 
          10, 1000}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {184., 191.}},
+     ImageSizeCache->{411., {185., 191.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -5920,7 +5716,7 @@ Cell[BoxData[
         PlotLabel -> $CellContext`x^2 + $CellContext`b$$ $CellContext`x - 1], 
       "Specifications" :> {{$CellContext`b$$, -10, 10}, {$CellContext`zoom$$, 
          10, 1000}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {184., 191.}},
+     ImageSizeCache->{411., {185., 191.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -6327,7 +6123,7 @@ Cell[BoxData[
          1], "Specifications" :> {{$CellContext`a$$, -10, 
          10}, {$CellContext`zoom$$, 10, 1000}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {184., 191.}},
+     ImageSizeCache->{411., {185., 191.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -6938,7 +6734,7 @@ $CellContext`x^2 + $CellContext`c$$ $CellContext`x + $CellContext`q$$, \
          10}, {$CellContext`b$$, -10, 10}, {$CellContext`c$$, -10, 
          10}, {$CellContext`q$$, -10, 10}, {$CellContext`zoom$$, 10, 1000}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {215., 222.}},
+     ImageSizeCache->{411., {218., 224.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -7041,7 +6837,7 @@ Cell[BoxData[
       "Specifications" :> {{
         MClib`d$$, -10, 10}, {$CellContext`zoom$$, 10, 1000}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {184., 191.}},
+     ImageSizeCache->{411., {185., 191.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -7295,7 +7091,7 @@ Cell[BoxData[
 $CellContext`x + 1], 
       "Specifications" :> {{$CellContext`c$$, -10, 10}, {$CellContext`zoom$$, 
          10, 1000}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {184., 191.}},
+     ImageSizeCache->{411., {185., 191.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -7430,7 +7226,7 @@ $CellContext`x + 1, {$CellContext`x, -3,
 $CellContext`x + 1], 
       "Specifications" :> {{$CellContext`b$$, -10, 10}, {$CellContext`zoom$$, 
          10, 1000}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {184., 191.}},
+     ImageSizeCache->{411., {185., 191.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -7565,7 +7361,7 @@ Cell[BoxData[
          4 $CellContext`x^2 + $CellContext`x + 1], 
       "Specifications" :> {{$CellContext`a$$, -10, 10}, {$CellContext`zoom$$, 
          10, 1000}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {184., 191.}},
+     ImageSizeCache->{411., {185., 191.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -7980,7 +7776,7 @@ Cell[BoxData[
         PlotLabel -> $CellContext`x^3 + $CellContext`x^2 + $CellContext`x + 
          1], "Specifications" :> {{$CellContext`zoom$$, 10, 1000}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {170., 177.}},
+     ImageSizeCache->{411., {171., 177.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -8018,7 +7814,7 @@ Cell[BoxData[
         PlotLabel -> $CellContext`x^3 + $CellContext`x^2], 
       "Specifications" :> {{$CellContext`zoom$$, 10, 1000}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {170., 177.}},
+     ImageSizeCache->{411., {171., 177.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -8057,7 +7853,7 @@ Cell[BoxData[
         PlotLabel -> $CellContext`x^3 + 3 $CellContext`x^2 + 3 $CellContext`x + 
          1], "Specifications" :> {{$CellContext`zoom$$, 10, 1000}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {170., 177.}},
+     ImageSizeCache->{411., {171., 177.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -8303,6 +8099,8 @@ Cell[CellGroupData[{
 Cell["", "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 
+Cell[CellGroupData[{
+
 Cell["Risultati", "Subsection",
  CellChangeTimes->{{3.734265185397483*^9, 3.734265225381525*^9}, 
    3.7342653603872137`*^9, {3.734500660983714*^9, 3.734500663140008*^9}, {
@@ -8311,7 +8109,180 @@ Cell["Risultati", "Subsection",
    3.73450453105163*^9, 3.734504533082904*^9}, 3.7345065986464386`*^9, {
    3.7345066322712517`*^9, 3.7345066341384797`*^9}, {3.734584527664571*^9, 
    3.734584533153314*^9}, {3.7353000069875264`*^9, 3.7353000084746113`*^9}},
- CellTags->"RS_G3"]
+ CellTags->"RS_G3"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7353196821399794`*^9, 3.7353196893273907`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"correctAnswer", " ", "=", " ", "16"}]], "Input",
+ CellChangeTimes->{{3.735319699126951*^9, 3.735319703912225*^9}}],
+
+Cell[BoxData["16"], "Output",
+ CellChangeTimes->{3.7353197075914354`*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7353194742460885`*^9, 3.735319474745117*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"If", "[", 
+  RowBox[{
+   RowBox[{"correctAnswerG3", "  ", "<", " ", "4"}], ",", " ", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"StringForm", "[", 
+     RowBox[{
+     "\"\<Su 6 domande hai risposto correttamente a ``.\>\"", ",", 
+      "correctAnswerG3"}], "]"}], "\[IndentingNewLine]", 
+    RowBox[{
+    "Text", "[", 
+     "\"\<volendo puoi proseguire ma sarebbe meglio ripassare un po di teoria \
+e poi riprovare gli esercizi\>\"", "]"}]}], "\[IndentingNewLine]", ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"StringForm", "[", 
+     RowBox[{
+     "\"\<Su 6 domande hai risposto correttamente a ``.\>\"", ",", 
+      "correctAnswerG3"}], "]"}], "\[IndentingNewLine]", 
+    RowBox[{
+    "Text", "[", 
+     "\"\<hai compreso bene l\[CloseCurlyQuote]argomento ora puoi proseguire, \
+ma se hai ancora qualche dubbio puoi comunque tornare indietro e riguardare \
+le equazioni di primo grado\>\"", "]"}]}], "\[IndentingNewLine]", ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Text", "[", "\"\<Qualcosa \[EGrave] andato storto!!\>\"", "]"}]}],
+   "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"Hyperlink", "[", 
+    RowBox[{
+     RowBox[{"StatusArea", "[", 
+      RowBox[{
+       RowBox[{"Button", "[", 
+        RowBox[{"\"\<Torna alla teoria\>\"", ",", " ", 
+         RowBox[{
+          RowBox[{"answer3", " ", "=", " ", "0"}], " ", ";", " ", 
+          RowBox[{"correctAnswerG3", " ", "=", " ", "0"}], ";", " ", 
+          RowBox[{"en3", "=", " ", "False"}]}]}], "]"}], ",", " ", 
+       "\"\<E_G3\>\""}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"EvaluationNotebook", "[", "]"}], ",", " ", "\"\<E_G3\>\""}], 
+      "}"}]}], "]"}], "}"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"Hyperlink", "[", 
+    RowBox[{
+     RowBox[{"StatusArea", "[", 
+      RowBox[{
+       RowBox[{"Button", "[", 
+        RowBox[{"\"\<Torna agli Esercizi\>\"", ",", " ", 
+         RowBox[{
+          RowBox[{"answer3", " ", "=", " ", "0"}], ";", " ", 
+          RowBox[{"correctAnswerG3", " ", "=", " ", "0"}], ";", " ", 
+          RowBox[{"en3", " ", "=", " ", "False"}]}]}], "]"}], ",", " ", 
+       "\"\<ES_G3\>\""}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"EvaluationNotebook", "[", "]"}], ",", " ", "\"\<ES_G3\>\""}], 
+      "}"}]}], "]"}], "}"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"StringForm", "[", 
+  RowBox[{
+  "\"\<Su 18 domande hai risposto correttamente a ``.\>\"", ",", 
+   "correctAnswer"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.735319554744693*^9, 3.735319619769412*^9}, {
+  3.735319657953596*^9, 3.735319675360592*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox["\<\"Su 6 domande hai risposto correttamente a \
+\\!\\(\\*RowBox[{\\\"0\\\"}]\\).\"\>",
+   StringForm["Su 6 domande hai risposto correttamente a ``.", 0],
+   Editable->False], " ", 
+  InterpretationBox[Cell[BoxData[
+    FormBox["\<\"volendo puoi proseguire ma sarebbe meglio ripassare un po di \
+teoria e poi riprovare gli esercizi\"\>", TextForm]], "InlineText"],
+   Text["volendo puoi proseguire ma sarebbe meglio ripassare un po di teoria \
+e poi riprovare gli esercizi"]]}]], "Output",
+ CellChangeTimes->{3.735319716256931*^9}],
+
+Cell[BoxData[
+ TemplateBox[{TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False -> TagBox[
+         ButtonBox[
+         "\"Torna alla teoria\"", 
+          ButtonFunction :> ($CellContext`answer3 = 
+            0; $CellContext`correctAnswerG3 = 0; $CellContext`en3 = False), 
+          Appearance -> Automatic, Evaluator -> Automatic, Method -> 
+          "Preemptive"], StatusArea[#, "E_G3"]& , TagBoxNote -> "E_G3"], True -> 
+       StyleBox[
+         TagBox[
+          ButtonBox[
+          "\"Torna alla teoria\"", 
+           ButtonFunction :> ($CellContext`answer3 = 
+             0; $CellContext`correctAnswerG3 = 0; $CellContext`en3 = False), 
+           Appearance -> Automatic, Evaluator -> Automatic, Method -> 
+           "Preemptive"], StatusArea[#, "E_G3"]& , TagBoxNote -> "E_G3"], {
+         "HyperlinkActive"}]}, 
+      Dynamic[
+       CurrentValue["MouseOver"]], BaseStyle -> {"Hyperlink"}, FrameMargins -> 
+      0, ImageSize -> Automatic], BaseStyle -> "Hyperlink", ButtonData :> {
+       NotebookObject[
+        FrontEndObject[
+         LinkObject["w396i_shm", 3, 1]], 77], "E_G3"}, ButtonNote -> 
+     ButtonData], Annotation[#, {
+      NotebookObject[
+       FrontEndObject[
+        LinkObject["w396i_shm", 3, 1]], 77], "E_G3"}, "Hyperlink"]& ]},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{3.7353197162729316`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False -> TagBox[
+         ButtonBox[
+         "\"Torna agli Esercizi\"", 
+          ButtonFunction :> ($CellContext`answer3 = 
+            0; $CellContext`correctAnswerG3 = 0; $CellContext`en3 = False), 
+          Appearance -> Automatic, Evaluator -> Automatic, Method -> 
+          "Preemptive"], StatusArea[#, "ES_G3"]& , TagBoxNote -> "ES_G3"], 
+       True -> StyleBox[
+         TagBox[
+          ButtonBox[
+          "\"Torna agli Esercizi\"", 
+           ButtonFunction :> ($CellContext`answer3 = 
+             0; $CellContext`correctAnswerG3 = 0; $CellContext`en3 = False), 
+           Appearance -> Automatic, Evaluator -> Automatic, Method -> 
+           "Preemptive"], StatusArea[#, "ES_G3"]& , TagBoxNote -> "ES_G3"], {
+         "HyperlinkActive"}]}, 
+      Dynamic[
+       CurrentValue["MouseOver"]], BaseStyle -> {"Hyperlink"}, FrameMargins -> 
+      0, ImageSize -> Automatic], BaseStyle -> "Hyperlink", ButtonData :> {
+       NotebookObject[
+        FrontEndObject[
+         LinkObject["w396i_shm", 3, 1]], 77], "ES_G3"}, ButtonNote -> 
+     ButtonData], Annotation[#, {
+      NotebookObject[
+       FrontEndObject[
+        LinkObject["w396i_shm", 3, 1]], 77], "ES_G3"}, "Hyperlink"]& ]},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{3.735319716291933*^9}],
+
+Cell[BoxData[
+ InterpretationBox["\<\"Su 18 domande hai risposto correttamente a \
+\\!\\(\\*RowBox[{\\\"16\\\"}]\\).\"\>",
+  StringForm["Su 18 domande hai risposto correttamente a ``.", 16],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.735319716297933*^9}]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1920, 997},
@@ -8351,49 +8322,49 @@ CellTagsIndex->{
    CellTags->"SlideShowHeader"],
   Cell[225082, 4305, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[280675, 5496, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[272463, 5292, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[284777, 5604, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[276566, 5400, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[289395, 5728, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[281184, 5524, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[293788, 5847, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[285577, 5643, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[298424, 5969, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[290213, 5765, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[311389, 6250, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[303178, 6046, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[316349, 6381, 64, 1, 89, "SlideShowNavigationBar",
+  Cell[308138, 6177, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[325066, 6596, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[316855, 6392, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[332990, 6809, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[324779, 6605, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[333659, 6825, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[325448, 6621, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[334378, 6842, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[326167, 6638, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[338856, 6959, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[330645, 6755, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[343743, 7090, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[335532, 6886, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[348252, 7214, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[340041, 7010, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[353191, 7344, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[344980, 7140, 64, 1, 90, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[358343, 7482, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[350132, 7278, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[363350, 7612, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[355139, 7408, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[368589, 7744, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[360378, 7540, 64, 1, 90, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[373260, 7863, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[365049, 7659, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[382249, 8078, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[374038, 7874, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[389878, 8286, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[381667, 8082, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[390547, 8302, 64, 1, 90, "SlideShowNavigationBar",
+  Cell[382336, 8098, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]},
  "Home"->{
   Cell[5487, 138, 136747, 2250, 213, "Title",
@@ -8411,103 +8382,103 @@ CellTagsIndex->{
   Cell[225171, 4310, 565, 8, 63, "Subsection",
    CellTags->"ES_G1"]},
  "E_2G"->{
-  Cell[280742, 5499, 212, 3, 67, "Text",
+  Cell[272530, 5295, 212, 3, 67, "Text",
    CellTags->"E_2G"]},
  "CG_G2_PC"->{
-  Cell[284866, 5609, 373, 5, 63, "Subsection",
+  Cell[276655, 5405, 373, 5, 63, "Subsection",
    CellTags->"CG_G2_PC"]},
  "E2_CP_C0"->{
-  Cell[289484, 5733, 495, 7, 63, "Subsection",
+  Cell[281273, 5529, 495, 7, 63, "Subsection",
    CellTags->"E2_CP_C0"]},
  "CG_G2_PB"->{
-  Cell[293877, 5852, 427, 6, 63, "Subsection",
+  Cell[285666, 5648, 427, 6, 63, "Subsection",
    CellTags->"CG_G2_PB"]},
  "E2_CP_B0"->{
-  Cell[298513, 5974, 478, 7, 63, "Subsection",
+  Cell[290302, 5770, 478, 7, 63, "Subsection",
    CellTags->"E2_CP_B0"]},
  "E_G2_CA"->{
-  Cell[311478, 6255, 478, 7, 63, "Subsection",
+  Cell[303267, 6051, 478, 7, 63, "Subsection",
    CellTags->"E_G2_CA"]},
  "E2_CP_A0"->{
-  Cell[316438, 6386, 597, 13, 93, "Subsection",
+  Cell[308227, 6182, 597, 13, 93, "Subsection",
    CellTags->"E2_CP_A0"]},
  "TS2"->{
-  Cell[325155, 6601, 522, 8, 57, "Subsection",
+  Cell[316944, 6397, 522, 8, 63, "Subsection",
    CellTags->"TS2"]},
  "ES_G2"->{
-  Cell[333057, 6812, 565, 8, 57, "Subsection",
+  Cell[324846, 6608, 565, 8, 63, "Subsection",
    CellTags->"ES_G2"]},
  "RS_G2"->{
-  Cell[333726, 6828, 615, 9, 57, "Subsection",
+  Cell[325515, 6624, 615, 9, 63, "Subsection",
    CellTags->"RS_G2"]},
  "E_G3"->{
-  Cell[334445, 6845, 214, 3, 60, "Text",
+  Cell[326234, 6641, 214, 3, 67, "Text",
    CellTags->"E_G3"]},
  "E_G3_CD"->{
-  Cell[338945, 6964, 528, 7, 57, "Subsection",
+  Cell[330734, 6760, 528, 7, 63, "Subsection",
    CellTags->"E_G3_CD"]},
  "E3_CP_D0"->{
-  Cell[343832, 7095, 641, 13, 58, "Subsection",
+  Cell[335621, 6891, 641, 13, 63, "Subsection",
    CellTags->"E3_CP_D0"]},
  "E_G3_CC"->{
-  Cell[348341, 7219, 582, 8, 57, "Subsection",
+  Cell[340130, 7015, 582, 8, 63, "Subsection",
    CellTags->"E_G3_CC"]},
  "E_G3_CB"->{
-  Cell[353280, 7349, 708, 13, 81, "Subsection",
+  Cell[345069, 7145, 708, 13, 81, "Subsection",
    CellTags->"E_G3_CB"]},
  "E_G3_CA"->{
-  Cell[358432, 7487, 747, 10, 57, "Subsection",
+  Cell[350221, 7283, 747, 10, 63, "Subsection",
    CellTags->"E_G3_CA"]},
  "E3_CP_A"->{
-  Cell[363439, 7617, 628, 9, 57, "Subsection",
+  Cell[355228, 7413, 628, 9, 63, "Subsection",
    CellTags->"E3_CP_A"]},
  "E3_CP_A0"->{
-  Cell[368678, 7749, 689, 10, 57, "Subsection",
+  Cell[360467, 7545, 689, 10, 57, "Subsection",
    CellTags->"E3_CP_A0"]},
  "E3_CP_0"->{
-  Cell[373349, 7868, 733, 10, 57, "Subsection",
+  Cell[365138, 7664, 733, 10, 63, "Subsection",
    CellTags->"E3_CP_0"]},
  "TS3"->{
-  Cell[382338, 8083, 522, 8, 57, "Subsection",
+  Cell[374127, 7879, 522, 8, 63, "Subsection",
    CellTags->"TS3"]},
  "ES_G3"->{
-  Cell[389945, 8289, 565, 8, 57, "Subsection",
+  Cell[381734, 8085, 565, 8, 63, "Subsection",
    CellTags->"ES_G3"]},
  "RS_G3"->{
-  Cell[390614, 8305, 568, 8, 57, "Subsection",
+  Cell[382425, 8103, 568, 8, 63, "Subsection",
    CellTags->"RS_G3"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 391562, 8328},
- {"Home", 394666, 8397},
- {"Introduction", 394754, 8400},
- {"AG_C1_G1", 394844, 8403},
- {"TS1", 394928, 8406},
- {"ES_G1", 395009, 8409},
- {"E_2G", 395091, 8412},
- {"CG_G2_PC", 395170, 8415},
- {"E2_CP_C0", 395259, 8418},
- {"CG_G2_PB", 395348, 8421},
- {"E2_CP_B0", 395437, 8424},
- {"E_G2_CA", 395525, 8427},
- {"E2_CP_A0", 395613, 8430},
- {"TS2", 395698, 8433},
- {"ES_G2", 395779, 8436},
- {"RS_G2", 395862, 8439},
- {"E_G3", 395944, 8442},
- {"E_G3_CD", 396022, 8445},
- {"E3_CP_D0", 396110, 8448},
- {"E_G3_CC", 396199, 8451},
- {"E_G3_CB", 396286, 8454},
- {"E_G3_CA", 396374, 8457},
- {"E3_CP_A", 396462, 8460},
- {"E3_CP_A0", 396550, 8463},
- {"E3_CP_0", 396639, 8466},
- {"TS3", 396723, 8469},
- {"ES_G3", 396804, 8472},
- {"RS_G3", 396887, 8475}
+ {"SlideShowHeader", 390108, 8299},
+ {"Home", 393212, 8368},
+ {"Introduction", 393300, 8371},
+ {"AG_C1_G1", 393390, 8374},
+ {"TS1", 393474, 8377},
+ {"ES_G1", 393555, 8380},
+ {"E_2G", 393637, 8383},
+ {"CG_G2_PC", 393716, 8386},
+ {"E2_CP_C0", 393805, 8389},
+ {"CG_G2_PB", 393894, 8392},
+ {"E2_CP_B0", 393983, 8395},
+ {"E_G2_CA", 394071, 8398},
+ {"E2_CP_A0", 394159, 8401},
+ {"TS2", 394244, 8404},
+ {"ES_G2", 394325, 8407},
+ {"RS_G2", 394408, 8410},
+ {"E_G3", 394490, 8413},
+ {"E_G3_CD", 394568, 8416},
+ {"E3_CP_D0", 394656, 8419},
+ {"E_G3_CC", 394745, 8422},
+ {"E_G3_CB", 394832, 8425},
+ {"E_G3_CA", 394920, 8428},
+ {"E3_CP_A", 395008, 8431},
+ {"E3_CP_A0", 395096, 8434},
+ {"E3_CP_0", 395185, 8437},
+ {"TS3", 395269, 8440},
+ {"ES_G3", 395350, 8443},
+ {"RS_G3", 395433, 8446}
  }
 *)
 (*NotebookFileOutline
@@ -8706,364 +8677,368 @@ Cell[225171, 4310, 565, 8, 63, "Subsection",
  CellTags->"ES_G1"],
 Cell[CellGroupData[{
 Cell[225761, 4322, 246, 5, 30, "Input"],
-Cell[226010, 4329, 179, 3, 34, "Output"]
+Cell[226010, 4329, 159, 3, 34, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[226226, 4337, 267, 5, 30, "Input"],
-Cell[226496, 4344, 615, 10, 30, "Output"]
+Cell[226206, 4337, 267, 5, 30, "Input"],
+Cell[226476, 4344, 692, 11, 126, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[227148, 4359, 137, 2, 30, "Input"],
-Cell[227288, 4363, 16115, 335, 1066, "Output"]
+Cell[227205, 4360, 391, 6, 30, "Input"],
+Cell[227599, 4368, 21682, 444, 1070, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[243440, 4703, 431, 6, 30, "Input"],
-Cell[243874, 4711, 25869, 537, 1012, "Output"]
+Cell[249318, 4817, 484, 7, 30, "Input"],
+Cell[249805, 4826, 20820, 416, 720, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[269780, 5253, 6349, 126, 373, "Input"],
-Cell[276132, 5381, 1856, 38, 42, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[278025, 5424, 282, 6, 30, "Input"],
-Cell[278310, 5432, 240, 5, 45, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[278587, 5442, 1188, 24, 30, "Input"],
-Cell[279778, 5468, 549, 12, 30, "Output"]
-}, Open  ]],
-Cell[280342, 5483, 92, 1, 30, "Input"],
-Cell[280437, 5486, 92, 1, 30, "Input"],
-Cell[280532, 5489, 94, 1, 30, "Input"]
+Cell[270662, 5247, 1188, 24, 30, "Input"],
+Cell[271853, 5273, 549, 12, 30, "Output"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[280675, 5496, 64, 1, 89, "SlideShowNavigationBar",
+Cell[272463, 5292, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[280742, 5499, 212, 3, 67, "Text",
+Cell[272530, 5295, 212, 3, 67, "Text",
  CellTags->"E_2G"],
 Cell[CellGroupData[{
-Cell[280979, 5506, 101, 1, 49, "Subsection"],
-Cell[281083, 5509, 190, 5, 49, "Text"],
+Cell[272767, 5302, 101, 1, 49, "Subsection"],
+Cell[272871, 5305, 190, 5, 49, "Text"],
 Cell[CellGroupData[{
-Cell[281298, 5518, 991, 29, 30, "Input"],
-Cell[282292, 5549, 2424, 48, 431, "Output"]
+Cell[273086, 5314, 991, 29, 30, "Input"],
+Cell[274080, 5345, 2425, 48, 419, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[284777, 5604, 64, 1, 89, "SlideShowNavigationBar",
+Cell[276566, 5400, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[284866, 5609, 373, 5, 63, "Subsection",
+Cell[276655, 5405, 373, 5, 63, "Subsection",
  CellTags->"CG_G2_PC"],
-Cell[285242, 5616, 133, 4, 49, "Text"],
+Cell[277031, 5412, 133, 4, 49, "Text"],
 Cell[CellGroupData[{
-Cell[285400, 5624, 954, 26, 34, "Input"],
-Cell[286357, 5652, 2006, 40, 392, "Output"]
+Cell[277189, 5420, 954, 26, 34, "Input"],
+Cell[278146, 5448, 2006, 40, 393, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[288400, 5697, 391, 8, 50, "Input"],
-Cell[288794, 5707, 540, 14, 30, "Output"]
+Cell[280189, 5493, 391, 8, 30, "Input"],
+Cell[280583, 5503, 540, 14, 30, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[289395, 5728, 64, 1, 89, "SlideShowNavigationBar",
+Cell[281184, 5524, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[289484, 5733, 495, 7, 63, "Subsection",
+Cell[281273, 5529, 495, 7, 63, "Subsection",
  CellTags->"E2_CP_C0"],
-Cell[289982, 5742, 114, 4, 49, "Text"],
+Cell[281771, 5538, 114, 4, 49, "Text"],
 Cell[CellGroupData[{
-Cell[290121, 5750, 125, 2, 30, "Input"],
-Cell[290249, 5754, 121, 2, 30, "Output"]
+Cell[281910, 5546, 125, 2, 30, "Input"],
+Cell[282038, 5550, 121, 2, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[290407, 5761, 1751, 45, 57, "Input"],
-Cell[292161, 5808, 1566, 32, 42, "Output"]
+Cell[282196, 5557, 1751, 45, 57, "Input"],
+Cell[283950, 5604, 1566, 32, 42, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[293788, 5847, 64, 1, 89, "SlideShowNavigationBar",
+Cell[285577, 5643, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[293877, 5852, 427, 6, 63, "Subsection",
+Cell[285666, 5648, 427, 6, 63, "Subsection",
  CellTags->"CG_G2_PB"],
-Cell[294307, 5860, 115, 4, 49, "Text"],
+Cell[286096, 5656, 115, 4, 49, "Text"],
 Cell[CellGroupData[{
-Cell[294447, 5868, 837, 23, 34, "Input"],
-Cell[295287, 5893, 2035, 40, 392, "Output"]
+Cell[286236, 5664, 837, 23, 34, "Input"],
+Cell[287076, 5689, 2035, 40, 393, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[297359, 5938, 425, 8, 50, "Input"],
-Cell[297787, 5948, 576, 14, 30, "Output"]
+Cell[289148, 5734, 425, 8, 30, "Input"],
+Cell[289576, 5744, 576, 14, 30, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[298424, 5969, 64, 1, 89, "SlideShowNavigationBar",
+Cell[290213, 5765, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[298513, 5974, 478, 7, 63, "Subsection",
+Cell[290302, 5770, 478, 7, 63, "Subsection",
  CellTags->"E2_CP_B0"],
-Cell[298994, 5983, 154, 2, 30, "Text"],
+Cell[290783, 5779, 154, 2, 30, "Text"],
 Cell[CellGroupData[{
-Cell[299173, 5989, 126, 2, 30, "Input"],
-Cell[299302, 5993, 70, 1, 30, "Output"]
+Cell[290962, 5785, 126, 2, 30, "Input"],
+Cell[291091, 5789, 70, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[299409, 5999, 1504, 41, 57, "Input"],
-Cell[300916, 6042, 1520, 32, 42, "Output"],
+Cell[291198, 5795, 1504, 41, 57, "Input"],
+Cell[292705, 5838, 1520, 32, 42, "Output"],
 Cell[CellGroupData[{
-Cell[302461, 6078, 8705, 160, 238, "Print"],
-Cell[311169, 6240, 147, 2, 22, "Print"]
+Cell[294250, 5874, 8705, 160, 238, "Print"],
+Cell[302958, 6036, 147, 2, 22, "Print"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[311389, 6250, 64, 1, 89, "SlideShowNavigationBar",
+Cell[303178, 6046, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[311478, 6255, 478, 7, 63, "Subsection",
+Cell[303267, 6051, 478, 7, 63, "Subsection",
  CellTags->"E_G2_CA"],
-Cell[311959, 6264, 115, 4, 49, "Text"],
+Cell[303748, 6060, 115, 4, 49, "Text"],
 Cell[CellGroupData[{
-Cell[312099, 6272, 910, 25, 34, "Input"],
-Cell[313012, 6299, 2025, 41, 392, "Output"]
+Cell[303888, 6068, 910, 25, 34, "Input"],
+Cell[304801, 6095, 2025, 41, 393, "Output"]
 }, Open  ]],
-Cell[315052, 6343, 96, 1, 30, "Input"],
+Cell[306841, 6139, 96, 1, 30, "Input"],
 Cell[CellGroupData[{
-Cell[315173, 6348, 483, 9, 69, "Input"],
-Cell[315659, 6359, 629, 15, 30, "Output"]
+Cell[306962, 6144, 483, 9, 50, "Input"],
+Cell[307448, 6155, 629, 15, 30, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[316349, 6381, 64, 1, 89, "SlideShowNavigationBar",
+Cell[308138, 6177, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[316438, 6386, 597, 13, 93, "Subsection",
+Cell[308227, 6182, 597, 13, 93, "Subsection",
  CellTags->"E2_CP_A0"],
-Cell[317038, 6401, 245, 7, 68, "Text"],
+Cell[308827, 6197, 245, 7, 68, "Text"],
 Cell[CellGroupData[{
-Cell[317308, 6412, 130, 2, 30, "Input"],
-Cell[317441, 6416, 70, 1, 30, "Output"]
+Cell[309097, 6208, 130, 2, 30, "Input"],
+Cell[309230, 6212, 70, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[317548, 6422, 1515, 40, 50, "Input"],
-Cell[319066, 6464, 1492, 31, 42, "Output"],
+Cell[309337, 6218, 1515, 40, 50, "Input"],
+Cell[310855, 6260, 1492, 31, 42, "Output"],
 Cell[CellGroupData[{
-Cell[320583, 6499, 4218, 85, 238, "Print"],
-Cell[324804, 6586, 189, 2, 22, "Print"]
+Cell[312372, 6295, 4218, 85, 238, "Print"],
+Cell[316593, 6382, 189, 2, 22, "Print"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[325066, 6596, 64, 1, 90, "SlideShowNavigationBar",
+Cell[316855, 6392, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[325155, 6601, 522, 8, 57, "Subsection",
+Cell[316944, 6397, 522, 8, 63, "Subsection",
  CellTags->"TS2"],
-Cell[325680, 6611, 242, 5, 30, "Text"],
+Cell[317469, 6407, 242, 5, 30, "Text"],
 Cell[CellGroupData[{
-Cell[325947, 6620, 3406, 83, 240, "Input"],
-Cell[329356, 6705, 111, 2, 30, "Output"],
-Cell[329470, 6709, 98, 1, 30, "Output"],
-Cell[329571, 6712, 1575, 41, 83, "Output"]
+Cell[317736, 6416, 3406, 83, 145, "Input"],
+Cell[321145, 6501, 111, 2, 30, "Output"],
+Cell[321259, 6505, 98, 1, 30, "Output"],
+Cell[321360, 6508, 1575, 41, 82, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[331183, 6758, 508, 14, 30, "Input"],
-Cell[331694, 6774, 1136, 25, 42, "Output"]
+Cell[322972, 6554, 508, 14, 30, "Input"],
+Cell[323483, 6570, 1136, 25, 42, "Output"]
 }, Open  ]],
-Cell[332845, 6802, 96, 1, 30, "Input"]
+Cell[324634, 6598, 96, 1, 30, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[332990, 6809, 64, 1, 90, "SlideShowNavigationBar",
+Cell[324779, 6605, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[333057, 6812, 565, 8, 57, "Subsection",
+Cell[324846, 6608, 565, 8, 63, "Subsection",
  CellTags->"ES_G2"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[333659, 6825, 64, 1, 90, "SlideShowNavigationBar",
+Cell[325448, 6621, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[333726, 6828, 615, 9, 57, "Subsection",
+Cell[325515, 6624, 615, 9, 63, "Subsection",
  CellTags->"RS_G2"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[334378, 6842, 64, 1, 90, "SlideShowNavigationBar",
+Cell[326167, 6638, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[334445, 6845, 214, 3, 60, "Text",
+Cell[326234, 6641, 214, 3, 67, "Text",
  CellTags->"E_G3"],
 Cell[CellGroupData[{
-Cell[334684, 6852, 101, 1, 43, "Subsection"],
-Cell[334788, 6855, 191, 5, 49, "Text"],
+Cell[326473, 6648, 101, 1, 49, "Subsection"],
+Cell[326577, 6651, 191, 5, 49, "Text"],
 Cell[CellGroupData[{
-Cell[335004, 6864, 1117, 34, 30, "Input"],
-Cell[336124, 6900, 2671, 52, 454, "Output"]
+Cell[326793, 6660, 1117, 34, 30, "Input"],
+Cell[327913, 6696, 2671, 52, 459, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[338856, 6959, 64, 1, 90, "SlideShowNavigationBar",
+Cell[330645, 6755, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[338945, 6964, 528, 7, 57, "Subsection",
+Cell[330734, 6760, 528, 7, 63, "Subsection",
  CellTags->"E_G3_CD"],
-Cell[339476, 6973, 130, 4, 49, "Text"],
+Cell[331265, 6769, 130, 4, 49, "Text"],
 Cell[CellGroupData[{
-Cell[339631, 6981, 1072, 29, 52, "Input"],
-Cell[340706, 7012, 2001, 42, 392, "Output"]
+Cell[331420, 6777, 1072, 29, 34, "Input"],
+Cell[332495, 6808, 2001, 42, 393, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[342744, 7059, 393, 8, 50, "Input"],
-Cell[343140, 7069, 542, 14, 30, "Output"]
+Cell[334533, 6855, 393, 8, 30, "Input"],
+Cell[334929, 6865, 542, 14, 30, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[343743, 7090, 64, 1, 90, "SlideShowNavigationBar",
+Cell[335532, 6886, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[343832, 7095, 641, 13, 58, "Subsection",
+Cell[335621, 6891, 641, 13, 63, "Subsection",
  CellTags->"E3_CP_D0"],
-Cell[344476, 7110, 140, 4, 49, "Text"],
+Cell[336265, 6906, 140, 4, 49, "Text"],
 Cell[CellGroupData[{
-Cell[344641, 7118, 1761, 46, 74, "Input"],
-Cell[346405, 7166, 124, 2, 30, "Output"],
-Cell[346532, 7170, 1659, 37, 42, "Output"]
+Cell[336430, 6914, 1761, 46, 77, "Input"],
+Cell[338194, 6962, 124, 2, 30, "Output"],
+Cell[338321, 6966, 1659, 37, 42, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[348252, 7214, 64, 1, 90, "SlideShowNavigationBar",
+Cell[340041, 7010, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[348341, 7219, 582, 8, 57, "Subsection",
+Cell[340130, 7015, 582, 8, 63, "Subsection",
  CellTags->"E_G3_CC"],
-Cell[348926, 7229, 115, 4, 49, "Text"],
+Cell[340715, 7025, 115, 4, 49, "Text"],
 Cell[CellGroupData[{
-Cell[349066, 7237, 973, 27, 33, "Input"],
-Cell[350042, 7266, 2087, 42, 392, "Output"]
+Cell[340855, 7033, 973, 27, 34, "Input"],
+Cell[341831, 7062, 2087, 42, 393, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[352166, 7313, 405, 8, 50, "Input"],
-Cell[352574, 7323, 556, 14, 30, "Output"]
+Cell[343955, 7109, 405, 8, 50, "Input"],
+Cell[344363, 7119, 556, 14, 30, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[353191, 7344, 64, 1, 90, "SlideShowNavigationBar",
+Cell[344980, 7140, 64, 1, 90, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[353280, 7349, 708, 13, 81, "Subsection",
+Cell[345069, 7145, 708, 13, 81, "Subsection",
  CellTags->"E_G3_CB"],
-Cell[353991, 7364, 140, 5, 68, "Text"],
+Cell[345780, 7160, 140, 5, 68, "Text"],
 Cell[CellGroupData[{
-Cell[354156, 7373, 965, 27, 33, "Input"],
-Cell[355124, 7402, 2047, 41, 392, "Output"]
+Cell[345945, 7169, 965, 27, 34, "Input"],
+Cell[346913, 7198, 2047, 41, 393, "Output"]
 }, Open  ]],
-Cell[357186, 7446, 16, 0, 30, "Text"],
+Cell[348975, 7242, 16, 0, 30, "Text"],
 Cell[CellGroupData[{
-Cell[357227, 7450, 475, 9, 50, "Input"],
-Cell[357705, 7461, 577, 14, 30, "Output"]
+Cell[349016, 7246, 475, 9, 30, "Input"],
+Cell[349494, 7257, 577, 14, 30, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[358343, 7482, 64, 1, 90, "SlideShowNavigationBar",
+Cell[350132, 7278, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[358432, 7487, 747, 10, 57, "Subsection",
+Cell[350221, 7283, 747, 10, 63, "Subsection",
  CellTags->"E_G3_CA"],
-Cell[359182, 7499, 115, 4, 49, "Text"],
+Cell[350971, 7295, 115, 4, 49, "Text"],
 Cell[CellGroupData[{
-Cell[359322, 7507, 992, 28, 33, "Input"],
-Cell[360317, 7537, 2063, 41, 392, "Output"]
+Cell[351111, 7303, 992, 28, 34, "Input"],
+Cell[352106, 7333, 2063, 41, 393, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[362417, 7583, 360, 7, 50, "Input"],
-Cell[362780, 7592, 509, 13, 30, "Output"]
+Cell[354206, 7379, 360, 7, 30, "Input"],
+Cell[354569, 7388, 509, 13, 30, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[363350, 7612, 64, 1, 90, "SlideShowNavigationBar",
+Cell[355139, 7408, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[363439, 7617, 628, 9, 57, "Subsection",
+Cell[355228, 7413, 628, 9, 63, "Subsection",
  CellTags->"E3_CP_A"],
-Cell[364070, 7628, 205, 6, 68, "Text"],
+Cell[355859, 7424, 205, 6, 68, "Text"],
 Cell[CellGroupData[{
-Cell[364300, 7638, 2188, 53, 96, "Input"],
-Cell[366491, 7693, 221, 4, 30, "Output"],
-Cell[366715, 7699, 1813, 38, 42, "Output"]
+Cell[356089, 7434, 2188, 53, 96, "Input"],
+Cell[358280, 7489, 221, 4, 30, "Output"],
+Cell[358504, 7495, 1813, 38, 42, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[368589, 7744, 64, 1, 90, "SlideShowNavigationBar",
+Cell[360378, 7540, 64, 1, 90, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[368678, 7749, 689, 10, 57, "Subsection",
+Cell[360467, 7545, 689, 10, 57, "Subsection",
  CellTags->"E3_CP_A0"],
-Cell[369370, 7761, 184, 2, 30, "Text"],
+Cell[361159, 7557, 184, 2, 30, "Text"],
 Cell[CellGroupData[{
-Cell[369579, 7767, 1770, 46, 96, "Input"],
-Cell[371352, 7815, 126, 2, 30, "Output"],
-Cell[371481, 7819, 1718, 37, 42, "Output"]
+Cell[361368, 7563, 1770, 46, 96, "Input"],
+Cell[363141, 7611, 126, 2, 30, "Output"],
+Cell[363270, 7615, 1718, 37, 42, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[373260, 7863, 64, 1, 90, "SlideShowNavigationBar",
+Cell[365049, 7659, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[373349, 7868, 733, 10, 57, "Subsection",
+Cell[365138, 7664, 733, 10, 63, "Subsection",
  CellTags->"E3_CP_0"],
-Cell[374085, 7880, 369, 8, 87, "Text"],
+Cell[365874, 7676, 369, 8, 68, "Text"],
 Cell[CellGroupData[{
-Cell[374479, 7892, 2210, 63, 77, "Input"],
-Cell[376692, 7957, 1845, 37, 364, "Output"],
-Cell[378540, 7996, 1793, 36, 364, "Output"],
-Cell[380336, 8034, 1852, 37, 364, "Output"]
+Cell[366268, 7688, 2210, 63, 80, "Input"],
+Cell[368481, 7753, 1845, 37, 365, "Output"],
+Cell[370329, 7792, 1793, 36, 365, "Output"],
+Cell[372125, 7830, 1852, 37, 365, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[382249, 8078, 64, 1, 90, "SlideShowNavigationBar",
+Cell[374038, 7874, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[382338, 8083, 522, 8, 57, "Subsection",
+Cell[374127, 7879, 522, 8, 63, "Subsection",
  CellTags->"TS3"],
-Cell[382863, 8093, 215, 5, 49, "Text"],
+Cell[374652, 7889, 215, 5, 49, "Text"],
 Cell[CellGroupData[{
-Cell[383103, 8102, 3302, 81, 240, "Input"],
-Cell[386408, 8185, 89, 2, 30, "Output"],
-Cell[386500, 8189, 79, 1, 30, "Output"],
-Cell[386582, 8192, 1551, 41, 83, "Output"]
+Cell[374892, 7898, 3302, 81, 145, "Input"],
+Cell[378197, 7981, 89, 2, 30, "Output"],
+Cell[378289, 7985, 79, 1, 30, "Output"],
+Cell[378371, 7988, 1551, 41, 82, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[388170, 8238, 508, 14, 30, "Input"],
-Cell[388681, 8254, 1136, 25, 42, "Output"]
+Cell[379959, 8034, 508, 14, 30, "Input"],
+Cell[380470, 8050, 1136, 25, 42, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[389878, 8286, 64, 1, 90, "SlideShowNavigationBar",
+Cell[381667, 8082, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[389945, 8289, 565, 8, 57, "Subsection",
+Cell[381734, 8085, 565, 8, 63, "Subsection",
  CellTags->"ES_G3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[390547, 8302, 64, 1, 90, "SlideShowNavigationBar",
+Cell[382336, 8098, 64, 1, 89, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[390614, 8305, 568, 8, 57, "Subsection",
- CellTags->"RS_G3"]
+Cell[CellGroupData[{
+Cell[382425, 8103, 568, 8, 63, "Subsection",
+ CellTags->"RS_G3"],
+Cell[382996, 8113, 96, 1, 30, "Input"],
+Cell[CellGroupData[{
+Cell[383117, 8118, 138, 2, 30, "Input"],
+Cell[383258, 8122, 73, 1, 30, "Output"]
+}, Open  ]],
+Cell[383346, 8126, 94, 1, 30, "Input"],
+Cell[CellGroupData[{
+Cell[383465, 8131, 2703, 67, 240, "Input"],
+Cell[386171, 8200, 575, 11, 32, "Output"],
+Cell[386749, 8213, 1339, 30, 42, "Output"],
+Cell[388091, 8245, 1347, 30, 42, "Output"],
+Cell[389441, 8277, 263, 5, 30, "Output"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 }
 ]
