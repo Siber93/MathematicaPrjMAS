@@ -29,9 +29,9 @@ BeginPackage[ "MClib`"];
 		exercises::usage="List containing all exercises for each grade and kind (solution + errors)"
 		enableAnswer::usage="List of all boolean variable that disable exercises after having done them"
 		
+		load::usage = "Load initial variables randomly"
 		
-		
-		loadFiles::usage = "Load initial Files"
+		loadFiles::usage = "Load initial variables from files and randomly"
 	
 		checkAnswer::usage = "Check the answer for 1 exercise Kind
 			\n@row_@ exercises row index"
