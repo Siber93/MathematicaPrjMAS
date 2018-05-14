@@ -33,6 +33,9 @@ BeginPackage[ "MClib`"];
 	
 		exKindAPrinter::usage = "Generate form Kind A for students
 			\n@row_@ exercises row index"
+			
+		exKindBPrinter::usage = "Generate form Kind B for students
+			\n@row_@ exercises row index"
 	
 	
 		generateExercisesG1::usage="Generate a list of all exercises (solutions + errors)
@@ -114,7 +117,7 @@ BeginPackage[ "MClib`"];
 																	Style["A quale funzione corrisponde la seguente retta?", FontWeight -> Bold], 
 																	plotWithZoomButtons[teacherEQ[[row,i]], Symbol["x"]],
 																	RadioButtonBar[
-																		Dynamic[userAnswer[row,i]], 
+																		Dynamic[userAnswer[[row,i]]], 
 																		exercises[[row,i]], 
 																		Enabled -> Dynamic[enableAnswer[[row,i]]]
 																	]
@@ -129,7 +132,44 @@ BeginPackage[ "MClib`"];
 			
 			
 			
-			
+				(* Draw Exercises KIND B of a grade *)
+				exKindBPrinter[row_] := Module[
+											{},
+											Column[
+												Table[
+													With[
+														{i = i},
+														Row[{
+															Panel[
+																Column[{
+																	Style[
+																	StringJoin[
+																		ToString[teacherEQ[[row,i]]], 
+																		" \t Qual'è il suo grafico?"], FontWeight -> Bold
+																	],
+																	Row[
+																		Table[
+																			With[
+																				{j = j},
+																				Row[{														 
+																					RadioButton[
+																						Dynamic[userAnswer[[row,i]]], exercises[[row,i,j]], 
+																						Enabled -> Dynamic[enableAnswer[[row,i]]]
+																					],
+																					plotWithZoomButtons[exercises[[row,i,j]], Symbol["x"]]
+																				}]
+																			],
+																			{j, MINNUMBEROFEXERCISES+1}
+																		]
+																	]
+																}]
+															]
+														}]
+													],
+													{i, Length[exercises[[row]]]}
+												]
+											]											
+										];
 			
 			
 				(* This function load exercises from a file and complete the exercises list adding Random ones till minimum number is reached *)
