@@ -106,6 +106,11 @@ BeginPackage[ "MClib`"];
 			(* Functions *)	
 
 				loadFiles[] := Module[{}, 
+					teacherEQ = { };				    
+				    exercises = { };				    
+				    userAnswer = { };				    
+				    enableAnswer = { };
+					
 					AppendTo[teacherEQ,solutionReadAndRandomFill["g1A.txt",1,MINNUMBEROFEXERCISES]]; (* Exercises Grade 1 solutions list of Exercise Kind A *)
 					AppendTo[teacherEQ,solutionReadAndRandomFill["g1B.txt",1,MINNUMBEROFEXERCISES]]; (* Exercises Grade 1 solutions list of Exercise Kind B *)				
 					AppendTo[teacherEQ,solutionReadAndRandomFill["g2A.txt",2,MINNUMBEROFEXERCISES]]; (* Exercises Grade 2 solutions list of Exercise Kind A *)
@@ -127,6 +132,11 @@ BeginPackage[ "MClib`"];
 				
 				
 				load[] := Module[{}, 
+					teacherEQ = { };				    
+				    exercises = { };				    
+				    userAnswer = { };				    
+				    enableAnswer = { };				
+				
 					AppendTo[teacherEQ,randomFill[1,MINNUMBEROFEXERCISES]]; (* Exercises Grade 1 solutions list of Exercise Kind A *)
 					AppendTo[teacherEQ,randomFill[1,MINNUMBEROFEXERCISES]]; (* Exercises Grade 1 solutions list of Exercise Kind B *)				
 					AppendTo[teacherEQ,randomFill[2,MINNUMBEROFEXERCISES]]; (* Exercises Grade 2 solutions list of Exercise Kind A *)
