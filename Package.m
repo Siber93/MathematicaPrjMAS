@@ -28,6 +28,9 @@ BeginPackage[ "MClib`"];
 		userAnswer::usage="List of all the user answer"
 		exercises::usage="List containing all exercises for each grade and kind (solution + errors)"
 		enableAnswer::usage="List of all boolean variable that disable exercises after having done them"
+		correctCounter::usage="Number of correct answer"
+		
+		
 		
 		load::usage = "Load initial variables randomly"
 		
@@ -91,7 +94,9 @@ BeginPackage[ "MClib`"];
 				p3 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
 			
 				
-				MINNUMBEROFEXERCISES = 3 (* CONSTANT- Minimum number of exercises per module *)
+				MINNUMBEROFEXERCISES = 3 (* CONSTANT- Minimum number of exercises per module *)			
+				
+				
 				teacherEQ = { } (* Exercises solutions list *)
 				
 				exercises = { } (* List containing all exercises for each grade and kind (solution + errors) *)
@@ -99,6 +104,8 @@ BeginPackage[ "MClib`"];
 				userAnswer = { } (* List of all user answer to the questions *)
 				
 				enableAnswer = { } (* Forms enabler *)
+				
+				correctCounter = 0 (* Number of correct answer *)
 			
 			(* /Variables *)
 		
@@ -110,6 +117,7 @@ BeginPackage[ "MClib`"];
 				    exercises = { };				    
 				    userAnswer = { };				    
 				    enableAnswer = { };
+					correctCounter = 0;
 					
 					AppendTo[teacherEQ,solutionReadAndRandomFill["g1A.txt",1,MINNUMBEROFEXERCISES]]; (* Exercises Grade 1 solutions list of Exercise Kind A *)
 					AppendTo[teacherEQ,solutionReadAndRandomFill["g1B.txt",1,MINNUMBEROFEXERCISES]]; (* Exercises Grade 1 solutions list of Exercise Kind B *)				
@@ -135,7 +143,8 @@ BeginPackage[ "MClib`"];
 					teacherEQ = { };				    
 				    exercises = { };				    
 				    userAnswer = { };				    
-				    enableAnswer = { };				
+				    enableAnswer = { };		
+					correctCounter = 0;				
 				
 					AppendTo[teacherEQ,randomFill[1,MINNUMBEROFEXERCISES]]; (* Exercises Grade 1 solutions list of Exercise Kind A *)
 					AppendTo[teacherEQ,randomFill[1,MINNUMBEROFEXERCISES]]; (* Exercises Grade 1 solutions list of Exercise Kind B *)				
@@ -233,7 +242,7 @@ BeginPackage[ "MClib`"];
 																					plotWithZoomButtons[exercises[[row,i,j]], Symbol["x"]]
 																				}]
 																			],
-																			{j, MINNUMBEROFEXERCISES+1}
+																			{j, Length[exercises[[row,i]]]}
 																		]
 																	]
 																}]
