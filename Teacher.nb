@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     71773,       1731]
-NotebookOptionsPosition[     67429,       1582]
-NotebookOutlinePosition[     68636,       1622]
-CellTagsIndexPosition[     68449,       1614]
+NotebookDataLength[     96607,       2152]
+NotebookOptionsPosition[     93887,       2058]
+NotebookOutlinePosition[     95096,       2098]
+CellTagsIndexPosition[     94909,       2090]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -33,8 +33,7 @@ ID4CxMfRMTZ9L168YL5w4YIaUD4AiC8C8Qcg/gvE/9AxFreC7PQD4gtA/BGq
 5F9s+h88eMBBjt0w/devXxcGso+S4m9k/ZcuXRKHpgeS3A7TD0wrkpToPw9J
 ywOmn1L3Uxp+lMYfpemH0vRLjfwDjQey8y9a+fGOWDPwlF+gsPhEKDywlZ8g
 d0D9EniexPITGd++fZv3PBnlN6764zxa3QHCAIDESDs=
-         "], {{0, 26}, {16, 
-         0}}, {0, 255},
+         "], {{0, 26}, {16, 0}}, {0, 255},
          ColorFunction->RGBColor],
         BaseStyle->"ImageGraphics",
         ImageSize->Magnification[1],
@@ -65,8 +64,7 @@ eu5WMrilsBwehJXwMKyGx2EtPElPU/19La9ZzXtWcozlHHMxa9zKmnM5h9mc
 Ic+VbLvs7ZkOau7owEAYTDtfY7BhoKGTOgAAAAAAANDr+hu2t9jWonmuvzFG
 nbsNhd1hOOwJI2Fv2B9Gw4FwMBwKR8JYOJrGW9THx/LaQ3nvgRxrf449krWG
 s/ZQtZH3NdfY7rrqtdW6/fvw/9LMnpuZ9Jty646y6n8AhCP7tg==
-         "], {{0, 26}, {
-         2000, 0}}, {0, 255},
+         "], {{0, 26}, {2000, 0}}, {0, 255},
          ColorFunction->RGBColor],
         BaseStyle->"ImageGraphics",
         ImageSize->Magnification[1],
@@ -102,7 +100,6 @@ Pu7kfNfO+x+/T/70++ob7NUEtQ==
      RowBox[{
      "Background", " ", "images", " ", "and", " ", "text", " ", "colors", " ",
        "have", " ", "been", " ", "adjusted", " ", "for", " ", "editing", " ", 
-      
       RowBox[{"purposes", "."}]}],
      LineBreakWithin->False,
      FontFamily->"Helvetica",
@@ -120,8 +117,6 @@ Pu7kfNfO+x+/T/70++ob7NUEtQ==
  TextAlignment->Center,
  CellTags->"SlideShowHeader"],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[{
  RowBox[{
   RowBox[{"SetDirectory", "[", 
@@ -132,55 +127,6 @@ Cell[BoxData[{
  CellChangeTimes->{{3.734093361146397*^9, 3.734093378552863*^9}, {
    3.734095287649521*^9, 3.734095289897346*^9}, 3.7340953586713905`*^9, {
    3.7354023997280445`*^9, 3.7354024027489047`*^9}}],
-
-Cell[BoxData["\<\"C:\\\\Users\\\\Simone\\\\Documents\\\\GitHub\\\\\
-MathematicaPrjMAS\"\>"], "Output",
- CellChangeTimes->{3.7341451378010077`*^9, 3.7342512719557357`*^9, 
-  3.7342527167053585`*^9, 3.7342667704125853`*^9, 3.734439398446945*^9, 
-  3.7344954799668913`*^9, 3.7344977280181046`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[{
- RowBox[{"a", "=", "1"}], "\[IndentingNewLine]", 
- RowBox[{"b", "=", "1"}], "\[IndentingNewLine]", 
- RowBox[{"c", "=", "1"}], "\[IndentingNewLine]", 
- RowBox[{"q", "=", "1"}], "\[IndentingNewLine]", 
- RowBox[{"e", " ", "=", " ", "1"}], "\[IndentingNewLine]", 
- RowBox[{"z", "=", " ", "1"}]}], "Input",
- CellChangeTimes->{{3.7349302833677855`*^9, 3.7349302903684564`*^9}}],
-
-Cell[BoxData["1"], "Output",
- CellChangeTimes->{3.734266770537675*^9, 3.7344394045876417`*^9, 
-  3.734495482607547*^9, 3.7344977303775077`*^9, 3.734930021605037*^9, 
-  3.7349302947275066`*^9}],
-
-Cell[BoxData["1"], "Output",
- CellChangeTimes->{3.734266770537675*^9, 3.7344394045876417`*^9, 
-  3.734495482607547*^9, 3.7344977303775077`*^9, 3.734930021605037*^9, 
-  3.734930294730507*^9}],
-
-Cell[BoxData["1"], "Output",
- CellChangeTimes->{3.734266770537675*^9, 3.7344394045876417`*^9, 
-  3.734495482607547*^9, 3.7344977303775077`*^9, 3.734930021605037*^9, 
-  3.734930294733507*^9}],
-
-Cell[BoxData["1"], "Output",
- CellChangeTimes->{3.734266770537675*^9, 3.7344394045876417`*^9, 
-  3.734495482607547*^9, 3.7344977303775077`*^9, 3.734930021605037*^9, 
-  3.734930294737507*^9}],
-
-Cell[BoxData["1"], "Output",
- CellChangeTimes->{3.734266770537675*^9, 3.7344394045876417`*^9, 
-  3.734495482607547*^9, 3.7344977303775077`*^9, 3.734930021605037*^9, 
-  3.7349302947385073`*^9}],
-
-Cell[BoxData["1"], "Output",
- CellChangeTimes->{3.734266770537675*^9, 3.7344394045876417`*^9, 
-  3.734495482607547*^9, 3.7344977303775077`*^9, 3.734930021605037*^9, 
-  3.7349302947385073`*^9}]
-}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -223,14 +169,6 @@ Cell["Equazioni di primo grado", "Section",
  CellChangeTimes->{{3.7340584072666225`*^9, 3.734058415360484*^9}},
  CellTags->"1\[Degree] Grado"],
 
-Cell[BoxData[
- RowBox[{
-  RowBox[{"list1", "=", 
-   RowBox[{"{", "}"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.7341547170278845`*^9, 3.734154726776566*^9}, 
-   3.7342526587597046`*^9, {3.7344434360011034`*^9, 3.7344434380011263`*^9}, 
-   3.735404916545486*^9}],
-
 Cell[CellGroupData[{
 
 Cell[BoxData[
@@ -238,133 +176,149 @@ Cell[BoxData[
   RowBox[{
    RowBox[{"{", 
     RowBox[{"f", ",", "aa", ",", "qq", ",", 
-     RowBox[{"mode", "=", "True"}]}], "}"}], ",", "\[IndentingNewLine]", 
-   RowBox[{"Column", "[", "\[IndentingNewLine]", 
-    RowBox[{"{", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"Row", "[", 
-       RowBox[{"{", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{"Row", "[", 
-          RowBox[{"{", 
-           RowBox[{"\"\<Normale \>\"", ",", 
-            RowBox[{"RadioButton", "[", 
-             RowBox[{
-              RowBox[{"Dynamic", "[", "mode", "]"}], ",", "True"}], "]"}]}], 
-           "}"}], "]"}], ",", "\[IndentingNewLine]", "\"\<\\t\>\"", ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"Row", "[", 
-          RowBox[{"{", 
-           RowBox[{"\"\<Fattorizzato \>\"", ",", 
-            RowBox[{"RadioButton", "[", 
-             RowBox[{
-              RowBox[{"Dynamic", "[", "mode", "]"}], ",", "False"}], "]"}]}], 
-           "}"}], "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
-       RowBox[{"If", "[", 
-        RowBox[{"mode", ",", "\[IndentingNewLine]", 
-         RowBox[{"Panel", "[", "\[IndentingNewLine]", 
-          RowBox[{"Row", "[", "\[IndentingNewLine]", 
-           RowBox[{"{", "\[IndentingNewLine]", 
-            RowBox[{
-             RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-              RowBox[{
-               RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
-               RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-              "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<x + \>\"", ",", "12"}], "]"}], ",", 
-             "\[IndentingNewLine]", 
-             RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-              RowBox[{
-               RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
-               RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-              "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}], 
-           "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"Panel", "[", "\[IndentingNewLine]", 
-          RowBox[{"Row", "[", "\[IndentingNewLine]", 
-           RowBox[{"{", "\[IndentingNewLine]", 
-            RowBox[{
-             RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-              RowBox[{
-               RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
-               RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-              "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<(x + \>\"", ",", "12"}], "]"}], ",", 
-             "\[IndentingNewLine]", 
-             RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-              RowBox[{
-               RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
-               RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-              "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<)\>\"", ",", "12"}], "]"}]}], 
-            "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
-          "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], 
-       "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"mode", "=", "True"}], ",", " ", 
+     RowBox[{"list", " ", "=", " ", 
+      RowBox[{"{", "}"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+    RowBox[{"Column", "[", "\[IndentingNewLine]", 
+     RowBox[{"{", "\[IndentingNewLine]", 
       RowBox[{
-       RowBox[{"Dynamic", "@", 
-        RowBox[{"Refresh", "[", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"If", "[", 
-            RowBox[{"mode", ",", 
-             RowBox[{"f", "=", 
-              RowBox[{
-               RowBox[{"aa", "*", "x"}], "+", " ", "qq"}]}], ",", 
-             RowBox[{"f", "=", 
-              RowBox[{"aa", "*", 
-               RowBox[{"(", 
-                RowBox[{"x", "+", " ", "qq"}], ")"}]}]}]}], "]"}], ";", " ", 
-           "\"\<\>\""}], ",", " ", 
-          RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
-           RowBox[{"{", 
-            RowBox[{"aa", ",", "qq", ",", " ", "mode"}], "}"}]}]}], "]"}]}], 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Esercizi Tipologia A Grado 1\>\"", ",", " ", 
+         RowBox[{"FontWeight", "\[Rule]", "Bold"}], ",", " ", 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}], ",", 
        "\[IndentingNewLine]", 
-       RowBox[{"Button", "[", "\[IndentingNewLine]", 
-        RowBox[{"\"\<Add\>\"", ",", "\[IndentingNewLine]", 
-         RowBox[{"If", "[", 
+       RowBox[{"Row", "[", 
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"Row", "[", 
+           RowBox[{"{", 
+            RowBox[{"\"\<Normale \>\"", ",", 
+             RowBox[{"RadioButton", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "mode", "]"}], ",", "True"}], "]"}]}], 
+            "}"}], "]"}], ",", "\[IndentingNewLine]", "\"\<\\t\>\"", ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Row", "[", 
+           RowBox[{"{", 
+            RowBox[{"\"\<Fattorizzato \>\"", ",", 
+             RowBox[{"RadioButton", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "mode", "]"}], ",", "False"}], "]"}]}],
+             "}"}], "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{"mode", ",", "\[IndentingNewLine]", 
+          RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", "\[IndentingNewLine]", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<x + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}], 
+            "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", "\[IndentingNewLine]", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(x + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<)\>\"", ",", "12"}], "]"}]}], 
+             "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
+           "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], 
+        "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Dynamic", "@", 
+         RowBox[{"Refresh", "[", 
           RowBox[{
            RowBox[{
-            RowBox[{"aa", "\[Equal]", " ", "Null"}], " ", "||", " ", 
-            RowBox[{"qq", "==", "Null"}]}], ",", "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{"mode", ",", 
+              RowBox[{"f", "=", 
+               RowBox[{
+                RowBox[{"aa", "*", "x"}], "+", " ", "qq"}]}], ",", 
+              RowBox[{"f", "=", 
+               RowBox[{"aa", "*", 
+                RowBox[{"(", 
+                 RowBox[{"x", "+", " ", "qq"}], ")"}]}]}]}], "]"}], ";", " ", 
+            "\"\<\>\""}], ",", " ", 
+           RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+            RowBox[{"{", 
+             RowBox[{"aa", ",", "qq", ",", " ", "mode"}], "}"}]}]}], "]"}]}], 
+        "\[IndentingNewLine]", 
+        RowBox[{"Button", "[", "\[IndentingNewLine]", 
+         RowBox[{"\"\<Aggiungi\>\"", ",", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
            RowBox[{
-           "MessageDialog", "[", 
-            "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
-           "\[IndentingNewLine]", 
-           RowBox[{"If", "[", 
             RowBox[{
-             RowBox[{
-              RowBox[{"Length", "[", 
-               RowBox[{"CoefficientList", "[", 
-                RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[GreaterEqual]", " ",
-               "2"}], ",", "\[IndentingNewLine]", 
-             RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-              RowBox[{"list1", ",", "\[IndentingNewLine]", "f"}], 
-              "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-             RowBox[{
-             "MessageDialog", "[", "\"\<Equazione di grado inferiore a 1\>\"",
-               "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
-           "\[IndentingNewLine]", 
-           RowBox[{"If", "[", 
+             RowBox[{"aa", "\[Equal]", " ", "Null"}], " ", "||", " ", 
+             RowBox[{"qq", "==", "Null"}]}], ",", "\[IndentingNewLine]", 
             RowBox[{
+            "MessageDialog", "[", 
+             "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
              RowBox[{
-              RowBox[{"Length", "[", 
-               RowBox[{"CoefficientList", "[", 
-                RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[GreaterEqual]", " ",
-               "2"}], ",", "\[IndentingNewLine]", 
-             RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-              RowBox[{"list1", ",", "\[IndentingNewLine]", "f"}], 
-              "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"Length", "[", 
+                RowBox[{"CoefficientList", "[", 
+                 RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[GreaterEqual]", 
+               " ", "2"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+               RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+              "MessageDialog", "[", 
+               "\"\<Equazione di grado inferiore a 1\>\"", "]"}]}], 
+             "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
              RowBox[{
-             "MessageDialog", "[", "\"\<Equazione di grado inferiore a 1\>\"",
-               "]"}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]",
-           "]"}]}], "\[IndentingNewLine]", "]"}]}]}], " ", 
-     "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}]}], 
-  "\[IndentingNewLine]", "]"}]], "Input",
+              RowBox[{
+               RowBox[{"Length", "[", 
+                RowBox[{"CoefficientList", "[", 
+                 RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[GreaterEqual]", 
+               " ", "2"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+               RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+              "MessageDialog", "[", 
+               "\"\<Equazione di grado inferiore a 1\>\"", "]"}]}], 
+             "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
+         "\[IndentingNewLine]", "]"}]}], " ", ",", "\[IndentingNewLine]", 
+       "\"\<Elementi aggiunti\>\"", ",", "\[IndentingNewLine]", 
+       RowBox[{"Dynamic", "[", 
+        RowBox[{"d", "[", "list", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Button", "[", 
+        RowBox[{"\"\<Esporta Lista\>\"", ",", " ", 
+         RowBox[{"Export", "[", 
+          RowBox[{"\"\<g1A.txt\>\"", ",", "list"}], "]"}]}], "]"}]}], 
+      "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
  CellChangeTimes->{{3.734066297195404*^9, 3.734066299638141*^9}, {
    3.734066343712489*^9, 3.7340663484398518`*^9}, {3.734066423804471*^9, 
    3.734066481648594*^9}, {3.734066515013324*^9, 3.7340666008393693`*^9}, {
@@ -398,160 +352,335 @@ Cell[BoxData[
    3.7354043482051067`*^9, 3.7354043748134346`*^9}, {3.735404410429397*^9, 
    3.7354044423921576`*^9}, {3.735404511222653*^9, 3.7354046466748714`*^9}, {
    3.7354046975986605`*^9, 3.73540476973403*^9}, {3.7354048192139316`*^9, 
-   3.7354048810186577`*^9}, {3.7354053615653653`*^9, 3.735405555735978*^9}}],
+   3.7354048810186577`*^9}, {3.7354053615653653`*^9, 3.735405555735978*^9}, {
+   3.7354602485110006`*^9, 3.735460257466193*^9}, {3.7354602956323004`*^9, 
+   3.735460554388009*^9}, {3.735460586125248*^9, 3.735460611548386*^9}, {
+   3.735460663215804*^9, 3.73546067507712*^9}, {3.7354609111180196`*^9, 
+   3.735460926539397*^9}, {3.735461637260668*^9, 3.7354616375313606`*^9}, {
+   3.735461700070156*^9, 3.7354617840428*^9}, {3.735461841673545*^9, 
+   3.7354618665904264`*^9}, {3.7354623186110764`*^9, 3.735462320089463*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`f$$ = 1 + $CellContext`x, $CellContext`aa$$ = 
-  1, $CellContext`qq$$ = 1, $CellContext`mode$$ = False}, 
-  TagBox[GridBox[{
-     {
-      TemplateBox[{TemplateBox[{"\"Normale \"", 
-          RadioButtonBox[
-           Dynamic[$CellContext`mode$$], {True}]}, "RowDefault"],"\"\\t\"",
-        TemplateBox[{"\"Fattorizzato \"", 
-          RadioButtonBox[
-           Dynamic[$CellContext`mode$$], {False}]}, "RowDefault"]},
-       "RowDefault"]},
-     {
-      DynamicBox[ToBoxes[
-        If[$CellContext`mode$$, 
-         Panel[
-          Row[{
-            InputField[
-             Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
-            Style["x + ", 12], 
-            InputField[
-             Dynamic[$CellContext`qq$$], Number, FieldSize -> Full]}]], 
-         Panel[
-          Row[{
-            InputField[
-             Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
-            Style["(x + ", 12], 
-            InputField[
-             Dynamic[$CellContext`qq$$], Number, FieldSize -> Full], 
-            Style[")", 12]}]]], StandardForm],
-       ImageSizeCache->{89., {18., 24.}}]},
-     {
-      RowBox[{
-       ButtonBox["\<\"Add\"\>",
-        Appearance->Automatic,
-        ButtonFunction:>If[
-          Or[$CellContext`aa$$ == Null, $CellContext`qq$$ == Null], 
-          MessageDialog["Alcuni campi inseriti non sono corretti!"], 
-          If[Length[
-             CoefficientList[$CellContext`f$$, $CellContext`x]] >= 2, 
-           AppendTo[$CellContext`list1, $CellContext`f$$], 
-           MessageDialog["Equazione di grado inferiore a 1"]], 
-          If[Length[
-             CoefficientList[$CellContext`f$$, $CellContext`x]] >= 2, 
-           AppendTo[$CellContext`list1, $CellContext`f$$], 
-           MessageDialog["Equazione di grado inferiore a 1"]]],
-        Evaluator->Automatic,
-        Method->"Preemptive"], " ", 
+ DynamicModuleBox[{$CellContext`f$$ = $CellContext`qq$$ + $CellContext`aa$$ \
+$CellContext`x, $CellContext`aa$$, $CellContext`qq$$, $CellContext`mode$$ = 
+  True, $CellContext`list$$ = {}}, 
+  PanelBox[
+   TagBox[GridBox[{
+      {
+       StyleBox["\<\"Esercizi Tipologia A Grado 1\"\>",
+        StripOnInput->False,
+        FontSize->14,
+        FontWeight->Bold]},
+      {
+       TemplateBox[{TemplateBox[{"\"Normale \"", 
+           RadioButtonBox[
+            Dynamic[$CellContext`mode$$], {True}]}, "RowDefault"],"\"\\t\"",
+         TemplateBox[{"\"Fattorizzato \"", 
+           RadioButtonBox[
+            Dynamic[$CellContext`mode$$], {False}]}, "RowDefault"]},
+        "RowDefault"]},
+      {
        DynamicBox[ToBoxes[
-         Refresh[
-         If[$CellContext`mode$$, $CellContext`f$$ = $CellContext`aa$$ \
+         If[$CellContext`mode$$, 
+          Panel[
+           Row[{
+             InputField[
+              Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
+             Style["x + ", 12], 
+             InputField[
+              Dynamic[$CellContext`qq$$], Number, FieldSize -> Full]}]], 
+          Panel[
+           Row[{
+             InputField[
+              Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
+             Style["(x + ", 12], 
+             InputField[
+              Dynamic[$CellContext`qq$$], Number, FieldSize -> Full], 
+             Style[")", 12]}]]], StandardForm],
+        ImageSizeCache->{81., {18., 24.}}]},
+      {
+       RowBox[{
+        ButtonBox["\<\"Aggiungi\"\>",
+         Appearance->Automatic,
+         ButtonFunction:>If[
+           Or[$CellContext`aa$$ == Null, $CellContext`qq$$ == Null], 
+           MessageDialog["Alcuni campi inseriti non sono corretti!"], 
+           If[Length[
+              CoefficientList[$CellContext`f$$, $CellContext`x]] >= 2, 
+            AppendTo[$CellContext`list$$, $CellContext`f$$], 
+            MessageDialog["Equazione di grado inferiore a 1"]], 
+           If[Length[
+              CoefficientList[$CellContext`f$$, $CellContext`x]] >= 2, 
+            AppendTo[$CellContext`list$$, $CellContext`f$$], 
+            MessageDialog["Equazione di grado inferiore a 1"]]],
+         Evaluator->Automatic,
+         Method->"Preemptive"], " ", 
+        DynamicBox[ToBoxes[
+          Refresh[
+          If[$CellContext`mode$$, $CellContext`f$$ = $CellContext`aa$$ \
 $CellContext`x + $CellContext`qq$$, $CellContext`f$$ = $CellContext`aa$$ \
 ($CellContext`x + $CellContext`qq$$)]; "", 
-          TrackedSymbols :> {$CellContext`aa$$, $CellContext`qq$$, \
+           TrackedSymbols :> {$CellContext`aa$$, $CellContext`qq$$, \
 $CellContext`mode$$}], StandardForm],
-        ImageSizeCache->{0., {0., 6.}}]}]}
-    },
-    DefaultBaseStyle->"Column",
-    GridBoxAlignment->{"Columns" -> {{Left}}},
-    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-   "Column"],
+         ImageSizeCache->{0., {0., 6.}}]}]},
+      {"\<\"Elementi aggiunti\"\>"},
+      {
+       DynamicBox[ToBoxes[
+         MClib`d[$CellContext`list$$], StandardForm],
+        ImageSizeCache->{22., {16., 22.}}]},
+      {
+       ButtonBox["\<\"Esporta Lista\"\>",
+        Appearance->Automatic,
+        ButtonFunction:>Export["g1A.txt", $CellContext`list$$],
+        Evaluator->Automatic,
+        Method->"Preemptive"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]],
   DynamicModuleValues:>{}]], "Output",
  CellChangeTimes->{
-  3.7342626759319267`*^9, 3.7342667706302404`*^9, 3.7344394830416636`*^9, 
-   3.7344415331942854`*^9, 3.7344419422669764`*^9, 3.7344420323625193`*^9, 
-   3.7344421911621404`*^9, 3.734442292540993*^9, 3.734442330645954*^9, 
-   3.7344434445365033`*^9, 3.7344955157822175`*^9, 3.7344977489968915`*^9, 
-   3.735403892209257*^9, 3.735404017588949*^9, 3.7354041528316917`*^9, 
-   3.735404402543597*^9, {3.7354045720115175`*^9, 3.7354046335555153`*^9}, {
-   3.735404756154151*^9, 3.735404773698905*^9}, 3.7354048848796425`*^9, 
-   3.735405565230077*^9}]
-}, Open  ]],
+  3.735460554716854*^9, 3.7354606156249514`*^9, 3.7354606761944833`*^9, 
+   3.7354607963960943`*^9, 3.7354609273593807`*^9, 3.735461785445602*^9, {
+   3.7354618512443867`*^9, 3.7354618702099075`*^9}, 3.735462322707898*^9}]
+}, {2}]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Dynamic", "[", 
+ RowBox[{"DynamicModule", "[", 
   RowBox[{
-   RowBox[{
-    RowBox[{"Button", "[", 
-     RowBox[{
-      RowBox[{"list1", "[", 
-       RowBox[{"[", "#", "]"}], "]"}], ",", 
-      RowBox[{"list1", " ", "=", " ", 
-       RowBox[{"Delete", "[", 
-        RowBox[{"list1", ",", 
-         RowBox[{"Position", "[", 
-          RowBox[{"list1", ",", 
-           RowBox[{"list1", "[", 
-            RowBox[{"[", "#", "]"}], "]"}]}], "]"}]}], "]"}]}]}], "]"}], 
-    "&"}], "/@", 
-   RowBox[{"Range", "[", 
-    RowBox[{"Length", "[", "list1", "]"}], "]"}]}], " ", "]"}]], "Input",
- CellChangeTimes->{{3.734153093188799*^9, 3.7341530968757453`*^9}, 
-   3.7342526843069086`*^9, {3.7344434672033415`*^9, 3.7344434831377153`*^9}}],
+   RowBox[{"{", 
+    RowBox[{"f", ",", "aa", ",", "qq", ",", 
+     RowBox[{"mode", "=", "True"}], ",", " ", 
+     RowBox[{"list", " ", "=", " ", 
+      RowBox[{"{", "}"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+    RowBox[{"Column", "[", "\[IndentingNewLine]", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Esercizi Tipologia B Grado 1\>\"", ",", " ", 
+         RowBox[{"FontWeight", "\[Rule]", "Bold"}], ",", " ", 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Row", "[", 
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"Row", "[", 
+           RowBox[{"{", 
+            RowBox[{"\"\<Normale \>\"", ",", 
+             RowBox[{"RadioButton", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "mode", "]"}], ",", "True"}], "]"}]}], 
+            "}"}], "]"}], ",", "\[IndentingNewLine]", "\"\<\\t\>\"", ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Row", "[", 
+           RowBox[{"{", 
+            RowBox[{"\"\<Fattorizzato \>\"", ",", 
+             RowBox[{"RadioButton", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "mode", "]"}], ",", "False"}], "]"}]}],
+             "}"}], "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{"mode", ",", "\[IndentingNewLine]", 
+          RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", "\[IndentingNewLine]", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<x + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}], 
+            "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", "\[IndentingNewLine]", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(x + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<)\>\"", ",", "12"}], "]"}]}], 
+             "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
+           "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], 
+        "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Dynamic", "@", 
+         RowBox[{"Refresh", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"If", "[", 
+             RowBox[{"mode", ",", 
+              RowBox[{"f", "=", 
+               RowBox[{
+                RowBox[{"aa", "*", "x"}], "+", " ", "qq"}]}], ",", 
+              RowBox[{"f", "=", 
+               RowBox[{"aa", "*", 
+                RowBox[{"(", 
+                 RowBox[{"x", "+", " ", "qq"}], ")"}]}]}]}], "]"}], ";", " ", 
+            "\"\<\>\""}], ",", " ", 
+           RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+            RowBox[{"{", 
+             RowBox[{"aa", ",", "qq", ",", " ", "mode"}], "}"}]}]}], "]"}]}], 
+        "\[IndentingNewLine]", 
+        RowBox[{"Button", "[", "\[IndentingNewLine]", 
+         RowBox[{"\"\<Aggiungi\>\"", ",", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"aa", "\[Equal]", " ", "Null"}], " ", "||", " ", 
+             RowBox[{"qq", "==", "Null"}]}], ",", "\[IndentingNewLine]", 
+            RowBox[{
+            "MessageDialog", "[", 
+             "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Length", "[", 
+                RowBox[{"CoefficientList", "[", 
+                 RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[GreaterEqual]", 
+               " ", "2"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+               RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+              "MessageDialog", "[", 
+               "\"\<Equazione di grado inferiore a 1\>\"", "]"}]}], 
+             "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Length", "[", 
+                RowBox[{"CoefficientList", "[", 
+                 RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[GreaterEqual]", 
+               " ", "2"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+               RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+              "MessageDialog", "[", 
+               "\"\<Equazione di grado inferiore a 1\>\"", "]"}]}], 
+             "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
+         "\[IndentingNewLine]", "]"}]}], " ", ",", "\[IndentingNewLine]", 
+       "\"\<Elementi aggiunti\>\"", ",", "\[IndentingNewLine]", 
+       RowBox[{"Dynamic", "[", 
+        RowBox[{"d", "[", "list", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Button", "[", 
+        RowBox[{"\"\<Esporta Lista\>\"", ",", " ", 
+         RowBox[{"Export", "[", 
+          RowBox[{"\"\<g1B.txt\>\"", ",", "list"}], "]"}]}], "]"}]}], 
+      "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.735461960927559*^9, 3.7354619727532463`*^9}, {
+  3.7354622901806564`*^9, 3.7354622928090863`*^9}}],
 
 Cell[BoxData[
- DynamicBox[ToBoxes[
-   Map[Button[
-     Part[$CellContext`list1, #], $CellContext`list1 = 
-     Delete[$CellContext`list1, 
-       Position[$CellContext`list1, 
-        Part[$CellContext`list1, #]]]]& , 
-    Range[
-     Length[$CellContext`list1]]], StandardForm],
-  ImageSizeCache->{76., {9., 18.}}]], "Output",
- CellChangeTimes->{3.7341530972270346`*^9, 3.7342512726276197`*^9, 
-  3.734252717220988*^9, 3.7342667706522565`*^9, 3.734443488467013*^9, 
-  3.734778510638837*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Dynamic", "[", 
-  RowBox[{"d", "[", "list1", "]"}], "]"}]], "Input",
- CellChangeTimes->{{3.734496442549617*^9, 3.734496446346611*^9}, {
-  3.734496559805782*^9, 3.7344966089933643`*^9}}],
-
-Cell[BoxData[
- DynamicBox[ToBoxes[
-   $CellContext`d[$CellContext`list1], StandardForm],
-  ImageSizeCache->{104., {6., 12.}}]], "Output",
- CellChangeTimes->{
-  3.7344964467528496`*^9, {3.73449657523401*^9, 3.7344966102738504`*^9}, 
-   3.734497754932416*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Button", "[", 
-  RowBox[{"\"\<Export Data\>\"", ",", " ", 
-   RowBox[{"Export", "[", 
-    RowBox[{"\"\<g1.txt\>\"", ",", "list1"}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.7341538540553646`*^9, 3.7341538878329973`*^9}, {
-  3.734153942855629*^9, 3.7341539571006727`*^9}, {3.7341542724166555`*^9, 
-  3.7341542772073746`*^9}, {3.734154441070569*^9, 3.734154441429948*^9}, {
-  3.734252677119304*^9, 3.734252682041259*^9}, {3.7344435146386213`*^9, 
-  3.7344435184171066`*^9}}],
-
-Cell[BoxData[
- ButtonBox["\<\"Export Data\"\>",
-  Appearance->Automatic,
-  ButtonFunction:>Export["g1.txt", $CellContext`list1],
-  Evaluator->Automatic,
-  Method->"Preemptive"]], "Output",
- CellChangeTimes->{3.734153958069419*^9, 3.7341542845207586`*^9, 
-  3.734154359516574*^9, 3.734154447148184*^9, 3.734251272643245*^9, 
-  3.734252717236613*^9, 3.7342667706692686`*^9, 3.734443521151513*^9, 
-  3.7347784577153406`*^9}]
-}, Open  ]]
+ DynamicModuleBox[{$CellContext`f$$ = $CellContext`qq$$ + $CellContext`aa$$ \
+$CellContext`x, $CellContext`aa$$, $CellContext`qq$$, $CellContext`mode$$ = 
+  True, $CellContext`list$$ = {}}, 
+  PanelBox[
+   TagBox[GridBox[{
+      {
+       StyleBox["\<\"Esercizi Tipologia B Grado 1\"\>",
+        StripOnInput->False,
+        FontSize->14,
+        FontWeight->Bold]},
+      {
+       TemplateBox[{TemplateBox[{"\"Normale \"", 
+           RadioButtonBox[
+            Dynamic[$CellContext`mode$$], {True}]}, "RowDefault"],"\"\\t\"",
+         TemplateBox[{"\"Fattorizzato \"", 
+           RadioButtonBox[
+            Dynamic[$CellContext`mode$$], {False}]}, "RowDefault"]},
+        "RowDefault"]},
+      {
+       DynamicBox[ToBoxes[
+         If[$CellContext`mode$$, 
+          Panel[
+           Row[{
+             InputField[
+              Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
+             Style["x + ", 12], 
+             InputField[
+              Dynamic[$CellContext`qq$$], Number, FieldSize -> Full]}]], 
+          Panel[
+           Row[{
+             InputField[
+              Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
+             Style["(x + ", 12], 
+             InputField[
+              Dynamic[$CellContext`qq$$], Number, FieldSize -> Full], 
+             Style[")", 12]}]]], StandardForm],
+        ImageSizeCache->{81., {18., 24.}}]},
+      {
+       RowBox[{
+        ButtonBox["\<\"Aggiungi\"\>",
+         Appearance->Automatic,
+         ButtonFunction:>If[
+           Or[$CellContext`aa$$ == Null, $CellContext`qq$$ == Null], 
+           MessageDialog["Alcuni campi inseriti non sono corretti!"], 
+           If[Length[
+              CoefficientList[$CellContext`f$$, $CellContext`x]] >= 2, 
+            AppendTo[$CellContext`list$$, $CellContext`f$$], 
+            MessageDialog["Equazione di grado inferiore a 1"]], 
+           If[Length[
+              CoefficientList[$CellContext`f$$, $CellContext`x]] >= 2, 
+            AppendTo[$CellContext`list$$, $CellContext`f$$], 
+            MessageDialog["Equazione di grado inferiore a 1"]]],
+         Evaluator->Automatic,
+         Method->"Preemptive"], " ", 
+        DynamicBox[ToBoxes[
+          Refresh[
+          If[$CellContext`mode$$, $CellContext`f$$ = $CellContext`aa$$ \
+$CellContext`x + $CellContext`qq$$, $CellContext`f$$ = $CellContext`aa$$ \
+($CellContext`x + $CellContext`qq$$)]; "", 
+           TrackedSymbols :> {$CellContext`aa$$, $CellContext`qq$$, \
+$CellContext`mode$$}], StandardForm],
+         ImageSizeCache->{0., {0., 6.}}]}]},
+      {"\<\"Elementi aggiunti\"\>"},
+      {
+       DynamicBox[ToBoxes[
+         MClib`d[$CellContext`list$$], StandardForm],
+        ImageSizeCache->{22., {16., 22.}}]},
+      {
+       ButtonBox["\<\"Esporta Lista\"\>",
+        Appearance->Automatic,
+        ButtonFunction:>Export["g1B.txt", $CellContext`list$$],
+        Evaluator->Automatic,
+        Method->"Preemptive"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{3.735461979900538*^9, 3.735462295056279*^9}]
+}, {2}]]
 }, Open  ]]
 }, Open  ]],
 
@@ -567,12 +696,314 @@ Cell["Equazioni di secondo grado", "Section",
   3.734251689875479*^9, 3.7342516921411314`*^9}},
  CellTags->"2\[Degree] Grado"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
- RowBox[{
-  RowBox[{"list2", "=", 
-   RowBox[{"{", "}"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.7342528433233557`*^9, 3.7342528435108557`*^9}, {
-   3.7344963089773326`*^9, 3.7344963107425976`*^9}, 3.7354067787361164`*^9}],
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "f", ",", "aa", ",", "bb", ",", "qq", ",", "exp1", ",", "exp2", ",", 
+     RowBox[{"mode", "=", "True"}], ",", " ", 
+     RowBox[{"list", " ", "=", " ", 
+      RowBox[{"{", "}"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+    RowBox[{"Column", "[", "\[IndentingNewLine]", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Esercizi Tipologia A Grado 2\>\"", ",", " ", 
+         RowBox[{"FontWeight", "\[Rule]", "Bold"}], ",", " ", 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Row", "[", 
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"Row", "[", 
+           RowBox[{"{", 
+            RowBox[{"\"\<Normale \>\"", ",", 
+             RowBox[{"RadioButton", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "mode", "]"}], ",", "True"}], "]"}]}], 
+            "}"}], "]"}], ",", "\[IndentingNewLine]", "\"\<\\t\>\"", ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Row", "[", 
+           RowBox[{"{", 
+            RowBox[{"\"\<Fattorizzato \>\"", ",", 
+             RowBox[{"RadioButton", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "mode", "]"}], ",", "False"}], "]"}]}],
+             "}"}], "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{"mode", ",", "\[IndentingNewLine]", 
+          RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", "\[IndentingNewLine]", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<\!\(\*SuperscriptBox[\(x\), \(2\)]\) + \>\"", ",", "12"}],
+                "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "bb", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<x + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}], 
+            "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", "\[IndentingNewLine]", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Superscript", "[", 
+               RowBox[{"x", ",", "\[IndentingNewLine]", 
+                RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"Dynamic", "[", "exp1", "]"}], ",", "Number", ",", 
+                  RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+                 "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}],
+               ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\< + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "bb", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<)\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Superscript", "[", 
+               RowBox[{"x", ",", "\[IndentingNewLine]", 
+                RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"Dynamic", "[", "exp2", "]"}], ",", "Number", ",", 
+                  RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+                 "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}],
+               ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\< + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<)\>\"", ",", "12"}], "]"}]}], 
+             "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
+           "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], 
+        "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Dynamic", "@", 
+         RowBox[{"Refresh", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"If", "[", 
+             RowBox[{"mode", ",", 
+              RowBox[{"f", "=", 
+               RowBox[{
+                RowBox[{"aa", "*", 
+                 SuperscriptBox["x", "2"]}], "+", 
+                RowBox[{"bb", "*", "x"}], "+", " ", "qq"}]}], ",", 
+              RowBox[{"f", "=", 
+               RowBox[{"aa", "*", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"x", "^", "exp1"}], "+", "bb"}], ")"}], "*", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"x", "^", "exp2"}], "+", " ", "qq"}], ")"}]}]}]}], 
+             "]"}], ";", " ", "\"\<\>\""}], ",", " ", 
+           RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+            RowBox[{"{", 
+             RowBox[{
+             "aa", ",", "bb", ",", "qq", ",", "exp1", ",", "exp2", ",", " ", 
+              "mode"}], "}"}]}]}], "]"}]}], "\[IndentingNewLine]", 
+        RowBox[{"Button", "[", "\[IndentingNewLine]", 
+         RowBox[{"\"\<Aggiungi\>\"", ",", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"aa", "\[Equal]", " ", "Null"}], " ", "||", " ", 
+             RowBox[{"bb", " ", "\[Equal]", " ", "Null"}], "||", " ", 
+             RowBox[{"qq", "==", "Null"}], " ", "||", " ", 
+             RowBox[{"exp1", " ", "\[Equal]", " ", "Null"}], "||", " ", 
+             RowBox[{"exp2", "==", "Null"}]}], ",", "\[IndentingNewLine]", 
+            RowBox[{
+            "MessageDialog", "[", 
+             "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Length", "[", 
+                RowBox[{"CoefficientList", "[", 
+                 RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
+               "3"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+               RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+              "MessageDialog", "[", "\"\<Equazione di grado diverso a 2\>\"", 
+               "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Length", "[", 
+                RowBox[{"CoefficientList", "[", 
+                 RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
+               "3"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+               RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+              "MessageDialog", "[", "\"\<Equazione di grado diverso a 2\>\"", 
+               "]"}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]",
+            "]"}]}], "\[IndentingNewLine]", "]"}]}], " ", " ", ",", 
+       "\[IndentingNewLine]", "\"\<Elementi aggiunti\>\"", ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Dynamic", "[", 
+        RowBox[{"d", "[", "list", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Button", "[", 
+        RowBox[{"\"\<Esporta Lista\>\"", ",", " ", 
+         RowBox[{"Export", "[", 
+          RowBox[{"\"\<g2A.txt\>\"", ",", "list"}], "]"}]}], "]"}]}], 
+      "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.735462160073105*^9, 3.7354622580160904`*^9}}],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`f$$ = $CellContext`qq$$ + $CellContext`bb$$ \
+$CellContext`x + $CellContext`aa$$ $CellContext`x^2, $CellContext`aa$$, \
+$CellContext`bb$$, $CellContext`qq$$, $CellContext`exp1$$, \
+$CellContext`exp2$$, $CellContext`mode$$ = True, $CellContext`list$$ = {}}, 
+  PanelBox[
+   TagBox[GridBox[{
+      {
+       StyleBox["\<\"Esercizi Tipologia A Grado 2\"\>",
+        StripOnInput->False,
+        FontSize->14,
+        FontWeight->Bold]},
+      {
+       TemplateBox[{TemplateBox[{"\"Normale \"", 
+           RadioButtonBox[
+            Dynamic[$CellContext`mode$$], {True}]}, "RowDefault"],"\"\\t\"",
+         TemplateBox[{"\"Fattorizzato \"", 
+           RadioButtonBox[
+            Dynamic[$CellContext`mode$$], {False}]}, "RowDefault"]},
+        "RowDefault"]},
+      {
+       DynamicBox[ToBoxes[
+         If[$CellContext`mode$$, 
+          Panel[
+           Row[{
+             InputField[
+              Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
+             Style["\!\(\*SuperscriptBox[\(x\), \(2\)]\) + ", 12], 
+             InputField[
+              Dynamic[$CellContext`bb$$], Number, FieldSize -> Full], 
+             Style["x + ", 12], 
+             InputField[
+              Dynamic[$CellContext`qq$$], Number, FieldSize -> Full]}]], 
+          Panel[
+           Row[{
+             InputField[
+              Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
+             Style["(", 12], 
+             Superscript[$CellContext`x, 
+              InputField[
+               Dynamic[$CellContext`exp1$$], Number, FieldSize -> Full]], 
+             Style[" + ", 12], 
+             InputField[
+              Dynamic[$CellContext`bb$$], Number, FieldSize -> Full], 
+             Style[")", 12], 
+             Style["(", 12], 
+             Superscript[$CellContext`x, 
+              InputField[
+               Dynamic[$CellContext`exp2$$], Number, FieldSize -> Full]], 
+             Style[" + ", 12], 
+             InputField[
+              Dynamic[$CellContext`qq$$], Number, FieldSize -> Full], 
+             Style[")", 12]}]]], StandardForm],
+        ImageSizeCache->{127., {18., 24.}}]},
+      {
+       RowBox[{
+        ButtonBox["\<\"Aggiungi\"\>",
+         Appearance->Automatic,
+         ButtonFunction:>If[
+           
+           Or[$CellContext`aa$$ == Null, $CellContext`bb$$ == 
+            Null, $CellContext`qq$$ == Null, $CellContext`exp1$$ == 
+            Null, $CellContext`exp2$$ == Null], 
+           MessageDialog["Alcuni campi inseriti non sono corretti!"], 
+           If[Length[
+              CoefficientList[$CellContext`f$$, $CellContext`x]] == 3, 
+            AppendTo[$CellContext`list$$, $CellContext`f$$], 
+            MessageDialog["Equazione di grado diverso a 2"]], 
+           If[Length[
+              CoefficientList[$CellContext`f$$, $CellContext`x]] == 3, 
+            AppendTo[$CellContext`list$$, $CellContext`f$$], 
+            MessageDialog["Equazione di grado diverso a 2"]]],
+         Evaluator->Automatic,
+         Method->"Preemptive"], " ", 
+        DynamicBox[ToBoxes[
+          Refresh[
+          If[$CellContext`mode$$, $CellContext`f$$ = $CellContext`aa$$ \
+$CellContext`x^2 + $CellContext`bb$$ $CellContext`x + $CellContext`qq$$, \
+$CellContext`f$$ = $CellContext`aa$$ ($CellContext`x^$CellContext`exp1$$ + \
+$CellContext`bb$$) ($CellContext`x^$CellContext`exp2$$ + $CellContext`qq$$)]; 
+           "", TrackedSymbols :> {$CellContext`aa$$, $CellContext`bb$$, \
+$CellContext`qq$$, $CellContext`exp1$$, $CellContext`exp2$$, \
+$CellContext`mode$$}], StandardForm],
+         ImageSizeCache->{0., {0., 6.}}]}]},
+      {"\<\"Elementi aggiunti\"\>"},
+      {
+       DynamicBox[ToBoxes[
+         MClib`d[$CellContext`list$$], StandardForm],
+        ImageSizeCache->{22., {16., 22.}}]},
+      {
+       ButtonBox["\<\"Esporta Lista\"\>",
+        Appearance->Automatic,
+        ButtonFunction:>Export["g2A.txt", $CellContext`list$$],
+        Evaluator->Automatic,
+        Method->"Preemptive"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{3.735462219362446*^9, 3.735462262807249*^9}]
+}, {2}]],
 
 Cell[CellGroupData[{
 
@@ -582,317 +1013,306 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{
     "f", ",", "aa", ",", "bb", ",", "qq", ",", "exp1", ",", "exp2", ",", 
-     RowBox[{"mode", "=", "True"}]}], "}"}], ",", "\[IndentingNewLine]", 
-   RowBox[{"Column", "[", "\[IndentingNewLine]", 
-    RowBox[{"{", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"Row", "[", 
-       RowBox[{"{", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{"Row", "[", 
-          RowBox[{"{", 
-           RowBox[{"\"\<Normale \>\"", ",", 
-            RowBox[{"RadioButton", "[", 
-             RowBox[{
-              RowBox[{"Dynamic", "[", "mode", "]"}], ",", "True"}], "]"}]}], 
-           "}"}], "]"}], ",", "\[IndentingNewLine]", "\"\<\\t\>\"", ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"Row", "[", 
-          RowBox[{"{", 
-           RowBox[{"\"\<Fattorizzato \>\"", ",", 
-            RowBox[{"RadioButton", "[", 
-             RowBox[{
-              RowBox[{"Dynamic", "[", "mode", "]"}], ",", "False"}], "]"}]}], 
-           "}"}], "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
-       RowBox[{"If", "[", 
-        RowBox[{"mode", ",", "\[IndentingNewLine]", 
-         RowBox[{"Panel", "[", "\[IndentingNewLine]", 
-          RowBox[{"Row", "[", "\[IndentingNewLine]", 
-           RowBox[{"{", "\[IndentingNewLine]", 
-            RowBox[{
-             RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-              RowBox[{
-               RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
-               RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-              "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-             RowBox[{"Style", "[", 
-              RowBox[{
-              "\"\<\!\(\*SuperscriptBox[\(x\), \(2\)]\) + \>\"", ",", "12"}], 
-              "]"}], ",", "\[IndentingNewLine]", 
-             RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-              RowBox[{
-               RowBox[{"Dynamic", "[", "bb", "]"}], ",", "Number", ",", 
-               RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-              "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<x + \>\"", ",", "12"}], "]"}], ",", 
-             "\[IndentingNewLine]", 
-             RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-              RowBox[{
-               RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
-               RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-              "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}], 
-           "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"Panel", "[", "\[IndentingNewLine]", 
-          RowBox[{"Row", "[", "\[IndentingNewLine]", 
-           RowBox[{"{", "\[IndentingNewLine]", 
-            RowBox[{
-             RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-              RowBox[{
-               RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
-               RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-              "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<(\>\"", ",", "12"}], "]"}], ",", 
-             "\[IndentingNewLine]", 
-             RowBox[{"Superscript", "[", 
-              RowBox[{"x", ",", "\[IndentingNewLine]", 
-               RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-                RowBox[{
-                 RowBox[{"Dynamic", "[", "exp1", "]"}], ",", "Number", ",", 
-                 RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-                "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], 
-             ",", "\[IndentingNewLine]", 
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\< + \>\"", ",", "12"}], "]"}], ",", 
-             "\[IndentingNewLine]", 
-             RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-              RowBox[{
-               RowBox[{"Dynamic", "[", "bb", "]"}], ",", "Number", ",", 
-               RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-              "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<)\>\"", ",", "12"}], "]"}], ",", 
-             "\[IndentingNewLine]", 
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<(\>\"", ",", "12"}], "]"}], ",", 
-             "\[IndentingNewLine]", 
-             RowBox[{"Superscript", "[", 
-              RowBox[{"x", ",", "\[IndentingNewLine]", 
-               RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-                RowBox[{
-                 RowBox[{"Dynamic", "[", "exp2", "]"}], ",", "Number", ",", 
-                 RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-                "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], 
-             ",", "\[IndentingNewLine]", 
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\< + \>\"", ",", "12"}], "]"}], ",", 
-             "\[IndentingNewLine]", 
-             RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-              RowBox[{
-               RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
-               RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-              "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<)\>\"", ",", "12"}], "]"}]}], 
-            "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
-          "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], 
-       "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"mode", "=", "True"}], ",", " ", 
+     RowBox[{"list", " ", "=", " ", 
+      RowBox[{"{", "}"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+    RowBox[{"Column", "[", "\[IndentingNewLine]", 
+     RowBox[{"{", "\[IndentingNewLine]", 
       RowBox[{
-       RowBox[{"Dynamic", "@", 
-        RowBox[{"Refresh", "[", 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Esercizi Tipologia B Grado 2\>\"", ",", " ", 
+         RowBox[{"FontWeight", "\[Rule]", "Bold"}], ",", " ", 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Row", "[", 
+        RowBox[{"{", "\[IndentingNewLine]", 
          RowBox[{
-          RowBox[{
-           RowBox[{"If", "[", 
-            RowBox[{"mode", ",", 
-             RowBox[{"f", "=", 
-              RowBox[{
-               RowBox[{"aa", "*", 
-                SuperscriptBox["x", "2"]}], "+", 
-               RowBox[{"bb", "*", "x"}], "+", " ", "qq"}]}], ",", 
-             RowBox[{"f", "=", 
-              RowBox[{"aa", "*", 
-               RowBox[{"(", 
-                RowBox[{
-                 RowBox[{"x", "^", "exp1"}], "+", "bb"}], ")"}], "*", 
-               RowBox[{"(", 
-                RowBox[{
-                 RowBox[{"x", "^", "exp2"}], "+", " ", "qq"}], ")"}]}]}]}], 
-            "]"}], ";", " ", "\"\<\>\""}], ",", " ", 
-          RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+          RowBox[{"Row", "[", 
            RowBox[{"{", 
-            RowBox[{
-            "aa", ",", "bb", ",", "qq", ",", "exp1", ",", "exp2", ",", " ", 
-             "mode"}], "}"}]}]}], "]"}]}], "\[IndentingNewLine]", 
-       RowBox[{"Button", "[", "\[IndentingNewLine]", 
-        RowBox[{"\"\<Add\>\"", ",", "\[IndentingNewLine]", 
-         RowBox[{"If", "[", 
+            RowBox[{"\"\<Normale \>\"", ",", 
+             RowBox[{"RadioButton", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "mode", "]"}], ",", "True"}], "]"}]}], 
+            "}"}], "]"}], ",", "\[IndentingNewLine]", "\"\<\\t\>\"", ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Row", "[", 
+           RowBox[{"{", 
+            RowBox[{"\"\<Fattorizzato \>\"", ",", 
+             RowBox[{"RadioButton", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "mode", "]"}], ",", "False"}], "]"}]}],
+             "}"}], "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{"mode", ",", "\[IndentingNewLine]", 
+          RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", "\[IndentingNewLine]", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<\!\(\*SuperscriptBox[\(x\), \(2\)]\) + \>\"", ",", "12"}],
+                "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "bb", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<x + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}], 
+            "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", "\[IndentingNewLine]", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Superscript", "[", 
+               RowBox[{"x", ",", "\[IndentingNewLine]", 
+                RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"Dynamic", "[", "exp1", "]"}], ",", "Number", ",", 
+                  RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+                 "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}],
+               ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\< + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "bb", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<)\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Superscript", "[", 
+               RowBox[{"x", ",", "\[IndentingNewLine]", 
+                RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"Dynamic", "[", "exp2", "]"}], ",", "Number", ",", 
+                  RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+                 "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}],
+               ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\< + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<)\>\"", ",", "12"}], "]"}]}], 
+             "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
+           "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], 
+        "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Dynamic", "@", 
+         RowBox[{"Refresh", "[", 
           RowBox[{
            RowBox[{
-            RowBox[{"aa", "\[Equal]", " ", "Null"}], " ", "||", " ", 
-            RowBox[{"bb", " ", "\[Equal]", " ", "Null"}], "||", " ", 
-            RowBox[{"qq", "==", "Null"}], " ", "||", " ", 
-            RowBox[{"exp1", " ", "\[Equal]", " ", "Null"}], "||", " ", 
-            RowBox[{"exp2", "==", "Null"}]}], ",", "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{"mode", ",", 
+              RowBox[{"f", "=", 
+               RowBox[{
+                RowBox[{"aa", "*", 
+                 SuperscriptBox["x", "2"]}], "+", 
+                RowBox[{"bb", "*", "x"}], "+", " ", "qq"}]}], ",", 
+              RowBox[{"f", "=", 
+               RowBox[{"aa", "*", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"x", "^", "exp1"}], "+", "bb"}], ")"}], "*", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"x", "^", "exp2"}], "+", " ", "qq"}], ")"}]}]}]}], 
+             "]"}], ";", " ", "\"\<\>\""}], ",", " ", 
+           RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+            RowBox[{"{", 
+             RowBox[{
+             "aa", ",", "bb", ",", "qq", ",", "exp1", ",", "exp2", ",", " ", 
+              "mode"}], "}"}]}]}], "]"}]}], "\[IndentingNewLine]", 
+        RowBox[{"Button", "[", "\[IndentingNewLine]", 
+         RowBox[{"\"\<Aggiungi\>\"", ",", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
            RowBox[{
-           "MessageDialog", "[", 
-            "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
-           "\[IndentingNewLine]", 
-           RowBox[{"If", "[", 
             RowBox[{
-             RowBox[{
-              RowBox[{"Length", "[", 
-               RowBox[{"CoefficientList", "[", 
-                RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
-              "3"}], ",", "\[IndentingNewLine]", 
-             RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-              RowBox[{"list2", ",", "\[IndentingNewLine]", "f"}], 
-              "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-             RowBox[{
-             "MessageDialog", "[", "\"\<Equazione di grado diverso a 2\>\"", 
-              "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
-           "\[IndentingNewLine]", 
-           RowBox[{"If", "[", 
+             RowBox[{"aa", "\[Equal]", " ", "Null"}], " ", "||", " ", 
+             RowBox[{"bb", " ", "\[Equal]", " ", "Null"}], "||", " ", 
+             RowBox[{"qq", "==", "Null"}], " ", "||", " ", 
+             RowBox[{"exp1", " ", "\[Equal]", " ", "Null"}], "||", " ", 
+             RowBox[{"exp2", "==", "Null"}]}], ",", "\[IndentingNewLine]", 
             RowBox[{
+            "MessageDialog", "[", 
+             "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
              RowBox[{
-              RowBox[{"Length", "[", 
-               RowBox[{"CoefficientList", "[", 
-                RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
-              "3"}], ",", "\[IndentingNewLine]", 
-             RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-              RowBox[{"list2", ",", "\[IndentingNewLine]", "f"}], 
-              "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"Length", "[", 
+                RowBox[{"CoefficientList", "[", 
+                 RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
+               "3"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+               RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+              "MessageDialog", "[", "\"\<Equazione di grado diverso a 2\>\"", 
+               "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
              RowBox[{
-             "MessageDialog", "[", "\"\<Equazione di grado diverso a 2\>\"", 
-              "]"}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
-          "]"}]}], "\[IndentingNewLine]", "]"}]}]}], " ", 
-     "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}]}], 
-  "\[IndentingNewLine]", "]"}]], "Input",
- CellChangeTimes->{
-  3.735405681372035*^9, {3.73540571798396*^9, 3.735405738973132*^9}, {
-   3.7354058012253923`*^9, 3.7354058206416373`*^9}, {3.7354058638586965`*^9, 
-   3.7354058762987576`*^9}, {3.735405908268511*^9, 3.735405908749011*^9}, {
-   3.735405942599807*^9, 3.735405962484729*^9}, {3.7354060296458855`*^9, 
-   3.7354061589770803`*^9}, {3.735406596373988*^9, 3.7354066722292757`*^9}, {
-   3.7354067097582474`*^9, 3.735406714410407*^9}, {3.7354067535517025`*^9, 
-   3.7354067721209917`*^9}, {3.735406841181172*^9, 3.7354068609553385`*^9}}],
+              RowBox[{
+               RowBox[{"Length", "[", 
+                RowBox[{"CoefficientList", "[", 
+                 RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
+               "3"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+               RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+              "MessageDialog", "[", "\"\<Equazione di grado diverso a 2\>\"", 
+               "]"}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]",
+            "]"}]}], "\[IndentingNewLine]", "]"}]}], " ", " ", ",", 
+       "\[IndentingNewLine]", "\"\<Elementi aggiunti\>\"", ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Dynamic", "[", 
+        RowBox[{"d", "[", "list", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Button", "[", 
+        RowBox[{"\"\<Esporta Lista\>\"", ",", " ", 
+         RowBox[{"Export", "[", 
+          RowBox[{"\"\<g2B.txt\>\"", ",", "list"}], "]"}]}], "]"}]}], 
+      "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.735462373637994*^9, 3.7354623816554284`*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`f$$ = (2 + $CellContext`x) (
-   3 + $CellContext`x), $CellContext`aa$$ = 1, $CellContext`bb$$ = 
-  2, $CellContext`qq$$ = 3, $CellContext`exp1$$ = 1, $CellContext`exp2$$ = 
-  1, $CellContext`mode$$ = False}, 
-  TagBox[GridBox[{
-     {
-      TemplateBox[{TemplateBox[{"\"Normale \"", 
-          RadioButtonBox[
-           Dynamic[$CellContext`mode$$], {True}]}, "RowDefault"],"\"\\t\"",
-        TemplateBox[{"\"Fattorizzato \"", 
-          RadioButtonBox[
-           Dynamic[$CellContext`mode$$], {False}]}, "RowDefault"]},
-       "RowDefault"]},
-     {
-      DynamicBox[ToBoxes[
-        If[$CellContext`mode$$, 
-         Panel[
-          Row[{
-            InputField[
-             Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
-            Style["\!\(\*SuperscriptBox[\(x\), \(2\)]\) + ", 12], 
-            InputField[
-             Dynamic[$CellContext`bb$$], Number, FieldSize -> Full], 
-            Style["x + ", 12], 
-            InputField[
-             Dynamic[$CellContext`qq$$], Number, FieldSize -> Full]}]], 
-         Panel[
-          Row[{
-            InputField[
-             Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
-            Style["(", 12], 
-            Superscript[$CellContext`x, 
-             InputField[
-              Dynamic[$CellContext`exp1$$], Number, FieldSize -> Full]], 
-            Style[" + ", 12], 
-            InputField[
-             Dynamic[$CellContext`bb$$], Number, FieldSize -> Full], 
-            Style[")", 12], 
-            Style["(", 12], 
-            Superscript[$CellContext`x, 
-             InputField[
-              Dynamic[$CellContext`exp2$$], Number, FieldSize -> Full]], 
-            Style[" + ", 12], 
-            InputField[
-             Dynamic[$CellContext`qq$$], Number, FieldSize -> Full], 
-            Style[")", 12]}]]], StandardForm],
-       ImageSizeCache->{179., {20., 26.}}]},
-     {
-      RowBox[{
-       ButtonBox["\<\"Add\"\>",
-        Appearance->Automatic,
-        ButtonFunction:>If[
-          
-          Or[$CellContext`aa$$ == Null, $CellContext`bb$$ == 
-           Null, $CellContext`qq$$ == Null, $CellContext`exp1$$ == 
-           Null, $CellContext`exp2$$ == Null], 
-          MessageDialog["Alcuni campi inseriti non sono corretti!"], 
-          If[Length[
-             CoefficientList[$CellContext`f$$, $CellContext`x]] == 3, 
-           AppendTo[$CellContext`list2, $CellContext`f$$], 
-           MessageDialog["Equazione di grado diverso a 2"]], 
-          If[Length[
-             CoefficientList[$CellContext`f$$, $CellContext`x]] == 3, 
-           AppendTo[$CellContext`list2, $CellContext`f$$], 
-           MessageDialog["Equazione di grado diverso a 2"]]],
-        Evaluator->Automatic,
-        Method->"Preemptive"], " ", 
+ DynamicModuleBox[{$CellContext`f$$ = $CellContext`qq$$ + $CellContext`bb$$ \
+$CellContext`x + $CellContext`aa$$ $CellContext`x^2, $CellContext`aa$$, \
+$CellContext`bb$$, $CellContext`qq$$, $CellContext`exp1$$, \
+$CellContext`exp2$$, $CellContext`mode$$ = True, $CellContext`list$$ = {}}, 
+  PanelBox[
+   TagBox[GridBox[{
+      {
+       StyleBox["\<\"Esercizi Tipologia B Grado 2\"\>",
+        StripOnInput->False,
+        FontSize->14,
+        FontWeight->Bold]},
+      {
+       TemplateBox[{TemplateBox[{"\"Normale \"", 
+           RadioButtonBox[
+            Dynamic[$CellContext`mode$$], {True}]}, "RowDefault"],"\"\\t\"",
+         TemplateBox[{"\"Fattorizzato \"", 
+           RadioButtonBox[
+            Dynamic[$CellContext`mode$$], {False}]}, "RowDefault"]},
+        "RowDefault"]},
+      {
        DynamicBox[ToBoxes[
-         Refresh[
-         If[$CellContext`mode$$, $CellContext`f$$ = $CellContext`aa$$ \
+         If[$CellContext`mode$$, 
+          Panel[
+           Row[{
+             InputField[
+              Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
+             Style["\!\(\*SuperscriptBox[\(x\), \(2\)]\) + ", 12], 
+             InputField[
+              Dynamic[$CellContext`bb$$], Number, FieldSize -> Full], 
+             Style["x + ", 12], 
+             InputField[
+              Dynamic[$CellContext`qq$$], Number, FieldSize -> Full]}]], 
+          Panel[
+           Row[{
+             InputField[
+              Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
+             Style["(", 12], 
+             Superscript[$CellContext`x, 
+              InputField[
+               Dynamic[$CellContext`exp1$$], Number, FieldSize -> Full]], 
+             Style[" + ", 12], 
+             InputField[
+              Dynamic[$CellContext`bb$$], Number, FieldSize -> Full], 
+             Style[")", 12], 
+             Style["(", 12], 
+             Superscript[$CellContext`x, 
+              InputField[
+               Dynamic[$CellContext`exp2$$], Number, FieldSize -> Full]], 
+             Style[" + ", 12], 
+             InputField[
+              Dynamic[$CellContext`qq$$], Number, FieldSize -> Full], 
+             Style[")", 12]}]]], StandardForm],
+        ImageSizeCache->{127., {18., 24.}}]},
+      {
+       RowBox[{
+        ButtonBox["\<\"Aggiungi\"\>",
+         Appearance->Automatic,
+         ButtonFunction:>If[
+           
+           Or[$CellContext`aa$$ == Null, $CellContext`bb$$ == 
+            Null, $CellContext`qq$$ == Null, $CellContext`exp1$$ == 
+            Null, $CellContext`exp2$$ == Null], 
+           MessageDialog["Alcuni campi inseriti non sono corretti!"], 
+           If[Length[
+              CoefficientList[$CellContext`f$$, $CellContext`x]] == 3, 
+            AppendTo[$CellContext`list$$, $CellContext`f$$], 
+            MessageDialog["Equazione di grado diverso a 2"]], 
+           If[Length[
+              CoefficientList[$CellContext`f$$, $CellContext`x]] == 3, 
+            AppendTo[$CellContext`list$$, $CellContext`f$$], 
+            MessageDialog["Equazione di grado diverso a 2"]]],
+         Evaluator->Automatic,
+         Method->"Preemptive"], " ", 
+        DynamicBox[ToBoxes[
+          Refresh[
+          If[$CellContext`mode$$, $CellContext`f$$ = $CellContext`aa$$ \
 $CellContext`x^2 + $CellContext`bb$$ $CellContext`x + $CellContext`qq$$, \
 $CellContext`f$$ = $CellContext`aa$$ ($CellContext`x^$CellContext`exp1$$ + \
 $CellContext`bb$$) ($CellContext`x^$CellContext`exp2$$ + $CellContext`qq$$)]; 
-          "", TrackedSymbols :> {$CellContext`aa$$, $CellContext`bb$$, \
+           "", TrackedSymbols :> {$CellContext`aa$$, $CellContext`bb$$, \
 $CellContext`qq$$, $CellContext`exp1$$, $CellContext`exp2$$, \
 $CellContext`mode$$}], StandardForm],
-        ImageSizeCache->{0., {0., 6.}}]}]}
-    },
-    DefaultBaseStyle->"Column",
-    GridBoxAlignment->{"Columns" -> {{Left}}},
-    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-   "Column"],
+         ImageSizeCache->{0., {0., 6.}}]}]},
+      {"\<\"Elementi aggiunti\"\>"},
+      {
+       DynamicBox[ToBoxes[
+         MClib`d[$CellContext`list$$], StandardForm],
+        ImageSizeCache->{22., {16., 22.}}]},
+      {
+       ButtonBox["\<\"Esporta Lista\"\>",
+        Appearance->Automatic,
+        ButtonFunction:>Export["g2B.txt", $CellContext`list$$],
+        Evaluator->Automatic,
+        Method->"Preemptive"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.7354057865386667`*^9, 3.7354062981474123`*^9, 
-  3.735406725774623*^9, 3.735406785325259*^9, 3.735406862011241*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Dynamic", "[", 
-  RowBox[{"d", "[", "list2", "]"}], "]"}]], "Input",
- CellChangeTimes->{{3.7342528818842096`*^9, 3.734252881962332*^9}, {
-  3.734496951416351*^9, 3.734496955340934*^9}}],
-
-Cell[BoxData[
- DynamicBox[ToBoxes[
-   $CellContext`d[$CellContext`list2], StandardForm],
-  ImageSizeCache->{206., {6., 12.}}]], "Output",
- CellChangeTimes->{3.7342529340254555`*^9, 3.7342667707483244`*^9, 
-  3.734496955942518*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Button", "[", 
-  RowBox[{"\"\<Export Data\>\"", ",", " ", 
-   RowBox[{"Export", "[", 
-    RowBox[{"\"\<g2.txt\>\"", ",", "list2"}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.7342531863342223`*^9, 3.734253189120414*^9}, {
-  3.73449698700344*^9, 3.734496989384451*^9}}],
-
-Cell[BoxData[
- ButtonBox["\<\"Export Data\"\>",
-  Appearance->Automatic,
-  ButtonFunction:>Export["g2.txt", $CellContext`list2],
-  Evaluator->Automatic,
-  Method->"Preemptive"]], "Output",
- CellChangeTimes->{3.7342531924485617`*^9, 3.734266770765336*^9, 
-  3.73449699167944*^9}]
-}, Open  ]]
+ CellChangeTimes->{3.735462386436849*^9}]
+}, {2}]]
 }, Open  ]]
 }, Open  ]],
 
@@ -911,672 +1331,728 @@ Cell["Equazioni di terzo grado", "Section",
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"list3", "=", 
-  RowBox[{"{", "}"}]}]], "Input",
- CellChangeTimes->{{3.7342534978420258`*^9, 3.7342534979357767`*^9}, {
-  3.734258289255665*^9, 3.734258300182907*^9}, {3.734258339382213*^9, 
-  3.734258339984221*^9}, {3.7342583763609085`*^9, 3.7342584496331897`*^9}, {
-  3.7342618140997963`*^9, 3.734261818169572*^9}, {3.7344970031617055`*^9, 
-  3.73449700486485*^9}}],
-
-Cell[BoxData[
- RowBox[{"{", "}"}]], "Output",
- CellChangeTimes->{3.734259827142165*^9, 3.7342599071892924`*^9, 
-  3.734260547148696*^9, 3.7342607201483765`*^9, 3.7342614838943615`*^9, 
-  3.734261707274683*^9, 3.7342618192726426`*^9, 3.7342626929172697`*^9, 
-  3.734266770786351*^9, 3.7344970498805733`*^9, 3.734930060063675*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
  RowBox[{"DynamicModule", "[", 
   RowBox[{
-   RowBox[{"{", "f", "}"}], ",", "\[IndentingNewLine]", 
-   RowBox[{"Column", "[", "\[IndentingNewLine]", 
-    RowBox[{"{", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"Panel", "[", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-       RowBox[{"Row", "[", "\[IndentingNewLine]", 
-        RowBox[{"{", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "a", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{
-           "\"\<\!\(\*SuperscriptBox[\(x\), \(3\)]\) + \>\"", ",", "12"}], 
-           "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "b", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{
-           "\"\<\!\(\*SuperscriptBox[\(x\), \(2\)]\) + \>\"", ",", "12"}], 
-           "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "c", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\<x + \>\"", ",", "12"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "q", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}]}], "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", 
-        "]"}], "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Dynamic", "@", 
-        RowBox[{"Refresh", "[", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"f", "=", 
-            RowBox[{
-             RowBox[{"a", "*", 
-              SuperscriptBox["x", "3"]}], "+", 
-             RowBox[{"b", "*", 
-              SuperscriptBox["x", "2"]}], "+", 
-             RowBox[{"c", "*", "x"}], " ", "+", " ", "q"}]}], ";", " ", 
-           "\"\<\>\""}], ",", " ", 
-          RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
-           RowBox[{"{", 
-            RowBox[{"a", ",", "b", ",", "c", ",", "q"}], "}"}]}]}], "]"}]}], 
-       "\[IndentingNewLine]", 
-       RowBox[{"Button", "[", "\[IndentingNewLine]", 
-        RowBox[{"\"\<Add\>\"", ",", "\[IndentingNewLine]", 
-         RowBox[{"If", "[", 
-          RowBox[{
-           RowBox[{
-            RowBox[{"a", "\[Equal]", " ", "Null"}], " ", "||", 
-            RowBox[{"b", "\[Equal]", " ", "Null"}], " ", "||", " ", 
-            RowBox[{"c", "\[Equal]", " ", "Null"}], "||", 
-            RowBox[{"q", "==", "Null"}]}], ",", "\[IndentingNewLine]", 
-           RowBox[{
-           "MessageDialog", "[", 
-            "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
-           "\[IndentingNewLine]", 
-           RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-            RowBox[{"list3", ",", "\[IndentingNewLine]", "f"}], 
-            "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-           RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-            RowBox[{"list3", ",", "\[IndentingNewLine]", "f"}], 
-            "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
-        "\[IndentingNewLine]", "]"}]}]}], " ", "\[IndentingNewLine]", "}"}], 
-    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
- CellChangeTimes->{{3.7342535601856456`*^9, 3.7342536177175064`*^9}, 
-   3.734254337209093*^9, {3.7342545966850295`*^9, 3.734254616832322*^9}, {
-   3.7342546926927423`*^9, 3.7342548011661415`*^9}, {3.7342548446987934`*^9, 
-   3.734254846320943*^9}, 3.7342549431561594`*^9, {3.734255209948109*^9, 
-   3.734255492650925*^9}, {3.734255653599659*^9, 3.7342556646166115`*^9}, {
-   3.7342557368636174`*^9, 3.734255776731838*^9}, {3.7342558173347015`*^9, 
-   3.7342559109808445`*^9}, {3.734256117817618*^9, 3.7342561265831566`*^9}, {
-   3.7342561865855317`*^9, 3.7342562116006346`*^9}, {3.7342562580054555`*^9, 
-   3.7342562892809925`*^9}, {3.734256354449525*^9, 3.734256394331956*^9}, {
-   3.7342564361895123`*^9, 3.734256436661321*^9}, {3.734256540966939*^9, 
-   3.7342565413307304`*^9}, {3.734256663111959*^9, 3.734256685976424*^9}, {
-   3.7342571122809196`*^9, 3.734257160988721*^9}, {3.734257260736145*^9, 
-   3.734257265022972*^9}, {3.734257486486658*^9, 3.734257505964695*^9}, {
-   3.734257546240371*^9, 3.7342575514455223`*^9}, {3.7342576829171953`*^9, 
-   3.7342576830281224`*^9}, {3.7342577543223753`*^9, 
-   3.7342577910996847`*^9}, {3.7342578525251093`*^9, 
-   3.7342578536684113`*^9}, {3.7342578957552395`*^9, 
-   3.7342578970057535`*^9}, {3.7342579971475854`*^9, 
-   3.7342580361580133`*^9}, {3.7342580817862263`*^9, 3.734258096242326*^9}, {
-   3.7342582471320267`*^9, 3.7342582580360017`*^9}, {3.734261765932596*^9, 
-   3.7342618068786354`*^9}, {3.734262551359135*^9, 3.734262554571314*^9}, {
-   3.73449700991459*^9, 3.7344970117427216`*^9}}],
-
-Cell[BoxData[
- DynamicModuleBox[{$CellContext`f$$ = 1 + $CellContext`x + $CellContext`x^2 + 
-  2 $CellContext`x^3}, 
-  TagBox[GridBox[{
-     {
-      PanelBox[
-       TemplateBox[{InputFieldBox[
-          Dynamic[$CellContext`a], Number, FieldSize -> Full],StyleBox[
-         "\"\\!\\(\\*SuperscriptBox[\\(x\\), \\(3\\)]\\) + \"", 12, 
-          StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`b], Number, FieldSize -> Full],StyleBox[
-         "\"\\!\\(\\*SuperscriptBox[\\(x\\), \\(2\\)]\\) + \"", 12, 
-          StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`c], Number, FieldSize -> Full],StyleBox[
-         "\"x + \"", 12, StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`q], Number, FieldSize -> Full]},
-        "RowDefault"]]},
-     {
-      RowBox[{
-       ButtonBox["\<\"Add\"\>",
-        Appearance->Automatic,
-        ButtonFunction:>If[
-          
-          Or[$CellContext`a == Null, $CellContext`b == Null, $CellContext`c == 
-           Null, $CellContext`q == Null], 
-          MessageDialog["Alcuni campi inseriti non sono corretti!"], 
-          AppendTo[$CellContext`list3, $CellContext`f$$], 
-          AppendTo[$CellContext`list3, $CellContext`f$$]],
-        Evaluator->Automatic,
-        Method->"Preemptive"], " ", 
-       DynamicBox[ToBoxes[
-         Refresh[$CellContext`f$$ = $CellContext`a $CellContext`x^3 + \
-$CellContext`b $CellContext`x^2 + $CellContext`c $CellContext`x + \
-$CellContext`q; "", 
-          TrackedSymbols :> {$CellContext`a, $CellContext`b, $CellContext`c, \
-$CellContext`q}], StandardForm],
-        ImageSizeCache->{0., {0., 6.}}]}]}
-    },
-    DefaultBaseStyle->"Column",
-    GridBoxAlignment->{"Columns" -> {{Left}}},
-    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-   "Column"],
-  DynamicModuleValues:>{}]], "Output",
- GeneratedCell->False,
- CellAutoOverwrite->False,
- CellChangeTimes->{{3.734254834649921*^9, 3.7342548514232826`*^9}, 
-   3.7342555021937857`*^9, {3.734255579867857*^9, 3.7342555881888695`*^9}, 
-   3.7342556702545924`*^9, 3.7342558827692213`*^9, 3.734255914466857*^9, 
-   3.734256136733112*^9, 3.7342562141991234`*^9, 3.734256270005229*^9, 
-   3.7342563688300385`*^9, 3.734256399192113*^9, 3.7342564756980295`*^9, 
-   3.734256547677684*^9, 3.734256665461571*^9, 3.7342571752735505`*^9, 
-   3.7342572740601535`*^9, 3.7342577950994496`*^9, 3.7342578563269963`*^9, 
-   3.734257899183587*^9, 3.734258098864702*^9, 3.734258268886465*^9, 
-   3.7342618466007385`*^9, 3.7342625578958845`*^9, 3.7342667708108687`*^9, 
-   3.734497018432023*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"DynamicModule", "[", 
-  RowBox[{
-   RowBox[{"{", "f", "}"}], ",", "\[IndentingNewLine]", 
-   RowBox[{"Column", "[", "\[IndentingNewLine]", 
-    RowBox[{"{", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"Panel", "[", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-       RowBox[{"Row", "[", "\[IndentingNewLine]", 
-        RowBox[{"{", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\<(  \>\"", ",", "12"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "a", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\<x + \>\"", ",", "12"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "b", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\< ) \>\"", ",", "12"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\< ( \>\"", ",", "12"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "c", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\< x + \>\"", ",", "12"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "d", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\< ) \>\"", ",", "12"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\< ( \>\"", ",", "12"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "e", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\<x + \>\"", ",", "12"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "z", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\< ) \>\"", ",", "12"}], "]"}]}], "\[IndentingNewLine]",
-          "}"}], "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}], 
-      ",", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Dynamic", "@", 
-        RowBox[{"Refresh", "[", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"f", "=", " ", 
-            RowBox[{
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{"a", "*", "x"}], " ", "+", " ", "b"}], ")"}], " ", "*",
-              " ", 
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{"c", "*", "x"}], " ", "+", " ", "d"}], ")"}], " ", "*",
-              " ", 
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{"e", "*", "x"}], " ", "+", " ", "z"}], ")"}]}]}], ";", 
-           " ", "\"\<\>\""}], ",", " ", 
-          RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
-           RowBox[{"{", 
-            RowBox[{
-            "a", ",", "b", ",", "c", ",", "d", ",", " ", "e", ",", " ", "z"}],
-             "}"}]}]}], "]"}]}], "\[IndentingNewLine]", 
-       RowBox[{"Button", "[", "\[IndentingNewLine]", 
-        RowBox[{"\"\<Add\>\"", ",", "\[IndentingNewLine]", 
-         RowBox[{"If", "[", 
-          RowBox[{
-           RowBox[{
-            RowBox[{"a", "\[Equal]", " ", "Null"}], " ", "||", 
-            RowBox[{"b", "\[Equal]", " ", "Null"}], " ", "||", " ", 
-            RowBox[{"c", "==", "Null"}], " ", "||", " ", 
-            RowBox[{"d", " ", "\[Equal]", " ", "Null"}]}], ",", 
-           "\[IndentingNewLine]", 
-           RowBox[{
-           "MessageDialog", "[", 
-            "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
-           "\[IndentingNewLine]", 
-           RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-            RowBox[{"list3", ",", "\[IndentingNewLine]", "f"}], 
-            "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-           RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-            RowBox[{"list3", ",", "\[IndentingNewLine]", "f"}], 
-            "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
-        "\[IndentingNewLine]", "]"}]}]}], " ", "\[IndentingNewLine]", "}"}], 
-    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
- CellChangeTimes->{{3.7349302377253027`*^9, 3.7349302723416395`*^9}, {
-  3.7349303344757185`*^9, 3.7349304220152464`*^9}}],
-
-Cell[BoxData[
- DynamicModuleBox[{$CellContext`f$$ = (1 + $CellContext`x) (
-   4 + $CellContext`x) (1 + 5 $CellContext`x)}, 
-  TagBox[GridBox[{
-     {
-      PanelBox[
-       TemplateBox[{
-        StyleBox["\"(  \"", 12, StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`a], Number, FieldSize -> Full],StyleBox[
-         "\"x + \"", 12, StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`b], Number, FieldSize -> Full],StyleBox[
-         "\" ) \"", 12, StripOnInput -> False],StyleBox[
-         "\" ( \"", 12, StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`c], Number, FieldSize -> Full],StyleBox[
-         "\" x + \"", 12, StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`d], Number, FieldSize -> Full],StyleBox[
-         "\" ) \"", 12, StripOnInput -> False],StyleBox[
-         "\" ( \"", 12, StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`e], Number, FieldSize -> Full],StyleBox[
-         "\"x + \"", 12, StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`z], Number, FieldSize -> Full],StyleBox[
-         "\" ) \"", 12, StripOnInput -> False]},
-        "RowDefault"]]},
-     {
-      RowBox[{
-       ButtonBox["\<\"Add\"\>",
-        Appearance->Automatic,
-        ButtonFunction:>If[
-          
-          Or[$CellContext`a == Null, $CellContext`b == Null, $CellContext`c == 
-           Null, $CellContext`d == Null], 
-          MessageDialog["Alcuni campi inseriti non sono corretti!"], 
-          AppendTo[$CellContext`list3, $CellContext`f$$], 
-          AppendTo[$CellContext`list3, $CellContext`f$$]],
-        Evaluator->Automatic,
-        Method->"Preemptive"], " ", 
-       DynamicBox[ToBoxes[
-         Refresh[$CellContext`f$$ = ($CellContext`a $CellContext`x + \
-$CellContext`b) ($CellContext`c $CellContext`x + $CellContext`d) \
-($CellContext`e $CellContext`x + $CellContext`z); "", 
-          TrackedSymbols :> {$CellContext`a, $CellContext`b, $CellContext`c, \
-$CellContext`d, $CellContext`e, $CellContext`z}], StandardForm],
-        ImageSizeCache->{0., {0., 6.}}]}]}
-    },
-    DefaultBaseStyle->"Column",
-    GridBoxAlignment->{"Columns" -> {{Left}}},
-    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-   "Column"],
-  DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.7349303945809574`*^9, 3.7349304313277435`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"DynamicModule", "[", 
-  RowBox[{
-   RowBox[{"{", "f", "}"}], ",", "\[IndentingNewLine]", 
-   RowBox[{"Column", "[", "\[IndentingNewLine]", 
-    RowBox[{"{", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"Panel", "[", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-       RowBox[{"Row", "[", "\[IndentingNewLine]", 
-        RowBox[{"{", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\<(  \>\"", ",", "12"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "a", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{
-           "\"\<\!\(\*SuperscriptBox[\(x\), \(2\)]\) + \>\"", ",", "12"}], 
-           "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "b", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\< ) \>\"", ",", "12"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\< ( \>\"", ",", "12"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "c", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\< x + \>\"", ",", "12"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"InputField", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"Dynamic", "[", "d", "]"}], ",", "Number", ",", 
-            RowBox[{"FieldSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]",
-            "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\< ) \>\"", ",", "12"}], "]"}]}], "\[IndentingNewLine]",
-          "}"}], "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}], 
-      ",", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Dynamic", "@", 
-        RowBox[{"Refresh", "[", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"f", "=", " ", 
-            RowBox[{
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{"a", "*", 
-                SuperscriptBox["x", "2"]}], "+", " ", "b"}], ")"}], " ", "*", 
-             " ", 
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{"c", "*", "x"}], " ", "+", " ", "d"}], ")"}]}]}], ";", 
-           " ", "\"\<\>\""}], ",", " ", 
-          RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
-           RowBox[{"{", 
-            RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}]}]}], "]"}]}], 
-       "\[IndentingNewLine]", 
-       RowBox[{"Button", "[", "\[IndentingNewLine]", 
-        RowBox[{"\"\<Add\>\"", ",", "\[IndentingNewLine]", 
-         RowBox[{"If", "[", 
-          RowBox[{
-           RowBox[{
-            RowBox[{"a", "\[Equal]", " ", "Null"}], " ", "||", 
-            RowBox[{"b", "\[Equal]", " ", "Null"}], " ", "||", " ", 
-            RowBox[{"c", "==", "Null"}], " ", "||", " ", 
-            RowBox[{"d", " ", "\[Equal]", " ", "Null"}]}], ",", 
-           "\[IndentingNewLine]", 
-           RowBox[{
-           "MessageDialog", "[", 
-            "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
-           "\[IndentingNewLine]", 
-           RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-            RowBox[{"list3", ",", "\[IndentingNewLine]", "f"}], 
-            "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-           RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-            RowBox[{"list3", ",", "\[IndentingNewLine]", "f"}], 
-            "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
-        "\[IndentingNewLine]", "]"}]}]}], " ", "\[IndentingNewLine]", "}"}], 
-    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
- CellChangeTimes->{{3.73493055444956*^9, 3.734930595972235*^9}, 
-   3.734930642448938*^9, 3.7349307159252076`*^9}],
-
-Cell[BoxData[
- DynamicModuleBox[{$CellContext`f$$ = (4 + $CellContext`x) (1 + 
-   5 $CellContext`x^2)}, 
-  TagBox[GridBox[{
-     {
-      PanelBox[
-       TemplateBox[{
-        StyleBox["\"(  \"", 12, StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`a], Number, FieldSize -> Full],StyleBox[
-         "\"\\!\\(\\*SuperscriptBox[\\(x\\), \\(2\\)]\\) + \"", 12, 
-          StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`b], Number, FieldSize -> Full],StyleBox[
-         "\" ) \"", 12, StripOnInput -> False],StyleBox[
-         "\" ( \"", 12, StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`c], Number, FieldSize -> Full],StyleBox[
-         "\" x + \"", 12, StripOnInput -> False],InputFieldBox[
-          Dynamic[$CellContext`d], Number, FieldSize -> Full],StyleBox[
-         "\" ) \"", 12, StripOnInput -> False]},
-        "RowDefault"]]},
-     {
-      RowBox[{
-       ButtonBox["\<\"Add\"\>",
-        Appearance->Automatic,
-        ButtonFunction:>If[
-          
-          Or[$CellContext`a == Null, $CellContext`b == Null, $CellContext`c == 
-           Null, $CellContext`d == Null], 
-          MessageDialog["Alcuni campi inseriti non sono corretti!"], 
-          AppendTo[$CellContext`list3, $CellContext`f$$], 
-          AppendTo[$CellContext`list3, $CellContext`f$$]],
-        Evaluator->Automatic,
-        Method->"Preemptive"], " ", 
-       DynamicBox[ToBoxes[
-         Refresh[$CellContext`f$$ = ($CellContext`a $CellContext`x^2 + \
-$CellContext`b) ($CellContext`c $CellContext`x + $CellContext`d); "", 
-          TrackedSymbols :> {$CellContext`a, $CellContext`b, $CellContext`c, \
-$CellContext`d}], StandardForm],
-        ImageSizeCache->{0., {0., 6.}}]}]}
-    },
-    DefaultBaseStyle->"Column",
-    GridBoxAlignment->{"Columns" -> {{Left}}},
-    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-   "Column"],
-  DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{{3.7349306466901846`*^9, 3.734930673349309*^9}, 
-   3.734930726774736*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Dynamic", "[", 
-  RowBox[{"d", "[", "list3", "]"}], "]"}]], "Input",
- CellChangeTimes->{{3.7342536802955694`*^9, 3.734253681217455*^9}, {
-  3.73449703099807*^9, 3.7344970349912367`*^9}}],
-
-Cell[BoxData[
- DynamicBox[ToBoxes[
-   $CellContext`d[$CellContext`list3], StandardForm],
-  ImageSizeCache->{618., {5., 12.}}]], "Output",
- CellChangeTimes->{3.734258475811579*^9, 3.73426677084089*^9, 
-  3.7344970354912434`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Button", "[", 
-  RowBox[{"\"\<Export Data\>\"", ",", " ", 
-   RowBox[{"Export", "[", 
-    RowBox[{"\"\<g3.txt\>\"", ",", "list3"}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.734253696608251*^9, 3.7342537007333193`*^9}, {
-  3.7344970681424737`*^9, 3.734497070220622*^9}}],
-
-Cell[BoxData[
- ButtonBox["\<\"Export Data\"\>",
-  Appearance->Automatic,
-  ButtonFunction:>Export["g3.txt", 
-    Keys[$CellContext`list3]],
-  Evaluator->Automatic,
-  Method->"Preemptive"]], "Output",
- CellChangeTimes->{3.7342537019833145`*^9, 3.734266770876916*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Button", "[", 
-  RowBox[{"\"\<\!\(\*SqrtBox[\(x\)]\)\>\"", ",", 
-   RowBox[{"Print", "[", 
-    SqrtBox["x"], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.734266782066173*^9, 3.734266834705998*^9}}],
-
-Cell[BoxData[
- ButtonBox["\<\"\\!\\(\\*SqrtBox[\\(x\\)]\\)\"\>",
-  Appearance->Automatic,
-  ButtonFunction:>Print[
-    Sqrt[$CellContext`x]],
-  Evaluator->Automatic,
-  Method->"Preemptive"]], "Output",
- CellChangeTimes->{3.734266839361395*^9}],
-
-Cell[BoxData[
- SqrtBox["x"]], "Print",
- CellChangeTimes->{3.7342668417724934`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"cippa", "=", 
-  RowBox[{"ReadList", "[", "\"\<g2.txt\>\"", "]"}]}]], "Input",
- CellChangeTimes->{{3.734266893202216*^9, 3.734266913193228*^9}}],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"4", "+", 
-    RowBox[{"3", " ", "x"}], "+", 
-    RowBox[{"2", " ", 
-     SuperscriptBox["x", "2"]}]}], ",", 
-   RowBox[{"3", "+", 
-    RowBox[{"4", " ", "x"}], "+", 
-    RowBox[{"5", " ", 
-     SuperscriptBox["x", "2"]}]}]}], "}"}]], "Output",
- CellChangeTimes->{3.7342669150799255`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"balls", "=", 
-   RowBox[{"Join", "[", 
-    RowBox[{
-     RowBox[{"Table", "[", 
-      RowBox[{
-       RowBox[{"Sphere", "[", 
-        RowBox[{
-         RowBox[{"RandomReal", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"0", ",", "100"}], "}"}], ",", "3"}], "]"}], ",", "1"}], 
-        "]"}], ",", 
-       RowBox[{"{", "50", "}"}]}], "]"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"Green", ",", 
-       RowBox[{"Sphere", "[", 
-        RowBox[{
-         RowBox[{"Scaled", "[", 
-          RowBox[{"{", 
-           RowBox[{"0.5", ",", "0.5", ",", "0.5"}], "}"}], "]"}], ",", 
-         ".05"}], "]"}]}], "}"}]}], "]"}]}], ";"}], "\n", 
- RowBox[{"Manipulate", "[", 
-  RowBox[{
-   RowBox[{"Graphics3D", "[", 
-    RowBox[{"balls", ",", 
-     RowBox[{"ViewPoint", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"1.3", "*", 
-         RowBox[{"10", "^", 
-          RowBox[{"-", "zoom"}]}]}], ",", 
-        RowBox[{
-         RowBox[{"-", "2.4"}], "*", 
-         RowBox[{"10", "^", 
-          RowBox[{"-", "zoom"}]}]}], ",", 
-        RowBox[{"2", "*", 
-         RowBox[{"10", "^", 
-          RowBox[{"-", "zoom"}]}]}]}], "}"}]}], ",", 
-     RowBox[{"ViewCenter", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{"0.5", ",", "0.5", ",", "0.5"}], "}"}]}], ",", 
-     RowBox[{"SphericalRegion", "\[Rule]", "True"}]}], "]"}], ",", 
    RowBox[{"{", 
-    RowBox[{"zoom", ",", "0", ",", "3"}], "}"}]}], "]"}], "\n"}], "Input",
- CellChangeTimes->{{3.7349320557792034`*^9, 3.7349320557792034`*^9}}],
+    RowBox[{
+    "f", ",", "aa", ",", "bb", ",", "cc", ",", "qq", ",", "exp1", ",", "exp2",
+      ",", "exp3", ",", 
+     RowBox[{"mode", "=", "True"}], ",", " ", 
+     RowBox[{"list", " ", "=", " ", 
+      RowBox[{"{", "}"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+    RowBox[{"Column", "[", "\[IndentingNewLine]", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Esercizi Tipologia A Grado 3\>\"", ",", " ", 
+         RowBox[{"FontWeight", "\[Rule]", "Bold"}], ",", " ", 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Row", "[", 
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"Row", "[", 
+           RowBox[{"{", 
+            RowBox[{"\"\<Normale \>\"", ",", 
+             RowBox[{"RadioButton", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "mode", "]"}], ",", "True"}], "]"}]}], 
+            "}"}], "]"}], ",", "\[IndentingNewLine]", "\"\<\\t\>\"", ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Row", "[", 
+           RowBox[{"{", 
+            RowBox[{"\"\<Fattorizzato \>\"", ",", 
+             RowBox[{"RadioButton", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "mode", "]"}], ",", "False"}], "]"}]}],
+             "}"}], "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{"mode", ",", "\[IndentingNewLine]", 
+          RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", "\[IndentingNewLine]", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<\!\(\*SuperscriptBox[\(x\), \(3\)]\) + \>\"", ",", "12"}],
+                "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "bb", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<\!\(\*SuperscriptBox[\(x\), \(2\)]\) + \>\"", ",", "12"}],
+                "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "cc", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<x + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}], 
+            "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", "\[IndentingNewLine]", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Superscript", "[", 
+               RowBox[{"x", ",", "\[IndentingNewLine]", 
+                RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"Dynamic", "[", "exp1", "]"}], ",", "Number", ",", 
+                  RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+                 "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}],
+               ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\< + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "bb", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<)\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Superscript", "[", 
+               RowBox[{"x", ",", "\[IndentingNewLine]", 
+                RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"Dynamic", "[", "exp2", "]"}], ",", "Number", ",", 
+                  RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+                 "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}],
+               ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\< + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "cc", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<)\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Superscript", "[", 
+               RowBox[{"x", ",", "\[IndentingNewLine]", 
+                RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"Dynamic", "[", "exp3", "]"}], ",", "Number", ",", 
+                  RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+                 "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}],
+               ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\< + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<)\>\"", ",", "12"}], "]"}]}], 
+             "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
+           "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], 
+        "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Dynamic", "@", 
+         RowBox[{"Refresh", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"If", "[", 
+             RowBox[{"mode", ",", 
+              RowBox[{"f", "=", 
+               RowBox[{
+                RowBox[{"aa", "*", 
+                 SuperscriptBox["x", "3"]}], "+", 
+                RowBox[{"bb", "*", 
+                 SuperscriptBox["x", "2"]}], "+", 
+                RowBox[{"cc", "*", "x"}], " ", "+", " ", "qq"}]}], ",", 
+              RowBox[{"f", "=", 
+               RowBox[{"aa", "*", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"x", "^", "exp1"}], "+", "bb"}], ")"}], "*", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"x", "^", "exp2"}], "+", " ", "cc"}], ")"}], "*", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"x", "^", "exp3"}], "+", " ", "qq"}], ")"}]}]}]}], 
+             "]"}], ";", " ", "\"\<\>\""}], ",", " ", 
+           RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+            RowBox[{"{", 
+             RowBox[{
+             "aa", ",", "bb", ",", "cc", ",", "qq", ",", "exp1", ",", "exp2", 
+              ",", "exp3", ",", " ", "mode"}], "}"}]}]}], "]"}]}], 
+        "\[IndentingNewLine]", 
+        RowBox[{"Button", "[", "\[IndentingNewLine]", 
+         RowBox[{"\"\<Aggiungi\>\"", ",", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"aa", "\[Equal]", " ", "Null"}], " ", "||", " ", 
+             RowBox[{"bb", " ", "\[Equal]", " ", "Null"}], "||", " ", 
+             RowBox[{"qq", "==", "Null"}], " ", "||", " ", 
+             RowBox[{"exp1", " ", "\[Equal]", " ", "Null"}], "||", " ", 
+             RowBox[{"exp2", "==", "Null"}]}], ",", "\[IndentingNewLine]", 
+            RowBox[{
+            "MessageDialog", "[", 
+             "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Length", "[", 
+                RowBox[{"CoefficientList", "[", 
+                 RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
+               "4"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+               RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+              "MessageDialog", "[", "\"\<Equazione di grado diverso a 3\>\"", 
+               "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Length", "[", 
+                RowBox[{"CoefficientList", "[", 
+                 RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
+               "4"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+               RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+              "MessageDialog", "[", "\"\<Equazione di grado diverso a 3\>\"", 
+               "]"}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]",
+            "]"}]}], "\[IndentingNewLine]", "]"}]}], " ", " ", ",", 
+       "\[IndentingNewLine]", "\"\<Elementi aggiunti\>\"", ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Dynamic", "[", 
+        RowBox[{"d", "[", "list", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Button", "[", 
+        RowBox[{"\"\<Esporta Lista\>\"", ",", " ", 
+         RowBox[{"Export", "[", 
+          RowBox[{"\"\<g3A.txt\>\"", ",", "list"}], "]"}]}], "]"}]}], 
+      "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.735462510430549*^9, 3.735462517840268*^9}, {
+  3.7354625759784966`*^9, 3.7354625850950165`*^9}, {3.7354628378978014`*^9, 
+  3.7354629564693985`*^9}, {3.7354630276534147`*^9, 3.7354630353659105`*^9}}],
 
 Cell[BoxData[
- TagBox[
-  StyleBox[
-   DynamicModuleBox[{$CellContext`zoom$$ = 0.095, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`zoom$$], 0, 3}}, Typeset`size$$ = {
-    360., {177., 183.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`zoom$5416$$ = 0}, 
-    DynamicBox[Manipulate`ManipulateBoxes[
-     1, StandardForm, "Variables" :> {$CellContext`zoom$$ = 0}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`zoom$$, $CellContext`zoom$5416$$, 0]}, 
-      "OtherVariables" :> {
-       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
-        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
-        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, "Body" :> 
-      Graphics3D[$CellContext`balls, 
-        ViewPoint -> {
-         1.3 10^(-$CellContext`zoom$$), (-2.4) 10^(-$CellContext`zoom$$), 2 
-          10^(-$CellContext`zoom$$)}, ViewCenter -> {0.5, 0.5, 0.5}, 
-        SphericalRegion -> True], 
-      "Specifications" :> {{$CellContext`zoom$$, 0, 3}}, "Options" :> {}, 
-      "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {223., 230.}},
-     SingleEvaluation->True],
-    Deinitialization:>None,
-    DynamicModuleValues:>{},
-    SynchronousInitialization->True,
-    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-    UnsavedVariables:>{Typeset`initDone$$},
-    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
-   Deployed->True,
-   StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.7349320600596113`*^9}]
-}, Open  ]]
+ DynamicModuleBox[{$CellContext`f$$ = $CellContext`qq$$ + $CellContext`cc$$ \
+$CellContext`x + $CellContext`bb$$ $CellContext`x^2 + $CellContext`aa$$ \
+$CellContext`x^3, $CellContext`aa$$ = 1, $CellContext`bb$$ = 
+  2, $CellContext`cc$$ = 3, $CellContext`qq$$ = 
+  4, $CellContext`exp1$$, $CellContext`exp2$$, $CellContext`exp3$$, \
+$CellContext`mode$$ = True, $CellContext`list$$ = {}}, 
+  PanelBox[
+   TagBox[GridBox[{
+      {
+       StyleBox["\<\"Esercizi Tipologia A Grado 3\"\>",
+        StripOnInput->False,
+        FontSize->14,
+        FontWeight->Bold]},
+      {
+       TemplateBox[{TemplateBox[{"\"Normale \"", 
+           RadioButtonBox[
+            Dynamic[$CellContext`mode$$], {True}]}, "RowDefault"],"\"\\t\"",
+         TemplateBox[{"\"Fattorizzato \"", 
+           RadioButtonBox[
+            Dynamic[$CellContext`mode$$], {False}]}, "RowDefault"]},
+        "RowDefault"]},
+      {
+       DynamicBox[ToBoxes[
+         If[$CellContext`mode$$, 
+          Panel[
+           Row[{
+             InputField[
+              Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
+             Style["\!\(\*SuperscriptBox[\(x\), \(3\)]\) + ", 12], 
+             InputField[
+              Dynamic[$CellContext`bb$$], Number, FieldSize -> Full], 
+             Style["\!\(\*SuperscriptBox[\(x\), \(2\)]\) + ", 12], 
+             InputField[
+              Dynamic[$CellContext`cc$$], Number, FieldSize -> Full], 
+             Style["x + ", 12], 
+             InputField[
+              Dynamic[$CellContext`qq$$], Number, FieldSize -> Full]}]], 
+          Panel[
+           Row[{
+             InputField[
+              Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
+             Style["(", 12], 
+             Superscript[$CellContext`x, 
+              InputField[
+               Dynamic[$CellContext`exp1$$], Number, FieldSize -> Full]], 
+             Style[" + ", 12], 
+             InputField[
+              Dynamic[$CellContext`bb$$], Number, FieldSize -> Full], 
+             Style[")", 12], 
+             Style["(", 12], 
+             Superscript[$CellContext`x, 
+              InputField[
+               Dynamic[$CellContext`exp2$$], Number, FieldSize -> Full]], 
+             Style[" + ", 12], 
+             InputField[
+              Dynamic[$CellContext`cc$$], Number, FieldSize -> Full], 
+             Style[")", 12], 
+             Style["(", 12], 
+             Superscript[$CellContext`x, 
+              InputField[
+               Dynamic[$CellContext`exp3$$], Number, FieldSize -> Full]], 
+             Style[" + ", 12], 
+             InputField[
+              Dynamic[$CellContext`qq$$], Number, FieldSize -> Full], 
+             Style[")", 12]}]]], StandardForm],
+        ImageSizeCache->{173., {18., 24.}}]},
+      {
+       RowBox[{
+        ButtonBox["\<\"Aggiungi\"\>",
+         Appearance->Automatic,
+         ButtonFunction:>If[
+           
+           Or[$CellContext`aa$$ == Null, $CellContext`bb$$ == 
+            Null, $CellContext`qq$$ == Null, $CellContext`exp1$$ == 
+            Null, $CellContext`exp2$$ == Null], 
+           MessageDialog["Alcuni campi inseriti non sono corretti!"], 
+           If[Length[
+              CoefficientList[$CellContext`f$$, $CellContext`x]] == 4, 
+            AppendTo[$CellContext`list$$, $CellContext`f$$], 
+            MessageDialog["Equazione di grado diverso a 3"]], 
+           If[Length[
+              CoefficientList[$CellContext`f$$, $CellContext`x]] == 4, 
+            AppendTo[$CellContext`list$$, $CellContext`f$$], 
+            MessageDialog["Equazione di grado diverso a 3"]]],
+         Evaluator->Automatic,
+         Method->"Preemptive"], " ", 
+        DynamicBox[ToBoxes[
+          Refresh[
+          If[$CellContext`mode$$, $CellContext`f$$ = $CellContext`aa$$ \
+$CellContext`x^3 + $CellContext`bb$$ $CellContext`x^2 + $CellContext`cc$$ \
+$CellContext`x + $CellContext`qq$$, $CellContext`f$$ = $CellContext`aa$$ \
+($CellContext`x^$CellContext`exp1$$ + $CellContext`bb$$) \
+($CellContext`x^$CellContext`exp2$$ + $CellContext`cc$$) \
+($CellContext`x^$CellContext`exp3$$ + $CellContext`qq$$)]; "", 
+           TrackedSymbols :> {$CellContext`aa$$, $CellContext`bb$$, \
+$CellContext`cc$$, $CellContext`qq$$, $CellContext`exp1$$, \
+$CellContext`exp2$$, $CellContext`exp3$$, $CellContext`mode$$}], StandardForm],
+         ImageSizeCache->{0., {0., 6.}}]}]},
+      {"\<\"Elementi aggiunti\"\>"},
+      {
+       DynamicBox[ToBoxes[
+         MClib`d[$CellContext`list$$], StandardForm],
+        ImageSizeCache->{22., {16., 22.}}]},
+      {
+       ButtonBox["\<\"Esporta Lista\"\>",
+        Appearance->Automatic,
+        ButtonFunction:>Export["g3A.txt", $CellContext`list$$],
+        Evaluator->Automatic,
+        Method->"Preemptive"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{{3.7354629515259094`*^9, 3.735462957566389*^9}, 
+   3.7354630399214525`*^9}]
+}, {2}]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "f", ",", "aa", ",", "bb", ",", "cc", ",", "qq", ",", "exp1", ",", "exp2",
+      ",", "exp3", ",", 
+     RowBox[{"mode", "=", "True"}], ",", " ", 
+     RowBox[{"list", " ", "=", " ", 
+      RowBox[{"{", "}"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+    RowBox[{"Column", "[", "\[IndentingNewLine]", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Esercizi Tipologia B Grado 3\>\"", ",", " ", 
+         RowBox[{"FontWeight", "\[Rule]", "Bold"}], ",", " ", 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Row", "[", 
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"Row", "[", 
+           RowBox[{"{", 
+            RowBox[{"\"\<Normale \>\"", ",", 
+             RowBox[{"RadioButton", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "mode", "]"}], ",", "True"}], "]"}]}], 
+            "}"}], "]"}], ",", "\[IndentingNewLine]", "\"\<\\t\>\"", ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Row", "[", 
+           RowBox[{"{", 
+            RowBox[{"\"\<Fattorizzato \>\"", ",", 
+             RowBox[{"RadioButton", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "mode", "]"}], ",", "False"}], "]"}]}],
+             "}"}], "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{"mode", ",", "\[IndentingNewLine]", 
+          RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", "\[IndentingNewLine]", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<\!\(\*SuperscriptBox[\(x\), \(3\)]\) + \>\"", ",", "12"}],
+                "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "bb", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<\!\(\*SuperscriptBox[\(x\), \(2\)]\) + \>\"", ",", "12"}],
+                "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "cc", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<x + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}], 
+            "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", "\[IndentingNewLine]", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "aa", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Superscript", "[", 
+               RowBox[{"x", ",", "\[IndentingNewLine]", 
+                RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"Dynamic", "[", "exp1", "]"}], ",", "Number", ",", 
+                  RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+                 "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}],
+               ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\< + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "bb", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<)\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Superscript", "[", 
+               RowBox[{"x", ",", "\[IndentingNewLine]", 
+                RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"Dynamic", "[", "exp2", "]"}], ",", "Number", ",", 
+                  RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+                 "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}],
+               ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\< + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "cc", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<)\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(\>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Superscript", "[", 
+               RowBox[{"x", ",", "\[IndentingNewLine]", 
+                RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"Dynamic", "[", "exp3", "]"}], ",", "Number", ",", 
+                  RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+                 "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}],
+               ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\< + \>\"", ",", "12"}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"InputField", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "qq", "]"}], ",", "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<)\>\"", ",", "12"}], "]"}]}], 
+             "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
+           "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], 
+        "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Dynamic", "@", 
+         RowBox[{"Refresh", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"If", "[", 
+             RowBox[{"mode", ",", 
+              RowBox[{"f", "=", 
+               RowBox[{
+                RowBox[{"aa", "*", 
+                 SuperscriptBox["x", "3"]}], "+", 
+                RowBox[{"bb", "*", 
+                 SuperscriptBox["x", "2"]}], "+", 
+                RowBox[{"cc", "*", "x"}], " ", "+", " ", "qq"}]}], ",", 
+              RowBox[{"f", "=", 
+               RowBox[{"aa", "*", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"x", "^", "exp1"}], "+", "bb"}], ")"}], "*", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"x", "^", "exp2"}], "+", " ", "cc"}], ")"}], "*", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"x", "^", "exp3"}], "+", " ", "qq"}], ")"}]}]}]}], 
+             "]"}], ";", " ", "\"\<\>\""}], ",", " ", 
+           RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+            RowBox[{"{", 
+             RowBox[{
+             "aa", ",", "bb", ",", "cc", ",", "qq", ",", "exp1", ",", "exp2", 
+              ",", "exp3", ",", " ", "mode"}], "}"}]}]}], "]"}]}], 
+        "\[IndentingNewLine]", 
+        RowBox[{"Button", "[", "\[IndentingNewLine]", 
+         RowBox[{"\"\<Aggiungi\>\"", ",", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"aa", "\[Equal]", " ", "Null"}], " ", "||", " ", 
+             RowBox[{"bb", " ", "\[Equal]", " ", "Null"}], "||", " ", 
+             RowBox[{"qq", "==", "Null"}], " ", "||", " ", 
+             RowBox[{"exp1", " ", "\[Equal]", " ", "Null"}], "||", " ", 
+             RowBox[{"exp2", "==", "Null"}]}], ",", "\[IndentingNewLine]", 
+            RowBox[{
+            "MessageDialog", "[", 
+             "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Length", "[", 
+                RowBox[{"CoefficientList", "[", 
+                 RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
+               "4"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+               RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+              "MessageDialog", "[", "\"\<Equazione di grado diverso a 3\>\"", 
+               "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Length", "[", 
+                RowBox[{"CoefficientList", "[", 
+                 RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
+               "4"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+               RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+              "MessageDialog", "[", "\"\<Equazione di grado diverso a 3\>\"", 
+               "]"}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]",
+            "]"}]}], "\[IndentingNewLine]", "]"}]}], " ", " ", ",", 
+       "\[IndentingNewLine]", "\"\<Elementi aggiunti\>\"", ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Dynamic", "[", 
+        RowBox[{"d", "[", "list", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Button", "[", 
+        RowBox[{"\"\<Esporta Lista\>\"", ",", " ", 
+         RowBox[{"Export", "[", 
+          RowBox[{"\"\<g3B.txt\>\"", ",", "list"}], "]"}]}], "]"}]}], 
+      "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}], 
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.7354630787044706`*^9, 3.735463087890435*^9}}],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`f$$ = $CellContext`qq$$ + $CellContext`cc$$ \
+$CellContext`x + $CellContext`bb$$ $CellContext`x^2 + $CellContext`aa$$ \
+$CellContext`x^3, $CellContext`aa$$, $CellContext`bb$$, $CellContext`cc$$, \
+$CellContext`qq$$, $CellContext`exp1$$, $CellContext`exp2$$, \
+$CellContext`exp3$$, $CellContext`mode$$ = True, $CellContext`list$$ = {}}, 
+  PanelBox[
+   TagBox[GridBox[{
+      {
+       StyleBox["\<\"Esercizi Tipologia B Grado 3\"\>",
+        StripOnInput->False,
+        FontSize->14,
+        FontWeight->Bold]},
+      {
+       TemplateBox[{TemplateBox[{"\"Normale \"", 
+           RadioButtonBox[
+            Dynamic[$CellContext`mode$$], {True}]}, "RowDefault"],"\"\\t\"",
+         TemplateBox[{"\"Fattorizzato \"", 
+           RadioButtonBox[
+            Dynamic[$CellContext`mode$$], {False}]}, "RowDefault"]},
+        "RowDefault"]},
+      {
+       DynamicBox[ToBoxes[
+         If[$CellContext`mode$$, 
+          Panel[
+           Row[{
+             InputField[
+              Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
+             Style["\!\(\*SuperscriptBox[\(x\), \(3\)]\) + ", 12], 
+             InputField[
+              Dynamic[$CellContext`bb$$], Number, FieldSize -> Full], 
+             Style["\!\(\*SuperscriptBox[\(x\), \(2\)]\) + ", 12], 
+             InputField[
+              Dynamic[$CellContext`cc$$], Number, FieldSize -> Full], 
+             Style["x + ", 12], 
+             InputField[
+              Dynamic[$CellContext`qq$$], Number, FieldSize -> Full]}]], 
+          Panel[
+           Row[{
+             InputField[
+              Dynamic[$CellContext`aa$$], Number, FieldSize -> Full], 
+             Style["(", 12], 
+             Superscript[$CellContext`x, 
+              InputField[
+               Dynamic[$CellContext`exp1$$], Number, FieldSize -> Full]], 
+             Style[" + ", 12], 
+             InputField[
+              Dynamic[$CellContext`bb$$], Number, FieldSize -> Full], 
+             Style[")", 12], 
+             Style["(", 12], 
+             Superscript[$CellContext`x, 
+              InputField[
+               Dynamic[$CellContext`exp2$$], Number, FieldSize -> Full]], 
+             Style[" + ", 12], 
+             InputField[
+              Dynamic[$CellContext`cc$$], Number, FieldSize -> Full], 
+             Style[")", 12], 
+             Style["(", 12], 
+             Superscript[$CellContext`x, 
+              InputField[
+               Dynamic[$CellContext`exp3$$], Number, FieldSize -> Full]], 
+             Style[" + ", 12], 
+             InputField[
+              Dynamic[$CellContext`qq$$], Number, FieldSize -> Full], 
+             Style[")", 12]}]]], StandardForm],
+        ImageSizeCache->{173., {18., 24.}}]},
+      {
+       RowBox[{
+        ButtonBox["\<\"Aggiungi\"\>",
+         Appearance->Automatic,
+         ButtonFunction:>If[
+           
+           Or[$CellContext`aa$$ == Null, $CellContext`bb$$ == 
+            Null, $CellContext`qq$$ == Null, $CellContext`exp1$$ == 
+            Null, $CellContext`exp2$$ == Null], 
+           MessageDialog["Alcuni campi inseriti non sono corretti!"], 
+           If[Length[
+              CoefficientList[$CellContext`f$$, $CellContext`x]] == 4, 
+            AppendTo[$CellContext`list$$, $CellContext`f$$], 
+            MessageDialog["Equazione di grado diverso a 3"]], 
+           If[Length[
+              CoefficientList[$CellContext`f$$, $CellContext`x]] == 4, 
+            AppendTo[$CellContext`list$$, $CellContext`f$$], 
+            MessageDialog["Equazione di grado diverso a 3"]]],
+         Evaluator->Automatic,
+         Method->"Preemptive"], " ", 
+        DynamicBox[ToBoxes[
+          Refresh[
+          If[$CellContext`mode$$, $CellContext`f$$ = $CellContext`aa$$ \
+$CellContext`x^3 + $CellContext`bb$$ $CellContext`x^2 + $CellContext`cc$$ \
+$CellContext`x + $CellContext`qq$$, $CellContext`f$$ = $CellContext`aa$$ \
+($CellContext`x^$CellContext`exp1$$ + $CellContext`bb$$) \
+($CellContext`x^$CellContext`exp2$$ + $CellContext`cc$$) \
+($CellContext`x^$CellContext`exp3$$ + $CellContext`qq$$)]; "", 
+           TrackedSymbols :> {$CellContext`aa$$, $CellContext`bb$$, \
+$CellContext`cc$$, $CellContext`qq$$, $CellContext`exp1$$, \
+$CellContext`exp2$$, $CellContext`exp3$$, $CellContext`mode$$}], StandardForm],
+         ImageSizeCache->{0., {0., 6.}}]}]},
+      {"\<\"Elementi aggiunti\"\>"},
+      {
+       DynamicBox[ToBoxes[
+         MClib`d[$CellContext`list$$], StandardForm],
+        ImageSizeCache->{22., {16., 22.}}]},
+      {
+       ButtonBox["\<\"Esporta Lista\"\>",
+        Appearance->Automatic,
+        ButtonFunction:>Export["g3B.txt", $CellContext`list$$],
+        Evaluator->Automatic,
+        Method->"Preemptive"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{3.7354630905284195`*^9}]
+}, {2}]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -1592,145 +2068,90 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "SlideShowHeader"->{
-  Cell[580, 22, 4383, 98, 76, "SlideShowNavigationBar",
+  Cell[580, 22, 4356, 95, 76, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[8304, 216, 64, 1, 75, "SlideShowNavigationBar",
+  Cell[6359, 162, 64, 1, 75, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[23384, 559, 64, 1, 75, "SlideShowNavigationBar",
+  Cell[30636, 688, 64, 1, 75, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[38238, 900, 64, 1, 75, "SlideShowNavigationBar",
+  Cell[59511, 1320, 64, 1, 75, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]},
  "1\[Degree] Grado"->{
-  Cell[8393, 221, 142, 2, 70, "Section",
+  Cell[6448, 167, 142, 2, 70, "Section",
    CellTags->"1\[Degree] Grado"]},
  "2\[Degree] Grado"->{
-  Cell[23473, 564, 195, 3, 70, "Section",
+  Cell[30725, 693, 195, 3, 70, "Section",
    CellTags->"2\[Degree] Grado"]},
  "3\[Degree] Grado"->{
-  Cell[38327, 905, 193, 3, 70, "Section",
+  Cell[59600, 1325, 193, 3, 70, "Section",
    CellTags->"3\[Degree] Grado"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 67771, 1593},
- {"1\[Degree] Grado", 68150, 1602},
- {"2\[Degree] Grado", 68249, 1605},
- {"3\[Degree] Grado", 68349, 1608}
+ {"SlideShowHeader", 94229, 2069},
+ {"1\[Degree] Grado", 94609, 2078},
+ {"2\[Degree] Grado", 94708, 2081},
+ {"3\[Degree] Grado", 94808, 2084}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 4383, 98, 76, "SlideShowNavigationBar",
+Cell[580, 22, 4356, 95, 76, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
+Cell[4939, 119, 413, 9, 50, "Input"],
 Cell[CellGroupData[{
-Cell[4988, 124, 413, 9, 50, "Input"],
-Cell[5404, 135, 294, 4, 30, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[5735, 144, 386, 7, 126, "Input"],
-Cell[6124, 153, 192, 3, 30, "Output"],
-Cell[6319, 158, 190, 3, 30, "Output"],
-Cell[6512, 163, 190, 3, 30, "Output"],
-Cell[6705, 168, 190, 3, 30, "Output"],
-Cell[6898, 173, 192, 3, 30, "Output"],
-Cell[7093, 178, 192, 3, 30, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[7322, 186, 866, 21, 347, "Title"],
-Cell[8191, 209, 64, 1, 56, "Subtitle"]
+Cell[5377, 132, 866, 21, 347, "Title"],
+Cell[6246, 155, 64, 1, 56, "Subtitle"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8304, 216, 64, 1, 75, "SlideShowNavigationBar",
+Cell[6359, 162, 64, 1, 75, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[8393, 221, 142, 2, 70, "Section",
+Cell[6448, 167, 142, 2, 70, "Section",
  CellTags->"1\[Degree] Grado"],
-Cell[8538, 225, 262, 6, 30, "Input"],
 Cell[CellGroupData[{
-Cell[8825, 235, 8702, 165, 1209, "Input"],
-Cell[17530, 402, 3073, 70, 109, "Output"]
-}, Open  ]],
+Cell[6615, 173, 10088, 187, 1323, "Input"],
+Cell[16706, 362, 3398, 83, 240, "Output"]
+}, {2}]],
 Cell[CellGroupData[{
-Cell[20640, 477, 719, 19, 30, "Input"],
-Cell[21362, 498, 491, 12, 44, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[21890, 515, 209, 4, 30, "Input"],
-Cell[22102, 521, 257, 6, 34, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[22396, 532, 503, 9, 30, "Input"],
-Cell[22902, 543, 421, 9, 42, "Output"]
-}, Open  ]]
+Cell[20138, 450, 7218, 149, 1323, "Input"],
+Cell[27359, 601, 3219, 80, 240, "Output"]
+}, {2}]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[23384, 559, 64, 1, 75, "SlideShowNavigationBar",
+Cell[30636, 688, 64, 1, 75, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[23473, 564, 195, 3, 70, "Section",
+Cell[30725, 693, 195, 3, 70, "Section",
  CellTags->"2\[Degree] Grado"],
-Cell[23671, 569, 238, 5, 30, "Input"],
 Cell[CellGroupData[{
-Cell[23934, 578, 9453, 192, 1684, "Input"],
-Cell[33390, 772, 3693, 85, 113, "Output"]
-}, Open  ]],
+Cell[30945, 700, 9962, 201, 1806, "Input"],
+Cell[40910, 903, 4283, 101, 240, "Output"]
+}, {2}]],
 Cell[CellGroupData[{
-Cell[37120, 862, 209, 4, 30, "Input"],
-Cell[37332, 868, 230, 5, 34, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[37599, 878, 297, 6, 30, "Input"],
-Cell[37899, 886, 278, 7, 42, "Output"]
-}, Open  ]]
+Cell[45227, 1009, 9962, 201, 1806, "Input"],
+Cell[55192, 1212, 4261, 101, 240, "Output"]
+}, {2}]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[38238, 900, 64, 1, 75, "SlideShowNavigationBar",
+Cell[59511, 1320, 64, 1, 75, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[38327, 905, 193, 3, 70, "Section",
+Cell[59600, 1325, 193, 3, 70, "Section",
  CellTags->"3\[Degree] Grado"],
 Cell[CellGroupData[{
-Cell[38545, 912, 390, 7, 30, "Input"],
-Cell[38938, 921, 328, 5, 30, "Output"]
-}, Open  ]],
+Cell[59818, 1332, 12062, 241, 2096, "Input"],
+Cell[71883, 1575, 5047, 117, 240, "Output"]
+}, {2}]],
 Cell[CellGroupData[{
-Cell[39303, 931, 5437, 102, 893, "Input"],
-Cell[44743, 1035, 2590, 54, 89, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[47370, 1094, 5506, 116, 1057, "Input"],
-Cell[52879, 1212, 2383, 49, 89, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[55299, 1266, 4446, 94, 923, "Input"],
-Cell[59748, 1362, 2037, 45, 89, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[61822, 1412, 210, 4, 30, "Input"],
-Cell[62035, 1418, 227, 5, 33, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[62299, 1428, 300, 6, 30, "Input"],
-Cell[62602, 1436, 265, 7, 42, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[62904, 1448, 224, 5, 39, "Input"],
-Cell[63131, 1455, 243, 7, 47, "Output"],
-Cell[63377, 1464, 82, 2, 25, "Print"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[63496, 1471, 167, 3, 30, "Input"],
-Cell[63666, 1476, 339, 11, 33, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[64042, 1492, 1551, 46, 69, "Input"],
-Cell[65596, 1540, 1793, 37, 527, "Output"]
-}, Open  ]]
+Cell[76964, 1697, 11908, 239, 2096, "Input"],
+Cell[88875, 1938, 4975, 115, 240, "Output"]
+}, {2}]]
 }, Open  ]]
 }, Open  ]]
 }
