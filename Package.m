@@ -69,6 +69,17 @@ BeginPackage[ "MClib`"];
 		plotWithZoomButtons::usage = "Draw a Graph with zoom buttons inside
 			\n@n_@ Function to plot
 			\n@x_@ Symbol that has to be used in order to resolve the interal equations"
+			
+		plotWithZoomButtonsT::usage = "Draw a teacherEQ Graph with zoom buttons inside
+			\n@row_@ row index
+			\n@col@ col index
+			\n@x_@ Symbol that has to be used in order to resolve the interal equations"
+			
+		plotWithZoomButtonsE::usage = "Draw a exercises Graph with zoom buttons inside
+			\n@row_@ row index
+			\n@col@ col index
+			\n@pos@ pos index
+			\n@x_@ Symbol that has to be used in order to resolve the interal equations"
 	
 		hyperText::usage = "Creating a cliccable text. The click trig a MessageDialog
 			\n@txt@ Text to show
@@ -78,7 +89,8 @@ BeginPackage[ "MClib`"];
 		d::usage = "Print a form with all the functions that the teacher is inserting in the list
 			\n@l_@ List to analize"
 	 
-		
+		resetGrade::usage = "Reset variables for the given grade
+			\n@g_@ List to analize"
 	 
 	 
 	(* End of Usage Definitions *)
@@ -165,7 +177,27 @@ BeginPackage[ "MClib`"];
 				]
 				
 				
+				(* reset variables for the given grade *)
+				resetGrade[grade_] := Module[
+									{},
+									teacherEQ[[grade*2-1]] = randomFill[1,MINNUMBEROFEXERCISES];
+									teacherEQ[[grade*2]] = randomFill[1,MINNUMBEROFEXERCISES];
+									If[g ==1,
+										exercises[[grade*2-1]] = generateExercisesG1[teacherEQ[[1]]];
+										exercises[[grade*2]] = generateExercisesG1[teacherEQ[[2]]],
+										If[g ==2,
+											exercises[[grade*2-1]] = generateExercisesG2[teacherEQ[[3]]];
+											exercises[[grade*2]] = generateExercisesG2[teacherEQ[[4]]],
+											exercises[[grade*2-1]] = generateExercisesG3[teacherEQ[[5]]];
+											exercises[[grade*2]] = generateExercisesG3[teacherEQ[[6]]]
+										] 
+									];
+									enableAnswer[[grade*2-1]] =	Table[True, MINNUMBEROFEXERCISES];	
+									enableAnswer[[grade*2]] = Table[True, MINNUMBEROFEXERCISES];	
+									userAnswer[[grade*2-1]] = Table[0, MINNUMBEROFEXERCISES];	
+									userAnswer[[grade*2]] =	Table[0, MINNUMBEROFEXERCISES];									
 				
+								]
 			
 			
 				(* Check answer of section row *)
@@ -198,11 +230,13 @@ BeginPackage[ "MClib`"];
 															Panel[
 																Column[{
 																	Style["A quale funzione corrisponde la seguente retta?", FontWeight -> Bold], 
-																	plotWithZoomButtons[teacherEQ[[row,i]], Symbol["x"]],
-																	RadioButtonBar[
-																		Dynamic[userAnswer[[row,i]]], 
-																		exercises[[row,i]], 
-																		Enabled -> Dynamic[enableAnswer[[row,i]]]
+																	plotWithZoomButtonsT[row,i, Symbol["x"]],
+																	Dynamic[
+																		RadioButtonBar[
+																			Dynamic[userAnswer[[row,i]]], 
+																			exercises[[row,i]], 
+																			Enabled -> Dynamic[enableAnswer[[row,i]]]
+																		]
 																	]
 																}]
 															]
@@ -225,21 +259,28 @@ BeginPackage[ "MClib`"];
 														Row[{
 															Panel[
 																Column[{
-																	Style[
-																	StringJoin[
-																		ToString[teacherEQ[[row,i]]], 
-																		" \t Qual'e' il suo grafico?"], FontWeight -> Bold
+																	Dynamic[
+																		Style[
+																			StringJoin[
+																				ToString[teacherEQ[[row,i]]], 
+																				" \t Qual'e' il suo grafico?"
+																				], 
+																			FontWeight -> Bold
+																		]
 																	],
 																	Row[
 																		Table[
 																			With[
 																				{j = j},
 																				Row[{														 
-																					RadioButton[
-																						Dynamic[userAnswer[[row,i]]], exercises[[row,i,j]], 
-																						Enabled -> Dynamic[enableAnswer[[row,i]]]
+																					Dynamic[
+																						RadioButton[
+																							Dynamic[userAnswer[[row,i]]], 
+																							exercises[[row,i,j]], 
+																							Enabled -> Dynamic[enableAnswer[[row,i]]]
+																						]
 																					],
-																					plotWithZoomButtons[exercises[[row,i,j]], Symbol["x"]]
+																					plotWithZoomButtonsE[row,i,j, Symbol["x"]]
 																				}]
 																			],
 																			{j, Length[exercises[[row,i]]]}
@@ -384,7 +425,8 @@ BeginPackage[ "MClib`"];
 																i,
 																l = Solve[Reduce[n == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
 																j = 1; 
-																y = x /. l[[1]]
+																y = x /. l[[1]];
+																Print[y]
 															]
 														],
 														{i, Length[Solve[Reduce[n == 0 && -11 < x < 11, x], x]]}
@@ -396,6 +438,60 @@ BeginPackage[ "MClib`"];
 											}]
 										];
 				
+				
+				(* Draw a Graph with zoom buttons inside teacherEQ*)
+				plotWithZoomButtonsT[row_,col_,x_] := Module[
+										{j = 5, y = 0,l},
+										Column[{
+											Row[{
+												"Zoom sugli zeri:",
+												Row[
+													Table[
+														With[
+															{i = i},
+															Button[
+																i,
+																l = Solve[Reduce[teacherEQ[[row,col]] == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
+																j = 1; 
+																y = x /. l[[1]]
+															]
+														],
+														{i, Length[Solve[Reduce[teacherEQ[[row,col]] == 0 && -11 < x < 11, x], x]]}
+													]
+												]
+											}],
+											Row[{Dynamic[Plot[teacherEQ[[row,col]], {x, y - j, y + j}, ImageSize -> Medium]]}], 
+											Button["Reset Zoom", j = 5; y = 0]
+											}]
+										];
+				
+				
+				
+				(* Draw a Graph with zoom buttons inside teacherEQ*)
+				plotWithZoomButtonsE[row_,col_,ind_,x_] := Module[
+										{j = 5, y = 0,l},
+										Column[{
+											Row[{
+												"Zoom sugli zeri:",
+												Row[
+													Table[
+														With[
+															{i = i},
+															Button[
+																i,
+																l = Solve[Reduce[exercises[[row,col,ind]] == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
+																j = 1; 
+																y = x /. l[[1]]
+															]
+														],
+														{i, Length[Solve[Reduce[exercises[[row,col,ind]] == 0 && -11 < x < 11, x], x]]}
+													]
+												]
+											}],
+											Row[{Dynamic[Plot[exercises[[row,col,ind]], {x, y - j, y + j}, ImageSize -> Medium]]}], 
+											Button["Reset Zoom", j = 5; y = 0]
+											}]
+										];
 				
 				
 				(* Creating a cliccable text *)
