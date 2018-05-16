@@ -174,7 +174,7 @@ BeginPackage[ "MClib`"];
 										For[i = 1, i <= Length[teacherEQ[[row]]], i++,
 											If[userAnswer[[row,i]] === teacherEQ[[row,i]],
 												StringAnswer = StringJoin[StringAnswer, StringJoin[StringJoin["\nEs #", ToString[i]], ": Risposta corretta"]];(* 1 is correct *)
-												enableAnswer[[row,i]] = False; (* Disable retring *),
+												enableAnswer[[row,i]] = False; correctCounter++;(* Disable retring *),
 												If[userAnswer[[row,i]] === 0,
 													StringAnswer = StringJoin[StringJoin["Domanda ", ToString[i]], " non completata"];(* 1 answer has not be given *)
 													enableAnswer[[row,i]] = True; (* Enable retring *) 
