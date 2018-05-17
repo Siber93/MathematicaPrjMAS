@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     96607,       2152]
-NotebookOptionsPosition[     93887,       2058]
-NotebookOutlinePosition[     95096,       2098]
-CellTagsIndexPosition[     94909,       2090]
+NotebookDataLength[     96861,       2158]
+NotebookOptionsPosition[     94141,       2064]
+NotebookOutlinePosition[     95350,       2104]
+CellTagsIndexPosition[     95163,       2096]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -165,8 +165,9 @@ Cell["", "SlideShowNavigationBar",
 
 Cell[CellGroupData[{
 
-Cell["Equazioni di primo grado", "Section",
- CellChangeTimes->{{3.7340584072666225`*^9, 3.734058415360484*^9}},
+Cell["Funzioni di primo grado", "Section",
+ CellChangeTimes->{{3.7340584072666225`*^9, 3.734058415360484*^9}, 
+   3.7355325223477154`*^9},
  CellTags->"1\[Degree] Grado"],
 
 Cell[CellGroupData[{
@@ -361,9 +362,9 @@ Cell[BoxData[
    3.7354618665904264`*^9}, {3.7354623186110764`*^9, 3.735462320089463*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`f$$ = $CellContext`qq$$ + $CellContext`aa$$ \
-$CellContext`x, $CellContext`aa$$, $CellContext`qq$$, $CellContext`mode$$ = 
-  True, $CellContext`list$$ = {}}, 
+ DynamicModuleBox[{$CellContext`f$$ = $CellContext`aa$$ ($CellContext`qq$$ + \
+$CellContext`x), $CellContext`aa$$, $CellContext`qq$$, $CellContext`mode$$ = 
+  False, $CellContext`list$$ = {}}, 
   PanelBox[
    TagBox[GridBox[{
       {
@@ -397,7 +398,7 @@ $CellContext`x, $CellContext`aa$$, $CellContext`qq$$, $CellContext`mode$$ =
              InputField[
               Dynamic[$CellContext`qq$$], Number, FieldSize -> Full], 
              Style[")", 12]}]]], StandardForm],
-        ImageSizeCache->{81., {18., 24.}}]},
+        ImageSizeCache->{89., {18., 24.}}]},
       {
        RowBox[{
         ButtonBox["\<\"Aggiungi\"\>",
@@ -427,7 +428,7 @@ $CellContext`mode$$}], StandardForm],
       {
        DynamicBox[ToBoxes[
          MClib`d[$CellContext`list$$], StandardForm],
-        ImageSizeCache->{22., {16., 22.}}]},
+        ImageSizeCache->{22., {17., 22.}}]},
       {
        ButtonBox["\<\"Esporta Lista\"\>",
         Appearance->Automatic,
@@ -666,7 +667,7 @@ $CellContext`mode$$}], StandardForm],
       {
        DynamicBox[ToBoxes[
          MClib`d[$CellContext`list$$], StandardForm],
-        ImageSizeCache->{22., {16., 22.}}]},
+        ImageSizeCache->{22., {17., 22.}}]},
       {
        ButtonBox["\<\"Esporta Lista\"\>",
         Appearance->Automatic,
@@ -691,9 +692,9 @@ Cell["", "SlideShowNavigationBar",
 
 Cell[CellGroupData[{
 
-Cell["Equazioni di secondo grado", "Section",
+Cell["Funzioni di secondo grado", "Section",
  CellChangeTimes->{{3.7340584072666225`*^9, 3.734058415360484*^9}, {
-  3.734251689875479*^9, 3.7342516921411314`*^9}},
+   3.734251689875479*^9, 3.7342516921411314`*^9}, 3.735532514846921*^9},
  CellTags->"2\[Degree] Grado"],
 
 Cell[CellGroupData[{
@@ -903,9 +904,10 @@ Cell[BoxData[
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`f$$ = $CellContext`qq$$ + $CellContext`bb$$ \
-$CellContext`x + $CellContext`aa$$ $CellContext`x^2, $CellContext`aa$$, \
-$CellContext`bb$$, $CellContext`qq$$, $CellContext`exp1$$, \
-$CellContext`exp2$$, $CellContext`mode$$ = True, $CellContext`list$$ = {}}, 
+$CellContext`x + $CellContext`aa$$ $CellContext`x^2, $CellContext`aa$$ = 
+  2, $CellContext`bb$$ = 17, $CellContext`qq$$ = 
+  2, $CellContext`exp1$$, $CellContext`exp2$$, $CellContext`mode$$ = 
+  True, $CellContext`list$$ = {2 + 17 $CellContext`x + 2 $CellContext`x^2}}, 
   PanelBox[
    TagBox[GridBox[{
       {
@@ -954,7 +956,7 @@ $CellContext`exp2$$, $CellContext`mode$$ = True, $CellContext`list$$ = {}},
              InputField[
               Dynamic[$CellContext`qq$$], Number, FieldSize -> Full], 
              Style[")", 12]}]]], StandardForm],
-        ImageSizeCache->{127., {18., 24.}}]},
+        ImageSizeCache->{128., {18., 24.}}]},
       {
        RowBox[{
         ButtonBox["\<\"Aggiungi\"\>",
@@ -979,8 +981,8 @@ $CellContext`exp2$$, $CellContext`mode$$ = True, $CellContext`list$$ = {}},
           Refresh[
           If[$CellContext`mode$$, $CellContext`f$$ = $CellContext`aa$$ \
 $CellContext`x^2 + $CellContext`bb$$ $CellContext`x + $CellContext`qq$$, \
-$CellContext`f$$ = $CellContext`aa$$ ($CellContext`x^$CellContext`exp1$$ + \
-$CellContext`bb$$) ($CellContext`x^$CellContext`exp2$$ + $CellContext`qq$$)]; 
+$CellContext`f$$ = ($CellContext`aa$$ ($CellContext`x^$CellContext`exp1$$ + \
+$CellContext`bb$$)) ($CellContext`x^$CellContext`exp2$$ + $CellContext`qq$$)]; 
            "", TrackedSymbols :> {$CellContext`aa$$, $CellContext`bb$$, \
 $CellContext`qq$$, $CellContext`exp1$$, $CellContext`exp2$$, \
 $CellContext`mode$$}], StandardForm],
@@ -989,7 +991,7 @@ $CellContext`mode$$}], StandardForm],
       {
        DynamicBox[ToBoxes[
          MClib`d[$CellContext`list$$], StandardForm],
-        ImageSizeCache->{22., {16., 22.}}]},
+        ImageSizeCache->{144., {21., 27.}}]},
       {
        ButtonBox["\<\"Esporta Lista\"\>",
         Appearance->Automatic,
@@ -1002,7 +1004,11 @@ $CellContext`mode$$}], StandardForm],
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.735462219362446*^9, 3.735462262807249*^9}]
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{
+  3.735462219362446*^9, 3.735462262807249*^9, {3.7355309230746574`*^9, 
+   3.7355309268566036`*^9}}]
 }, {2}]],
 
 Cell[CellGroupData[{
@@ -1288,8 +1294,8 @@ $CellContext`exp2$$, $CellContext`mode$$ = True, $CellContext`list$$ = {}},
           Refresh[
           If[$CellContext`mode$$, $CellContext`f$$ = $CellContext`aa$$ \
 $CellContext`x^2 + $CellContext`bb$$ $CellContext`x + $CellContext`qq$$, \
-$CellContext`f$$ = $CellContext`aa$$ ($CellContext`x^$CellContext`exp1$$ + \
-$CellContext`bb$$) ($CellContext`x^$CellContext`exp2$$ + $CellContext`qq$$)]; 
+$CellContext`f$$ = ($CellContext`aa$$ ($CellContext`x^$CellContext`exp1$$ + \
+$CellContext`bb$$)) ($CellContext`x^$CellContext`exp2$$ + $CellContext`qq$$)]; 
            "", TrackedSymbols :> {$CellContext`aa$$, $CellContext`bb$$, \
 $CellContext`qq$$, $CellContext`exp1$$, $CellContext`exp2$$, \
 $CellContext`mode$$}], StandardForm],
@@ -1298,7 +1304,7 @@ $CellContext`mode$$}], StandardForm],
       {
        DynamicBox[ToBoxes[
          MClib`d[$CellContext`list$$], StandardForm],
-        ImageSizeCache->{22., {16., 22.}}]},
+        ImageSizeCache->{22., {17., 22.}}]},
       {
        ButtonBox["\<\"Esporta Lista\"\>",
         Appearance->Automatic,
@@ -1323,9 +1329,9 @@ Cell["", "SlideShowNavigationBar",
 
 Cell[CellGroupData[{
 
-Cell["Equazioni di terzo grado", "Section",
+Cell["Funzioni di terzo grado", "Section",
  CellChangeTimes->{{3.7340584072666225`*^9, 3.734058415360484*^9}, {
-  3.734251712891385*^9, 3.7342517136726594`*^9}},
+   3.734251712891385*^9, 3.7342517136726594`*^9}, 3.735532529544216*^9},
  CellTags->"3\[Degree] Grado"],
 
 Cell[CellGroupData[{
@@ -1664,9 +1670,9 @@ $CellContext`mode$$ = True, $CellContext`list$$ = {}},
           Refresh[
           If[$CellContext`mode$$, $CellContext`f$$ = $CellContext`aa$$ \
 $CellContext`x^3 + $CellContext`bb$$ $CellContext`x^2 + $CellContext`cc$$ \
-$CellContext`x + $CellContext`qq$$, $CellContext`f$$ = $CellContext`aa$$ \
-($CellContext`x^$CellContext`exp1$$ + $CellContext`bb$$) \
-($CellContext`x^$CellContext`exp2$$ + $CellContext`cc$$) \
+$CellContext`x + $CellContext`qq$$, $CellContext`f$$ = (($CellContext`aa$$ \
+($CellContext`x^$CellContext`exp1$$ + $CellContext`bb$$)) \
+($CellContext`x^$CellContext`exp2$$ + $CellContext`cc$$)) \
 ($CellContext`x^$CellContext`exp3$$ + $CellContext`qq$$)]; "", 
            TrackedSymbols :> {$CellContext`aa$$, $CellContext`bb$$, \
 $CellContext`cc$$, $CellContext`qq$$, $CellContext`exp1$$, \
@@ -1676,7 +1682,7 @@ $CellContext`exp2$$, $CellContext`exp3$$, $CellContext`mode$$}], StandardForm],
       {
        DynamicBox[ToBoxes[
          MClib`d[$CellContext`list$$], StandardForm],
-        ImageSizeCache->{22., {16., 22.}}]},
+        ImageSizeCache->{22., {17., 22.}}]},
       {
        ButtonBox["\<\"Esporta Lista\"\>",
         Appearance->Automatic,
@@ -2026,9 +2032,9 @@ $CellContext`exp3$$, $CellContext`mode$$ = True, $CellContext`list$$ = {}},
           Refresh[
           If[$CellContext`mode$$, $CellContext`f$$ = $CellContext`aa$$ \
 $CellContext`x^3 + $CellContext`bb$$ $CellContext`x^2 + $CellContext`cc$$ \
-$CellContext`x + $CellContext`qq$$, $CellContext`f$$ = $CellContext`aa$$ \
-($CellContext`x^$CellContext`exp1$$ + $CellContext`bb$$) \
-($CellContext`x^$CellContext`exp2$$ + $CellContext`cc$$) \
+$CellContext`x + $CellContext`qq$$, $CellContext`f$$ = (($CellContext`aa$$ \
+($CellContext`x^$CellContext`exp1$$ + $CellContext`bb$$)) \
+($CellContext`x^$CellContext`exp2$$ + $CellContext`cc$$)) \
 ($CellContext`x^$CellContext`exp3$$ + $CellContext`qq$$)]; "", 
            TrackedSymbols :> {$CellContext`aa$$, $CellContext`bb$$, \
 $CellContext`cc$$, $CellContext`qq$$, $CellContext`exp1$$, \
@@ -2038,7 +2044,7 @@ $CellContext`exp2$$, $CellContext`exp3$$, $CellContext`mode$$}], StandardForm],
       {
        DynamicBox[ToBoxes[
          MClib`d[$CellContext`list$$], StandardForm],
-        ImageSizeCache->{22., {16., 22.}}]},
+        ImageSizeCache->{22., {17., 22.}}]},
       {
        ButtonBox["\<\"Esporta Lista\"\>",
         Appearance->Automatic,
@@ -2068,37 +2074,37 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "SlideShowHeader"->{
-  Cell[580, 22, 4356, 95, 76, "SlideShowNavigationBar",
+  Cell[580, 22, 4356, 95, 77, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[6359, 162, 64, 1, 75, "SlideShowNavigationBar",
+  Cell[6359, 162, 64, 1, 76, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[30636, 688, 64, 1, 75, "SlideShowNavigationBar",
+  Cell[30666, 689, 64, 1, 76, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[59511, 1320, 64, 1, 75, "SlideShowNavigationBar",
+  Cell[59735, 1326, 64, 1, 76, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]},
  "1\[Degree] Grado"->{
-  Cell[6448, 167, 142, 2, 70, "Section",
+  Cell[6448, 167, 169, 3, 70, "Section",
    CellTags->"1\[Degree] Grado"]},
  "2\[Degree] Grado"->{
-  Cell[30725, 693, 195, 3, 70, "Section",
+  Cell[30755, 694, 217, 3, 70, "Section",
    CellTags->"2\[Degree] Grado"]},
  "3\[Degree] Grado"->{
-  Cell[59600, 1325, 193, 3, 70, "Section",
+  Cell[59824, 1331, 215, 3, 70, "Section",
    CellTags->"3\[Degree] Grado"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 94229, 2069},
- {"1\[Degree] Grado", 94609, 2078},
- {"2\[Degree] Grado", 94708, 2081},
- {"3\[Degree] Grado", 94808, 2084}
+ {"SlideShowHeader", 94483, 2075},
+ {"1\[Degree] Grado", 94863, 2084},
+ {"2\[Degree] Grado", 94962, 2087},
+ {"3\[Degree] Grado", 95062, 2090}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 4356, 95, 76, "SlideShowNavigationBar",
+Cell[580, 22, 4356, 95, 77, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[4939, 119, 413, 9, 50, "Input"],
 Cell[CellGroupData[{
@@ -2107,50 +2113,50 @@ Cell[6246, 155, 64, 1, 56, "Subtitle"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6359, 162, 64, 1, 75, "SlideShowNavigationBar",
+Cell[6359, 162, 64, 1, 76, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[6448, 167, 142, 2, 70, "Section",
+Cell[6448, 167, 169, 3, 70, "Section",
  CellTags->"1\[Degree] Grado"],
 Cell[CellGroupData[{
-Cell[6615, 173, 10088, 187, 1323, "Input"],
-Cell[16706, 362, 3398, 83, 240, "Output"]
+Cell[6642, 174, 10088, 187, 1323, "Input"],
+Cell[16733, 363, 3401, 83, 241, "Output"]
 }, {2}]],
 Cell[CellGroupData[{
-Cell[20138, 450, 7218, 149, 1323, "Input"],
-Cell[27359, 601, 3219, 80, 240, "Output"]
+Cell[20168, 451, 7218, 149, 1323, "Input"],
+Cell[27389, 602, 3219, 80, 241, "Output"]
 }, {2}]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30636, 688, 64, 1, 75, "SlideShowNavigationBar",
+Cell[30666, 689, 64, 1, 76, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[30725, 693, 195, 3, 70, "Section",
+Cell[30755, 694, 217, 3, 70, "Section",
  CellTags->"2\[Degree] Grado"],
 Cell[CellGroupData[{
-Cell[30945, 700, 9962, 201, 1806, "Input"],
-Cell[40910, 903, 4283, 101, 240, "Output"]
+Cell[30997, 701, 9962, 201, 1806, "Input"],
+Cell[40962, 904, 4453, 106, 249, "Output"]
 }, {2}]],
 Cell[CellGroupData[{
-Cell[45227, 1009, 9962, 201, 1806, "Input"],
-Cell[55192, 1212, 4261, 101, 240, "Output"]
+Cell[45449, 1015, 9962, 201, 1806, "Input"],
+Cell[55414, 1218, 4263, 101, 241, "Output"]
 }, {2}]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[59511, 1320, 64, 1, 75, "SlideShowNavigationBar",
+Cell[59735, 1326, 64, 1, 76, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[59600, 1325, 193, 3, 70, "Section",
+Cell[59824, 1331, 215, 3, 70, "Section",
  CellTags->"3\[Degree] Grado"],
 Cell[CellGroupData[{
-Cell[59818, 1332, 12062, 241, 2096, "Input"],
-Cell[71883, 1575, 5047, 117, 240, "Output"]
+Cell[60064, 1338, 12062, 241, 2096, "Input"],
+Cell[72129, 1581, 5051, 117, 241, "Output"]
 }, {2}]],
 Cell[CellGroupData[{
-Cell[76964, 1697, 11908, 239, 2096, "Input"],
-Cell[88875, 1938, 4975, 115, 240, "Output"]
+Cell[77214, 1703, 11908, 239, 2096, "Input"],
+Cell[89125, 1944, 4979, 115, 241, "Output"]
 }, {2}]]
 }, Open  ]]
 }, Open  ]]
