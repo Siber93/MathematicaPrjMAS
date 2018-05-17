@@ -178,7 +178,7 @@ BeginPackage[ "MClib`"];
 				
 				
 				(* reset variables for the given grade *)
-				resetGrade[grade_] := Module[
+				resetGrade[grade_, count_] := Module[
 									{},
 									teacherEQ[[grade*2-1]] = randomFill[1,MINNUMBEROFEXERCISES];
 									teacherEQ[[grade*2]] = randomFill[1,MINNUMBEROFEXERCISES];
@@ -196,7 +196,7 @@ BeginPackage[ "MClib`"];
 									enableAnswer[[grade*2]] = Table[True, MINNUMBEROFEXERCISES];	
 									userAnswer[[grade*2-1]] = Table[0, MINNUMBEROFEXERCISES];	
 									userAnswer[[grade*2]] =	Table[0, MINNUMBEROFEXERCISES];									
-				
+									correctCounter = correctCounter - count;
 								]
 			
 			
@@ -263,7 +263,7 @@ BeginPackage[ "MClib`"];
 																		Style[
 																			StringJoin[
 																				ToString[teacherEQ[[row,i]]], 
-																				" \t Qual'e' il suo grafico?"
+																				" \t Qual e' il suo grafico?"
 																				], 
 																			FontWeight -> Bold
 																		]
@@ -433,7 +433,7 @@ BeginPackage[ "MClib`"];
 													]
 												]
 											}],
-											Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium]]}], 
+											Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium, PlotLabels->n]]}], 
 											Button["Reset Zoom", j = 5; y = 0]
 											}]
 										];
