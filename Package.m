@@ -69,6 +69,18 @@ BeginPackage[ "MClib`"];
 		plotWithZoomButtons::usage = "Draw a Graph with zoom buttons inside
 			\n@n_@ Function to plot
 			\n@x_@ Symbol that has to be used in order to resolve the interal equations"
+		
+		plotWithZoomButtonsA::usage = "Draw a Graph with zoom buttons inside
+			\n@n_@ Function to plot
+			\n@x_@ Symbol that has to be used in order to resolve the interal equations"	
+		
+		plotWithZoomButtonsB::usage = "Draw a Graph with zoom buttons inside
+			\n@n_@ Function to plot
+			\n@x_@ Symbol that has to be used in order to resolve the interal equations"	
+			
+		plotWithZoomButtonsC::usage = "Draw a Graph with zoom buttons inside
+			\n@n_@ Function to plot
+			\n@x_@ Symbol that has to be used in order to resolve the interal equations"		
 			
 		plotWithZoomButtonsT::usage = "Draw a teacherEQ Graph with zoom buttons inside
 			\n@row_@ row index
@@ -426,7 +438,6 @@ BeginPackage[ "MClib`"];
 																l = Solve[Reduce[n == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
 																j = 1; 
 																y = x /. l[[1]];
-																Print[y]
 															]
 														],
 														{i, Length[Solve[Reduce[n == 0 && -11 < x < 11, x], x]]}
@@ -437,6 +448,84 @@ BeginPackage[ "MClib`"];
 											Button["Reset Zoom", j = 5; y = 0]
 											}]
 										];
+				plotWithZoomButtonsA[n_,x_] := Module[
+										{j = 5, y = 0,l},
+										Column[{
+											Row[{
+												"Zoom sugli zeri:",
+												Row[
+													Table[
+														With[
+															{i = i},
+															Button[
+																i,
+																l = Solve[Reduce[n == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
+																j = 1; 
+																y = x /. l[[1]];
+															]
+														],
+														{i, Length[Solve[Reduce[n == 0 && -11 < x < 11, x], x]]}
+													]
+												]
+											}],
+											DynamicModule[{},Dynamic[If[ j === 5 && y === 0, Text[""], Text["zero di molteplicit\[AGrave] 1"]]]]
+											Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium, PlotLabels->n]]}], 
+											Button["Reset Zoom", j = 5; y = 0]
+											}]
+										];			
+											
+						plotWithZoomButtonsB[n_,x_] := Module[
+										{j = 5, y = 0,l,ind = 0},
+										Column[{
+											Row[{
+												"Zoom sugli zeri:",
+												Row[
+													Table[
+														With[
+															{i = i},
+															Button[
+																i,
+																l = Solve[Reduce[n == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
+																j = 1; 
+																y = x /. l[[1]];
+																ind = i
+															]
+														],
+														{i, Length[Solve[Reduce[n == 0 && -11 < x < 11, x], x]]}
+													]
+												]
+											}],
+												DynamicModule[{},Dynamic[If[ ind === 0, Text[""],If[ind===1,Text["zero di molteplicit\[AGrave] 1"], Text["zero di molteplicit\[AGrave] 2"]]]]]
+											Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium, PlotLabels->n]]}], 
+											Button["Reset Zoom", j = 5; y = 0; ind = 0]
+											}]
+										];
+											
+						plotWithZoomButtonsC[n_,x_] := Module[
+										{j = 5, y = 0,l},
+										Column[{
+											Row[{
+												"Zoom sugli zeri:",
+												Row[
+													Table[
+														With[
+															{i = i},
+															Button[
+																i,
+																l = Solve[Reduce[n == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
+																j = 1; 
+																y = x /. l[[1]];
+															]
+														],
+														{i, Length[Solve[Reduce[n == 0 && -11 < x < 11, x], x]]}
+													]
+												]
+											}],
+											DynamicModule[{},Dynamic[If[ j === 5 && y === 0, Text[""], Text["zero di molteplicit\[AGrave] 3"]]]],
+											Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium, PlotLabels->n]]}], 
+											Button["Reset Zoom", j = 5; y = 0]
+											}]
+										];											
 				
 				
 				(* Draw a Graph with zoom buttons inside teacherEQ*)
@@ -536,6 +625,15 @@ BeginPackage[ "MClib`"];
 	(* End of Package *)
 	
 EndPackage[];
+
+
+
+
+
+
+
+
+
 
 
 
