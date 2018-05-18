@@ -1,0 +1,15 @@
+"Zeri di funzione"
+
+
+"Per cercare gli zeri della funzione polinomiale imponiamo f(x)=0 nel caso del 2° grado: ax^2+bx+c=0.
+
+abbiamo 3 possibili risultati:"
+
+presentazione grafico di x^2+1 e -x^2-1 "le parabola non intersecano mai l'asse x quindi entrambe non hanno zeri reali"
+
+presentazione grafico di x^2 e -x^2 con zoom in zero "le parabola intersecano l'asse x in un punto ma avvicinandosi molto all'asse x con un andamento curvo che si sciaccia sull'asse x"
+
+presentazione grafico di x^2+x e -x^2-x con zoom in zero "le parabola intersecano l'asse x in due punti e il grafico delle parabole non si avvicina all'asse"
+
+
+ 
