@@ -657,7 +657,7 @@ BeginPackage[ "MClib`"];
 			SelfDestruct[e_]:=(
 				If[$FrontEnd=!=$Failed,
 					SelectionMove[EvaluationNotebook[],All,EvaluationCell];
-					NotebookDelete[]]; e)	
+					NotebookDelete[]]; )	
 			SetAttributes[SelfDestruct,HoldAllComplete];		
 				(* Allow to function d to ovverride l value with the value of the given variable *)
 				SetAttributes[d, HoldAll];	
@@ -676,6 +676,9 @@ BeginPackage[ "MClib`"];
 	(* End of Package *)
 	
 EndPackage[];
+
+
+
 
 
 
