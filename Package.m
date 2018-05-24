@@ -448,6 +448,7 @@ BeginPackage[ "MClib`"];
 											Button["Reset Zoom", j = 5; y = 0]
 											}]
 										];
+			(*Draw Graph of function and if zoom stamp text case 3 of zero function 2 grade*)								
 				plotWithZoomButtonsA[n_,x_] := Module[
 										{j = 5, y = 0,l},
 										Column[{
@@ -473,7 +474,7 @@ BeginPackage[ "MClib`"];
 											Button["Reset Zoom", j = 5; y = 0]
 											}]
 										];			
-											
+						(*Draw Graph of function and if zoom stamp text case 3 of zero function 2 grade*)						
 						plotWithZoomButtonsB[n_,x_] := Module[
 										{j = 5, y = 0,l,ind = 0},
 										Column[{
@@ -500,7 +501,7 @@ BeginPackage[ "MClib`"];
 											Button["Reset Zoom", j = 5; y = 0; ind = 0]
 											}]
 										];
-											
+										(*Draw Graph of function and if zoom stamp text case 3 of zero function 3 grade*)	
 						plotWithZoomButtonsC[n_,x_] := Module[
 										{j = 5, y = 0,l},
 										Column[{
@@ -612,7 +613,7 @@ BeginPackage[ "MClib`"];
 						];
 						
 			
-			
+			(*function for hidden code when student o teacher evaluate notebook*)
 			SelfDestruct[e_]:=(
 				If[$FrontEnd=!=$Failed,
 					SelectionMove[EvaluationNotebook[],All,EvaluationCell];
