@@ -24,13 +24,33 @@ BeginPackage[ "MClib`"];
 		p1::usage="[G1, q=0] Variable that indicates that user has already chosen something"
 		p2::usage="[G1, m!=0] Variable that indicates that user has already chosen something"
 		p3::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		p4::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		p5::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		p6::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		p7::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		p8::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		p9::usage="[G1, m=0] Variable that indicates that user has already chosen something"
 		teacherEQ::usage="Exercises solutions list"
 		userAnswer::usage="List of all the user answer"
 		exercises::usage="List containing all exercises for each grade and kind (solution + errors)"
 		enableAnswer::usage="List of all boolean variable that disable exercises after having done them"
 		correctCounter::usage="Number of correct answer"
+		correctAnswerG1::usage="Number of correct answer part 1"
+		correctAnswerG2::usage="Number of correct answer part 2"
+		correctAnswerG3::usage="Number of correct answer part 1"
 		SelfDestruct::usage="Hidden text"		
-		
+		freeEq::usage="Free eq"
+        currentEq::usage= "eq1"
+        freeEq2::usage="Free eq2"
+        currentEq2::usage= "eq2"
+        freeEq3::usage="Free eq3"
+        currentEq3::usage= "eq3"
+        clicked::usage="click first verify"
+        clicked2::usage="click first verify"
+        clicked2B::usage="click first verify"
+        clicked3B::usage="click first verify"
+        clicked3::usage="click first verify"
+        clicked1b::usage="click second verify"
 		
 		load::usage = "Load initial variables randomly"
 		
@@ -45,7 +65,7 @@ BeginPackage[ "MClib`"];
 		exKindBPrinter::usage = "Generate form Kind B for students
 			\n@row_@ exercises row index"
 	
-	
+		 AutoCollapse::usage="Hidden text"	
 		generateExercisesG1::usage="Generate a list of all exercises GRADE 1 (solutions + errors)
 			\n@l_@ List of solutions"
 			
@@ -116,7 +136,24 @@ BeginPackage[ "MClib`"];
 				p1 = 0 (* Variable that indicates that user has already chosen something [G1, q=0] *)
 				p2 = 0 (* Variable that indicates that user has already chosen something [G1, m!=0] *)
 				p3 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
-			
+				p4 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
+				p5 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
+				p6 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
+				p7 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
+				p8 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
+				p9 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
+				freeEq = {}(* List that contains at most 5 expressions to be compared, TODO: Insert in package*)
+				currentEq = "" (* Current expression that user is inserting, TODO: Insert in package *)
+				clicked = 0
+				clicked2 = 0
+				clicked1b = 0
+				clicked2B = 0
+				clicked3 = 0;
+				clicked3B = 0;
+				freeEq2 = {}(* List that contains at most 5 expressions to be compared, TODO: Insert in package*)
+				freeEq3 = {}
+				currentEq3=""
+				currentEq2="" (* Current expression that user is inserting, TODO: Insert in package *)
 				
 				MINNUMBEROFEXERCISES = 3 (* CONSTANT- Minimum number of exercises per module *)			
 				
@@ -130,6 +167,9 @@ BeginPackage[ "MClib`"];
 				enableAnswer = { } (* Forms enabler *)
 				
 				correctCounter = 0 (* Number of correct answer *)
+				correctAnswerG1 = 0 (* Number of correct answer part 1*)
+				correctAnswerG2 = 0 (* Number of correct answer part 2 *)
+				correctAnswerG3 = 0 (* Number of correct answer part3*)
 			
 			(* /Variables *)
 		
@@ -617,13 +657,17 @@ BeginPackage[ "MClib`"];
 			SelfDestruct[e_]:=(
 				If[$FrontEnd=!=$Failed,
 					SelectionMove[EvaluationNotebook[],All,EvaluationCell];
-					NotebookDelete[]];)	
+					NotebookDelete[]]; e)	
 			SetAttributes[SelfDestruct,HoldAllComplete];		
 				(* Allow to function d to ovverride l value with the value of the given variable *)
 				SetAttributes[d, HoldAll];	
 			
 			(* Functions *)
 		(* End of Private functions definition space *)
+		AutoCollapse[] := (
+  If[$FrontEnd =!= $Failed, 
+   SelectionMove[EvaluationNotebook[], All, GeneratedCell];
+   FrontEndTokenExecute["SelectionCloseUnselectedCells"]])
 		
 	End[];
 	
