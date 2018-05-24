@@ -29,7 +29,7 @@ BeginPackage[ "MClib`"];
 		exercises::usage="List containing all exercises for each grade and kind (solution + errors)"
 		enableAnswer::usage="List of all boolean variable that disable exercises after having done them"
 		correctCounter::usage="Number of correct answer"
-		
+		SelfDestruct::usage="Hidden text"		
 		
 		
 		load::usage = "Load initial variables randomly"
@@ -611,7 +611,13 @@ BeginPackage[ "MClib`"];
 							]
 						];
 						
-						
+			
+			
+			SelfDestruct[e_]:=(
+				If[$FrontEnd=!=$Failed,
+					SelectionMove[EvaluationNotebook[],All,EvaluationCell];
+					NotebookDelete[]];)	
+			SetAttributes[SelfDestruct,HoldAllComplete];		
 				(* Allow to function d to ovverride l value with the value of the given variable *)
 				SetAttributes[d, HoldAll];	
 			
@@ -625,6 +631,9 @@ BeginPackage[ "MClib`"];
 	(* End of Package *)
 	
 EndPackage[];
+
+
+
 
 
 
