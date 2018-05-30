@@ -176,6 +176,7 @@ BeginPackage[ "MClib`"];
 
 			(* Functions *)	
 
+				(* Load initial variables from files and it fill them randomly *)
 				loadFiles[] := Module[{}, 
 					teacherEQ = { };				    
 				    exercises = { };				    
@@ -202,7 +203,7 @@ BeginPackage[ "MClib`"];
 				]
 				
 				
-				
+				(* Load initial variables randomly *)
 				load[] := Module[{}, 
 					teacherEQ = { };				    
 				    exercises = { };				    
@@ -397,7 +398,7 @@ BeginPackage[ "MClib`"];
 											];
 				
 	
-				
+				(* Generate Exercise for grade 1 *)
 				generateExercisesG1[l_] := Module[
 											{return = {}, sol={}, coeff},
 											For[i = 1, i <= Length[l], i++,
@@ -421,7 +422,7 @@ BeginPackage[ "MClib`"];
 											return
 										];
 										
-										
+				(* Generate Exercise for grade 2 *)					
 				generateExercisesG2[l_] := Module[
 											{return = {}, sol={}, coeff},
 											For[i = 1, i <= Length[l], i++,
@@ -437,7 +438,7 @@ BeginPackage[ "MClib`"];
 											return
 										];
 										
-										
+				(* Generate Exercise for grade 3 *)						
 				generateExercisesG3[l_] := Module[
 											{return = {}, sol={}, coeff},
 											For[i = 1, i <= Length[l], i++,
@@ -488,7 +489,9 @@ BeginPackage[ "MClib`"];
 											Button["Reset Zoom", j = 5; y = 0]
 											}]
 										];
-			(*Draw Graph of function and if zoom stamp text case 3 of zero function 2 grade*)								
+										
+										
+				(*Draw Graph of function and if zoom stamp text case 3 of zero function 2 grade*)								
 				plotWithZoomButtonsA[n_,x_] := Module[
 										{j = 5, y = 0,l},
 										Column[{
@@ -513,154 +516,156 @@ BeginPackage[ "MClib`"];
 											Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium,  PlotLegends->Placed[{n}, Above]]]}], 
 											Button["Reset Zoom", j = 5; y = 0]
 											}]
-										];			
-						(*Draw Graph of function and if zoom stamp text case 3 of zero function 2 grade*)						
-						plotWithZoomButtonsB[n_,x_] := Module[
-										{j = 5, y = 0,l,ind = 0},
-										Column[{
-											Row[{
-												"Zoom sugli zeri:",
-												Row[
-													Table[
-														With[
-															{i = i},
-															Button[
-																i,
-																l = Solve[Reduce[n == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
-																j = 1; 
-																y = x /. l[[1]];
-																ind = i
-															]
-														],
-														{i, Length[Solve[Reduce[n == 0 && -11 < x < 11, x], x]]}
-													]
+										];	
+										
+					(*Draw Graph of function and if zoom stamp text case 3 of zero function 2 grade*)						
+					plotWithZoomButtonsB[n_,x_] := Module[
+									{j = 5, y = 0,l,ind = 0},
+									Column[{
+										Row[{
+											"Zoom sugli zeri:",
+											Row[
+												Table[
+													With[
+														{i = i},
+														Button[
+															i,
+															l = Solve[Reduce[n == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
+															j = 1; 
+															y = x /. l[[1]];
+															ind = i
+														]
+													],
+													{i, Length[Solve[Reduce[n == 0 && -11 < x < 11, x], x]]}
 												]
-											}],
-												DynamicModule[{},Dynamic[If[ ind === 0, Text[""],If[ind===1,Text["zero di molteplicit\[AGrave] 1"], Text["zero di molteplicit\[AGrave] 2"]]]]]
-											Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium,  PlotLegends->Placed[{n}, Above]]]}], 
-											Button["Reset Zoom", j = 5; y = 0; ind = 0]
-											}]
-										];
-										(*Draw Graph of function and if zoom stamp text case 3 of zero function 3 grade*)	
-						plotWithZoomButtonsC[n_,x_] := Module[
-										{j = 5, y = 0,l},
-										Column[{
-											Row[{
-												"Zoom sugli zeri:",
-												Row[
-													Table[
-														With[
-															{i = i},
-															Button[
-																i,
-																l = Solve[Reduce[n == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
-																j = 1; 
-																y = x /. l[[1]];
-															]
-														],
-														{i, Length[Solve[Reduce[n == 0 && -11 < x < 11, x], x]]}
-													]
+											]
+										}],
+											DynamicModule[{},Dynamic[If[ ind === 0, Text[""],If[ind===1,Text["zero di molteplicit\[AGrave] 1"], Text["zero di molteplicit\[AGrave] 2"]]]]]
+										Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium,  PlotLegends->Placed[{n}, Above]]]}], 
+										Button["Reset Zoom", j = 5; y = 0; ind = 0]
+										}]
+									];
+									
+					(*Draw Graph of function and if zoom stamp text case 3 of zero function 3 grade*)	
+					plotWithZoomButtonsC[n_,x_] := Module[
+									{j = 5, y = 0,l},
+									Column[{
+										Row[{
+											"Zoom sugli zeri:",
+											Row[
+												Table[
+													With[
+														{i = i},
+														Button[
+															i,
+															l = Solve[Reduce[n == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
+															j = 1; 
+															y = x /. l[[1]];
+														]
+													],
+													{i, Length[Solve[Reduce[n == 0 && -11 < x < 11, x], x]]}
 												]
-											}],
-											DynamicModule[{},Dynamic[If[ j === 5 && y === 0, Text[""], Text["zero di molteplicit\[AGrave] 3"]]]],
-											Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium,  PlotLegends->Placed[{n}, Above]]]}], 
-											Button["Reset Zoom", j = 5; y = 0]
-											}]
-										];											
+											]
+										}],
+										DynamicModule[{},Dynamic[If[ j === 5 && y === 0, Text[""], Text["zero di molteplicit\[AGrave] 3"]]]],
+										Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium,  PlotLegends->Placed[{n}, Above]]]}], 
+										Button["Reset Zoom", j = 5; y = 0]
+										}]
+									];											
 				
 				
-				(* Draw a Graph with zoom buttons inside teacherEQ*)
-				plotWithZoomButtonsT[row_,col_,x_] := Module[
-										{j = 5, y = 0,l},
-										Column[{
-											Row[{
-												"Zoom sugli zeri:",
-												Row[
-													Table[
-														With[
-															{i = i},
-															Button[
-																i,
-																l = Solve[Reduce[teacherEQ[[row,col]] == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
-																j = 1; 
-																y = x /. l[[1]]
-															]
-														],
-														{i, Length[Solve[Reduce[teacherEQ[[row,col]] == 0 && -11 < x < 11, x], x]]}
+					(* Draw a Graph with zoom buttons inside teacherEQ*)
+					plotWithZoomButtonsT[row_,col_,x_] := Module[
+											{j = 5, y = 0,l},
+											Column[{
+												Row[{
+													"Zoom sugli zeri:",
+													Row[
+														Table[
+															With[
+																{i = i},
+																Button[
+																	i,
+																	l = Solve[Reduce[teacherEQ[[row,col]] == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
+																	j = 1; 
+																	y = x /. l[[1]]
+																]
+															],
+															{i, Length[Solve[Reduce[teacherEQ[[row,col]] == 0 && -11 < x < 11, x], x]]}
+														]
 													]
-												]
-											}],
-											Row[{Dynamic[Plot[teacherEQ[[row,col]], {x, y - j, y + j}, ImageSize -> Medium]]}], 
-											Button["Reset Zoom", j = 5; y = 0]
-											}]
-										];
+												}],
+												Row[{Dynamic[Plot[teacherEQ[[row,col]], {x, y - j, y + j}, ImageSize -> Medium]]}], 
+												Button["Reset Zoom", j = 5; y = 0]
+												}]
+											];
 				
 				
 				
-				(* Draw a Graph with zoom buttons inside teacherEQ*)
-				plotWithZoomButtonsE[row_,col_,ind_,x_] := Module[
-										{j = 5, y = 0,l},
-										Column[{
-											Row[{
-												"Zoom sugli zeri:",
-												Row[
-													Table[
-														With[
-															{i = i},
-															Button[
-																i,
-																l = Solve[Reduce[exercises[[row,col,ind]] == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
-																j = 1; 
-																y = x /. l[[1]]
-															]
-														],
-														{i, Length[Solve[Reduce[exercises[[row,col,ind]] == 0 && -11 < x < 11, x], x]]}
+					(* Draw a Graph with zoom buttons inside teacherEQ*)
+					plotWithZoomButtonsE[row_,col_,ind_,x_] := Module[
+											{j = 5, y = 0,l},
+											Column[{
+												Row[{
+													"Zoom sugli zeri:",
+													Row[
+														Table[
+															With[
+																{i = i},
+																Button[
+																	i,
+																	l = Solve[Reduce[exercises[[row,col,ind]] == 0 && -11 < x < 11, x], x][[i]]; (* On button click set zoom center Y and surround area J *)
+																	j = 1; 
+																	y = x /. l[[1]]
+																]
+															],
+															{i, Length[Solve[Reduce[exercises[[row,col,ind]] == 0 && -11 < x < 11, x], x]]}
+														]
 													]
-												]
-											}],
-											Row[{Dynamic[Plot[exercises[[row,col,ind]], {x, y - j, y + j}, ImageSize -> Medium]]}], 
-											Button["Reset Zoom", j = 5; y = 0]
-											}]
-										];
+												}],
+												Row[{Dynamic[Plot[exercises[[row,col,ind]], {x, y - j, y + j}, ImageSize -> Medium]]}], 
+												Button["Reset Zoom", j = 5; y = 0]
+												}]
+											];
 				
 				
-				(* Creating a cliccable text *)
-				hyperText[txt_,msg_, curs_] := EventHandler[
-					MouseAppearance[
-						Style[txt, FontColor -> Blue], 
-						curs
-					], 
-					{"MouseClicked" :>  MessageDialog[msg]}
-				]; 
+					(* Creating a cliccable text *)
+					hyperText[txt_,msg_, curs_] := EventHandler[
+						MouseAppearance[
+							Style[txt, FontColor -> Blue], 
+							curs
+						], 
+						{"MouseClicked" :>  MessageDialog[msg]}
+					]; 
 				
-				(* Print a form with all the functions that the teacher is inserting in the list l_ *)
-				d[l_] := Panel[
-							Grid[
-								Table[
-									With[
-										{i = i, j = j}, 
-										Row[
-											{l[[i]], 
-											"\t", 
-											Button["X", l = Delete[l, Position[l, l[[i]]]]]}
-										]
+					(* Print a form with all the functions that the teacher is inserting in the list l_ *)
+					d[l_] := Panel[
+								Grid[
+									Table[
+										With[
+											{i = i, j = j}, 
+											Row[
+												{l[[i]], 
+												"\t", 
+												Button["X", l = Delete[l, Position[l, l[[i]]]]]}
+											]
+										], 
+										{i, Length[l]},
+										{j, 1}
 									], 
-									{i, Length[l]},
-									{j, 1}
-								], 
-								Alignment -> Right
-							]
-						];
+									Alignment -> Right
+								]
+							];
 						
 			
-			(*function for hidden code when student o teacher evaluate notebook*)
-			SelfDestruct[e_]:=(
-				If[$FrontEnd=!=$Failed,
-					SelectionMove[EvaluationNotebook[],All,EvaluationCell];
-					NotebookDelete[]]; )	
-			SetAttributes[SelfDestruct,HoldAllComplete];		
-				(* Allow to function d to ovverride l value with the value of the given variable *)
-				SetAttributes[d, HoldAll];	
+				(* Function for hidden code when student o teacher evaluate notebook *)
+				SelfDestruct[e_]:=(
+					If[$FrontEnd=!=$Failed,
+						SelectionMove[EvaluationNotebook[],All,EvaluationCell];
+						NotebookDelete[]]; )	
+				SetAttributes[SelfDestruct,HoldAllComplete];		
+					(* Allow to function d to ovverride l value with the value of the given variable *)
+					SetAttributes[d, HoldAll];	
 			
 			(* Functions *)
 		(* End of Private functions definition space *)
