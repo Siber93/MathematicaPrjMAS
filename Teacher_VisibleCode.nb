@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     29144,        642]
-NotebookOptionsPosition[     28356,        610]
-NotebookOutlinePosition[     28889,        632]
-CellTagsIndexPosition[     28811,        627]
+NotebookDataLength[     28937,        645]
+NotebookOptionsPosition[     28005,        608]
+NotebookOutlinePosition[     28538,        630]
+CellTagsIndexPosition[     28460,        625]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -120,23 +120,89 @@ Pu7kfNfO+x+/T/70++ob7NUEtQ==
  TextAlignment->Center,
  CellTags->"SlideShowHeader"],
 
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.734093361146397*^9, 3.734093378552863*^9}, {
+   3.734095287649521*^9, 3.734095289897346*^9}, 3.7340953586713905`*^9, {
+   3.7354023997280445`*^9, 3.7354024027489047`*^9}, {3.7359272298900185`*^9, 
+   3.7359272324838085`*^9}, {3.7359272931029763`*^9, 3.735927329134801*^9}, {
+   3.7359280637250624`*^9, 3.735928072677791*^9}, {3.735928231101549*^9, 
+   3.7359282810560055`*^9}, {3.735993676231355*^9, 3.7359936776219096`*^9}, {
+   3.735993809541542*^9, 3.7359938165732293`*^9}, {3.735995818243533*^9, 
+   3.7359958226409674`*^9}, {3.7360046382371845`*^9, 
+   3.7360046628405986`*^9}, {3.736004831610159*^9, 3.736004849427633*^9}, {
+   3.7360051274174895`*^9, 3.736005135006774*^9}, {3.7360052794083047`*^9, 
+   3.736005282983139*^9}, {3.7360054110141335`*^9, 3.7360054148041925`*^9}, {
+   3.7360063146060905`*^9, 3.736006331388231*^9}, 3.7360064484530964`*^9, {
+   3.7360065029644322`*^9, 3.7360065372563334`*^9}, {3.7360068376930237`*^9, 
+   3.736006966276186*^9}, {3.736007002919838*^9, 3.73600700707563*^9}, {
+   3.7360070775385933`*^9, 3.736007321609123*^9}, {3.7360073710887203`*^9, 
+   3.7360074318884935`*^9}, {3.7361804937152767`*^9, 3.7361805024681234`*^9}, 
+   3.736672695852868*^9}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Benvenuto Professore!\n",
+ StyleBox["Seleziona l\[CloseCurlyQuote]argomento del quale generare \
+esercizi", "Chapter"]
+}], "Title",
+ CellChangeTimes->{
+  3.559948400406288*^9, {3.7340581602275753`*^9, 3.7340581900992765`*^9}, {
+   3.7340582749750524`*^9, 3.7340583146578255`*^9}, {3.7340583858911333`*^9, 
+   3.7340583971727514`*^9}, {3.734251578000148*^9, 3.734251578000148*^9}, {
+   3.734253429110056*^9, 3.734253429110056*^9}, {3.734253468233617*^9, 
+   3.734253468233617*^9}, {3.7355414785369716`*^9, 3.7355415441909094`*^9}, 
+   3.735927255915428*^9}],
+
+Cell["Indicare grado e tipologia", "Subtitle",
+ CellChangeTimes->{
+  3.7340581833491836`*^9, {3.735927266759362*^9, 3.735927284915351*^9}, {
+   3.735927341469758*^9, 3.735927348547991*^9}}],
+
+Cell[CellGroupData[{
+
 Cell[BoxData[{
+ RowBox[{"Button", "[", 
+  RowBox[{"\"\<Iniziamo\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"SetDirectory", "[", 
+     RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Get", "[", "\"\<Package.m\>\"", "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"loadFiles", "[", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"FrontEndExecute", "[", 
+     RowBox[{"FrontEndToken", "[", "\"\<EvaluateNotebook\>\"", "]"}], "]"}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"AutoCollapse", "[", "]"}]}], ",", 
+   RowBox[{"Appearance", "\[Rule]", "\"\<Palette\>\""}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "140"}]}], "]"}], "\n", 
  RowBox[{
-  RowBox[{"SetDirectory", "[", 
-   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
-  ";"}], "\[IndentingNewLine]", 
+  RowBox[{"AutoCollapse", "[", "]"}], ";"}]}], "Input"],
+
+Cell[BoxData[
+ ButtonBox["\<\"Iniziamo\"\>",
+  Appearance->"Palette",
+  ButtonFunction:>(SetDirectory[
+     NotebookDirectory[]]; Get["Package.m"]; MClib`loadFiles[]; 
+   FrontEndExecute[
+     FrontEndToken["EvaluateNotebook"]]; MClib`AutoCollapse[]),
+  Evaluator->Automatic,
+  ImageSize->140,
+  Method->"Preemptive"]], "Output",
+ CellChangeTimes->{3.736674586989968*^9}]
+}, {2}]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{"\"\<\>\"", "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Get", "[", "\"\<Package.m\>\"", "]"}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"mode", "=", "True"}], ";"}], " ", 
+  RowBox[{"mode", "=", "True"}], " ", ";", 
   RowBox[{"(*", " ", 
    RowBox[{
    "Variable", " ", "to", " ", "set", " ", "if", " ", "the", " ", "out", " ", 
     "must", " ", "be", " ", "factorized", " ", "or", " ", "not"}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
+   "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{"draw", "[", 
     RowBox[{"grade_", ",", " ", "kind_"}], "]"}], ":=", 
@@ -448,7 +514,8 @@ Cell[BoxData[{
          "Button", " ", "that", " ", "allow", " ", "to", " ", "export", " ", 
           "the", " ", "list"}], " ", "*)"}], "\[IndentingNewLine]", "}"}], 
        "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}]}], 
-    "\[IndentingNewLine]", "]"}]}], ";"}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"AutoCollapse", "[", "]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"gg", " ", "=", " ", "1"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
@@ -458,44 +525,15 @@ Cell[BoxData[{
    RowBox[{"draw", "[", 
     RowBox[{"gg", ",", "tt"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"AutoCollapse", "[", "]"}]}], "Input",
- CellChangeTimes->{{3.734093361146397*^9, 3.734093378552863*^9}, {
-   3.734095287649521*^9, 3.734095289897346*^9}, 3.7340953586713905`*^9, {
-   3.7354023997280445`*^9, 3.7354024027489047`*^9}, {3.7359272298900185`*^9, 
-   3.7359272324838085`*^9}, {3.7359272931029763`*^9, 3.735927329134801*^9}, {
-   3.7359280637250624`*^9, 3.735928072677791*^9}, {3.735928231101549*^9, 
-   3.7359282810560055`*^9}, {3.735993676231355*^9, 3.7359936776219096`*^9}, {
-   3.735993809541542*^9, 3.7359938165732293`*^9}, {3.735995818243533*^9, 
-   3.7359958226409674`*^9}, {3.7360046382371845`*^9, 
-   3.7360046628405986`*^9}, {3.736004831610159*^9, 3.736004849427633*^9}, {
-   3.7360051274174895`*^9, 3.736005135006774*^9}, {3.7360052794083047`*^9, 
-   3.736005282983139*^9}, {3.7360054110141335`*^9, 3.7360054148041925`*^9}, {
-   3.7360063146060905`*^9, 3.736006331388231*^9}, 3.7360064484530964`*^9, {
-   3.7360065029644322`*^9, 3.7360065372563334`*^9}, {3.7360068376930237`*^9, 
-   3.736006966276186*^9}, {3.736007002919838*^9, 3.73600700707563*^9}, {
-   3.7360070775385933`*^9, 3.736007321609123*^9}, {3.7360073710887203`*^9, 
-   3.7360074318884935`*^9}, {3.7361804937152767`*^9, 3.7361805024681234`*^9}}],
+ CellChangeTimes->{{3.7366727557908382`*^9, 3.736672761444872*^9}, {
+  3.736672805918154*^9, 3.736672842941787*^9}, {3.736672881529022*^9, 
+  3.7366729106410017`*^9}, {3.736672970705375*^9, 3.7366729853531075`*^9}, {
+  3.736673036530337*^9, 3.7366730490630255`*^9}, {3.7366730836468563`*^9, 
+  3.736673199940467*^9}}],
 
-Cell[CellGroupData[{
-
-Cell[TextData[{
- "Benvenuto Professore!\n",
- StyleBox["Seleziona l\[CloseCurlyQuote]argomento del quale generare \
-esercizi", "Chapter"]
-}], "Title",
- CellChangeTimes->{
-  3.559948400406288*^9, {3.7340581602275753`*^9, 3.7340581900992765`*^9}, {
-   3.7340582749750524`*^9, 3.7340583146578255`*^9}, {3.7340583858911333`*^9, 
-   3.7340583971727514`*^9}, {3.734251578000148*^9, 3.734251578000148*^9}, {
-   3.734253429110056*^9, 3.734253429110056*^9}, {3.734253468233617*^9, 
-   3.734253468233617*^9}, {3.7355414785369716`*^9, 3.7355415441909094`*^9}, 
-   3.735927255915428*^9}],
-
-Cell["Indicare grado e tipologia", "Subtitle",
- CellChangeTimes->{
-  3.7340581833491836`*^9, {3.735927266759362*^9, 3.735927284915351*^9}, {
-   3.735927341469758*^9, 3.735927348547991*^9}}],
-
-Cell[CellGroupData[{
+Cell[BoxData["\<\"\"\>"], "Output",
+ CellChangeTimes->{3.73667320631271*^9}]
+}, Open  ]],
 
 Cell[BoxData[{
  RowBox[{"Panel", "[", " ", 
@@ -564,47 +602,7 @@ Cell[BoxData[{
    3.736006697858265*^9, 3.7360067077999263`*^9}, {3.7360067545073442`*^9, 
    3.7360067933135753`*^9}, {3.7360074516669235`*^9, 
    3.7360074704270024`*^9}, {3.736007569203538*^9, 3.7360076264795895`*^9}, {
-   3.7361805102461534`*^9, 3.736180514032175*^9}}],
-
-Cell[BoxData[
- PanelBox[
-  TemplateBox[{PanelBox[
-     TagBox[
-      GridBox[{{
-         TemplateBox[{"\"Grado:\\t\"", 
-           InputFieldBox[
-            Dynamic[$CellContext`gg], Number, FieldSize -> Full]}, 
-          "RowDefault"]}, {
-         TemplateBox[{"\"Tipologia:\\t\"", "\"Riconoscimento Funzione\"", 
-           RadioButtonBox[
-            Dynamic[$CellContext`tt], {"A"}], 
-           RowBox[{"\"\\t Riconoscimento Grafico\"", " ", 
-             RadioButtonBox[
-              Dynamic[$CellContext`tt], {"B"}]}]}, "RowDefault"]}, {
-         ButtonBox[
-         "\"Aggiorna Form\"", 
-          ButtonFunction :> ($CellContext`res = \
-$CellContext`draw[$CellContext`gg, $CellContext`tt]), Appearance -> Automatic,
-           Evaluator -> Automatic, Method -> "Preemptive"]}}, 
-       GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-       "Column", 
-       GridBoxItemSize -> {
-        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]],
-    "\"\\t\"",DynamicBox[
-     ToBoxes[$CellContext`res, StandardForm], 
-     ImageSizeCache -> {206., {131., 138.}}]},
-   "RowDefault"]]], "Output",
- CellChangeTimes->{
-  3.7359275376009583`*^9, {3.735927595786016*^9, 3.735927627182376*^9}, 
-   3.735927688376244*^9, 3.7359277378452435`*^9, 3.7359283589909983`*^9, 
-   3.7359965876251764`*^9, 3.736004711642844*^9, 3.7360047760578575`*^9, 
-   3.736004827351591*^9, 3.7360048847077417`*^9, 3.7360053807206364`*^9, 
-   3.7360054356305323`*^9, 3.7360056420201535`*^9, 3.7360056762895093`*^9, {
-   3.736005769160914*^9, 3.7360057831183577`*^9}, 3.736006103923134*^9, 
-   3.7360061586098804`*^9, 3.7360063651582127`*^9, 3.7360064523080864`*^9, 
-   3.736006510667982*^9, 3.736006560425399*^9, 3.736006667068899*^9, 
-   3.73600670854315*^9, {3.7360067595970507`*^9, 3.7360067956251707`*^9}}]
-}, Open  ]]
+   3.7361805102461534`*^9, 3.736180514032175*^9}}]
 }, Open  ]]
 }, Open  ]]
 },
@@ -626,7 +624,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 28698, 621}
+ {"SlideShowHeader", 28347, 619}
  }
 *)
 (*NotebookFileOutline
@@ -634,14 +632,19 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 4405, 98, 77, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[4988, 122, 17240, 353, 2235, "Input"],
+Cell[4988, 122, 1241, 17, 30, "Input"],
 Cell[CellGroupData[{
-Cell[22253, 479, 574, 11, 133, "Title"],
-Cell[22830, 492, 189, 3, 49, "Subtitle"],
+Cell[6254, 143, 574, 11, 133, "Title"],
+Cell[6831, 156, 189, 3, 49, "Subtitle"],
 Cell[CellGroupData[{
-Cell[23044, 499, 3449, 67, 449, "Input"],
-Cell[26496, 568, 1820, 37, 132, "Output"]
-}, Open  ]]
+Cell[7045, 163, 768, 17, 145, "Input"],
+Cell[7816, 182, 371, 10, 36, "Output"]
+}, {2}]],
+Cell[CellGroupData[{
+Cell[8221, 197, 16213, 334, 2235, "Input"],
+Cell[24437, 533, 76, 1, 30, "Output"]
+}, Open  ]],
+Cell[24528, 537, 3449, 67, 449, "Input"]
 }, Open  ]]
 }, Open  ]]
 }
