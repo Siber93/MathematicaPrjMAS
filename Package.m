@@ -313,13 +313,13 @@ BeginPackage[ "MClib`"];
 															Panel[
 																Column[{
 																	Dynamic[
-																		Style[
-																			StringJoin[
-																				ToString[teacherEQ[[row,i]]], 
-																				" \t Qual e' il suo grafico?"
-																				], 
-																			FontWeight -> Bold
-																		]
+																	
+																			Style[
+																			Text["Seleziona tramite checkbox il grafico della funzione "]
+																			Text[teacherEQ[[row,i]]],
+																			FontWeight->Bold
+																			]
+																		
 																	],
 																	Row[
 																		Table[
@@ -463,9 +463,7 @@ BeginPackage[ "MClib`"];
 										];
 				
 				
-				
-				(* Draw a Graph with zoom buttons inside *)
-				plotWithZoomButtons[n_,x_] := Module[
+plotWithZoomButtons[n_,x_] := Module[
 										{j = 5, y = 0,l},
 										Column[{
 											Row[{
@@ -485,7 +483,7 @@ BeginPackage[ "MClib`"];
 													]
 												]
 											}],
-											Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium, PlotLegends->Placed[{n}, Above]]]}], 
+											Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium, PlotLegends->Placed[n, Above]]]}], 
 											Button["Reset Zoom", j = 5; y = 0]
 											}]
 										];
@@ -513,7 +511,7 @@ BeginPackage[ "MClib`"];
 												]
 											}],
 											DynamicModule[{},Dynamic[If[ j === 5 && y === 0, Text[""], Text["zero di molteplicit\[AGrave] 1"]]]]
-											Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium,  PlotLegends->Placed[{n}, Above]]]}], 
+											Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium,  PlotLegends->Placed[n, Above]]]}], 
 											Button["Reset Zoom", j = 5; y = 0]
 											}]
 										];	
@@ -541,7 +539,7 @@ BeginPackage[ "MClib`"];
 											]
 										}],
 											DynamicModule[{},Dynamic[If[ ind === 0, Text[""],If[ind===1,Text["zero di molteplicit\[AGrave] 1"], Text["zero di molteplicit\[AGrave] 2"]]]]]
-										Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium,  PlotLegends->Placed[{n}, Above]]]}], 
+										Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium,  PlotLegends->Placed[n, Above]]]}], 
 										Button["Reset Zoom", j = 5; y = 0; ind = 0]
 										}]
 									];
@@ -568,7 +566,7 @@ BeginPackage[ "MClib`"];
 											]
 										}],
 										DynamicModule[{},Dynamic[If[ j === 5 && y === 0, Text[""], Text["zero di molteplicit\[AGrave] 3"]]]],
-										Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium,  PlotLegends->Placed[{n}, Above]]]}], 
+										Row[{Dynamic[Plot[n, {x, y - j, y + j}, ImageSize -> Medium,  PlotLegends->Placed[n, Above]]]}], 
 										Button["Reset Zoom", j = 5; y = 0]
 										}]
 									];											
@@ -628,7 +626,6 @@ BeginPackage[ "MClib`"];
 												}]
 											];
 				
-				
 					(* Creating a cliccable text *)
 					hyperText[txt_,msg_, curs_] := EventHandler[
 						MouseAppearance[
@@ -681,6 +678,24 @@ BeginPackage[ "MClib`"];
 	(* End of Package *)
 	
 EndPackage[];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
