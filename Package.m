@@ -463,7 +463,7 @@ BeginPackage[ "MClib`"];
 										];
 				
 				
-plotWithZoomButtons[n_,x_] := Module[
+plotWithZoomButtons[n_,x_] := DynamicModule[
 										{j = 5, y = 0,l},
 										Column[{
 											Row[{
@@ -490,7 +490,7 @@ plotWithZoomButtons[n_,x_] := Module[
 										
 										
 				(*Draw Graph of function and if zoom stamp text case 3 of zero function 2 grade*)								
-				plotWithZoomButtonsA[n_,x_] := Module[
+				plotWithZoomButtonsA[n_,x_] := DynamicModule[
 										{j = 5, y = 0,l},
 										Column[{
 											Row[{
@@ -517,7 +517,7 @@ plotWithZoomButtons[n_,x_] := Module[
 										];	
 										
 					(*Draw Graph of function and if zoom stamp text case 3 of zero function 2 grade*)						
-					plotWithZoomButtonsB[n_,x_] := Module[
+					plotWithZoomButtonsB[n_,x_] := DynamicModule[
 									{j = 5, y = 0,l,ind = 0},
 									Column[{
 										Row[{
@@ -545,7 +545,7 @@ plotWithZoomButtons[n_,x_] := Module[
 									];
 									
 					(*Draw Graph of function and if zoom stamp text case 3 of zero function 3 grade*)	
-					plotWithZoomButtonsC[n_,x_] := Module[
+					plotWithZoomButtonsC[n_,x_] := DynamicModule[
 									{j = 5, y = 0,l},
 									Column[{
 										Row[{
@@ -573,7 +573,7 @@ plotWithZoomButtons[n_,x_] := Module[
 				
 				
 					(* Draw a Graph with zoom buttons inside teacherEQ*)
-					plotWithZoomButtonsT[row_,col_,x_] := Module[
+					plotWithZoomButtonsT[row_,col_,x_] := DynamicModule[
 											{j = 5, y = 0,l},
 											Column[{
 												Row[{
@@ -601,7 +601,7 @@ plotWithZoomButtons[n_,x_] := Module[
 				
 				
 					(* Draw a Graph with zoom buttons inside teacherEQ*)
-					plotWithZoomButtonsE[row_,col_,ind_,x_] := Module[
+					plotWithZoomButtonsE[row_,col_,ind_,x_] := DynamicModule[
 											{j = 5, y = 0,l},
 											Column[{
 												Row[{
