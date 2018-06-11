@@ -20410,6 +20410,117 @@ StyleDefinitions->"Default.nb"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
+ "AG_C1_G1"->{
+  Cell[272062, 4981, 431, 6, 57, "Subsection",
+   CellTags->"AG_C1_G1"]},
+ "CG_G2_PB"->{
+  Cell[506554, 9832, 481, 7, 57, "Subsection",
+   CellTags->"CG_G2_PB"]},
+ "CG_G2_PC"->{
+  Cell[463984, 8967, 427, 6, 57, "Subsection",
+   CellTags->"CG_G2_PC"]},
+ "CP_1_A"->{
+  Cell[312562, 5811, 493, 7, 57, "Subsection",
+   CellTags->"CP_1_A"]},
+ "CP_1_K"->{
+  Cell[331850, 6192, 629, 15, 58, "Subsection",
+   CellTags->"CP_1_K"]},
+ "ES_G1"->{
+  Cell[364593, 6890, 629, 9, 57, "Subsection",
+   CellTags->"ES_G1"]},
+ "ES_G1_B"->{
+  Cell[381202, 7255, 683, 10, 57, "Subsection",
+   CellTags->"ES_G1_B"]},
+ "ES_G2"->{
+  Cell[653527, 12817, 628, 9, 57, "Subsection",
+   CellTags->"ES_G2"]},
+ "ES_G2_B"->{
+  Cell[668491, 13150, 684, 10, 57, "Subsection",
+   CellTags->"ES_G2_B"]},
+ "ES_G3"->{
+  Cell[960932, 19124, 629, 9, 57, "Subsection",
+   CellTags->"ES_G3"]},
+ "ES_G3_B"->{
+  Cell[975291, 19447, 633, 9, 57, "Subsection",
+   CellTags->"ES_G3_B"]},
+ "E_G1"->{
+  Cell[192219, 3374, 278, 5, 60, "Text",
+   CellTags->"E_G1"]},
+ "E_G2_CA"->{
+  Cell[549461, 10706, 528, 7, 57, "Subsection",
+   CellTags->"E_G2_CA"]},
+ "E_G3"->{
+  Cell[721460, 14264, 325, 5, 60, "Text",
+   CellTags->"E_G3"]},
+ "E_G3_CA"->{
+  Cell[850916, 16839, 797, 11, 57, "Subsection",
+   CellTags->"E_G3_CA"]},
+ "E_G3_CB"->{
+  Cell[830163, 16421, 756, 13, 81, "Subsection",
+   CellTags->"E_G3_CB"]},
+ "E_G3_CC"->{
+  Cell[807368, 15966, 636, 9, 57, "Subsection",
+   CellTags->"E_G3_CC"]},
+ "E_G3_CD"->{
+  Cell[764836, 15098, 580, 8, 57, "Subsection",
+   CellTags->"E_G3_CD"]},
+ "E_2G"->{
+  Cell[425786, 8224, 326, 5, 60, "Text",
+   CellTags->"E_2G"]},
+ "E1_CP_M"->{
+  Cell[292541, 5401, 494, 7, 57, "Subsection",
+   CellTags->"E1_CP_M"]},
+ "E1_CP_Q"->{
+  Cell[227938, 4095, 368, 5, 57, "Subsection",
+   CellTags->"E1_CP_Q"]},
+ "E1_CP_Q0"->{
+  Cell[249810, 4542, 368, 5, 57, "Subsection",
+   CellTags->"E1_CP_Q0"]},
+ "E2_CP_A0"->{
+  Cell[569959, 11117, 645, 13, 82, "Subsection",
+   CellTags->"E2_CP_A0"]},
+ "E2_CP_B0"->{
+  Cell[527511, 10259, 478, 7, 57, "Subsection",
+   CellTags->"E2_CP_B0"]},
+ "E2_CP_C0"->{
+  Cell[484595, 9384, 495, 7, 57, "Subsection",
+   CellTags->"E2_CP_C0"]},
+ "E2_0"->{
+  Cell[590193, 11521, 125, 2, 57, "Subsection",
+   CellTags->"E2_0"]},
+ "E3_CP_A"->{
+  Cell[871363, 17251, 628, 9, 57, "Subsection",
+   CellTags->"E3_CP_A"]},
+ "E3_CP_A0"->{
+  Cell[894194, 17716, 737, 10, 57, "Subsection",
+   CellTags->"E3_CP_A0"]},
+ "E3_CP_D0"->{
+  Cell[785603, 15518, 693, 14, 58, "Subsection",
+   CellTags->"E3_CP_D0"]},
+ "E3_CP_0"->{
+  Cell[916107, 18161, 733, 10, 57, "Subsection",
+   CellTags->"E3_CP_0"]},
+ "Home"->{
+  Cell[5463, 129, 136811, 2251, 205, "Title",
+   CellTags->"Home"]},
+ "Index"->{
+  Cell[189558, 3303, 310, 4, 57, "Subsection",
+   CellTags->"Index"]},
+ "Introduction"->{
+  Cell[159299, 2706, 128, 2, 77, "Section",
+   CellTags->"Introduction"]},
+ "RS_G2"->{
+  Cell[708215, 13982, 615, 9, 57, "Subsection",
+   CellTags->"RS_G2"]},
+ "RS_G3"->{
+  Cell[1012328, 20232, 568, 8, 57, "Subsection",
+   CellTags->"RS_G3"]},
+ "RS1"->{
+  Cell[417346, 8031, 116, 2, 77, "Section",
+   CellTags->"RS1"]},
+ "Setup"->{
+  Cell[175769, 3035, 169, 3, 77, "Section",
+   CellTags->"Setup"]},
  "SlideShowHeader"->{
   Cell[580, 22, 4380, 95, 90, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
@@ -20491,171 +20602,60 @@ CellTagsIndex->{
    CellTags->"SlideShowHeader"],
   Cell[1012239, 20227, 64, 1, 89, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]},
- "Home"->{
-  Cell[5463, 129, 136811, 2251, 205, "Title",
-   CellTags->"Home"]},
- "Introduction"->{
-  Cell[159299, 2706, 128, 2, 77, "Section",
-   CellTags->"Introduction"]},
- "Setup"->{
-  Cell[175769, 3035, 169, 3, 77, "Section",
-   CellTags->"Setup"]},
- "Index"->{
-  Cell[189558, 3303, 310, 4, 57, "Subsection",
-   CellTags->"Index"]},
- "E_G1"->{
-  Cell[192219, 3374, 278, 5, 60, "Text",
-   CellTags->"E_G1"]},
- "E1_CP_Q"->{
-  Cell[227938, 4095, 368, 5, 57, "Subsection",
-   CellTags->"E1_CP_Q"]},
- "E1_CP_Q0"->{
-  Cell[249810, 4542, 368, 5, 57, "Subsection",
-   CellTags->"E1_CP_Q0"]},
- "AG_C1_G1"->{
-  Cell[272062, 4981, 431, 6, 57, "Subsection",
-   CellTags->"AG_C1_G1"]},
- "E1_CP_M"->{
-  Cell[292541, 5401, 494, 7, 57, "Subsection",
-   CellTags->"E1_CP_M"]},
- "CP_1_A"->{
-  Cell[312562, 5811, 493, 7, 57, "Subsection",
-   CellTags->"CP_1_A"]},
- "CP_1_K"->{
-  Cell[331850, 6192, 629, 15, 58, "Subsection",
-   CellTags->"CP_1_K"]},
  "TS1"->{
   Cell[350160, 6563, 522, 8, 57, "Subsection",
    CellTags->"TS1"]},
- "ES_G1"->{
-  Cell[364593, 6890, 629, 9, 57, "Subsection",
-   CellTags->"ES_G1"]},
- "ES_G1_B"->{
-  Cell[381202, 7255, 683, 10, 57, "Subsection",
-   CellTags->"ES_G1_B"]},
- "RS1"->{
-  Cell[417346, 8031, 116, 2, 77, "Section",
-   CellTags->"RS1"]},
- "E_2G"->{
-  Cell[425786, 8224, 326, 5, 60, "Text",
-   CellTags->"E_2G"]},
- "CG_G2_PC"->{
-  Cell[463984, 8967, 427, 6, 57, "Subsection",
-   CellTags->"CG_G2_PC"]},
- "E2_CP_C0"->{
-  Cell[484595, 9384, 495, 7, 57, "Subsection",
-   CellTags->"E2_CP_C0"]},
- "CG_G2_PB"->{
-  Cell[506554, 9832, 481, 7, 57, "Subsection",
-   CellTags->"CG_G2_PB"]},
- "E2_CP_B0"->{
-  Cell[527511, 10259, 478, 7, 57, "Subsection",
-   CellTags->"E2_CP_B0"]},
- "E_G2_CA"->{
-  Cell[549461, 10706, 528, 7, 57, "Subsection",
-   CellTags->"E_G2_CA"]},
- "E2_CP_A0"->{
-  Cell[569959, 11117, 645, 13, 82, "Subsection",
-   CellTags->"E2_CP_A0"]},
- "E2_0"->{
-  Cell[590193, 11521, 125, 2, 57, "Subsection",
-   CellTags->"E2_0"]},
  "TS2"->{
   Cell[638711, 12485, 522, 8, 57, "Subsection",
    CellTags->"TS2"]},
- "ES_G2"->{
-  Cell[653527, 12817, 628, 9, 57, "Subsection",
-   CellTags->"ES_G2"]},
- "ES_G2_B"->{
-  Cell[668491, 13150, 684, 10, 57, "Subsection",
-   CellTags->"ES_G2_B"]},
- "RS_G2"->{
-  Cell[708215, 13982, 615, 9, 57, "Subsection",
-   CellTags->"RS_G2"]},
- "E_G3"->{
-  Cell[721460, 14264, 325, 5, 60, "Text",
-   CellTags->"E_G3"]},
- "E_G3_CD"->{
-  Cell[764836, 15098, 580, 8, 57, "Subsection",
-   CellTags->"E_G3_CD"]},
- "E3_CP_D0"->{
-  Cell[785603, 15518, 693, 14, 58, "Subsection",
-   CellTags->"E3_CP_D0"]},
- "E_G3_CC"->{
-  Cell[807368, 15966, 636, 9, 57, "Subsection",
-   CellTags->"E_G3_CC"]},
- "E_G3_CB"->{
-  Cell[830163, 16421, 756, 13, 81, "Subsection",
-   CellTags->"E_G3_CB"]},
- "E_G3_CA"->{
-  Cell[850916, 16839, 797, 11, 57, "Subsection",
-   CellTags->"E_G3_CA"]},
- "E3_CP_A"->{
-  Cell[871363, 17251, 628, 9, 57, "Subsection",
-   CellTags->"E3_CP_A"]},
- "E3_CP_A0"->{
-  Cell[894194, 17716, 737, 10, 57, "Subsection",
-   CellTags->"E3_CP_A0"]},
- "E3_CP_0"->{
-  Cell[916107, 18161, 733, 10, 57, "Subsection",
-   CellTags->"E3_CP_0"]},
  "TS3"->{
   Cell[945456, 18784, 522, 8, 57, "Subsection",
-   CellTags->"TS3"]},
- "ES_G3"->{
-  Cell[960932, 19124, 629, 9, 57, "Subsection",
-   CellTags->"ES_G3"]},
- "ES_G3_B"->{
-  Cell[975291, 19447, 633, 9, 57, "Subsection",
-   CellTags->"ES_G3_B"]},
- "RS_G3"->{
-  Cell[1012328, 20232, 568, 8, 57, "Subsection",
-   CellTags->"RS_G3"]}
+   CellTags->"TS3"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 1020013, 20412},
- {"Home", 1023685, 20493},
- {"Introduction", 1023773, 20496},
- {"Setup", 1023860, 20499},
- {"Index", 1023940, 20502},
- {"E_G1", 1024022, 20505},
- {"E1_CP_Q", 1024100, 20508},
- {"E1_CP_Q0", 1024188, 20511},
- {"AG_C1_G1", 1024277, 20514},
- {"E1_CP_M", 1024365, 20517},
- {"CP_1_A", 1024451, 20520},
- {"CP_1_K", 1024536, 20523},
- {"TS1", 1024619, 20526},
- {"ES_G1", 1024700, 20529},
- {"ES_G1_B", 1024785, 20532},
- {"RS1", 1024869, 20535},
- {"E_2G", 1024946, 20538},
- {"CG_G2_PC", 1025025, 20541},
- {"E2_CP_C0", 1025114, 20544},
- {"CG_G2_PB", 1025203, 20547},
- {"E2_CP_B0", 1025292, 20550},
- {"E_G2_CA", 1025381, 20553},
- {"E2_CP_A0", 1025470, 20556},
- {"E2_0", 1025557, 20559},
- {"TS2", 1025638, 20562},
- {"ES_G2", 1025720, 20565},
- {"ES_G2_B", 1025806, 20568},
- {"RS_G2", 1025893, 20571},
- {"E_G3", 1025976, 20574},
- {"E_G3_CD", 1026055, 20577},
- {"E3_CP_D0", 1026144, 20580},
- {"E_G3_CC", 1026234, 20583},
- {"E_G3_CB", 1026322, 20586},
- {"E_G3_CA", 1026411, 20589},
- {"E3_CP_A", 1026500, 20592},
- {"E3_CP_A0", 1026589, 20595},
- {"E3_CP_0", 1026679, 20598},
- {"TS3", 1026764, 20601},
- {"ES_G3", 1026846, 20604},
- {"ES_G3_B", 1026932, 20607},
- {"RS_G3", 1027018, 20610}
+ {"AG_C1_G1", 1020006, 20412},
+ {"CG_G2_PB", 1020095, 20415},
+ {"CG_G2_PC", 1020184, 20418},
+ {"CP_1_A", 1020271, 20421},
+ {"CP_1_K", 1020356, 20424},
+ {"ES_G1", 1020441, 20427},
+ {"ES_G1_B", 1020526, 20430},
+ {"ES_G2", 1020612, 20433},
+ {"ES_G2_B", 1020698, 20436},
+ {"ES_G3", 1020785, 20439},
+ {"ES_G3_B", 1020871, 20442},
+ {"E_G1", 1020956, 20445},
+ {"E_G2_CA", 1021034, 20448},
+ {"E_G3", 1021119, 20451},
+ {"E_G3_CA", 1021198, 20454},
+ {"E_G3_CB", 1021287, 20457},
+ {"E_G3_CC", 1021376, 20460},
+ {"E_G3_CD", 1021464, 20463},
+ {"E_2G", 1021549, 20466},
+ {"E1_CP_M", 1021627, 20469},
+ {"E1_CP_Q", 1021714, 20472},
+ {"E1_CP_Q0", 1021802, 20475},
+ {"E2_CP_A0", 1021891, 20478},
+ {"E2_CP_B0", 1021982, 20481},
+ {"E2_CP_C0", 1022072, 20484},
+ {"E2_0", 1022157, 20487},
+ {"E3_CP_A", 1022242, 20490},
+ {"E3_CP_A0", 1022331, 20493},
+ {"E3_CP_D0", 1022422, 20496},
+ {"E3_CP_0", 1022512, 20499},
+ {"Home", 1022598, 20502},
+ {"Index", 1022679, 20505},
+ {"Introduction", 1022769, 20508},
+ {"RS_G2", 1022856, 20511},
+ {"RS_G3", 1022940, 20514},
+ {"RS1", 1023023, 20517},
+ {"Setup", 1023101, 20520},
+ {"SlideShowHeader", 1023191, 20523},
+ {"TS1", 1026862, 20604},
+ {"TS2", 1026941, 20607},
+ {"TS3", 1027021, 20610}
  }
 *)
 (*NotebookFileOutline
