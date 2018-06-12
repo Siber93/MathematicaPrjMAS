@@ -652,28 +652,14 @@ plotWithZoomButtons[n_,x_] := DynamicModule[
 									], 
 									Alignment -> Right
 								]
-							];
-						
-			
-				(* Function for hidden code when student o teacher evaluate notebook *)
-				SelfDestruct[e_]:=(
-					If[$FrontEnd=!=$Failed,
-						SelectionMove[EvaluationNotebook[],All,EvaluationCell];
-						NotebookDelete[]]; )	
-				SetAttributes[SelfDestruct,HoldAllComplete];		
-					(* Allow to function d to ovverride l value with the value of the given variable *)
-					SetAttributes[d, HoldAll];	
+							];	
 			
 			(* Functions *)
 		(* End of Private functions definition space *)
-		AutoCollapse[] := (
-  If[$FrontEnd =!= $Failed, 
-   SelectionMove[EvaluationNotebook[], All, GeneratedCell];
-   FrontEndTokenExecute["SelectionCloseUnselectedCells"]])
 		
 	End[];
 	
-	(*Protect["MClib`*"]*) (* Protect package's names *)
+	Protect["MClib`*"] (* Protect package's names *)
 	
 	(* End of Package *)
 	
