@@ -21,36 +21,35 @@ BeginPackage[ "MClib`"];
 	ClearAll["MClib`*"];
 	
 	(* Usage Definitions *)
-		p1::usage="[G1, q=0] Variable that indicates that user has already chosen something"
-		p2::usage="[G1, m!=0] Variable that indicates that user has already chosen something"
-		p3::usage="[G1, m=0] Variable that indicates that user has already chosen something"
-		p4::usage="[G1, m=0] Variable that indicates that user has already chosen something"
-		p5::usage="[G1, m=0] Variable that indicates that user has already chosen something"
-		p6::usage="[G1, m=0] Variable that indicates that user has already chosen something"
-		p7::usage="[G1, m=0] Variable that indicates that user has already chosen something"
-		p8::usage="[G1, m=0] Variable that indicates that user has already chosen something"
-		p9::usage="[G1, m=0] Variable that indicates that user has already chosen something"
-		teacherEQ::usage="Exercises solutions list"
-		userAnswer::usage="List of all the user answer"
-		exercises::usage="List containing all exercises for each grade and kind (solution + errors)"
-		enableAnswer::usage="List of all boolean variable that disable exercises after having done them"
-		correctCounter::usage="Number of correct answer"
-		correctAnswerG1::usage="Number of correct answer part 1"
-		correctAnswerG2::usage="Number of correct answer part 2"
-		correctAnswerG3::usage="Number of correct answer part 1"
-		SelfDestruct::usage="Hidden text"		
-		freeEq::usage="Free eq"
-        currentEq::usage= "eq1"
-        freeEq2::usage="Free eq2"
-        currentEq2::usage= "eq2"
-        freeEq3::usage="Free eq3"
-        currentEq3::usage= "eq3"
-        clicked::usage="click first verify"
-        clicked2::usage="click first verify"
-        clicked2B::usage="click first verify"
-        clicked3B::usage="click first verify"
-        clicked3::usage="click first verify"
-        clicked1b::usage="click second verify"
+		getP1::usage="[G1, q=0] Variable that indicates that user has already chosen something"
+		getP2::usage="[G1, m!=0] Variable that indicates that user has already chosen something"
+		getP3::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		getP4::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		getP5::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		getP6::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		getP7::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		getP8::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		getP9::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		getTeacherEQ::usage="Exercises solutions list"
+		getUserAnswer::usage="List of all the user answer"
+		getExercises::usage="List containing all exercises for each grade and kind (solution + errors)"
+		getEnableAnswer::usage="List of all boolean variable that disable exercises after having done them"
+		getCorrectCounter::usage="Number of correct answer"
+		getCorrectAnswerG1::usage="Number of correct answer part 1"
+		getCorrectAnswerG2::usage="Number of correct answer part 2"
+		getCorrectAnswerG3::usage="Number of correct answer part 1"
+		getFreeEq::usage="Free eq"
+		getCurrentEq::usage= "eq1"
+		getFreeEq2::usage="Free eq2"
+		getCurrentEq2::usage= "eq2"
+		getFreeEq3::usage="Free eq3"
+		getCurrentEq3::usage= "eq3"
+		getClicked::usage="click first verify"
+		getClicked2::usage="click first verify"
+		getClicked2B::usage="click first verify"
+		getClicked3B::usage="click first verify"
+		getClicked3::usage="click first verify"
+		getClicked1b::usage="click second verify"
 		
 		load::usage = "Load initial variables randomly"
 		
@@ -65,7 +64,6 @@ BeginPackage[ "MClib`"];
 		exKindBPrinter::usage = "Generate form Kind B for students
 			\n@row_@ exercises row index"
 	
-		 AutoCollapse::usage="Hidden text"	
 		generateExercisesG1::usage="Generate a list of all exercises GRADE 1 (solutions + errors)
 			\n@l_@ List of solutions"
 			
@@ -122,7 +120,7 @@ BeginPackage[ "MClib`"];
 			\n@l_@ List to analize"
 	 
 		resetGrade::usage = "Reset variables for the given grade
-			\n@g_@ List to analize"
+			\n@g_@ List to analize"	
 	 
 	 
 	(* End of Usage Definitions *)
@@ -142,26 +140,25 @@ BeginPackage[ "MClib`"];
 				p7 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
 				p8 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
 				p9 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
-				freeEq = {}(* List that contains at most 5 expressions to be compared, TODO: Insert in package*)
-				currentEq = "" (* Current expression that user is inserting, TODO: Insert in package *)
+				freeEq = {}(* List that contains at most 5 expressions to be compared*)
+				currentEq = "" (* Current expression that user is inserting*)
 				clicked = 0
 				clicked2 = 0
 				clicked1b = 0
 				clicked2B = 0
 				clicked3 = 0;
 				clicked3B = 0;
-				freeEq2 = {}(* List that contains at most 5 expressions to be compared, TODO: Insert in package*)
+				freeEq2 = {}(* List that contains at most 5 expressions to be compared*)
 				freeEq3 = {}
 				currentEq3=""
-				currentEq2="" (* Current expression that user is inserting, TODO: Insert in package *)
+				currentEq2="" (* Current expression that user is inserting*)
 				
-				MINNUMBEROFEXERCISES = 3 (* CONSTANT- Minimum number of exercises per module *)			
-				
+				MINNUMBEROFEXERCISES = 3 (* CONSTANT- Minimum number of exercises per module *)		
 				
 				teacherEQ = { } (* Exercises solutions list *)
 				
 				exercises = { } (* List containing all exercises for each grade and kind (solution + errors) *)
-				
+								
 				userAnswer = { } (* List of all user answer to the questions *)
 				
 				enableAnswer = { } (* Forms enabler *)
@@ -175,13 +172,47 @@ BeginPackage[ "MClib`"];
 		
 
 			(* Functions *)	
+				
+				(* Getter Private Variables*)
+				getP1[] := Module[{},p1]
+				getP2[] := Module[{},p2]
+				getP3[] := Module[{},p3]
+				getP4[] := Module[{},p4]
+				getP5[] := Module[{},p5]
+				getP6[] := Module[{},p6]
+				getP7[] := Module[{},p7]
+				getP8[] := Module[{},p8]
+				getP9[] := Module[{},p9]
+				getTeacherEQ[] := Module[{},teacherEQ]
+				getUserAnswer[] := Module[{},userAnswer]
+				getExercises[] := Module[{},exercises]
+				getEnableAnswer[] := Module[{},enableAnswer]
+				getCorrectCounter[] := Module[{},correctCounter]
+				getCorrectAnswerG1[] := Module[{},correctAnswerG1]
+				getCorrectAnswerG2[] := Module[{},correctAnswerG2]
+				getCorrectAnswerG3[] := Module[{},correctAnswerG3]
+				getFreeEq[] := Module[{},freeEq]
+				getCurrentEq[] := Module[{},currentEq]
+				getFreeEq2[] := Module[{},freeEq2]
+				getCurrentEq2[] := Module[{},currentEq2]
+				getFreeEq3[] := Module[{},freeEq3]
+				getCurrentEq3[] := Module[{},currentEq3]
+				getClicked[] := Module[{},clicked]
+				getClicked2[] := Module[{},clicked2]
+				getClicked2B[] := Module[{},clicked2B]
+				getClicked3B[] := Module[{},clicked3B]
+				getClicked3[] := Module[{},clicked3]
+				getClicked1b[] := Module[{},clicked1b]
+				(* End of Getter Private Variables*)
+				
 
+				
 				(* Load initial variables from files and it fill them randomly *)
-				loadFiles[] := Module[{}, 
+				loadFiles[] := Module[{},
 					teacherEQ = { };				    
-				    exercises = { };				    
-				    userAnswer = { };				    
-				    enableAnswer = { };
+					exercises = { };				    
+					userAnswer = { };				    
+					enableAnswer = { };
 					correctCounter = 0;
 					
 					AppendTo[teacherEQ,solutionReadAndRandomFill["g1A.txt",1,MINNUMBEROFEXERCISES]]; (* Exercises Grade 1 solutions list of Exercise Kind A *)
@@ -659,7 +690,7 @@ plotWithZoomButtons[n_,x_] := DynamicModule[
 		
 	End[];
 	
-	(*Protect["MClib`*"]*) (* Protect package's names *)
+	Protect["MClib`*"] (* Protect package's names *)
 	
 	(* End of Package *)
 	
