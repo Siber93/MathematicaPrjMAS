@@ -659,7 +659,7 @@ plotWithZoomButtons[n_,x_] := DynamicModule[
 		
 	End[];
 	
-	Protect["MClib`*"] (* Protect package's names *)
+	(*Protect["MClib`*"]*) (* Protect package's names *)
 	
 	(* End of Package *)
 	
