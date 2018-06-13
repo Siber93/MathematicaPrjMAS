@@ -35,9 +35,6 @@ BeginPackage[ "MClib`"];
 		getExercises::usage="List containing all exercises for each grade and kind (solution + errors)"
 		getEnableAnswer::usage="List of all boolean variable that disable exercises after having done them"
 		getCorrectCounter::usage="Number of correct answer"
-		getCorrectAnswerG1::usage="Number of correct answer part 1"
-		getCorrectAnswerG2::usage="Number of correct answer part 2"
-		getCorrectAnswerG3::usage="Number of correct answer part 3"
 		getClicked::usage="click first verify"
 		getClicked2::usage="click first verify"
 		getClicked2B::usage="click first verify"
@@ -171,9 +168,6 @@ BeginPackage[ "MClib`"];
 				enableAnswer = { } (* Forms enabler *)
 				
 				correctCounter = 0 (* Number of correct answer *)
-				correctAnswerG1 = 0 (* Number of correct answer part 1*)
-				correctAnswerG2 = 0 (* Number of correct answer part 2 *)
-				correctAnswerG3 = 0 (* Number of correct answer part3*)
 			
 			(* /Variables *)
 		
@@ -194,10 +188,7 @@ BeginPackage[ "MClib`"];
 				getUserAnswer[] := Module[{},userAnswer]
 				getExercises[] := Module[{},exercises]
 				getEnableAnswer[] := Module[{},enableAnswer]
-				getCorrectCounter[] := Module[{},correctCounter]
-				getCorrectAnswerG1[] := Module[{},correctAnswerG1]
-				getCorrectAnswerG2[] := Module[{},correctAnswerG2]
-				getCorrectAnswerG3[] := Module[{},correctAnswerG3]				
+				getCorrectCounter[] := Module[{},correctCounter]			
 				getClicked[] := Module[{},clicked]
 				getClicked2[] := Module[{},clicked2]
 				getClicked2B[] := Module[{},clicked2B]
