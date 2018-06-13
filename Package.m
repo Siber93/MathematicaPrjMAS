@@ -51,6 +51,19 @@ BeginPackage[ "MClib`"];
 		getClicked3::usage="click first verify"
 		getClicked1b::usage="click second verify"
 		
+		
+		
+		
+		setP1::usage="[G1, q=0] Variable that indicates that user has already chosen something"
+		setP2::usage="[G1, m!=0] Variable that indicates that user has already chosen something"
+		setP3::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		setP4::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		setP5::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		setP6::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		setP7::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		setP8::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		setP9::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		
 		load::usage = "Load initial variables randomly"
 		
 		loadFiles::usage = "Load initial variables from files and randomly"
@@ -205,6 +218,17 @@ BeginPackage[ "MClib`"];
 				getClicked1b[] := Module[{},clicked1b]
 				(* End of Getter Private Variables*)
 				
+				(* Setter Private Variables*)
+				setP1[v_] := Module[{},p1=v]
+				setP2[v_] := Module[{},p2=v]
+				setP3[v_] := Module[{},p3=v]
+				setP4[v_] := Module[{},p4=v]
+				setP5[v_] := Module[{},p5=v]
+				setP6[v_] := Module[{},p6=v]
+				setP7[v_] := Module[{},p7=v]
+				setP8[v_] := Module[{},p8=v]
+				setP9[v_] := Module[{},p9=v]
+				(* End of Setter Private Variables*)
 
 				
 				(* Load initial variables from files and it fill them randomly *)
