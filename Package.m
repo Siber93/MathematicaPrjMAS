@@ -494,7 +494,7 @@ BeginPackage[ "MClib`"];
 										];
 				
 				
-plotWithZoomButtons[n_,x_] := DynamicModule[
+				plotWithZoomButtons[n_,x_] := DynamicModule[
 										{j = 5, y = 0,l},
 										Column[{
 											Row[{
@@ -700,51 +700,3 @@ plotWithZoomButtons[n_,x_] := DynamicModule[
 	(* End of Package *)
 	
 EndPackage[];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
