@@ -38,12 +38,6 @@ BeginPackage[ "MClib`"];
 		getCorrectAnswerG1::usage="Number of correct answer part 1"
 		getCorrectAnswerG2::usage="Number of correct answer part 2"
 		getCorrectAnswerG3::usage="Number of correct answer part 3"
-		getFreeEq::usage="Free eq"
-		getCurrentEq::usage= "eq1"
-		getFreeEq2::usage="Free eq2"
-		getCurrentEq2::usage= "eq2"
-		getFreeEq3::usage="Free eq3"
-		getCurrentEq3::usage= "eq3"
 		getClicked::usage="click first verify"
 		getClicked2::usage="click first verify"
 		getClicked2B::usage="click first verify"
@@ -159,18 +153,12 @@ BeginPackage[ "MClib`"];
 				p7 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
 				p8 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
 				p9 = 0 (* Variable that indicates that user has already chosen something [G1, m=0] *)
-				freeEq = {}(* List that contains at most 5 expressions to be compared*)
-				currentEq = "" (* Current expression that user is inserting*)
 				clicked = 0
 				clicked2 = 0
 				clicked1b = 0
 				clicked2B = 0
 				clicked3 = 0;
 				clicked3B = 0;
-				freeEq2 = {}(* List that contains at most 5 expressions to be compared*)
-				freeEq3 = {}
-				currentEq3=""
-				currentEq2="" (* Current expression that user is inserting*)
 				
 				MINNUMBEROFEXERCISES = 3 (* CONSTANT- Minimum number of exercises per module *)		
 				
@@ -209,13 +197,7 @@ BeginPackage[ "MClib`"];
 				getCorrectCounter[] := Module[{},correctCounter]
 				getCorrectAnswerG1[] := Module[{},correctAnswerG1]
 				getCorrectAnswerG2[] := Module[{},correctAnswerG2]
-				getCorrectAnswerG3[] := Module[{},correctAnswerG3]
-				getFreeEq[] := Module[{},freeEq]
-				getCurrentEq[] := Module[{},currentEq]
-				getFreeEq2[] := Module[{},freeEq2]
-				getCurrentEq2[] := Module[{},currentEq2]
-				getFreeEq3[] := Module[{},freeEq3]
-				getCurrentEq3[] := Module[{},currentEq3]
+				getCorrectAnswerG3[] := Module[{},correctAnswerG3]				
 				getClicked[] := Module[{},clicked]
 				getClicked2[] := Module[{},clicked2]
 				getClicked2B[] := Module[{},clicked2B]
