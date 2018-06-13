@@ -684,6 +684,11 @@ plotWithZoomButtons[n_,x_] := DynamicModule[
 									Alignment -> Right
 								]
 							];	
+							
+							
+							
+					(* Allow to function d to ovverride l value with the value of the given variable *)
+-					SetAttributes[d, HoldAll];
 			
 			(* Functions *)
 		(* End of Private functions definition space *)

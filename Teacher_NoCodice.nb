@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     67342,       1373]
-NotebookOptionsPosition[     65475,       1303]
-NotebookOutlinePosition[     66340,       1336]
-CellTagsIndexPosition[     66211,       1329]
+NotebookDataLength[     67558,       1377]
+NotebookOptionsPosition[     65690,       1307]
+NotebookOutlinePosition[     66556,       1340]
+CellTagsIndexPosition[     66427,       1333]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -858,98 +858,98 @@ Cell["Sezione Inserimento Esercizi", "Section",
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"mode", "=", "True"}], " ", ";", 
+  RowBox[{
+   RowBox[{"mode", "=", "True"}], " ", ";"}], 
   RowBox[{"(*", " ", 
    RowBox[{
    "Variable", " ", "to", " ", "set", " ", "if", " ", "the", " ", "out", " ", 
     "must", " ", "be", " ", "factorized", " ", "or", " ", "not"}], " ", 
-   "*)"}], "\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{"draw", "[", 
-    RowBox[{"grade_", ",", " ", "kind_"}], "]"}], ":=", 
-   RowBox[{"Module", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"f", ",", 
-       RowBox[{"coeff", "=", 
-        RowBox[{"Table", "[", 
-         RowBox[{"1", ",", 
-          RowBox[{"grade", "+", "1"}]}], "]"}]}], ",", 
-       RowBox[{"exp", " ", "=", 
-        RowBox[{"Table", "[", 
-         RowBox[{"1", ",", "grade"}], "]"}]}], ",", " ", 
-       RowBox[{"list", " ", "=", " ", 
-        RowBox[{"{", "}"}]}], ",", 
-       RowBox[{"app", " ", "=", 
-        RowBox[{"{", "}"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Panel", "[", "\[IndentingNewLine]", 
-      RowBox[{"Column", "[", "\[IndentingNewLine]", 
-       RowBox[{"{", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{"Style", "[", 
-          RowBox[{
-           RowBox[{"StringJoin", "[", 
-            RowBox[{
-            "\"\<Esercizi Tipologia \>\"", ",", " ", "kind", ",", 
-             "\"\< Grado \>\"", ",", 
-             RowBox[{"ToString", "[", "grade", "]"}]}], "]"}], ",", " ", 
-           RowBox[{"FontWeight", "\[Rule]", "Bold"}], ",", " ", 
-           RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}], ",", 
-         RowBox[{"(*", " ", 
-          RowBox[{"Dynamic", " ", "text"}], " ", "*)"}], 
-         "\[IndentingNewLine]", 
-         RowBox[{"Row", "[", 
-          RowBox[{"{", 
-           RowBox[{"(*", " ", 
-            RowBox[{"mode", " ", "selection"}], " ", "*)"}], 
-           "\[IndentingNewLine]", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"draw", "[", 
+   RowBox[{"grade_", ",", " ", "kind_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"f", ",", 
+      RowBox[{"coeff", "=", 
+       RowBox[{"Table", "[", 
+        RowBox[{"1", ",", 
+         RowBox[{"grade", "+", "1"}]}], "]"}]}], ",", 
+      RowBox[{"exp", " ", "=", 
+       RowBox[{"Table", "[", 
+        RowBox[{"1", ",", "grade"}], "]"}]}], ",", " ", 
+      RowBox[{"list", " ", "=", " ", 
+       RowBox[{"{", "}"}]}], ",", 
+      RowBox[{"app", " ", "=", 
+       RowBox[{"{", "}"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+     RowBox[{"Column", "[", "\[IndentingNewLine]", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"StringJoin", "[", 
            RowBox[{
-            RowBox[{"Row", "[", 
-             RowBox[{"{", 
-              RowBox[{"\"\<Normale \>\"", ",", 
-               RowBox[{"RadioButton", "[", 
-                RowBox[{
-                 RowBox[{"Dynamic", "[", "mode", "]"}], ",", "True"}], 
-                "]"}]}], "}"}], "]"}], ",", "\[IndentingNewLine]", 
-            "\"\<\\t\>\"", ",", "\[IndentingNewLine]", 
-            RowBox[{"Row", "[", 
-             RowBox[{"{", 
-              RowBox[{"\"\<Fattorizzato \>\"", ",", 
-               RowBox[{"RadioButton", "[", 
-                RowBox[{
-                 RowBox[{"Dynamic", "[", "mode", "]"}], ",", "False"}], 
-                "]"}]}], "}"}], "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], 
-         ",", "\[IndentingNewLine]", 
-         RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
-          RowBox[{"If", "[", 
-           RowBox[{"mode", ",", 
-            RowBox[{"(*", " ", 
-             RowBox[{
-             "Normal", " ", "input", " ", "fields", " ", "generation"}], " ", 
-             "*)"}], "\[IndentingNewLine]", 
-            RowBox[{"Panel", "[", "\[IndentingNewLine]", 
-             RowBox[{"Row", "[", 
-              RowBox[{"{", "\[IndentingNewLine]", 
+           "\"\<Esercizi Tipologia \>\"", ",", " ", "kind", ",", 
+            "\"\< Grado \>\"", ",", 
+            RowBox[{"ToString", "[", "grade", "]"}]}], "]"}], ",", " ", 
+          RowBox[{"FontWeight", "\[Rule]", "Bold"}], ",", " ", 
+          RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}], ",", 
+        RowBox[{"(*", " ", 
+         RowBox[{"Dynamic", " ", "text"}], " ", "*)"}], "\[IndentingNewLine]", 
+        RowBox[{"Row", "[", 
+         RowBox[{"{", 
+          RowBox[{"(*", " ", 
+           RowBox[{"mode", " ", "selection"}], " ", "*)"}], 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"Row", "[", 
+            RowBox[{"{", 
+             RowBox[{"\"\<Normale \>\"", ",", 
+              RowBox[{"RadioButton", "[", 
                RowBox[{
-                RowBox[{"InputField", "[", 
-                 RowBox[{"(*", " ", 
-                  RowBox[{"Free", " ", "coeff"}], " ", "*)"}], 
+                RowBox[{"Dynamic", "[", "mode", "]"}], ",", "True"}], "]"}]}],
+              "}"}], "]"}], ",", "\[IndentingNewLine]", "\"\<\\t\>\"", ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", 
+            RowBox[{"{", 
+             RowBox[{"\"\<Fattorizzato \>\"", ",", 
+              RowBox[{"RadioButton", "[", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "mode", "]"}], ",", "False"}], 
+               "]"}]}], "}"}], "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
+         RowBox[{"If", "[", 
+          RowBox[{"mode", ",", 
+           RowBox[{"(*", " ", 
+            RowBox[{
+            "Normal", " ", "input", " ", "fields", " ", "generation"}], " ", 
+            "*)"}], "\[IndentingNewLine]", 
+           RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+            RowBox[{"Row", "[", 
+             RowBox[{"{", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"InputField", "[", 
+                RowBox[{"(*", " ", 
+                 RowBox[{"Free", " ", "coeff"}], " ", "*)"}], 
+                "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"Dynamic", "[", 
+                  RowBox[{"coeff", "[", 
+                   RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+                 "\[IndentingNewLine]", "Number", ",", "\[IndentingNewLine]", 
+                 RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+                "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+               RowBox[{"Row", "[", 
+                RowBox[{"(*", " ", 
+                 RowBox[{"Coeff", " ", "*", " ", "x", " ", "symbol"}], "*)"}],
                  "\[IndentingNewLine]", 
+                RowBox[{"Table", "[", "\[IndentingNewLine]", 
                  RowBox[{
-                  RowBox[{"Dynamic", "[", 
-                   RowBox[{"coeff", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
-                  "\[IndentingNewLine]", "Number", ",", "\[IndentingNewLine]", 
-                  RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-                 "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-                RowBox[{"Row", "[", 
-                 RowBox[{"(*", " ", 
-                  RowBox[{"Coeff", " ", "*", " ", "x", " ", "symbol"}], 
-                  "*)"}], "\[IndentingNewLine]", 
-                 RowBox[{"Table", "[", "\[IndentingNewLine]", 
-                  RowBox[{
-                   RowBox[{"With", "[", 
-                    RowBox[{
+                  RowBox[{"With", "[", 
+                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{"i", "=", "i"}], "}"}], ",", 
                     "\[IndentingNewLine]", 
@@ -966,48 +966,46 @@ Cell[BoxData[{
                     "\[IndentingNewLine]", 
                     RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
                     "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-                    
                     RowBox[{"Superscript", "[", 
                     RowBox[{"x", ",", "i"}], "]"}]}], "\[IndentingNewLine]", 
                     "}"}], "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
-                   "\[IndentingNewLine]", 
-                   RowBox[{"{", 
-                    RowBox[{"i", ",", "grade"}], "}"}]}], " ", 
-                  RowBox[{"(*", " ", 
-                   RowBox[{"Iteration", " ", "on", " ", "grade"}], " ", 
-                   "*)"}], "\[IndentingNewLine]", "]"}], 
-                 "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}],
-               "]"}], "\[IndentingNewLine]", "]"}], ",", 
-            "\[IndentingNewLine]", 
-            RowBox[{"Panel", "[", 
-             RowBox[{"(*", " ", 
+                  "\[IndentingNewLine]", 
+                  RowBox[{"{", 
+                   RowBox[{"i", ",", "grade"}], "}"}]}], " ", 
+                 RowBox[{"(*", " ", 
+                  RowBox[{"Iteration", " ", "on", " ", "grade"}], " ", "*)"}],
+                  "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
+                "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], 
+            "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"Panel", "[", 
+            RowBox[{"(*", " ", 
+             RowBox[{
+             "Factorized", " ", "input", " ", "fields", " ", "generation"}], 
+             " ", "*)"}], "\[IndentingNewLine]", 
+            RowBox[{"Row", "[", 
+             RowBox[{"{", "\[IndentingNewLine]", 
               RowBox[{
-              "Factorized", " ", "input", " ", "fields", " ", "generation"}], 
-              " ", "*)"}], "\[IndentingNewLine]", 
-             RowBox[{"Row", "[", 
-              RowBox[{"{", "\[IndentingNewLine]", 
-               RowBox[{
-                RowBox[{"InputField", "[", 
-                 RowBox[{"(*", " ", 
-                  RowBox[{"Extern", " ", "multiplier"}], " ", "*)"}], 
-                 "\[IndentingNewLine]", 
+               RowBox[{"InputField", "[", 
+                RowBox[{"(*", " ", 
+                 RowBox[{"Extern", " ", "multiplier"}], " ", "*)"}], 
+                "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"Dynamic", "[", 
+                  RowBox[{"coeff", "[", 
+                   RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+                 "\[IndentingNewLine]", "Number", ",", "\[IndentingNewLine]", 
+                 RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
+                "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+               RowBox[{"Row", "[", 
+                RowBox[{"(*", " ", 
                  RowBox[{
-                  RowBox[{"Dynamic", "[", 
-                   RowBox[{"coeff", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
-                  "\[IndentingNewLine]", "Number", ",", "\[IndentingNewLine]", 
-                  RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
-                 "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-                RowBox[{"Row", "[", 
-                 RowBox[{"(*", " ", 
-                  RowBox[{
-                   RowBox[{"x", " ", 
-                    RowBox[{"symbol", " ", "^", " ", "exp"}]}], " ", "+", " ",
-                    "coeff"}], " ", "*)"}], "\[IndentingNewLine]", 
-                 RowBox[{"Table", "[", "\[IndentingNewLine]", 
-                  RowBox[{
-                   RowBox[{"With", "[", 
-                    RowBox[{
+                  RowBox[{"x", " ", 
+                   RowBox[{"symbol", " ", "^", " ", "exp"}]}], " ", "+", " ", 
+                  "coeff"}], " ", "*)"}], "\[IndentingNewLine]", 
+                RowBox[{"Table", "[", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"With", "[", 
+                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{"i", "=", "i"}], "}"}], ",", 
                     "\[IndentingNewLine]", 
@@ -1036,58 +1034,56 @@ Cell[BoxData[{
                     RowBox[{"FieldSize", "\[Rule]", "Full"}]}], 
                     "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
                     "\"\<)\>\""}], "\[IndentingNewLine]", "}"}], "]"}]}], 
-                    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-                   
-                   RowBox[{"{", 
-                    RowBox[{"i", ",", "grade"}], "}"}]}], 
-                  RowBox[{"(*", " ", 
-                   RowBox[{"Iteration", " ", "on", " ", "grade"}], " ", 
-                   "*)"}], "\[IndentingNewLine]", "]"}], 
-                 "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}],
-               "]"}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
-           "]"}], "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"Dynamic", "@", 
-           RowBox[{"Refresh", "[", 
-            RowBox[{"(*", " ", 
-             RowBox[{
-             "Automatic", " ", "refresh", " ", "of", " ", "result", " ", 
-              "function"}], " ", "*)"}], "\[IndentingNewLine]", 
+                   "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+                  RowBox[{"{", 
+                   RowBox[{"i", ",", "grade"}], "}"}]}], 
+                 RowBox[{"(*", " ", 
+                  RowBox[{"Iteration", " ", "on", " ", "grade"}], " ", "*)"}],
+                  "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
+                "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], 
+            "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], 
+         "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Dynamic", "@", 
+          RowBox[{"Refresh", "[", 
+           RowBox[{"(*", " ", 
             RowBox[{
-             RowBox[{
-              RowBox[{"If", "[", 
-               RowBox[{"mode", ",", "\[IndentingNewLine]", 
-                RowBox[{
-                 RowBox[{"f", "=", 
-                  RowBox[{"coeff", "[", 
-                   RowBox[{"[", "1", "]"}], "]"}]}], ";", 
-                 "\[IndentingNewLine]", 
-                 RowBox[{"For", "[", 
+            "Automatic", " ", "refresh", " ", "of", " ", "result", " ", 
+             "function"}], " ", "*)"}], "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"If", "[", 
+              RowBox[{"mode", ",", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"f", "=", 
+                 RowBox[{"coeff", "[", 
+                  RowBox[{"[", "1", "]"}], "]"}]}], ";", 
+                "\[IndentingNewLine]", 
+                RowBox[{"For", "[", 
+                 RowBox[{
+                  RowBox[{"i", " ", "=", " ", "1"}], ",", " ", 
+                  RowBox[{"i", "\[LessEqual]", "grade"}], ",", 
+                  RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
                   RowBox[{
-                   RowBox[{"i", " ", "=", " ", "1"}], ",", " ", 
-                   RowBox[{"i", "\[LessEqual]", "grade"}], ",", 
-                   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-                   RowBox[{
-                    RowBox[{"f", " ", "+=", 
+                   RowBox[{"f", " ", "+=", 
                     RowBox[{
                     RowBox[{"coeff", "[", 
                     RowBox[{"[", 
                     RowBox[{"i", "+", "1"}], "]"}], "]"}], "*", 
                     RowBox[{"x", "^", "i"}]}]}], ";"}]}], 
-                  "\[IndentingNewLine]", "]"}]}], ",", "\[IndentingNewLine]", 
-                
-                RowBox[{
-                 RowBox[{"f", "=", 
-                  RowBox[{"coeff", "[", 
-                   RowBox[{"[", "1", "]"}], "]"}]}], ";", 
-                 "\[IndentingNewLine]", 
-                 RowBox[{"For", "[", 
+                 "\[IndentingNewLine]", "]"}]}], ",", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"f", "=", 
+                 RowBox[{"coeff", "[", 
+                  RowBox[{"[", "1", "]"}], "]"}]}], ";", 
+                "\[IndentingNewLine]", 
+                RowBox[{"For", "[", 
+                 RowBox[{
+                  RowBox[{"i", " ", "=", " ", "1"}], ",", " ", 
+                  RowBox[{"i", "\[LessEqual]", "grade"}], ",", 
+                  RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
                   RowBox[{
-                   RowBox[{"i", " ", "=", " ", "1"}], ",", " ", 
-                   RowBox[{"i", "\[LessEqual]", "grade"}], ",", 
-                   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-                   RowBox[{
-                    RowBox[{"f", " ", "*=", " ", 
+                   RowBox[{"f", " ", "*=", " ", 
                     RowBox[{"(", " ", 
                     RowBox[{
                     RowBox[{"coeff", "[", 
@@ -1096,86 +1092,91 @@ Cell[BoxData[{
                     RowBox[{"x", "^", 
                     RowBox[{"exp", "[", 
                     RowBox[{"[", "i", "]"}], "]"}]}]}], ")"}]}], ";"}]}], 
-                  "\[IndentingNewLine]", "]"}], ";"}]}], 
-               "\[IndentingNewLine]", "]"}], ";", " ", "\"\<\>\""}], ",", " ",
-              "\[IndentingNewLine]", 
-             RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
-              RowBox[{"{", 
-               RowBox[{"coeff", ",", "exp", ",", " ", "mode"}], "}"}]}]}], 
-            " ", 
-            RowBox[{"(*", " ", 
-             RowBox[{
-             "Symbols", " ", "to", " ", "track", " ", "in", " ", "order", " ",
-               "to", " ", "update", " ", "the", " ", "resulting", " ", 
-              "function", " ", "that", " ", "must", " ", "be", " ", "added", 
-              " ", "to", " ", "the", " ", "list"}], "*)"}], 
-            "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
-          RowBox[{"Button", "[", " ", 
+                 "\[IndentingNewLine]", "]"}], ";"}]}], "\[IndentingNewLine]",
+               "]"}], ";", " ", "\"\<\>\""}], ",", " ", "\[IndentingNewLine]", 
+            RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+             RowBox[{"{", 
+              RowBox[{"coeff", ",", "exp", ",", " ", "mode"}], "}"}]}]}], " ", 
            RowBox[{"(*", " ", 
             RowBox[{
-            "Button", " ", "that", " ", "allow", " ", "to", " ", "add", " ", 
-             "an", " ", "exercise", " ", "to", " ", "the", " ", "list"}], " ",
-             "*)"}], "\[IndentingNewLine]", 
-           RowBox[{"\"\<Aggiungi\>\"", ",", "\[IndentingNewLine]", 
-            RowBox[{"If", "[", 
-             RowBox[{"False", ",", "\[IndentingNewLine]", 
+            "Symbols", " ", "to", " ", "track", " ", "in", " ", "order", " ", 
+             "to", " ", "update", " ", "the", " ", "resulting", " ", 
+             "function", " ", "that", " ", "must", " ", "be", " ", "added", 
+             " ", "to", " ", "the", " ", "list"}], "*)"}], 
+           "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+         RowBox[{"Button", "[", " ", 
+          RowBox[{"(*", " ", 
+           RowBox[{
+           "Button", " ", "that", " ", "allow", " ", "to", " ", "add", " ", 
+            "an", " ", "exercise", " ", "to", " ", "the", " ", "list"}], " ", 
+           "*)"}], "\[IndentingNewLine]", 
+          RowBox[{"\"\<Aggiungi\>\"", ",", "\[IndentingNewLine]", 
+           RowBox[{"If", "[", 
+            RowBox[{"False", ",", "\[IndentingNewLine]", 
+             RowBox[{
+             "MessageDialog", "[", 
+              "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",", 
+             "\[IndentingNewLine]", 
+             RowBox[{"If", "[", 
               RowBox[{
-              "MessageDialog", "[", 
-               "\"\<Alcuni campi inseriti non sono corretti!\>\"", "]"}], ",",
-               "\[IndentingNewLine]", 
-              RowBox[{"If", "[", 
                RowBox[{
-                RowBox[{
-                 RowBox[{"Length", "[", 
-                  RowBox[{"CoefficientList", "[", 
-                   RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
-                 RowBox[{"grade", "+", "1"}]}], ",", "\[IndentingNewLine]", 
-                RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-                 RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
-                 "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-                RowBox[{"MessageDialog", "[", 
-                 RowBox[{"StringJoin", "[", 
-                  RowBox[{"\"\<Equazione di grado diverso a \>\"", ",", 
-                   RowBox[{"ToString", "[", "grade", "]"}]}], "]"}], "]"}]}], 
-               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-              RowBox[{"If", "[", 
+                RowBox[{"Length", "[", 
+                 RowBox[{"CoefficientList", "[", 
+                  RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
+                RowBox[{"grade", "+", "1"}]}], ",", "\[IndentingNewLine]", 
+               RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+                RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+                "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+               RowBox[{"MessageDialog", "[", 
+                RowBox[{"StringJoin", "[", 
+                 RowBox[{"\"\<Equazione di grado diverso a \>\"", ",", 
+                  RowBox[{"ToString", "[", "grade", "]"}]}], "]"}], "]"}]}], 
+              "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+             RowBox[{"If", "[", 
+              RowBox[{
                RowBox[{
-                RowBox[{
-                 RowBox[{"Length", "[", 
-                  RowBox[{"CoefficientList", "[", 
-                   RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
-                 RowBox[{"grade", "+", "1"}]}], ",", "\[IndentingNewLine]", 
-                RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
-                 RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
-                 "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-                RowBox[{"MessageDialog", "[", 
-                 RowBox[{"StringJoin", "[", 
-                  RowBox[{"\"\<Equazione di grado diverso a \>\"", ",", 
-                   RowBox[{"ToString", "[", "grade", "]"}]}], "]"}], "]"}]}], 
-               "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}],
-            "\[IndentingNewLine]", "]"}]}], " ", " ", ",", 
-         "\[IndentingNewLine]", "\"\<Elementi aggiunti\>\"", ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"Dynamic", "[", 
-          RowBox[{"d", "[", "list", "]"}], "]"}], ",", 
-         RowBox[{"(*", " ", 
-          RowBox[{"List", " ", "of", " ", "chosen", " ", "exercises"}], " ", 
-          "*)"}], "\[IndentingNewLine]", 
-         RowBox[{"Button", "[", 
-          RowBox[{"\"\<Esporta Lista\>\"", ",", " ", 
+                RowBox[{"Length", "[", 
+                 RowBox[{"CoefficientList", "[", 
+                  RowBox[{"f", ",", "x"}], "]"}], "]"}], "\[Equal]", "  ", 
+                RowBox[{"grade", "+", "1"}]}], ",", "\[IndentingNewLine]", 
+               RowBox[{"AppendTo", "[", "\[IndentingNewLine]", 
+                RowBox[{"list", ",", "\[IndentingNewLine]", "f"}], 
+                "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+               RowBox[{"MessageDialog", "[", 
+                RowBox[{"StringJoin", "[", 
+                 RowBox[{"\"\<Equazione di grado diverso a \>\"", ",", 
+                  RowBox[{"ToString", "[", "grade", "]"}]}], "]"}], "]"}]}], 
+              "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
+          "\[IndentingNewLine]", "]"}]}], " ", " ", ",", 
+        "\[IndentingNewLine]", "\"\<Elementi aggiunti\>\"", ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Dynamic", "[", 
+         RowBox[{"d", "[", "list", "]"}], "]"}], ",", 
+        RowBox[{"(*", " ", 
+         RowBox[{"List", " ", "of", " ", "chosen", " ", "exercises"}], " ", 
+         "*)"}], "\[IndentingNewLine]", 
+        RowBox[{"Button", "[", 
+         RowBox[{"\"\<Esporta Lista\>\"", ",", " ", 
+          RowBox[{
            RowBox[{"Export", "[", 
             RowBox[{
              RowBox[{"StringJoin", "[", 
               RowBox[{"\"\<g\>\"", ",", 
                RowBox[{"ToString", "[", "grade", "]"}], ",", "kind", ",", 
-               "\"\<.txt\>\""}], "]"}], ",", "list"}], "]"}]}], "]"}]}], " ", 
-        
-        RowBox[{"(*", " ", 
-         RowBox[{
-         "Button", " ", "that", " ", "allow", " ", "to", " ", "export", " ", 
-          "the", " ", "list"}], " ", "*)"}], "\[IndentingNewLine]", "}"}], 
-       "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}]}], 
-    "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", 
+               "\"\<.txt\>\""}], "]"}], ",", "list"}], "]"}], ";", 
+           RowBox[{"MessageDialog", " ", "[", 
+            RowBox[{"StringJoin", "[", 
+             RowBox[{"\"\<Lista esportata in \>\"", ",", 
+              RowBox[{"StringJoin", "[", 
+               RowBox[{"\"\<g\>\"", ",", 
+                RowBox[{"ToString", "[", "grade", "]"}], ",", "kind", ",", 
+                "\"\<.txt\>\""}], "]"}]}], "]"}], "]"}]}]}], "]"}]}], " ", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+        "Button", " ", "that", " ", "allow", " ", "to", " ", "export", " ", 
+         "the", " ", "list"}], " ", "*)"}], "\[IndentingNewLine]", "}"}], 
+      "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}]}], 
+   "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"gg", " ", "=", " ", "1"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
@@ -1192,7 +1193,8 @@ Cell[BoxData[{
   3.736673036530337*^9, 3.7366730490630255`*^9}, {3.7366730836468563`*^9, 
   3.736673199940467*^9}, {3.7377402283390756`*^9, 3.737740230010337*^9}, {
   3.7377404741523843`*^9, 3.7377404924423614`*^9}, {3.7377426079686513`*^9, 
-  3.737742608648944*^9}},
+  3.737742608648944*^9}, {3.7378679346724167`*^9, 3.7378679729418635`*^9}, {
+  3.7378680035441647`*^9, 3.737868038806938*^9}},
  Background->None],
 
 Cell[CellGroupData[{
@@ -1293,17 +1295,19 @@ $CellContext`draw[$CellContext`gg, $CellContext`tt]), Appearance -> Automatic,
        GridBoxItemSize -> {
         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]],
     "\"\\t\"",DynamicBox[
-     ToBoxes[$CellContext`res, StandardForm]]},
+     ToBoxes[$CellContext`res, StandardForm], 
+     ImageSizeCache -> {206., {114., 121.}}]},
    "RowDefault"]]], "Output",
  CellChangeTimes->{
-  3.7377402474212255`*^9, {3.7377404514260263`*^9, 3.737740501415025*^9}}]
+  3.7377402474212255`*^9, {3.7377404514260263`*^9, 3.737740501415025*^9}, 
+   3.7378680606517944`*^9}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 ScreenStyleEnvironment->"SlideShow",
-WindowSize->{881, 637},
-WindowMargins->{{224, Automatic}, {Automatic, 8}},
+WindowSize->{1366, 695},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 TaggingRules->{"SlideShow" -> True},
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
 StyleDefinitions->"Default.nb"
@@ -1313,32 +1317,32 @@ StyleDefinitions->"Default.nb"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "SlideShowHeader"->{
-  Cell[580, 22, 4378, 95, 2, "SlideShowNavigationBar",
-   CellTags->"SlideShowHeader"],
-  Cell[39936, 755, 4378, 95, 2, "SlideShowNavigationBar",
-   CellTags->"SlideShowHeader"]},
  "Home"->{
-  Cell[4961, 119, 506, 8, 190, "Title",
+  Cell[4961, 119, 506, 8, 197, "Title",
    CellTags->"Home"]},
  "Insert"->{
-  Cell[44339, 854, 136, 2, 115, "Section",
-   CellTags->"Insert"]}
+  Cell[44339, 854, 136, 2, 118, "Section",
+   CellTags->"Insert"]},
+ "SlideShowHeader"->{
+  Cell[580, 22, 4378, 95, 0, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[39936, 755, 4378, 95, 2, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 65853, 1315},
- {"Home", 66044, 1320},
- {"Insert", 66120, 1323}
+ {"Home", 66058, 1319},
+ {"Insert", 66134, 1322},
+ {"SlideShowHeader", 66224, 1325}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 4378, 95, 2, "SlideShowNavigationBar",
+Cell[580, 22, 4378, 95, 0, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[4961, 119, 506, 8, 190, "Title",
+Cell[4961, 119, 506, 8, 197, "Title",
  CellTags->"Home"],
 Cell[5470, 129, 468, 10, 178, "Subtitle"],
 Cell[CellGroupData[{
@@ -1346,8 +1350,8 @@ Cell[5963, 143, 836, 19, 192, "Input"],
 Cell[6802, 164, 562, 13, 85, "Output"]
 }, {2}]],
 Cell[CellGroupData[{
-Cell[7398, 182, 136, 1, 178, "Subtitle"],
-Cell[7537, 185, 25417, 421, 584, "Input"]
+Cell[7398, 182, 136, 1, 109, "Subtitle"],
+Cell[7537, 185, 25417, 421, 593, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[32991, 611, 155, 3, 178, "Subtitle"],
@@ -1362,16 +1366,16 @@ Cell[CellGroupData[{
 Cell[39936, 755, 4378, 95, 2, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[44339, 854, 136, 2, 115, "Section",
+Cell[44339, 854, 136, 2, 118, "Section",
  CellTags->"Insert"],
-Cell[44478, 858, 16272, 337, 25, "Input",
+Cell[44478, 858, 16413, 339, 25, "Input",
  CellOpen->False,
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[60775, 1199, 3474, 69, 25, "Input",
+Cell[60916, 1201, 3474, 69, 25, "Input",
  CellOpen->False,
  InitializationCell->True],
-Cell[64252, 1270, 1183, 28, 141, "Output"]
+Cell[64393, 1272, 1257, 30, 283, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
