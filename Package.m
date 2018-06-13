@@ -37,7 +37,7 @@ BeginPackage[ "MClib`"];
 		getCorrectCounter::usage="Number of correct answer"
 		getCorrectAnswerG1::usage="Number of correct answer part 1"
 		getCorrectAnswerG2::usage="Number of correct answer part 2"
-		getCorrectAnswerG3::usage="Number of correct answer part 1"
+		getCorrectAnswerG3::usage="Number of correct answer part 3"
 		getFreeEq::usage="Free eq"
 		getCurrentEq::usage= "eq1"
 		getFreeEq2::usage="Free eq2"
@@ -63,6 +63,12 @@ BeginPackage[ "MClib`"];
 		setP7::usage="[G1, m=0] Variable that indicates that user has already chosen something"
 		setP8::usage="[G1, m=0] Variable that indicates that user has already chosen something"
 		setP9::usage="[G1, m=0] Variable that indicates that user has already chosen something"
+		setClicked::usage="click first verify"
+		setClicked2::usage="click first verify"
+		setClicked2B::usage="click first verify"
+		setClicked3B::usage="click first verify"
+		setClicked3::usage="click first verify"
+		setClicked1b::usage="click second verify"
 		
 		load::usage = "Load initial variables randomly"
 		
@@ -228,6 +234,12 @@ BeginPackage[ "MClib`"];
 				setP7[v_] := Module[{},p7=v]
 				setP8[v_] := Module[{},p8=v]
 				setP9[v_] := Module[{},p9=v]
+				setClicked[v_] := Module[{},clicked=v]
+				setClicked2[v_] := Module[{},clicked2=v]
+				setClicked2B[v_] := Module[{},clicked2B=v]
+				setClicked3B[v_] := Module[{},clicked3B=v]
+				setClicked3[v_] := Module[{},clicked3=v]
+				setClicked1b[v_] := Module[{},clicked1b=v]
 				(* End of Setter Private Variables*)
 
 				
