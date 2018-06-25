@@ -156,7 +156,7 @@ BeginPackage[ "MClib`"];
 				clicked2B = 0
 				clicked3 = 0;
 				clicked3B = 0;
-				
+				testo = "";
 				MINNUMBEROFEXERCISES = 3 (* CONSTANT- Minimum number of exercises per module *)		
 				
 				teacherEQ = { } (* Exercises solutions list *)
@@ -273,18 +273,21 @@ BeginPackage[ "MClib`"];
 				(* reset variables for the given grade *)
 				resetGrade[grade_, count_] := Module[
 									{},
-									teacherEQ[[grade*2-1]] = randomFill[1,MINNUMBEROFEXERCISES];
-									teacherEQ[[grade*2]] = randomFill[1,MINNUMBEROFEXERCISES];
-									If[g ==1,
+									teacherEQ[[grade*2-1]] = randomFill[grade,MINNUMBEROFEXERCISES];
+									teacherEQ[[grade*2]] = randomFill[grade ,MINNUMBEROFEXERCISES];
+									If[grade === 1,
 										exercises[[grade*2-1]] = generateExercisesG1[teacherEQ[[1]]];
-										exercises[[grade*2]] = generateExercisesG1[teacherEQ[[2]]],
-										If[g ==2,
+										exercises[[grade*2]] = generateExercisesG1[teacherEQ[[2]]]]
+										
+										If[grade === 2,
 											exercises[[grade*2-1]] = generateExercisesG2[teacherEQ[[3]]];
 											exercises[[grade*2]] = generateExercisesG2[teacherEQ[[4]]],
+										] 
+										If[grade === 3,
 											exercises[[grade*2-1]] = generateExercisesG3[teacherEQ[[5]]];
 											exercises[[grade*2]] = generateExercisesG3[teacherEQ[[6]]]
 										] 
-									];
+									;
 									enableAnswer[[grade*2-1]] =	Table[True, MINNUMBEROFEXERCISES];	
 									enableAnswer[[grade*2]] = Table[True, MINNUMBEROFEXERCISES];	
 									userAnswer[[grade*2-1]] = Table[0, MINNUMBEROFEXERCISES];	
@@ -304,7 +307,7 @@ BeginPackage[ "MClib`"];
 													StringAnswer = StringJoin[StringJoin["Domanda ", ToString[i]], " non completata"];(* 1 answer has not be given *)
 													enableAnswer[[row,i]] = True; (* Enable retring *) 
 													Break[], 
-													StringAnswer = StringJoin[StringAnswer, StringJoin[StringJoin[StringJoin["\nEs #", ToString[i]], ": Risposta errata. Quella corretta era "], ToString[teacherEQ[[row,i]]]]]; (* 1 error*) 
+													StringAnswer = StringJoin[StringAnswer, StringJoin[StringJoin[StringJoin["\nEs #", ToString[i]], ": Risposta errata. Quella corretta era "], teacherEQ[[row,i]]]]; (* 1 error*) 
 													enableAnswer[[row,i]] = False(* Disable retring *)
 												]
 											]
@@ -322,7 +325,10 @@ BeginPackage[ "MClib`"];
 														Row[{
 															Panel[
 																Column[{
-																	Style["A quale funzione corrisponde la seguente retta?", FontWeight -> Bold], 
+																If[row === 1, testo ="A quale funzione corrisponde la seguente retta?";] ;
+																If[row === 3, testo= "A quale funzione corrisponde la seguente parabola?";]; 
+																If[row === 5, testo= "A quale funzione corrisponde la seguente cubica?";];
+																	Style[testo, FontWeight -> Bold], 
 																	plotWithZoomButtonsT[row,i, Symbol["x"]],
 																	Dynamic[
 																		RadioButtonBar[
@@ -709,3 +715,6 @@ BeginPackage[ "MClib`"];
 	(* End of Package *)
 	
 EndPackage[];
+
+
+
