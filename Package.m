@@ -307,7 +307,7 @@ BeginPackage[ "MClib`"];
 													StringAnswer = StringJoin[StringJoin["Domanda ", ToString[i]], " non completata"];(* 1 answer has not be given *)
 													enableAnswer[[row,i]] = True; (* Enable retring *) 
 													Break[], 
-													StringAnswer = StringJoin[StringAnswer, StringJoin[StringJoin[StringJoin["\nEs #", ToString[i]], ": Risposta errata. Quella corretta era "], teacherEQ[[row,i]]]]; (* 1 error*) 
+													StringAnswer = StringJoin[StringAnswer, "\nEs #", ToString[i], ": Risposta errata. Quella corretta era     ", ToString[teacherEQ[[row,i]],InputForm]]; (* 1 error*) 
 													enableAnswer[[row,i]] = False(* Disable retring *)
 												]
 											]
